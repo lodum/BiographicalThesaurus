@@ -39,22 +39,8 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
   
-  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
-    <script>
-      function init() {
-        map = new OpenLayers.Map("map");
-        var mapnik = new OpenLayers.Layer.OSM();
-        map.addLayer(mapnik);
-        map.setCenter(new OpenLayers.LonLat(7.3,52.0) // Center of the map
-          .transform(
-            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
-          ), 10 // Zoom level
-        );
-      }
-    </script>
+  
 
-  <body onload="init();">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -68,8 +54,8 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="stis.html">Home</a></li>
-              <li class="active"><a href="#">Search</a></li>
-              <li><a href="explore.html">Explore</a></li>
+              <li><a href="search.html">Search</a></li>
+              <li class="active"><a href="#">Explore</a></li>
               <li><a href="results.html">Results</a></li>
 <!--
               <li><a href="#about">About</a></li>
@@ -81,62 +67,48 @@
       </div>
     </div>
 
-	<div class="container">
-		<h1>Thesaurus Search Map</h1>
-		<p>Click on the map to find all datasets that have a relationship to the location that you clicked on!</p>
-	</div>
-    <div id="map"></div>
-    <div class="container">
 
-      <h1>Thesaurus search form</h1>
-      <p>Search for authors, publications, time and/or places in which you are interested.</br> The results will be published on the map and in a table!</p>
-			<form>
-				<fieldset>
-				<legend>Search form</legend>
-				<label>Person</label>
-				<input type="text" placeholder="Person">
-				</label>
-				<div class="btn-group">
-				  <a class="btn btn-primary" href="#">participates in event</a>
-				  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">is parent of</a></li>
-					<li><a href="#">is child of</a></li>
-				  </ul>
-				</div>
-				<input type="text" placeholder="Insert text here...">
-				<label>Event</label>
-				<input type="text" placeholder="Event description">
-				</label>
-				<input type="text" placeholder="Happened at which location?">
-				<div class="btn-group">
-				  <a class="btn btn-primary" href="#">occured before event</a>
-				  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">occured after event</a></li>
-					<li><a href="#">occured after timestamp</a></li>
-					<li><a href="#">occured after timestamp</a></li>
-				  </ul>
-				</div>
-				<input type="text" placeholder="Insert timestamp or event here">
-				<label>Author</label>
-				<input type="text" placeholder="Author">
-				</label>
-				<input type="text" placeholder="Co-Author">
-				<label>Publication</label>
-				<input type="text" placeholder="Publication">
-				</label>
-				<label>Period/Timestamp</label>
-				<input type="text" placeholder="Period/Timestamp">
-				</label>
-				<label>Place</label>
-				<input type="text" placeholder="Place">
-				</label>
-				<button type="submit" class="btn">Submit</button>
-				</fieldset>
-			</form>
-			
-			
+ 
+    <div class="container">
+			<h1>Thesaurus Topics and Contents</h1>
+			<h2>Events</h2>
+			<table class="table">
+				<tr>
+					<td>War </td>
+					<td>Browse events </td>
+				</tr>
+				<tr>
+					<td>Marriage </td>
+					<td>Browse events </td>
+				</tr>
+				<tr>
+					<td>Publication </td>
+					<td>Browse events </td>
+				</tr>
+				<tr>
+					<td>Peace treaty </td>
+					<td>Browse events </td>
+				</tr>
+			</table>
+			<h2>Literature genre</h2>
+			<table class="table">
+				<tr>
+					<td>Computer science </td>
+					<td>Browse genre </td>
+				</tr>
+				<tr>
+					<td>German literature </td>
+					<td>Browse genre </td>
+				</tr>
+				<tr>
+					<td>Novel </td>
+					<td>Browse genre </td>
+				</tr>
+				<tr>
+					<td>... </td>
+					<td>Browse genre </td>
+				</tr>
+			</table>
     </div>
 
     <!-- Le javascript
