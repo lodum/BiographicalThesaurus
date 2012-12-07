@@ -1,76 +1,92 @@
-## from http://epad.ifgi.de/p/stis-concept
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf:    <http://xmlns.com/foaf/spec/index.rdf#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix bio:     <http://vocab.org/bio/0.1/.rdf#> .
 @prefix gnd:     <http://d-nb.info/standards/elementset/gnd.rdf#> .
-@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix stis:    <http://localhost/default#> .
 @prefix dbp:     <http://dbpedia.org/data3/.rdf#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix daml:    <http://www.daml.org/2001/03/daml+oil#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:    <http://xmlns.com/foaf/spec/index.rdf#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix :        <http://localhost/default#> .
-stis:participatesAs
-      rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:domain stis:Person ;
-      rdfs:range stis:Role .
-stis:participatesIn
-      rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:domain stis:Role ;
-      rdfs:range bio:Event .
-stis:Role
-    rdf:type owl:Class ;
-    rdfs:subClassOf gnd:functionOrRole .
-stis:Author
-    rdf:type owl:Class ;
-    rdfs:subClassOf stis:Role ;
-    rdfs:subClassOf gnd:Author .
-    
-stis:Mother
-   rdf:type owl:Class ;
-   rdfs:subClassOf stis:Role ;
-   rdfs:subClassOf bio:Mother ;
-   rdfs:subClassOf stis:Person .
-stis:Father
-   rdf:type owl:Class ;
-   rdfs:subClassOf stis:Role ;
-   rdfs:subClassOf bio:Father ;
-   rdfs:subClassOf stis:Person .
-stis:CoWriter
-    rdf:type owl:Class ;
-    rdfs:subClassOf stis:Role .
-stis:Spectator
-    rdf:type owl:Class ;
-    rdfs:subClassOf stis:Role .
-    
-##usw
-dbp:nationality
-      rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:domain stis:Person ;
-      rdfs:range dbp:Country .
-foaf:depiction
-      rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:domain stis:Person ;
-      rdfs:range foaf:Image .
-foaf:homepage
-      rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:domain stis:Person ;
-      rdfs:range foaf:Document .
-gnd:Person
+@prefix bio:     <http://vocab.org/bio/0.1/.rdf#> .
+
+foaf:Image
       rdf:type owl:Class .
-stis:Person
-      rdf:type owl:Class ;
-      rdfs:subClassOf gnd:Person .
-stis:Publication
-      rdfs:subClassOf bio:Event ;
-      rdfs:subClassOf gnd:Work .
-stis:Occupation
-      rdfs:subClassOf bio:Event .
-stis:Living
-      rdfs:subClassOf bio:Event .
-#Allow Literals is maybe dangerous as they have no type
+
+stis:participatesAsCoAuthor
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range bio:Event ;
+      rdfs:subPropertyOf stis:participates .
+
 stis:Subject
       rdf:type owl:ObjectProperty , rdf:Property ;
       rdfs:domain stis:Publication ;
       rdfs:range rdf:Class .
+
+foaf:depiction
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range foaf:Image .
+
+stis:participatesAsMother
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range bio:Event ;
+      rdfs:subPropertyOf stis:participates .
+
+foaf:homepage
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range foaf:Document .
+
+stis:participatesAsAuthor
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range bio:Event ;
+      rdfs:subPropertyOf stis:participates .
+
+gnd:Person
+      rdf:type owl:Class ;
+      rdfs:subClassOf stis:Person .
+
+stis:Person
+      rdf:type owl:Class .
+
+rdf:Class
+      rdf:type owl:Class .
+
+stis:Publication
+      rdf:type owl:Class ;
+      rdfs:subClassOf gnd:Work , bio:Event .
+
+dbp:Country
+      rdf:type owl:Class .
+
+stis:participatesAsObserver
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range bio:Event ;
+      rdfs:subPropertyOf stis:participates .
+
+bio:Event
+      rdf:type owl:Class .
+
+stis:participatesAsInitiator
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range bio:Event ;
+      rdfs:subPropertyOf stis:participates .
+
+stis:participates
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range bio:Event .
+
+dbp:nationality
+      rdf:type owl:ObjectProperty , rdf:Property ;
+      rdfs:domain stis:Person ;
+      rdfs:range dbp:Country .
+
+foaf:Document
+      rdf:type owl:Class .
