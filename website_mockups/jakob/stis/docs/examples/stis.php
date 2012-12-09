@@ -122,7 +122,7 @@ include 'common.php';
         <div class="span4">
           <h2>Tag cloud</h2>
           <p>Explore a tagcloud that features prominent entries in the data.</p>
-          <p><a class="btn" href="#">Show me the cloud &raquo;</a></p>
+          <p><a class="btn" href="tag_cloud.html">Show me the cloud &raquo;</a></p>
         </div>
       </div>
 
