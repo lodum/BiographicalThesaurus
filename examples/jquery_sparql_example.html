@@ -7,7 +7,8 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-
+	//author: Johannes Trame ... do whatever you want with the code
+	
 	function submitQuery(){
 		var endpoint="http://lobid.org/sparql/";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
@@ -17,8 +18,10 @@
 		request.query=$("#sparqlQuery").val();
 		//request.query="Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10";
 
+		//sent request
 		$.ajax({
 			dataType: "jsonp",
+			//some sparql endpoints do only support "sparql-results+json" instead of simply "json"
 			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
 			data: request,
 			url: queryUrl,
@@ -26,6 +29,7 @@
 		});
 	};
 
+	//handles the ajax response
 	function callbackFunc(results) {		
 		$("#resultdiv").empty();	   
 		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
