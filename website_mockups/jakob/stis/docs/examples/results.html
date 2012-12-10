@@ -53,6 +53,18 @@
         );
       }
     </script>
+    
+    <script type="text/javascript">
+		function showValue1(newValue)
+		{
+			document.getElementById("range1").innerHTML=newValue;
+		}
+		function showValue2(newValue)
+		{
+			document.getElementById("range2").innerHTML=newValue;
+		}
+		
+	</script>
 
   <body onload="init();">
 
@@ -85,6 +97,24 @@
 		<h1>Thesaurus Result Map</h1>
 	</div>
     <div id="map"></div>
+    <div class="container">
+	<table>
+		<tr>
+			<td> 
+				<p>Earliest result:</p>
+				<input type="range" min="1335" max="1965" value="1335" step="1" onchange="showValue1(this.value)" />
+				<span id="range1">0</span>
+			</td>
+			<td>
+				<p>Latest result:</p>
+				<input type="range" min="1335" max="1965" value="1965" step="1" onchange="showValue2(this.value)" />
+				<span id="range2">0</span>
+			</td>
+		</tr>
+	</table>
+		
+    </div>
+   
     <div class="container">
 			<h1>Thesaurus Search Results</h1>
 			<p>Filter results depending on the column in the results table.</p>
