@@ -1,0 +1,67 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+	function submitQuery(){
+		var endpoint="http://lobid.org/sparql/";
+		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
+		var request = { accept : 'application/sparql-results+json' };
+		//get sparql query from textarea
+		request.query=$("#sparqlQuery").val();
+		//request.query="Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10";
+
+		$.ajax({
+			dataType: "jsonp",
+			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
+			data: request,
+			url: queryUrl,
+			success: callbackFunc
+		});
+	};
+
+	function callbackFunc(results) {		
+		$("#resultdiv").empty();	   
+		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+		htmlString="<table class=\"table table-striped\">";
+		//write table head
+		htmlString+="<tr>";
+			$.each(results.head.vars, function(index2, value2) { 
+				htmlString+="<th>?"+value2+"</th>";
+			 });
+		htmlString+="</tr>";
+		//write table body
+		$.each(results.results.bindings, function(index1, value1) { 
+			htmlString+="<tr>";
+			$.each(results.head.vars, function(index2, value2) { 
+				htmlString+="<td>"+value1[value2].value+"</td>";
+				//console.log(value1[value2].value)
+			 });
+			htmlString+="</tr>";
+		});
+
+		htmlString+="</table>";
+		$("#resultdiv").html(htmlString);
+	}
+
+	</script>
+</head>
+<body>
+	<textarea id="sparqlQuery" rows="5" class="field span12">Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10</textarea><br/>
+	<button type="submit" class="btn btn-primary" onclick="submitQuery()">Submit Query</button><br/><br/>
+
+	<!-- empty html div-element ... placeholder for results (text/canvas/map etc)-->
+	<div id="resultdiv"></div>
+	<br/>
+	
+
+</body>
+
+
+</html>
