@@ -87,7 +87,22 @@ include 'common.php';
       <div class="hero-unit">
         <h1><?php echo $lang['STIS_HERO_HEADER']; ?></h1>
         <p><?php echo $lang['STIS_HERO_TEXT']; ?></p>
-        <p><a class="btn btn-primary btn-large" href="search.html"><?php echo $lang['STIS_HERO_BUTTON']; ?></a></p>
+		<table>
+			<tr>
+				<td>
+					<p><a class="btn btn-primary btn-large" href="search.html"><?php echo $lang['STIS_HERO_BUTTON1']; ?></a></p>
+				</td>
+				<td style='width: 100px'>
+					<p>   </p>
+				</td>
+				<td>
+					<p><?php echo $lang['STIS_HERO_FREE_SEARCH']; ?></p>
+					<input type="text" size="25" value="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
+					<p><a class="btn btn-primary btn-large" href="results.html"><?php echo $lang['STIS_HERO_BUTTON2']; ?></a></p>
+				</td>
+			</tr>
+		</table>
+        
       </div>
 
       <!-- Example row of columns -->
