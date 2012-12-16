@@ -43,16 +43,14 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 	
 	<script type="text/javascript">
-	//author: Johannes Trame ... do whatever you want with the code
 	
 	function submitQuery(){
-		var endpoint="http://lobid.org/sparql/";
+		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
 		//get sparql query from textarea
 		request.query=$("#sparqlQuery").val();
-		//request.query="Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10";
 
 		//sent request
 		$.ajax({
@@ -64,12 +62,18 @@ include 'common.php';
 			success: callbackFunc
 		});
 	};
+	
+	function replaceURLWithHTMLLinks(text) {
+		    var exp = /(\b(https?|ftp|file):\/\/\b(lobid.org)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+		    return text.replace(exp,"<a href='http://giv-stis-2012.uni-muenster.de:8080/openrdf-workbench/repositories/stis/explore?resource=$1' target=\"_blank\">$1</a>"); 
+		}
+	
 
 	//handles the ajax response
 	function callbackFunc(results) {		
 		$("#resultdiv").empty();	   
 		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
-		htmlString="<table class=\"table table-striped\">";
+		htmlString="<table class=\"table table-striped table-condensed\">";
 		//write table head
 		htmlString+="<tr>";
 			$.each(results.head.vars, function(index2, value2) { 
@@ -80,8 +84,11 @@ include 'common.php';
 		$.each(results.results.bindings, function(index1, value1) { 
 			htmlString+="<tr>";
 			$.each(results.head.vars, function(index2, value2) { 
-				htmlString+="<td>"+value1[value2].value+"</td>";
-				//console.log(value1[value2].value)
+				if(value1[value2]!=undefined){
+					htmlString+="<td>"+replaceURLWithHTMLLinks(value1[value2].value)+"</td>";
+				}else{
+					htmlString+="<td></td>";
+				}
 			 });
 			htmlString+="</tr>";
 		});
@@ -123,18 +130,13 @@ include 'common.php';
     <div class="container">
 			<?php echo $lang['SPARQL_TOP']; ?>
 				<textarea id="sparqlQuery" rows="15" class="field span12">
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-PREFIX transit: <http://vocab.org/transit/terms/>
-PREFIX ext: <java:org.geospatialweb.arqext.>
-PREFIX bio: <http://purl.org/vocab/bio/0.1/>
-PREFIX dcterm: <http://purl.org/dc/terms/>
-PREFIX dctype: <http://purl.org/dc/dcmitype/>
-PREFIX foaf: <http://xmlns.com/foaf/spec/>
-PREFIX gnde: <http://d-nb.info/standards/elementset/gnd#>
-PREFIX gnd: <http://d-nb.info/gnd/>
-	
-Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10
+prefix stis:    <http://localhost/default#>
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix gnd:     <http://d-nb.info/standards/elementset/gnd#>
+
+select * where{
+ ?a a gnd:DifferentiatedPerson.
+}
 				</textarea><br/>
 	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br/>
 
