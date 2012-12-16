@@ -1,0 +1,81 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	//author: Johannes Trame ... do whatever you want with the code
+	
+	function submitQuery(){
+		var endpoint="http://giv-stis-2012.uni-muenster.de:3030/ds/query";
+		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+		var queryUrl = endpoint;
+		//var request = { accept : 'application/sparql-results+json' };
+		//get sparql query from textarea
+		var request={};
+		//var request = $("#sparqlQuery").val();
+		request.query=$("#sparqlQuery").val();
+		//var request="prefix xsd: <http://www.w3.org/2001/XMLSchema#> prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>  prefix foaf:    <http://xmlns.com/foaf/spec/index.rdf#>  prefix owl:     <http://www.w3.org/2002/07/owl#>  prefix bio:     <http://vocab.org/bio/0.1/.rdf#>  prefix gnd:     <http://d-nb.info/standards/elementset/gnd.rdf#>  prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#>  prefix stis:    <http://localhost/default#>  prefix dbp:     <http://dbpedia.org/data3/.rdf#>  prefix daml:    <http://www.daml.org/2001/03/daml+oil#>  prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  prefix ns1:     <http://en.wikipedia.org/wiki/>  prefix ns2:     <http://live.dbpedia.org/resource/>  prefix ns3:     <http://live.dbpedia.org/property/>  prefix ns4:     <http://live.dbpedia.org/ontology/>  select * where { ?a a gnd:DifferentiatedPerson.}";
+
+		//sent request
+		$.ajax({
+			dataType: "json",
+			//some sparql endpoints do only support "sparql-results+json" instead of simply "json"
+			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
+			data: request,
+			url: queryUrl,
+			success: callbackFunc
+		});
+	};
+
+	//handles the ajax response
+	function callbackFunc(results) {		
+		$("#resultdiv").empty();	   
+		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+		htmlString="<table class=\"table table-striped\">";
+		//write table head
+		htmlString+="<tr>";
+			$.each(results.head.vars, function(index2, value2) { 
+				htmlString+="<th>?"+value2+"</th>";
+			 });
+		htmlString+="</tr>";
+		//write table body
+		$.each(results.results.bindings, function(index1, value1) { 
+			htmlString+="<tr>";
+			$.each(results.head.vars, function(index2, value2) { 
+				htmlString+="<td>"+value1[value2].value+"</td>";
+				//console.log(value1[value2].value)
+			 });
+			htmlString+="</tr>";
+		});
+
+		htmlString+="</table>";
+		$("#resultdiv").html(htmlString);
+	}
+
+	</script>
+</head>
+<body>
+	<textarea id="sparqlQuery" rows="5" class="field span12">prefix stis:    <http://localhost/default#>
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix gnd:     <http://d-nb.info/standards/elementset/gnd#>
+
+select * where{
+ ?a a gnd:DifferentiatedPerson.
+}
+	
+	</textarea><br/>
+	<button type="submit" class="btn btn-primary" onclick="submitQuery()">Submit Query</button><br/><br/>
+
+	<!-- empty html div-element ... placeholder for results (text/canvas/map etc)-->
+	<div id="resultdiv"></div>
+	<br/>
+	
+
+</body>
+
+
+</html>
