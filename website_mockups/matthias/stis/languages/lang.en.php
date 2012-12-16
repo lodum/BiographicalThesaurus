@@ -7,6 +7,12 @@ Language: English
 
 $lang = array();
 
+// Menu links:
+$lang['MENU_HOME'] = 'Home';
+$lang['MENU_SEARCH'] = 'Search';
+$lang['MENU_EXPLORE'] = 'Explore';
+$lang['MENU_RESULTS'] = 'Results';
+
 //stis.php
 $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="en">';
 $lang['STIS_PAGE_TITLE'] = 'Biographical Thesaurus NRW';
@@ -23,7 +29,7 @@ $lang['STIS_HELP'] =  '<h2>Help</h2><p>How can the biographical thesaurus be use
 
 $lang['STIS_ULB'] =  '<h2>ULB</h2>
           <p>What other services does the ULB offer to me? How can I visit the ULB? </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>';
+          <p><a class="btn" href="http://www.ulb.uni-muenster.de/" target="_blanc">View details &raquo;</a></p>';
 		  
 $lang['STIS_SPARQL'] = '<h2>SPARQL Endpoint</h2>
           <p>Expert interface to browse and explore the data directly via SPARQL.</p>
@@ -36,12 +42,16 @@ $lang['STIS_CHILDREN'] = '<h2>Childrens access</h2>
 $lang['STIS_TAG_CLOUD'] = '<h2>Tag cloud</h2>
           <p>Explore a tagcloud that features prominent entries in the data.</p>
           <p><a class="btn" href="tag_cloud.html">Show me the cloud &raquo;</a></p>';
-		  
+
+//search.php		  
 $lang['SEARCH_MAP'] = '<h1>Thesaurus Search Map</h1>
 		<p>Click on the map to find all datasets that have a relationship to the location that you clicked on!</p>';
 
 $lang['SEARCH_FORM'] = '<h1>Thesaurus search form</h1>
       <p>Search for authors, publications, time and/or places in which you are interested.</br> The results will be published on the map and in a table!</p>';
-		  
+
+//sparql.php
+$lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpoint</h1><br/><h3>Query Submission Form</h3>';
+$lang['SPARQL_SUBMIT'] = 'Submit Query';
 
 ?>

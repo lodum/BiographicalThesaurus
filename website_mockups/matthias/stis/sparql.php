@@ -5,11 +5,12 @@ include 'common.php';
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Biographical Thesaurus NRW</title>
+    <title><?php echo $lang['STIS_PAGE_TITLE']; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	<?php echo $lang['STIS_LANGUAGE']; ?>
+	
     <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <style>
@@ -40,6 +41,56 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+	
+	<script type="text/javascript">
+	//author: Johannes Trame ... do whatever you want with the code
+	
+	function submitQuery(){
+		var endpoint="http://lobid.org/sparql/";
+		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
+		var request = { accept : 'application/sparql-results+json' };
+		//get sparql query from textarea
+		request.query=$("#sparqlQuery").val();
+		//request.query="Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10";
+
+		//sent request
+		$.ajax({
+			dataType: "jsonp",
+			//some sparql endpoints do only support "sparql-results+json" instead of simply "json"
+			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
+			data: request,
+			url: queryUrl,
+			success: callbackFunc
+		});
+	};
+
+	//handles the ajax response
+	function callbackFunc(results) {		
+		$("#resultdiv").empty();	   
+		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+		htmlString="<table class=\"table table-striped\">";
+		//write table head
+		htmlString+="<tr>";
+			$.each(results.head.vars, function(index2, value2) { 
+				htmlString+="<th>?"+value2+"</th>";
+			 });
+		htmlString+="</tr>";
+		//write table body
+		$.each(results.results.bindings, function(index1, value1) { 
+			htmlString+="<tr>";
+			$.each(results.head.vars, function(index2, value2) { 
+				htmlString+="<td>"+value1[value2].value+"</td>";
+				//console.log(value1[value2].value)
+			 });
+			htmlString+="</tr>";
+		});
+
+		htmlString+="</table>";
+		$("#resultdiv").html(htmlString);
+	}
+
+	</script>
   </head>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -50,63 +101,46 @@ include 'common.php';
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Biographical Thesaurus NRW</a>
+          <a class="brand" href="#"><?php echo $lang['STIS_PAGE_TITLE']; ?></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="stis.html">Home</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li class="active"><a href="#">Explore</a></li>
-              <li><a href="results.html">Results</a></li>
-<!--
+              <li><a href="stis.php"><?php echo $lang['MENU_HOME']; ?></a></li>
+              <li><a href="search.php"><?php echo $lang['MENU_SEARCH']; ?></a></li>
+              <li><a href="explore.php"><?php echo $lang['MENU_EXPLORE']; ?></a></li>
+              <li><a href="results.php"><?php echo $lang['MENU_RESULTS']; ?></a></li>
+			  <li class="active"><a href="#">SPARQL</a></li>
+<!--	
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
 -->
             </ul>
+			<div style="padding: 10px 20px 10px;" align="right" class="text"><?php echo $lang['SELECT LANGUAGE']; ?> <a href="?lang=de"><img src="languages/flags/de.png" alt="Deutsch"/></a> <a href="?lang=en"><img src="languages/flags/gb.png" alt="English"/></a></div>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
- 
+
     <div class="container">
-			<h1>Thesaurus Topics and Contents</h1>
-			<h2>Events</h2>
-			<table class="table">
-				<tr>
-					<td>War </td>
-					<td>Browse events </td>
-				</tr>
-				<tr>
-					<td>Marriage </td>
-					<td>Browse events </td>
-				</tr>
-				<tr>
-					<td>Publication </td>
-					<td>Browse events </td>
-				</tr>
-				<tr>
-					<td>Peace treaty </td>
-					<td>Browse events </td>
-				</tr>
-			</table>
-			<h2>Literature genre</h2>
-			<table class="table">
-				<tr>
-					<td>Computer science </td>
-					<td>Browse genre </td>
-				</tr>
-				<tr>
-					<td>German literature </td>
-					<td>Browse genre </td>
-				</tr>
-				<tr>
-					<td>Novel </td>
-					<td>Browse genre </td>
-				</tr>
-				<tr>
-					<td>... </td>
-					<td>Browse genre </td>
-				</tr>
-			</table>
+			<?php echo $lang['SPARQL_TOP']; ?>
+				<textarea id="sparqlQuery" rows="15" class="field span12">
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX transit: <http://vocab.org/transit/terms/>
+PREFIX ext: <java:org.geospatialweb.arqext.>
+PREFIX bio: <http://purl.org/vocab/bio/0.1/>
+PREFIX dcterm: <http://purl.org/dc/terms/>
+PREFIX dctype: <http://purl.org/dc/dcmitype/>
+PREFIX foaf: <http://xmlns.com/foaf/spec/>
+PREFIX gnde: <http://d-nb.info/standards/elementset/gnd#>
+PREFIX gnd: <http://d-nb.info/gnd/>
+	
+Select ?b ?c WHERE {<http://d-nb.info/gnd/118527533> ?b ?c} Limit 10
+				</textarea><br/>
+	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br/>
+
+	<!-- empty html div-element ... placeholder for results (text/canvas/map etc)-->
+	<div id="resultdiv"></div>
+			
     </div>
 
     <!-- Le javascript

@@ -7,8 +7,13 @@ Language: German
 
 $lang = array();
 
-//stis.php
+//Menu links:
+$lang['MENU_HOME'] = 'Startseite';
+$lang['MENU_SEARCH'] = 'Suchen';
+$lang['MENU_EXPLORE'] = 'Erkunden';
+$lang['MENU_RESULTS'] = 'Ergebnisse';
 
+//stis.php
 $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="de">';
 $lang['STIS_PAGE_TITLE'] = 'Biographischer Thesaurus NRW';
 $lang['STIS_HERO_HEADER'] = 'Willkommen';
@@ -38,5 +43,15 @@ $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
           <p>Erkunde die Tag Cloud und finde wichtige Einträge in den Daten.</p>
           <p><a class="btn" href="tag_cloud.html">Zeige Cloud &raquo;</a></p>';
 
+//search.php
+$lang['SEARCH_MAP'] = '<h1>Thesaurus Landkarte</h1>
+		<p>Klicken sie auf einen Ort in der Karte um Daten um Informationen zu diesem Ort zu bekommen!</p>';
+
+$lang['SEARCH_FORM'] = '<h1>Thesaurus Suche</h1>
+      <p>Suchen Sie nach Autoren, Publikationen, Zeit und Ort eines Geschehens für das sie sich interessieren.</br> Das Ergebnis wird in einer Tabelle dargestellt</p>';
+	  
+//sparql.php
+$lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';
+$lang['SPARQL_SUBMIT'] = 'Query senden';
 
 ?>
