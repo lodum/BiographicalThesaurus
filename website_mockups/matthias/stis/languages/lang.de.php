@@ -36,7 +36,7 @@ $lang['STIS_SPARQL'] = '<h2>SPARQL Endpunkt</h2>
           <p><a class="btn" href="sparql.php">SPARQL Endpunkt &raquo;</a></p>';
 		  
 $lang['STIS_CHILDREN'] = '<h2>Zugang für Kinder</h2>
-          <p>Eine spannende Enddeckungreise durch die Geschichte Westphalens für Kinder</p>
+          <p>Eine spannende Entdeckungreise durch die Geschichte Westfalens.</p>
           <p><a class="btn" href="#">Zum Spiel! &raquo;</a></p>';
 
 $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
