@@ -59,7 +59,11 @@ include 'common.php';
 			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
 			data: request,
 			url: queryUrl,
-			success: callbackFunc
+			success: callbackFunc,
+			error: function (request, status, error) {
+		        //alert(request.responseText);
+					$("#error").html(request.responseText);
+		    }
 		});
 	};
 	
@@ -139,7 +143,7 @@ select * where{
 }
 				</textarea><br/>
 	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br/>
-
+	<div id="error" style="color:red"></div>
 	<!-- empty html div-element ... placeholder for results (text/canvas/map etc)-->
 	<div id="resultdiv"></div>
 			
