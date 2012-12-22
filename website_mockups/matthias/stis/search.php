@@ -41,9 +41,11 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
-  
-  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    
+	<script src="query.js" type="text/javascript"></script>
+	
     <script>
       function init() {
         map = new OpenLayers.Map("map");
@@ -63,7 +65,9 @@ include 'common.php';
 	  
 	  
     </script>
-
+    
+  </head>
+  
   <body onload="init();">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -109,9 +113,9 @@ include 'common.php';
 				<legend>Search form</legend>
 				<label>Person</label>
 				<input type="text" placeholder="Person">
-				</label>
 				<div class="btn-group">
-				  <a  id="dropdown1" click="test('testbtn','test123');" class="btn btn-primary" href="#">participates in event</a>
+				  <!--<a  id="dropdown1" click="test('testbtn','test123');" class="btn btn-primary" href="#">participates in event</a>-->
+				  <a class="btn btn-primary" href="#">participates in event</a>
 				  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 				  <ul class="dropdown-menu">
 					<li><a href="#">is parent of</a></li>
@@ -121,7 +125,6 @@ include 'common.php';
 				<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
-				</label>
 				<input type="text" placeholder="Happened at which location?">
 				<div class="btn-group">
 				  <a class="btn btn-primary" href="#">occured before event</a>
@@ -135,23 +138,22 @@ include 'common.php';
 				<input type="text" placeholder="Insert timestamp or event here">
 				<label>Author</label>
 				<input type="text" placeholder="Author">
-				</label>
 				<input type="text" placeholder="Co-Author">
 				<label>Publication</label>
 				<input type="text" placeholder="Publication">
-				</label>
 				<label>Period/Timestamp</label>
 				<input type="text" placeholder="Period/Timestamp">
-				</label>
 				<label>Place</label>
 				<input type="text" placeholder="Place">
-				</label>
-				<button type="submit" class="btn">Submit</button>
+				<button type="submit" class="btn btn-primary" onclick="submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}')">Submit</button>
 				</fieldset>
 			</form>
-			
+			<!--<br/><br/>-->
+		<div id="error" style="color:red"></div>
+		<div id="resultdiv"></div>	
 			
     </div>
+    
 
     <!-- Le javascript
     ================================================== -->
