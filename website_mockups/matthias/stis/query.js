@@ -21,6 +21,19 @@ function submitQuery(){
 		});
 	};
 	
+	function buildQuery(){
+		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}');
+		var person = ($("#person").val());
+		
+		//Just for testing:
+		if (person==''){
+			person='gnd:DifferentiatedPerson';
+		}
+		console.log('Person = ' + person);
+		
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a '+person+'.}');
+	}
+	
 	function submitCustomQuery(text){
 		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)

@@ -112,7 +112,7 @@ include 'common.php';
 				<fieldset>
 				<legend>Search form</legend>
 				<label>Person</label>
-				<input type="text" placeholder="Person">
+				<input id="person" type="text" placeholder="Person">
 				<div class="btn-group">
 				  <!--<a  id="dropdown1" click="test('testbtn','test123');" class="btn btn-primary" href="#">participates in event</a>-->
 				  <a class="btn btn-primary" href="#">participates in event</a>
@@ -145,7 +145,7 @@ include 'common.php';
 				<input type="text" placeholder="Period/Timestamp">
 				<label>Place</label>
 				<input type="text" placeholder="Place">
-				<button type="submit" class="btn btn-primary" onclick="submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}')">Submit</button>
+				<button type="submit" class="btn btn-primary" onclick="buildQuery()">Submit</button>
 				</fieldset>
 			</form>
 			<!--<br/><br/>-->
