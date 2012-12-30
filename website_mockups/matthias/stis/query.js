@@ -25,13 +25,30 @@ function submitQuery(){
 		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}');
 		var person = ($("#person").val());
 		
+		switch (person){
+			case '': 
+					console.log('1 Person = ' + person);
+					person='gnd:DifferentiatedPerson';
+					submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a '+person+'.}');
+					break;
+			
+			case 'gnd:DifferentiatedPerson': 	
+					console.log('2 Person = ' + person);
+					submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a '+person+'.}');
+					break;
+												
+			default: 
+					console.log('I do not know this query yet.');
+		}
+		
 		//Just for testing:
-		if (person==''){
+		/*if (person==''){
 			person='gnd:DifferentiatedPerson';
 		}
 		console.log('Person = ' + person);
 		
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a '+person+'.}');
+	*/
 	}
 	
 	function submitCustomQuery(text){

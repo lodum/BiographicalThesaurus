@@ -113,28 +113,32 @@ include 'common.php';
 				<legend>Search form</legend>
 				<label>Person</label>
 				<input id="person" type="text" placeholder="Person">
-				<div class="btn-group">
+				
+				<!--<div class="btn-group">-->
 				  <!--<a  id="dropdown1" click="test('testbtn','test123');" class="btn btn-primary" href="#">participates in event</a>-->
-				  <a class="btn btn-primary" href="#">participates in event</a>
-				  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">is parent of</a></li>
-					<li><a href="#">is child of</a></li>
-				  </ul>
-				</div>
+				  <!--<a class="btn btn-primary" href="#">participates in event</a>-->
+				  <!--<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>-->
+				  <!--<ul class="dropdown-menu">-->
+					<!--<li><a href="#">is parent of</a></li>-->
+					<!--<li><a href="#">is child of</a></li>-->
+				  <!--</ul>-->
+				<!--</div>-->
+				
 				<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
 				<input type="text" placeholder="Happened at which location?">
-				<div class="btn-group">
-				  <a class="btn btn-primary" href="#">occured before event</a>
-				  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#">occured after event</a></li>
-					<li><a href="#">occured after timestamp</a></li>
-					<li><a href="#">occured after timestamp</a></li>
-				  </ul>
-				</div>
+
+				<!--<div class="btn-group">-->
+				  <!--<a class="btn btn-primary" href="#">occured before event</a>-->
+				  <!--<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>-->
+				  <!--<ul class="dropdown-menu">-->
+					<!--<li><a href="#">occured after event</a></li>-->
+					<!--<li><a href="#">occured after timestamp</a></li>-->
+					<!--<li><a href="#">occured after timestamp</a></li>-->
+				 <!-- </ul>-->
+				<!--</div>-->
+
 				<input type="text" placeholder="Insert timestamp or event here">
 				<label>Author</label>
 				<input type="text" placeholder="Author">
