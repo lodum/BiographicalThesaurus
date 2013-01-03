@@ -27,8 +27,9 @@ function submitQuery(){
 		
 		switch (person){
 			case '': 
-					console.log('1 Person = ' + person);
+					//console.log('1 Person = ' + person);
 					person='gnd:DifferentiatedPerson';
+					console.log('1 Person = ' + person);
 					submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a '+person+'.}');
 					break;
 			
@@ -58,7 +59,7 @@ function submitQuery(){
 		var request = { accept : 'application/sparql-results+json' };
 		//get sparql query from textarea
 		request.query=text;
-		
+		console.log('Start Ajax');
 		//sent request
 		$.ajax({
 			dataType: "jsonp",
@@ -82,6 +83,7 @@ function submitQuery(){
 
 	//handles the ajax response
 	function callbackFunc(results) {
+		console.log('start callback');
 		$("#resultdiv").empty();	   
 		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 		htmlString="<table class=\"table table-striped table-condensed\">";

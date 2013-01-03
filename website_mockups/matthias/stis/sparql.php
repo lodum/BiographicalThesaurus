@@ -10,7 +10,7 @@ include 'common.php';
     <meta name="description" content="">
     <meta name="author" content="">
 	<?php echo $lang['STIS_LANGUAGE']; ?>
-	
+
     <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <style>
@@ -42,9 +42,11 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 	
-	<script src="query.js" type="text/javascript"></script>
+   <script src="query.js" type="text/javascript"></script>
+
   </head>
 
+  <body> 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -85,7 +87,6 @@ select * where{
 				</textarea><br/>
 	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br/>
 	<div id="error" style="color:red"></div>
-	<!-- empty html div-element ... placeholder for results (text/canvas/map etc)-->
 	<div id="resultdiv"></div>
 			
     </div>
