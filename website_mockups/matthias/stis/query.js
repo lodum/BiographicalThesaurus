@@ -109,3 +109,69 @@ function submitQuery(){
 		htmlString+="</table>";
 		$("#resultdiv").html(htmlString);
 	}
+	
+	function submitTagCloudQuery(){
+		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
+		var request = { accept : 'application/sparql-results+json' };
+		//get sparql query from textarea
+		request.query="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a where{ ?c  gnd:surname ?a.} LIMIT 1000";
+		console.log('Start Ajax');
+		//sent request
+		$.ajax({
+			dataType: "jsonp",
+			//some sparql endpoints do only support "sparql-results+json" instead of simply "json"
+			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
+			data: request,
+			url: queryUrl,
+			success: callbackTag,
+			error: function (request, status, error) {
+		        //alert(request.responseText);
+					$("#error").html(request.responseText);
+		    }
+		});
+	};
+	
+	//handles the ajax response
+	function callbackTag(results) {
+		console.log('start tag-callback');
+		$("#resultdiv").empty();	   
+		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+		htmlString="";
+		//write table body
+		$.each(results.results.bindings, function(index1, value1) { 
+			htmlString+="<li>";
+			console.log(index1);
+			console.log(value1);
+			$.each(results.head.vars, function(index2, value2) { 
+				if(value1[value2]!=undefined){
+					htmlString+="<a href\=\"\#\">"+replaceURLWithHTMLLinks(value1[value2].value)+"</a>";
+				}/*else{
+					htmlString+="<td></td>";
+				}*/
+			 });
+			htmlString+="</li>";
+		});
+
+		//htmlString+="</ul>";
+		console.log('String= '+ htmlString);
+		$("#resultdiv").html(htmlString);
+		reloadCloud();
+	}
+	
+	function reloadCloud(){
+		console.log('reloadCloud');
+		 // set colour of text and outline of active tag
+		  TagCanvas.textColour = '#000000';
+		  TagCanvas.outlineColour = '#ff9999';
+		  TagCanvas.Start('myCanvas');
+		try {
+		  TagCanvas.Start('myCanvas');
+		} catch(e) {
+		  // something went wrong, hide the canvas container
+		  document.getElementById('myCanvasContainer').style.display = 'none';
+		}
+	  }
+		
+	
