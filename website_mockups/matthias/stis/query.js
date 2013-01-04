@@ -153,36 +153,26 @@ function submitQuery(){
 			 });
 			htmlString+="</li>";
 		});
-		
-		$.each(results.results.bindings, function(index1, value1) { 
-			htmlString+="<li>";
-			console.log(index1);
-			console.log(value1);
-			$.each(results.head.vars, function(index2, value2) { 
-				if(value1[value2]!=undefined){
-					htmlString+="<a href\=\"\#\">"+replaceURLWithHTMLLinks(value1[value2].value)+"</a>";
-				}/*else{
-					htmlString+="<td></td>";
-				}*/
-			 });
-			htmlString+="</li>";
-		});
-		
-		$.each(results.results.bindings, function(index1, value1) { 
-			htmlString+="<li>";
-			console.log(index1);
-			console.log(value1);
-			$.each(results.head.vars, function(index2, value2) { 
-				if(value1[value2]!=undefined){
-					htmlString+="<a href\=\"\#\">"+replaceURLWithHTMLLinks(value1[value2].value)+"</a>";
-				}/*else{
-					htmlString+="<td></td>";
-				}*/
-			 });
-			htmlString+="</li>";
-		});
+
 
 		//htmlString+="</ul>";
 		console.log('String= '+ htmlString);
 		$("#resultdiv").html(htmlString);
+		reloadCloud();
 	}
+	
+	function reloadCloud(){
+		console.log('reloadCloud');
+		 // set colour of text and outline of active tag
+		  TagCanvas.textColour = '#000000';
+		  TagCanvas.outlineColour = '#ff9999';
+		  TagCanvas.Start('myCanvas');
+		try {
+		  TagCanvas.Start('myCanvas');
+		} catch(e) {
+		  // something went wrong, hide the canvas container
+		  document.getElementById('myCanvasContainer').style.display = 'none';
+		}
+	  }
+		
+	

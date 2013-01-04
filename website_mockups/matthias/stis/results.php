@@ -21,7 +21,7 @@ include 'common.php';
     <style type="text/css">
       html, body, #map {
           width: 100%;
-          height: 80%;
+          height: 300px;
           margin: 0;
           
       }
@@ -41,21 +41,33 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
+    
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+	
+	 <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+
   
-  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  
     <script>
       function init() {
-        map = new OpenLayers.Map("map");
-        var mapnik = new OpenLayers.Layer.OSM();
-        map.addLayer(mapnik);
-        map.setCenter(new OpenLayers.LonLat(7.3,52.0) // Center of the map
-          .transform(
-            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
-          ), 10 // Zoom level
-        );
+         // set up the map
+			map = new L.Map('map');
+
+			 L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+                }).addTo(map);	
+
+			map.setView(new L.LatLng(51.966667, 7.633333),9);
+			
+			addResultMarker();
       }
+      
+      function addResultMarker(){
+		  var marker = L.marker([51.966667, 7.633333]).addTo(map);
+		  marker.bindPopup("<b>Bernd Stelter</b><br><a href=\"#\">Link</a>").openPopup();
+	  }
+      
     </script>
     
     <script type="text/javascript">
@@ -69,6 +81,8 @@ include 'common.php';
 		}
 		
 	</script>
+	
+	  </head>
 
   <body onload="init();">
 
@@ -133,11 +147,11 @@ include 'common.php';
 				</tr>
 				<tr>
 					<td>1 </td>
-					<td>Author1 </td>
+					<td>Bernd Stelter </td>
 					<td>Title1 </td>
 					<td>LINK </td>
 				</tr>
-				<tr>
+				<!--<tr>
 					<td>2 </td>
 					<td>Author2 </td>
 					<td>Title2 </td>
@@ -148,7 +162,7 @@ include 'common.php';
 					<td>Author3 </td>
 					<td>Title3 </td>
 					<td>LINK </td>
-				</tr>
+				</tr>-->
 			</table>
     </div>
 

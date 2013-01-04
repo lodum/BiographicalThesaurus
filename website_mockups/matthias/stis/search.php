@@ -21,7 +21,7 @@ include 'common.php';
     <style type="text/css">
       html, body, #map {
           width: 100%;
-          height: 80%;
+          height:  300px;
           margin: 0;
           
       }
@@ -42,21 +42,24 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     
-    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
     
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
 	
+	 <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
 	
     <script>
       function init() {
-        map = new OpenLayers.Map("map");
-        var mapnik = new OpenLayers.Layer.OSM();
-        map.addLayer(mapnik);
-        map.setCenter(new OpenLayers.LonLat(7.3,52.0) // Center of the map
-          .transform(
-            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
-          ), 10 // Zoom level
-        );
+		  
+        // set up the map
+			map = new L.Map('map');
+
+			 L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+                    maxZoom: 18,
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+                }).addTo(map);	
+
+			map.setView(new L.LatLng(51.966667, 7.633333),9);
+		
       }
 	  
 	  function test(id, content) {
@@ -104,7 +107,7 @@ include 'common.php';
 	<?php echo $lang['SEARCH_MAP']; ?>
 	</div>
 	
-	<div id="map"></div>
+	 <div id="map"></div>
 	
     <div class="container">
 	<?php echo $lang['SEARCH_FORM']; ?> 

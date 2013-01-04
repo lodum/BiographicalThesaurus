@@ -50,7 +50,7 @@ include 'common.php';
               <li class="active"><a href="#"><?php echo $lang['MENU_HOME']; ?></a></li>
                <li><a href="search.php"><?php echo $lang['MENU_SEARCH']; ?></a></li>
                <li><a href="explore.php"><?php echo $lang['MENU_EXPLORE']; ?></a></li>
-               <li><a href="results.html"><?php echo $lang['MENU_RESULTS']; ?></a></li>
+               <li><a href="results.php"><?php echo $lang['MENU_RESULTS']; ?></a></li>
 			  <li><a href="sparql.php">SPARQL</a></li>
 <!--
               <li><a href="#about">About</a></li>
