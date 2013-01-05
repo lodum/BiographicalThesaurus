@@ -62,9 +62,15 @@ include 'common.php';
 		
       }
 	  
-	  function test(id, content) {
+	  /*function test(id, content) {
 		$(id).value=content;
-	  }
+	  }*/
+	  
+	  function goToResults(){
+		var person = document.getElementById('person').value;
+		
+		location.href="results.php?person="+person;
+	}
 	  
 	  
     </script>
@@ -132,9 +138,7 @@ include 'common.php';
 				<input type="text" placeholder="Place">
 				</fieldset>
 			</form>
-	<button type="submit" class="btn btn-primary" onclick="buildQuery()">Submit</button>
-	<div id="error" style="color:red"></div>
-	<div id="resultdiv"></div>
+	<button class="btn btn-primary" onclick="goToResults()">Submit</button>
 			
     </div>
 

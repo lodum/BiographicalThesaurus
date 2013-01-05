@@ -64,7 +64,7 @@ include 'common.php';
 			
 			addResultMarker();
 			
-			startPageQuery();
+			startQuery();
 			
       }
       

@@ -21,9 +21,9 @@ function submitQuery(){
 		});
 	};
 	
-	function buildQuery(){
+	function buildQuery(person){
 		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}');
-		var person = ($("#person").val());
+		//var person = ($("#person").val());
 		
 		switch (person){
 			case '': 
@@ -228,10 +228,19 @@ function submitQuery(){
 		}
 	  }
 		
-	function startPageQuery(){
+	function startQuery(){
 		var searchstring = getParam('searchstring');
-		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
-		submitCustomQueryStartPage('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+		console.log('searchstring='+searchstring);
+		var person = getParam('person');
+		console.log('person='+person);
+		if (searchstring!=""){
+			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+			submitCustomQueryStartPage('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+		} else if (person!=""){
+			buildQuery(person);
+		} else {
+				console.log('No parameters');
+		}
 		
 	}
 	
