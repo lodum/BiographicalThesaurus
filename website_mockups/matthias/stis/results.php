@@ -45,6 +45,8 @@ include 'common.php';
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
 	
 	 <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+	 
+	 <script src="query.js" type="text/javascript"></script>
 
   
   
@@ -61,6 +63,9 @@ include 'common.php';
 			map.setView(new L.LatLng(51.966667, 7.633333),9);
 			
 			addResultMarker();
+			
+			startPageQuery();
+			
       }
       
       function addResultMarker(){
@@ -164,7 +169,13 @@ include 'common.php';
 					<td>LINK </td>
 				</tr>-->
 			</table>
+			
+			<div id="error" style="color:red"></div>
+	<div id="resultdiv"></div>
+			
     </div>
+    
+    
 
     <!-- Le javascript
     ================================================== -->

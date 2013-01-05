@@ -32,6 +32,19 @@ include 'common.php';
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    
+    <script src="query.js" type="text/javascript"></script>
+    
+    <script>
+    
+    function goToResults(){
+		var searchstring = document.getElementById('searchstring').value;
+		
+		location.href="results.php?searchstring="+searchstring;
+	}
+    
+    </script>
+    
   </head>
 
   <body>
@@ -99,8 +112,8 @@ include 'common.php';
 				</td>
 				<td>
 					<p><?php echo $lang['STIS_HERO_FREE_SEARCH']; ?></p>
-					<input type="text" size="25" value="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
-					<p><a class="btn btn-primary btn-large" href="results.php"><?php echo $lang['STIS_HERO_BUTTON2']; ?></a></p>
+					<input id="searchstring" type="text" size="25" value="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
+					<p><a class="btn btn-primary btn-large" onclick="goToResults()"><?php echo $lang['STIS_HERO_BUTTON2']; ?></a></p>
 				</td>
 			</tr>
 		</table>
@@ -142,6 +155,8 @@ include 'common.php';
       </footer>
 
     </div> <!-- /container -->
+    
+    
 
     <!-- Le javascript
     ================================================== -->
