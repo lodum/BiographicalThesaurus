@@ -143,35 +143,9 @@ include 'common.php';
     <div class="container">
 			<h1>Thesaurus Search Results</h1>
 			<p>Filter results depending on the column in the results table.</p>
-			<table class="table">
-				<tr>
-					<td>Number </td>
-					<td>Author </td>
-					<td>Publication </td>
-					<td>Link </td>
-				</tr>
-				<tr>
-					<td>1 </td>
-					<td>Bernd Stelter </td>
-					<td>Title1 </td>
-					<td>LINK </td>
-				</tr>
-				<!--<tr>
-					<td>2 </td>
-					<td>Author2 </td>
-					<td>Title2 </td>
-					<td>LINK </td>
-				</tr>
-				<tr>
-					<td>3 </td>
-					<td>Author3 </td>
-					<td>Title3 </td>
-					<td>LINK </td>
-				</tr>-->
-			</table>
 			
 			<div id="error" style="color:red"></div>
-	<div id="resultdiv"></div>
+			<div id="resultdiv"></div>
 			
     </div>
     
