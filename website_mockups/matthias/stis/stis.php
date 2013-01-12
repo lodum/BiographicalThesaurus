@@ -60,11 +60,11 @@ include 'common.php';
           <a class="brand" href="#"><?php echo $lang['STIS_PAGE_TITLE']; ?></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#"><?php echo $lang['MENU_HOME']; ?></a></li>
+               <li class="active"><a href="#"><?php echo $lang['MENU_HOME']; ?></a></li>
                <li><a href="search.php"><?php echo $lang['MENU_SEARCH']; ?></a></li>
-               <li><a href="explore.php"><?php echo $lang['MENU_EXPLORE']; ?></a></li>
-               <li><a href="results.php"><?php echo $lang['MENU_RESULTS']; ?></a></li>
-			  <li><a href="sparql.php">SPARQL</a></li>
+               <!--<li><a href="explore.php"><?php echo $lang['MENU_EXPLORE']; ?></a></li>-->
+               <li><a href="tag_cloud.php"><?php echo $lang['MENU_TAG']; ?></a></li>
+			   <li><a href="sparql.php"><?php echo $lang['MENU_SPARQL']; ?></a></li>
 <!--
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -102,26 +102,20 @@ include 'common.php';
       <div class="hero-unit">
         <h1><?php echo $lang['STIS_HERO_HEADER']; ?></h1>
         <p><?php echo $lang['STIS_HERO_TEXT']; ?></p>
-		<table>
+        <br>
+        <p><?php echo $lang['STIS_HERO_FREE_SEARCH']; ?></p>
+        <input id="searchstring" type="text" size="10" style="width: 75%" value="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
+		<table width="75%">
 			<tr>
-				<td>
-					<p><a class="btn btn-primary btn-large" href="search.php"><?php echo $lang['STIS_HERO_BUTTON1']; ?></a></p>
-				</td>
-				<td style='width: 100px'>
-					<p>   </p>
-				</td>
-				<td>
-					<p><?php echo $lang['STIS_HERO_FREE_SEARCH']; ?></p>
-					<input id="searchstring" type="text" size="25" value="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
-					<p><a class="btn btn-primary btn-large" onclick="goToResults()"><?php echo $lang['STIS_HERO_BUTTON2']; ?></a></p>
-				</td>
+				<td align="center"><a class="btn btn-primary btn-large" onclick="goToResults()"><?php echo $lang['STIS_HERO_BUTTON2']; ?></a></td>
+				<td align="center"><a class="btn btn-primary btn-large" href="search.php"><?php echo $lang['STIS_HERO_BUTTON1']; ?></a></td>
 			</tr>
 		</table>
         
       </div>
 
       <!-- Example row of columns -->
-      <div class="row">
+      <!--<div class="row">
 		<div class="span4">
 			<?php echo $lang['STIS_EXPLORE']; ?>
 
@@ -132,19 +126,21 @@ include 'common.php';
 
         </div>
         <div class="span4">
-			<?php echo $lang['STIS_ULB']; ?>
-
+			<?php echo $lang['STIS_CHILDREN']; ?>
         </div>
-      </div>
+        
+      </div>-->
         <div class="row">
 		<div class="span4">
 			<?php echo $lang['STIS_SPARQL']; ?>
         </div>
-        <div class="span4">
-			<?php echo $lang['STIS_CHILDREN']; ?>
-        </div>
+        
         <div class="span4">
 			<?php echo $lang['STIS_TAG_CLOUD']; ?>
+        </div>
+        <div class="span4">
+			<?php echo $lang['STIS_ULB']; ?>
+
         </div>
       </div>
 

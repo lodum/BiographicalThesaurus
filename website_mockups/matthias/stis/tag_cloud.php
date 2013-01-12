@@ -1,3 +1,6 @@
+<?php
+include 'common.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -71,10 +74,11 @@
           <a class="brand" href="#">Biographical Thesaurus NRW</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="stis.html">Home</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li><a href="explore.html">Explore</a></li>
-              <li class="active"><a href="#">Results</a></li>
+               <li><a href="stis.php"><?php echo $lang['MENU_HOME']; ?></a></li>
+               <li><a href="search.php"><?php echo $lang['MENU_SEARCH']; ?></a></li>
+               <!--<li><a href="explore.php"><?php echo $lang['MENU_EXPLORE']; ?></a></li>-->
+               <li class="active"><a href="#"><?php echo $lang['MENU_TAG']; ?></a></li>
+			   <li><a href="sparql.php"><?php echo $lang['MENU_SPARQL']; ?></a></li>
 <!--
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>

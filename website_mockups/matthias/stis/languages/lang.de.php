@@ -12,6 +12,8 @@ $lang['MENU_HOME'] = 'Startseite';
 $lang['MENU_SEARCH'] = 'Suchen';
 $lang['MENU_EXPLORE'] = 'Erkunden';
 $lang['MENU_RESULTS'] = 'Ergebnisse';
+$lang['MENU_TAG'] = 'Tag Cloud';
+$lang['MENU_SPARQL'] = 'SPARQL Endpunkt';
 
 //stis.php
 $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="de">';
@@ -31,8 +33,8 @@ $lang['STIS_ULB'] =  '<h2>ULB</h2>
           <p>Hier finden Sie mehr Informationen zur Universitäts- und Landesbibliothek Münster.</p>
           <p><a class="btn" href="http://www.ulb.uni-muenster.de/" target="_blanc">Details &raquo;</a></p>';
 		  
-$lang['STIS_SPARQL'] = '<h2>SPARQL Endpunkt</h2>
-          <p>Benutzeroberfläche für Experten zur direkten Abfrage von Daten mit SPARQL-Queries.</p>
+$lang['STIS_SPARQL'] = '<h2>Expertenzugang</h2>
+          <p>SPARQL Endpunkt für Experten zur direkten Abfrage von Daten mit SPARQL-Queries.</p>
           <p><a class="btn" href="sparql.php">SPARQL Endpunkt &raquo;</a></p>';
 		  
 $lang['STIS_CHILDREN'] = '<h2>Zugang für Kinder</h2>
@@ -41,7 +43,7 @@ $lang['STIS_CHILDREN'] = '<h2>Zugang für Kinder</h2>
 
 $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
           <p>Erkunde die Tag Cloud und finde wichtige Einträge in den Daten.</p>
-          <p><a class="btn" href="tag_cloud.html">Zeige Cloud &raquo;</a></p>';
+          <p><a class="btn" href="tag_cloud.php">Zeige Cloud &raquo;</a></p>';
 
 //search.php
 $lang['SEARCH_MAP'] = '<h1>Thesaurus Landkarte</h1>

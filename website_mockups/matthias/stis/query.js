@@ -170,7 +170,7 @@ function submitQuery(){
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
 		//get sparql query from textarea
-		request.query="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a where{ ?c  gnd:surname ?a.} LIMIT 1000";
+		request.query="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a where{ ?c  gnd:surname ?a.} LIMIT 35";
 		console.log('Start Ajax');
 		//sent request
 		$.ajax({
@@ -234,8 +234,8 @@ function submitQuery(){
 		var person = getParam('person');
 		console.log('person='+person);
 		if (searchstring!=""){
-			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
-			submitCustomQueryStartPage('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+			submitCustomQueryStartPage('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
 		} else if (person!=""){
 			buildQuery(person);
 		} else {

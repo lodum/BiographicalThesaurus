@@ -92,11 +92,11 @@ include 'common.php';
           <a class="brand" href="#"><?php echo $lang['STIS_PAGE_TITLE']; ?></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="stis.php"><?php echo $lang['MENU_HOME']; ?></a></li>
-              <li class="active"><a href="#"><?php echo $lang['MENU_SEARCH']; ?></a></li>
-              <li><a href="explore.php"><?php echo $lang['MENU_EXPLORE'];?></a></li>
-              <li><a href="results.php"><?php echo $lang['MENU_RESULTS'];?></a></li>
-			  <li><a href="sparql.php">SPARQL</a></li>
+               <li><a href="stis.php"><?php echo $lang['MENU_HOME']; ?></a></li>
+               <li class="active"><a href="#"><?php echo $lang['MENU_SEARCH']; ?></a></li>
+               <!--<li><a href="explore.php"><?php echo $lang['MENU_EXPLORE']; ?></a></li>-->
+               <li><a href="tag_cloud.php"><?php echo $lang['MENU_TAG']; ?></a></li>
+			   <li><a href="sparql.php"><?php echo $lang['MENU_SPARQL']; ?></a></li>
 <!--
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
