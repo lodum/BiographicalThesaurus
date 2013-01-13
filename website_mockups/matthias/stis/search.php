@@ -59,6 +59,7 @@ include 'common.php';
                 }).addTo(map);	
 
 			map.setView(new L.LatLng(51.966667, 7.633333),9);
+			map.on('click', onMapClick);
 		
       }
 	  
@@ -70,7 +71,26 @@ include 'common.php';
 		var person = document.getElementById('person').value;
 		
 		location.href="results.php?person="+person;
-	}
+		}
+	
+		function onMapClick(e) {
+			console.log(e.latlng.lat);
+			console.log(e.latlng.lng);
+			
+			var s = document.createElement('script');       
+			s.src = 'http://nominatim.openstreetmap.org/reverse?format=json&json_callback=cb&lat='+e.latlng.lat+'.&lon='+e.latlng.lng+'';
+			document.getElementsByTagName('head')[0].appendChild(s);
+			
+			
+		}
+		
+		function cb(json) {
+			//do what you want with the json
+			console.log(json.address.city);
+			document.getElementById('place').value=json.address.city;
+		}
+
+		
 	  
 	  
     </script>
@@ -135,7 +155,7 @@ include 'common.php';
 				<label>Period/Timestamp</label>
 				<input type="text" placeholder="Period/Timestamp">
 				<label>Place</label>
-				<input type="text" placeholder="Place">
+				<input id="place" type="text" placeholder="Place">
 				</fieldset>
 			</form>
 	<button class="btn btn-primary" onclick="goToResults()">Submit</button>
