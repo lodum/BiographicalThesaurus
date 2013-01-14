@@ -252,4 +252,58 @@ function submitQuery(){
             if(pair[0] == variable){return pair[1];}
        }       return(false);
 	}
+	
+	
+function submitQueryAutocompletePerson(){
+		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
+		var request = { accept : 'application/sparql-results+json' };
+		//get sparql query from textarea
+		request.query="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a where{ ?c  gnd:preferredNameForThePerson ?a.}";
+		console.log('Start Ajax');
+		//sent request
+		$.ajax({
+			dataType: "jsonp",
+			//some sparql endpoints do only support "sparql-results+json" instead of simply "json"
+			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
+			data: request,
+			url: queryUrl,
+			success: callbackAutocompletePerson,
+			error: function (request, status, error) {
+		        //alert(request.responseText);
+					$("#error").html(request.responseText);
+		    }
+		});
+	};
+	
+	var persons;// = ["Annette von Droste-Hülshoff", "Bernd Stelter"];;
+	
+	function getPersons(){
+		if(persons==null)
+			submitQueryAutocompletePerson();
+		return persons;
+	}
+	
+	function callbackAutocompletePerson(results) {
+			console.log('Autocomplete Person-callback');
+  
+			//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+			persons = new Array();
+			for(var i=0,j=results.results.bindings.length; i<j; i++){
+			  persons[i]=results.results.bindings[i].a;
+			};
+
+             $("#person").autocomplete({
+                 source : persons
+            });
+			//write table body
+			// $.each(results.results.bindings, function(index1, value1) {
+				// var persons = getPersons() 
+				// persons[index1]=value1.value;
+			// });
+
+		}
+	
+	
 
