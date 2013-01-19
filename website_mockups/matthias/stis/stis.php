@@ -19,7 +19,14 @@ include 'common.php';
         padding-bottom: 40px;
       }
     </style>
+    <style>
+    	.ui-autocomplete-loading {
+    		background: white url('images/ajax-loader.gif') right center no-repeat;
+    	}
+
+	</style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -104,7 +111,7 @@ include 'common.php';
         <p><?php echo $lang['STIS_HERO_TEXT']; ?></p>
         <br>
         <p><?php echo $lang['STIS_HERO_FREE_SEARCH']; ?></p>
-        <input id="searchstring" type="text" size="10" style="width: 75%" value="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
+        <input id="searchstring" type="text" size="10" style="width: 75%" placeholder="<?php echo $lang['STIS_HERO_FREE_SEARCH_TEXT']; ?>">
 		<table width="75%">
 			<tr>
 				<td align="center"><a class="btn btn-primary btn-large" onclick="goToResults()"><?php echo $lang['STIS_HERO_BUTTON2']; ?></a></td>
@@ -170,6 +177,82 @@ include 'common.php';
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script language="JavaScript1.2">
+  $(function() {
+ 
+        // //sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+        // var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
+        // var request = { accept : 'application/sparql-results+json' };
+        // //get sparql query from textarea
+        // request.query=text;
+        // console.log('Start Ajax');
+        // //sent request
+        // $.ajax({
+            // dataType: "jsonp",
+            // //some sparql endpoints do only support "sparql-results+json" instead of simply "json"
+            // beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
+            // data: request,
+            // url: queryUrl,
+            // success: callbackFuncResults,
+            // error: function (request, status, error) {
+                // //alert(request.responseText);
+                    // $("#error").html(request.responseText);
+            // }
+        // });
+
+    $( "#searchstring" ).autocomplete({
+      source: function( request, response ) {
+          //String.split()
+          var regex = request.term.split(" ");
+          var filter="";
+          for(var i=0,j=regex.length; i<j; i++){
+            filter+="filter regex(?c, \""+regex[i]+"\",\"i\") ";
+          };
+          
+          var query ="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct (?c as ?Result) where{ ?a ?b ?c . "+ filter +"} LIMIT 20";
+          
+        $.ajax({
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          dataType: "jsonp",
+          beforeSend: function(xhrObj){
+                 xhrObj.setRequestHeader("Accept","application/sparql-results+json");
+                 console.log(query);
+          },
+          data: { accept : 'application/sparql-results+json' ,
+                  query : query
+                 },
+          success: 
+                function filterData( data ) {
+                    response($.map(data.results.bindings, function(item) {
+                        return {
+                            label : item.Result.value,
+                            value : item.Result.value
+                        }
+                    }));
+                },
+           error: function (request, status, error) {
+                 alert(request.responseText+ error);
+                  //$("#error").html(request.responseText);
+            }
+        });
+      },
+      minLength: 2,
+      delay: 500,
+      // select: function( event, ui ) {
+        // log( ui.item ?
+          // "Selected: " + ui.item.label :
+          // "Nothing selected, input was " + this.value);
+      // },
+       // open: function() {
+         // $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+       // },
+       // close: function() {
+         // $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+       // }
+    });
+  });
+  </script>
 
   </body>
 </html>
