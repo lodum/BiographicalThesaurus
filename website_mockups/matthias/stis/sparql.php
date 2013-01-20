@@ -25,6 +25,29 @@ include 'common.php';
           margin: 0;
           
       }
+	  #result_success{
+		background-color: green;
+		position: absolute;
+		top: 40px;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+	  #result_error{
+		background-color: red;
+		position: absolute;
+		top: 40px;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+	  
+	  #loadingDiv{
+		display:none;
+	  }
+	  
       img {max-width:none}
 		
     </style>
@@ -75,6 +98,12 @@ include 'common.php';
     </div>
 
     <div class="container">
+		<div id="result_success">
+		<? echo $lang['result_status_success']; ?>
+		</div>
+		<div id="result_error">
+		<? echo $lang['result_status_error']; ?>
+		</div>
 			<?php echo $lang['SPARQL_TOP']; ?>
 				<textarea id="sparqlQuery" rows="15" class="field span12">
 prefix stis:    <http://localhost/default#>
@@ -85,7 +114,7 @@ select * where{
  ?a a gnd:DifferentiatedPerson.
 }
 				</textarea><br/>
-	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br/>
+	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br><div id="loadingDiv"><img src="../assets/img/ajax-loader.gif"></div><br/>
 	<div id="error" style="color:red"></div>
 	<div id="resultdiv"></div>
 			

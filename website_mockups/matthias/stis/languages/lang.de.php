@@ -55,6 +55,8 @@ $lang['SEARCH_FORM'] = '<p>Suchen Sie nach Autoren, Publikationen, Zeit und Ort 
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';
 $lang['SPARQL_SUBMIT'] = 'Query senden';
 
+$lang['result_status_success'] = 'Abfrage erfolgreich...';
+$lang['result_status_error'] = 'Fehlerhafte Frage...';
 
 
 ?>

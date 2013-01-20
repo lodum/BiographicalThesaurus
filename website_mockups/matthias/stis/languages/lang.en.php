@@ -54,5 +54,8 @@ $lang['SEARCH_FORM'] = '<p>Search for authors, publications, time and/or places 
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpoint</h1><br/><h3>Query Submission Form</h3>';
 $lang['SPARQL_SUBMIT'] = 'Submit Query';
+
+$lang['result_status_success'] = 'Query returned succesfully';
+$lang['result_status_error'] = 'Invalid query...';
 ?>
 
