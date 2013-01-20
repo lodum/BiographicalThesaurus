@@ -85,8 +85,9 @@ include 'common.php';
 			var place = document.getElementById('place').value;
 			var beginDate = document.getElementById('beginDate').value;
 			var endDate = document.getElementById('endDate').value;
+			var author = document.getElementById('author').value;
 
-			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate;
+			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author;
 		}
 		
         document.onkeydown = function(event) {
@@ -182,7 +183,7 @@ include 'common.php';
 				<input type="text" placeholder="Happened at which location?">
 				<input type="text" placeholder="Insert timestamp or event here">-->
 				<label>Author</label>
-				<input type="text" placeholder="Author">
+				<input id="author" type="text" placeholder="Author">
 				<!--<input type="text" placeholder="Co-Author">-->
 				<label>Publication</label>
 				<input id="publication" type="text" placeholder="Publication">
