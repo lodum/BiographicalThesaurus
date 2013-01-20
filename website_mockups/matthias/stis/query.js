@@ -1,5 +1,6 @@
 var searchResults;
 var currentPage;
+var map;
 
 function gotoPage(number){
 	currentPage=number;
@@ -241,6 +242,54 @@ function displayResults() {
 	htmlString += "</table>";
 	console.log(htmlString);
 	$("#resultdiv").html(htmlString);
+	
+	//EXPERIMENTAL: COMMENT THIS OUT IF NOT WORKING CORRECTLY!!!
+	//Geocoding
+	 
+	try{
+		var td = htmlString.split("</td>");
+		console.log(td);
+		if (htmlString.search('birthPlace')!=-1){
+			console.log('Birthplace found');
+			var l=td.length;
+			
+			birth=td[l-3];
+			var birthPlace = birth.split(">");
+			console.log('Birth place '+birthPlace[1]);
+			
+			//get coordinates for birthplace
+			
+			var s = document.createElement('script');
+			s.src = 'http://nominatim.openstreetmap.org/search?q='+birthPlace[1]+'&format=json&json_callback=cb1';
+			document.getElementsByTagName('head')[0].appendChild(s);
+			
+			death=td[l-2];
+			var deathPlace = death.split(">");
+			console.log('Death place '+deathPlace[1]);
+			
+			//get coordinates for deathplace
+			
+			var s = document.createElement('script');
+			s.src = 'http://nominatim.openstreetmap.org/search?q='+deathPlace[1]+'&format=json&json_callback=cb2';
+			document.getElementsByTagName('head')[0].appendChild(s);
+			
+		}
+	} catch(e) {
+		console.log('no places found');
+	}
+	
+	//END EXPERIMENTAL
+};
+
+function cb1(json) {
+		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
+		marker.bindPopup("Birth place").openPopup();
+			
+};
+
+function cb2(json) {
+		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
+		marker.bindPopup("Death place").openPopup();
 };
 
 
@@ -312,7 +361,8 @@ function reloadCloud() {
 	}
   }
 	
-function startQuery(){
+function startQuery(map2){
+	map=map2;
 	var searchstring = getParam('searchstring');
 	console.log('searchstring='+searchstring);
 	var person = getParam('person');
@@ -326,14 +376,13 @@ function startQuery(){
 	var endDate = getParam('endDate');
 	console.log('endDate='+endDate);
 	
-	
 	if (searchstring!=""){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
 	} else if (person!=""){
 		//buildQuery(person);
-		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?name where {?a a stis:Person;gnd:preferredNameForThePerson ?name FILTER regex(?name, \"'+person+'\", "i")}');
-		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?name where {?a a stis:Person;gnd:preferredNameForThePerson ?name FILTER regex(?name, \"'+person+'\", "i")}');
+		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct ?a ?name ?birthPlace ?deathPlace where {?a a stis:Person; gnd:preferredNameForThePerson ?name FILTER regex(?name, \"'+person+'\", "i").?a gnd:placeOfBirth ?birthEntity.?birthEntity gnd:preferredName ?birthPlace. ?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?deathPlace.}');
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct ?a ?name ?birthPlace ?deathPlace where {?a a stis:Person; gnd:preferredNameForThePerson ?name FILTER regex(?name, \"'+person+'\", "i").?a gnd:placeOfBirth ?birthEntity.?birthEntity gnd:preferredName ?birthPlace. ?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?deathPlace.}');
 	} else if (publication!=""){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');	

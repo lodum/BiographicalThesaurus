@@ -62,9 +62,16 @@ include 'common.php';
 
 			map.setView(new L.LatLng(51.966667, 7.633333),9);
 			
-			addResultMarker();
+			//addResultMarker();
 			
-			startQuery();
+			startQuery(map);
+			
+			/*var str = getElementById('resultdiv').value;
+			//console.log(str);
+			var td = str.split("<td></td>");
+			console.log(td.length);*/
+			
+			
 			
       }
       
