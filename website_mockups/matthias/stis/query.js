@@ -6,7 +6,7 @@ function gotoPage(number){
 	displayResults();
 }
 
-/*function submitQuery() {
+function submitQuery() {
 	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
 	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 	var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
@@ -31,7 +31,7 @@ function gotoPage(number){
 			$("#error").html(request.responseText + error);
 		}
 	});
-};*/
+};
 
 /*function buildQuery(person){
 	//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}');
@@ -130,7 +130,7 @@ function replaceURLWithHTMLLinks(text) {
 
 
 //handles the ajax response
-/*function callbackFunc(results) {
+function callbackFunc(results) {
 	console.log('start callback');
 	$("#resultdiv").empty();
 	//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
@@ -156,7 +156,7 @@ function replaceURLWithHTMLLinks(text) {
 
 	htmlString += "</table>";
 	$("#resultdiv").html(htmlString);
-}*/
+}
 
 
 //handles the ajax response
@@ -333,8 +333,8 @@ function startQuery(){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');	
 	} else if (place!=""){
-		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where { ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName. FILTER regex(?locationName, \"\^'+place+'\",”i”) .}');
-		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where { ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName. FILTER regex(?locationName, \"\^'+place+'\",”i”) .}');
+		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName FILTER regex(?locationName, \"\^'+place+'\","i") .}');
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName FILTER regex(?locationName, \"\^'+place+'\","i") .}');
 	} else {
 			console.log('No parameters');
 	}
