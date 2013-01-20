@@ -1,3 +1,11 @@
+var searchResults;
+var currentPage;
+
+function gotoPage(number){
+	currentPage=number;
+	displayResults();
+}
+
 function submitQuery() {
 	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
 	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
@@ -112,8 +120,16 @@ function submitCustomQueryStartPage(text) {
 
 function replaceURLWithHTMLLinks(text) {
 	var exp = /(\b(https?|ftp|file):\/\/\b(lobid.org)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-	return text.replace(exp, "<a href='http://giv-stis-2012.uni-muenster.de:8080/openrdf-workbench/repositories/stis/explore?resource=$1' target=\"_blank\">$1</a>");
+	text = text.replace(exp, "<a href='http://giv-stis-2012.uni-muenster.de:8080/openrdf-workbench/repositories/stis/explore?resource=$1' target=\"_blank\">$1</a>");
+	if (text.indexOf("<a href") == 0){
+		return text;
+	}else{
+		var exp = /(\b(https?|ftp|file):\/\/\b[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+		text = text.replace(exp, "<a href='$1' target=\"_blank\">$1</a>");
+	}
+	return text;
 }
+
 
 //handles the ajax response
 function callbackFunc(results) {
@@ -144,9 +160,48 @@ function callbackFunc(results) {
 	$("#resultdiv").html(htmlString);
 }
 
+
 //handles the ajax response
 function callbackFuncResults(results) {
-	console.log('start callback');
+	console.log('start callback');	
+	searchresults=results;
+	gotoPage(1);
+};
+	
+
+function displayResults() {
+    if(searchresults==undefined)
+       return;
+    var results = searchresults;
+	var respp = document.getElementById("resultsPerPage");	
+	var resppValue = parseInt(respp.options[respp.selectedIndex].text);
+	var minIndex = (currentPage-1)*resppValue;
+	var pagesHtml = "Total number of results: " +results.results.bindings.length+"<br\>";
+	var numberOfPages = Math.ceil(results.results.bindings.length / resppValue);
+	
+	var i = 1;
+	var j= numberOfPages;
+	if(numberOfPages > 20){
+		i = Math.max(1,currentPage-9);
+		j = Math.min(i+19,numberOfPages)
+		if(i > 1){
+			pagesHtml +="... ";
+		}
+	}
+		
+	for (; i <= j; i++) {
+	  	
+	  if(i==currentPage){
+	  	pagesHtml += "<b><a href=\"javascript:gotoPage("+i+")\"> "+i+"</a></b>";
+	  }else
+	  	pagesHtml += "<a href=\"javascript:gotoPage("+i+")\"> "+i+"</a>";
+	};
+	
+	if(j < numberOfPages)
+		pagesHtml +=" ...";
+	      
+	$("#pages").html(pagesHtml);
+	
 	$("#resultdiv").empty();
 	//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
 	htmlString = "<table class=\"table table-striped table-condensed\">";
@@ -158,22 +213,38 @@ function callbackFuncResults(results) {
 	htmlString += "</tr>";
 
 	//write table body
-	$.each(results.results.bindings, function(index1, value1) {
+	for (var i = minIndex, j = Math.min(resppValue*currentPage, results.results.bindings.length); i < j; i++) {
 		htmlString += "<tr>";
-		$.each(results.head.vars, function(index2, value2) {
-			if (value1[value2] != undefined) {
-				htmlString += "<td>" + replaceURLWithHTMLLinks(value1[value2].value) + "</td>";
+		for (var k = 0, l = results.head.vars.length; k < l; k++) {
+			var valueObject = results.results.bindings[i];
+			valueObject = valueObject[results.head.vars[k]];
+			if (valueObject != undefined) {
+				htmlString += "<td>" + replaceURLWithHTMLLinks(valueObject.value) + "</td>";
 			} else {
 				htmlString += "<td></td>";
 			}
-		});
+
+		};
 		htmlString += "</tr>";
-	});
-	console.log('here');
+	}
+
+	// $.each(results.results.bindings, function(index1, value1) {
+	// htmlString += "<tr>";
+	// $.each(results.head.vars, function(index2, value2) {
+	// if (value1[value2] != undefined) {
+	// htmlString += "<td>" + replaceURLWithHTMLLinks(value1[value2].value) + "</td>";
+	// } else {
+	// htmlString += "<td></td>";
+	// }
+	// });
+	// htmlString += "</tr>";
+	// });
+
 	htmlString += "</table>";
 	console.log(htmlString);
 	$("#resultdiv").html(htmlString);
-}
+};
+
 
 function submitTagCloudQuery() {
 	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";

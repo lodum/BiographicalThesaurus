@@ -49,6 +49,14 @@ include 'common.php';
 		
 		location.href="results.php?searchstring="+searchstring;
 	}
+	
+	
+	document.onkeydown = function(event) {
+             if (event.keyCode == 13) {
+                goToResults();
+             }
+   }
+
     
     </script>
     
@@ -179,28 +187,9 @@ include 'common.php';
     <script src="../assets/js/bootstrap-typeahead.js"></script>
     <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script language="JavaScript1.2">
+    
   $(function() {
  
-        // //sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
-        // var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
-        // var request = { accept : 'application/sparql-results+json' };
-        // //get sparql query from textarea
-        // request.query=text;
-        // console.log('Start Ajax');
-        // //sent request
-        // $.ajax({
-            // dataType: "jsonp",
-            // //some sparql endpoints do only support "sparql-results+json" instead of simply "json"
-            // beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
-            // data: request,
-            // url: queryUrl,
-            // success: callbackFuncResults,
-            // error: function (request, status, error) {
-                // //alert(request.responseText);
-                    // $("#error").html(request.responseText);
-            // }
-        // });
-
     $( "#searchstring" ).autocomplete({
       source: function( request, response ) {
           //String.split()
@@ -238,18 +227,7 @@ include 'common.php';
         });
       },
       minLength: 2,
-      delay: 500,
-      // select: function( event, ui ) {
-        // log( ui.item ?
-          // "Selected: " + ui.item.label :
-          // "Nothing selected, input was " + this.value);
-      // },
-       // open: function() {
-         // $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
-       // },
-       // close: function() {
-         // $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
-       // }
+      delay: 500
     });
   });
   </script>

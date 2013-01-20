@@ -148,6 +148,18 @@ include 'common.php';
 			<p>Filter results depending on the column in the results table.</p>
 			
 			<div id="error" style="color:red"></div>
+
+			<div id="resultsPerPageContainder" align="right">
+			    Results per page:
+			    <select id="resultsPerPage" style="width: 50pt" onchange="gotoPage(1)">
+                      <option>10</option>
+                      <option selected>20</option>
+                      <option>30</option>
+                      <option>40</option>
+                      <option>50</option>
+                 </select> 
+             </div>
+            <div id="pages" align="center"></div>
 			<div id="resultdiv"></div>
 			
     </div>

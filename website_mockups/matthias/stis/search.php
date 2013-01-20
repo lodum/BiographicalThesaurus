@@ -84,7 +84,13 @@ include 'common.php';
 
 			location.href = "results.php?person=" + person;
 		}
-
+		
+        document.onkeydown = function(event) {
+             if (event.keyCode == 13) {
+                goToResults();
+             }
+        }
+ 
 		function onMapClick(e) {
 			console.log(e.latlng.lat);
 			console.log(e.latlng.lng);

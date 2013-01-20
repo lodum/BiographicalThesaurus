@@ -56,4 +56,7 @@ $lang['SEARCH_FORM'] = '<h1>Thesaurus Suche</h1>
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';
 $lang['SPARQL_SUBMIT'] = 'Query senden';
 
+
+
 ?>
+
