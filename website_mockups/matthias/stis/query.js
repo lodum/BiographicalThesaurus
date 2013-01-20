@@ -1,5 +1,6 @@
 function submitQuery(){
 		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		//var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
@@ -21,7 +22,7 @@ function submitQuery(){
 		});
 	};
 	
-	function buildQuery(person){
+	/*function buildQuery(person){
 		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}');
 		//var person = ($("#person").val());
 		
@@ -49,11 +50,12 @@ function submitQuery(){
 		console.log('Person = ' + person);
 		
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a '+person+'.}');
-	*/
-	}
+	
+	}*/
 	
 	function submitCustomQuery(text){
 		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		// var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
@@ -75,8 +77,9 @@ function submitQuery(){
 		});
 	};
 	
-	function submitCustomQueryStartPage(text){
+	/*function submitCustomQueryStartPage(text){
 		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		// var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
@@ -96,7 +99,7 @@ function submitQuery(){
 					$("#error").html(request.responseText);
 		    }
 		});
-	};
+	};*/
 	
 	function replaceURLWithHTMLLinks(text) {
 		    var exp = /(\b(https?|ftp|file):\/\/\b(lobid.org)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
@@ -134,7 +137,7 @@ function submitQuery(){
 	}
 	
 	//handles the ajax response
-	function callbackFuncResults(results) {
+	/*function callbackFuncResults(results) {
 		console.log('start callback');
 		$("#resultdiv").empty();
 		//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
@@ -162,10 +165,11 @@ function submitQuery(){
 		htmlString+="</table>";
 		console.log(htmlString);
 		$("#resultdiv").html(htmlString);
-	}
+	}*/
 	
 	function submitTagCloudQuery(){
 		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		// var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
@@ -233,11 +237,24 @@ function submitQuery(){
 		console.log('searchstring='+searchstring);
 		var person = getParam('person');
 		console.log('person='+person);
+		var publication = getParam('publication');
+		console.log('publication='+publication);
+		var place = getParam('place');
+		console.log('place='+place);
+		
 		if (searchstring!=""){
 			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
-			submitCustomQueryStartPage('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+			submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
 		} else if (person!=""){
-			buildQuery(person);
+			//buildQuery(person);
+			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?name where {?a a stis:Person;gnd:preferredNameForThePerson ?name FILTER regex(?name, \"'+person+'\", "i")}');
+			submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?name where {?a a stis:Person;gnd:preferredNameForThePerson ?name FILTER regex(?name, \"'+person+'\", "i")}');
+		} else if (publication!=""){
+			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
+			submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');	
+		} else if (place!=""){
+			console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where { ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName. FILTER regex(?locationName, \"\^'+place+'\",”i”) .}');
+			submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where { ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName. FILTER regex(?locationName, \"\^'+place+'\",”i”) .}');
 		} else {
 				console.log('No parameters');
 		}
@@ -256,6 +273,7 @@ function submitQuery(){
 	
 function submitQueryAutocompletePerson(){
 		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		// var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
