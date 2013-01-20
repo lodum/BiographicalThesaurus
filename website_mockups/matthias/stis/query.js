@@ -6,7 +6,7 @@ function gotoPage(number){
 	displayResults();
 }
 
-function submitQuery() {
+/*function submitQuery() {
 	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
 	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 	var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
@@ -31,7 +31,7 @@ function submitQuery() {
 			$("#error").html(request.responseText + error);
 		}
 	});
-};
+};*/
 
 /*function buildQuery(person){
 	//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{?a a gnd:DifferentiatedPerson.}');
@@ -82,7 +82,7 @@ function submitCustomQuery(text){
 			beforeSend: function(xhrObj){xhrObj.setRequestHeader("Accept","application/sparql-results+json");},
 			data: request,
 			url: queryUrl,
-			success: callbackFunc,
+			success: callbackFuncResults,
 			error: function (request, status, error) {
 		        //alert(request.responseText);
 					$("#error").html(request.responseText);
@@ -130,7 +130,7 @@ function replaceURLWithHTMLLinks(text) {
 
 
 //handles the ajax response
-function callbackFunc(results) {
+/*function callbackFunc(results) {
 	console.log('start callback');
 	$("#resultdiv").empty();
 	//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
@@ -156,7 +156,7 @@ function callbackFunc(results) {
 
 	htmlString += "</table>";
 	$("#resultdiv").html(htmlString);
-}
+}*/
 
 
 //handles the ajax response
