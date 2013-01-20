@@ -83,8 +83,10 @@ include 'common.php';
 			var person = document.getElementById('person').value;
 			var publication = document.getElementById('publication').value;
 			var place = document.getElementById('place').value;
+			var beginDate = document.getElementById('beginDate').value;
+			var endDate = document.getElementById('endDate').value;
 
-			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place;
+			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate;
 		}
 		
         document.onkeydown = function(event) {
@@ -178,7 +180,7 @@ include 'common.php';
 				<input type="text" placeholder="Co-Author">
 				<label>Publication</label>
 				<input id="publication" type="text" placeholder="Publication">
-				<label>Period/Timestamp (Date format mm/dd/yyyy)</label>
+				<label>Period/Timestamp (Date format yyyy, as days are not supported yet)</label>
 	           
 	           
 
@@ -222,11 +224,13 @@ include 'common.php';
 $( "#beginDate" ).datepicker({
 changeMonth: true,
 changeYear: true,
+dateFormat: "yy",
 yearRange: "-1500:+0"
 });
 $( "#endDate" ).datepicker({
 changeMonth: true,
 changeYear: true,
+dateFormat: "yy",
 yearRange: "-1500:+0"
 });
 });
