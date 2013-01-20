@@ -94,10 +94,15 @@ include 'common.php';
                 goToResults();
              }
         }
+        
+        var marker;
  
 		function onMapClick(e) {
 			console.log(e.latlng.lat);
 			console.log(e.latlng.lng);
+			
+			marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+		    
 
 			var s = document.createElement('script');
 			s.src = 'http://nominatim.openstreetmap.org/reverse?format=json&json_callback=cb&lat=' + e.latlng.lat + '.&lon=' + e.latlng.lng + '';
@@ -109,6 +114,7 @@ include 'common.php';
 			//do what you want with the json
 			console.log(json.address.city);
 			document.getElementById('place').value = json.address.city;
+			marker.bindPopup("Place: "+json.address.city).openPopup();
 		}
 
     </script>
@@ -163,30 +169,27 @@ include 'common.php';
 	 <div id="map"></div>
 	
     <div class="container">
-	<?php echo $lang['SEARCH_FORM']; ?> 
+	<?php echo $lang['SEARCH_FORM']; ?>
 
 			<form>
 				<fieldset>
 				<legend>Search form</legend>
 				<label>Person</label>
 				<input id="person" type="text" placeholder="Person">
-				<input type="text" placeholder="Insert text here...">
+				<!--<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
 				<input type="text" placeholder="Happened at which location?">
-				<input type="text" placeholder="Insert timestamp or event here">
+				<input type="text" placeholder="Insert timestamp or event here">-->
 				<label>Author</label>
 				<input type="text" placeholder="Author">
-				<input type="text" placeholder="Co-Author">
+				<!--<input type="text" placeholder="Co-Author">-->
 				<label>Publication</label>
 				<input id="publication" type="text" placeholder="Publication">
 				<label>Period/Timestamp (Date format yyyy, as days are not supported yet)</label>
-	           
-	           
-
-	           <input type="text" name="beginDate" id="beginDate"  placeholder="Date of the Beginning"/>
-               -
-                               <input type="text" name="endDate" id="endDate" placeholder="Date of the End"/>        
+	            <input type="text" name="beginDate" id="beginDate"  placeholder="Date of the Beginning"/>
+                -
+                <input type="text" name="endDate" id="endDate" placeholder="Date of the End"/>        
 				<label>Place</label>
 				<input id="place" type="text" placeholder="Place">
 				</fieldset>

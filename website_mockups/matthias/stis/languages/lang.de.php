@@ -20,7 +20,7 @@ $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="de">';
 $lang['STIS_PAGE_TITLE'] = 'Biographischer Thesaurus NRW';
 $lang['STIS_HERO_HEADER'] = 'Willkommen';
 $lang['STIS_HERO_TEXT'] = 'Dies ist der biographische Thesaurus NRW. Hier finden Sie Informationen über Personen, Autoren und Veröffentlichungen. Erkunden Sie die biographische Suche nach Personen, die in einer Verbindung zu Nordrhein-Westfalen (NRW) stehen.';
-$lang['STIS_HERO_BUTTON1'] = 'Zur Formularsuche &raquo;';
+$lang['STIS_HERO_BUTTON1'] = 'Zur Karten- und Formularsuche &raquo;';
 $lang['STIS_HERO_FREE_SEARCH'] = 'Probieren Sie die Freitextsuche:';
 $lang['STIS_HERO_FREE_SEARCH_TEXT'] = 'Geben Sie hier Ihre Anfrage ein';
 $lang['STIS_HERO_BUTTON2'] = 'Freitextsuche starten! &raquo;';
@@ -46,11 +46,10 @@ $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
           <p><a class="btn" href="tag_cloud.php">Zeige Cloud &raquo;</a></p>';
 
 //search.php
-$lang['SEARCH_MAP'] = '<h1>Thesaurus Landkarte</h1>
-		<p>Klicken sie auf einen Ort in der Karte um Daten um Informationen zu diesem Ort zu bekommen!</p>';
+$lang['SEARCH_MAP'] = '<h1>Thesaurus Landkarte und Suchformular</h1>
+		<p>Klicken sie auf einen Ort in der Karte um Daten um Informationen zu diesem Ort zu bekommen.</p>';
 
-$lang['SEARCH_FORM'] = '<h1>Thesaurus Suche</h1>
-      <p>Suchen Sie nach Autoren, Publikationen, Zeit und Ort eines Geschehens für das sie sich interessieren.</br> Das Ergebnis wird in einer Tabelle dargestellt</p>';
+$lang['SEARCH_FORM'] = '<p>Suchen Sie nach Autoren, Publikationen, Zeit und Ort eines Geschehens für das sie sich interessieren.</br> Das Ergebnis wird in einer Tabelle dargestellt.</p>';
 	  
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';

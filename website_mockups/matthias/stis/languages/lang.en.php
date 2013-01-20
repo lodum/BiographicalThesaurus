@@ -19,8 +19,8 @@ $lang['MENU_SPARQL'] = 'SPARQL Endpoint';
 $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="en">';
 $lang['STIS_PAGE_TITLE'] = 'Biographical Thesaurus NRW';
 $lang['STIS_HERO_HEADER'] = 'Welcome';
-$lang['STIS_HERO_TEXT'] = 'This is the Biographical Thesaurus NRW. Here, you will find information on authors and publications. Explore the biographical search application about people with reference to North Rhine-Westphalia (NRW)';
-$lang['STIS_HERO_BUTTON1'] = 'Or go to search form! &raquo;';
+$lang['STIS_HERO_TEXT'] = 'This is the Biographical Thesaurus NRW. Here, you will find information on persons, authors and publications. Explore the biographical search application about people with reference to North Rhine-Westphalia (NRW)';
+$lang['STIS_HERO_BUTTON1'] = 'Or go to map and search form! &raquo;';
 $lang['STIS_HERO_FREE_SEARCH'] = 'Try the free text search:';
 $lang['STIS_HERO_FREE_SEARCH_TEXT'] = 'Enter your search string here';
 $lang['STIS_HERO_BUTTON2'] = 'Start free text search! &raquo;';
@@ -46,11 +46,10 @@ $lang['STIS_TAG_CLOUD'] = '<h2>Tag cloud</h2>
           <p><a class="btn" href="tag_cloud.php">Show me the cloud &raquo;</a></p>';
 
 //search.php		  
-$lang['SEARCH_MAP'] = '<h1>Thesaurus Search Map</h1>
-		<p>Click on the map to find all datasets that have a relationship to the location that you clicked on!</p>';
+$lang['SEARCH_MAP'] = '<h1>Thesaurus Search Map and Form</h1>
+		<p>Click on the map to find all datasets that have a relationship to the location that you clicked on.</p>';
 
-$lang['SEARCH_FORM'] = '<h1>Thesaurus search form</h1>
-      <p>Search for authors, publications, time and/or places in which you are interested.</br> The results will be published on the map and in a table!</p>';
+$lang['SEARCH_FORM'] = '<p>Search for authors, publications, time and/or places in which you are interested.</br> The results will be published on the map and in a table.</p>';
 
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpoint</h1><br/><h3>Query Submission Form</h3>';
