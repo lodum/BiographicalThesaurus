@@ -81,8 +81,10 @@ include 'common.php';
 
 		function goToResults() {
 			var person = document.getElementById('person').value;
+			var publication = document.getElementById('publication').value;
+			var place = document.getElementById('place').value;
 
-			location.href = "results.php?person=" + person;
+			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place;
 		}
 		
         document.onkeydown = function(event) {
@@ -175,7 +177,7 @@ include 'common.php';
 				<input type="text" placeholder="Author">
 				<input type="text" placeholder="Co-Author">
 				<label>Publication</label>
-				<input type="text" placeholder="Publication">
+				<input id="publication" type="text" placeholder="Publication">
 				<label>Period/Timestamp (Date format mm/dd/yyyy)</label>
 	           
 	           
