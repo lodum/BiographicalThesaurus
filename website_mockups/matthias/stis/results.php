@@ -26,6 +26,28 @@ include 'common.php';
           
       }
       img {max-width:none}
+	  	  #result_success{
+		background-color: green;
+		position: absolute;
+		top: 40px;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+	  #result_error{
+		background-color: red;
+		position: absolute;
+		top: 40px;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+	  
+	  #loadingDiv{
+		display:none;
+	  }
 		
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -122,6 +144,12 @@ include 'common.php';
 			<div style="padding: 10px 20px 10px;" align="right" class="text"><?php echo $lang['SELECT LANGUAGE']; ?> <a href="?lang=de"><img src="languages/flags/de.png" alt="Deutsch"/></a> <a href="?lang=en"><img src="languages/flags/gb.png" alt="English"/></a></div>			
           </div><!--/.nav-collapse -->
         </div>
+		<div id="result_success">
+			<? echo $lang['result_status_success']; ?>
+		</div>
+		<div id="result_error">
+			<? echo $lang['result_status_error']; ?>
+		</div>
       </div>
     </div>
 
@@ -153,6 +181,7 @@ include 'common.php';
     <div class="container">
 			<h1>Thesaurus Search Results</h1>
 			<p>Filter results depending on the column in the results table.</p>
+
 			
 			<div id="error" style="color:red"></div>
 
@@ -166,6 +195,7 @@ include 'common.php';
                       <option>50</option>
                  </select> 
              </div>
+			 <div id="loadingDiv"><img src="../assets/img/ajax-loader.gif"></div>
             <div id="pages" align="center"></div>
 			<div id="resultdiv"></div>
 			
