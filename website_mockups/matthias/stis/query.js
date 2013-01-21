@@ -124,7 +124,7 @@ function submitCustomQuery(text){
 
 function replaceURLWithHTMLLinks(text) {
 	var exp = /(\b(https?|ftp|file):\/\/\b(lobid.org)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-	text = text.replace(exp, "<a href='http://giv-stis-2012.uni-muenster.de:8080/openrdf-workbench/repositories/stis/explore?resource=$1' target=\"_blank\">$1</a>");
+	text = text.replace(exp, "<a href='http://giv-stis-2012.uni-muenster.de:8080/openrdf-workbench/repositories/stis/explore?resource=%3C$1%3E' target=\"_blank\">$1</a>");
 	if (text.indexOf("<a href") == 0){
 		return text;
 	}else{
