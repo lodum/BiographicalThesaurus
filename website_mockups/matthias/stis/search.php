@@ -99,6 +99,11 @@ include 'common.php';
         var marker;
  
 		function onMapClick(e) {
+			try {
+				map.removeLayer(marker);
+			} catch (e){
+				console.log('no marker yet');
+			}
 			console.log(e.latlng.lat);
 			console.log(e.latlng.lng);
 			
