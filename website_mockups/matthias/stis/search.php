@@ -88,8 +88,19 @@ include 'common.php';
 			var endDate = document.getElementById('endDate').value;
 			var author = document.getElementById('author').value;
 			var subject = document.getElementById('subject').value;
-
-			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author + "&subject=" + subject;
+			var lat;
+			var lon;
+			if (marker!=null){
+				lat=marker.getLatLng().lat;
+				lon=marker.getLatLng().lng;
+			} else {
+				lat="";
+				lon="";
+			}
+			
+			console.log(lat);
+			console.log(lon);
+			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author + "&subject=" + subject + "&lat=" + lat + "&lon=" + lon;
 		}
 		
         document.onkeydown = function(event) {

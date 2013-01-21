@@ -423,6 +423,10 @@ function startQuery(map2){
 	console.log('author='+author);
 	var subject = getParam('subject');
 	console.log('subject='+subject);
+	var lat = getParam('lat');
+	console.log('lat='+lat);
+	var lon = getParam('lon');
+	console.log('lon='+lon);
 	
 	if (searchstring!=""){
 		console.log(searchstring);
@@ -453,6 +457,7 @@ function startQuery(map2){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');	
 	} else if (place!=""){
+		var marker = L.marker([lat, lon]).addTo(map);
 		console.log(place);
 		place=place.replace(/%20/g," ");
 		console.log(place);
