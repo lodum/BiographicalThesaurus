@@ -291,15 +291,45 @@ function displayResults() {
 	//END EXPERIMENTAL
 };
 
+var point1lat;
+var point1lon;
+var point2lat;
+var point2lon;
+
 function cb1(json) {
 		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
+		point1lat=json[0].lat;
+		point1lon=json[0].lon;
 		marker.bindPopup("Birth place").openPopup();
 			
 };
 
 function cb2(json) {
 		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
+		point2lat=json[0].lat;
+		point2lon=json[0].lon;
 		marker.bindPopup("Death place").openPopup();
+		
+		console.log(point1lat);
+		console.log(point1lon);
+		var point1=new L.LatLng(point1lat,point1lon);
+		var point2=new L.LatLng(point2lat,point2lon);
+		var bounds=new L.LatLngBounds(point1,point2);
+		map.fitBounds(bounds);
+		
+		/*map.fitBounds([
+			[point1lat,point1lon],
+			[point2lat,point2lon]
+		]);
+		*/
+		
+		/*var meanlat=((point1lat*1)+(point2lat*1))/2;
+		var meanlon=((point1lon*1)+(point2lon*1))/2;
+		
+		console.log(meanlat + " " + meanlon);
+		
+		map.setView([meanlat,meanlon],8);*/
+		
 };
 
 
@@ -391,6 +421,12 @@ function startQuery(map2){
 	console.log('endDate='+endDate);
 	var author = getParam('author');
 	console.log('author='+author);
+	var subject = getParam('subject');
+	console.log('subject='+subject);
+	var lat = getParam('lat');
+	console.log('lat='+lat);
+	var lon = getParam('lon');
+	console.log('lon='+lon);
 	
 	if (searchstring!=""){
 		console.log(searchstring);
@@ -423,13 +459,14 @@ function startQuery(map2){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b; } union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');	
 	} else if (place!=""){
+		var marker = L.marker([lat, lon]).addTo(map);
 		console.log(place);
 		place=decodeURI(place);
 		//place=place.replace(/%20/g," ");
 		console.log(place);
-		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName FILTER regex(?locationName, \"\^'+place+'\","i") . ?a <http://iflastandards.info/ns/isbd/elements/P1004> ?title.}');
-		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a a stis:Publication. ?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName FILTER regex(?locationName, \"\^'+place+'\","i") . ?a <http://iflastandards.info/ns/isbd/elements/P1004> ?title.}');
-	} else if ((beginDate!="")&&(endDate!="")){
+		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');
+	} else if (((beginDate!="")&&(endDate!=""))&&(subject=="")&&(author=="")&&(place=="")&&(publication=="")&&(person=="")){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> prefix dcterms:<http://purl.org/dc/terms/> select ?a ?name ?date where{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?name; dcterms:date ?b. BIND (xsd:decimal(?b) as ?date) Filter (?date <= '+endDate+' && ?date >= '+beginDate+')} ');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> prefix dcterms:<http://purl.org/dc/terms/> select ?a ?name ?date where{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?name; dcterms:date ?b. BIND (xsd:decimal(?b) as ?date) Filter (?date <= '+endDate+' && ?date >= '+beginDate+')} ');
 	} else if (author!=""){
@@ -439,6 +476,12 @@ function startQuery(map2){
 		console.log(author);
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?title ?name where{{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?title} union { ?a a stis:Publication; gnd:preferredNameForTheWork ?title.}{{?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://xmlns.com/foaf/0.1/name> ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://www.w3.org/2000/01/rdf-schema#label> ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:variantName ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://rdvocab.info/ElementsGr2/variantNameForThePerson> ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:variantNameForThePerson ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:preferredName ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:preferredNameForThePerson ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://rdvocab.info/ElementsGr2/preferredNameForThePerson> ?name .} FILTER regex(?name, \"'+author+'\",\"i\")}}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?title ?name where{{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?title} union { ?a a stis:Publication; gnd:preferredNameForTheWork ?title.}{{?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://xmlns.com/foaf/0.1/name> ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://www.w3.org/2000/01/rdf-schema#label> ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:variantName ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://rdvocab.info/ElementsGr2/variantNameForThePerson> ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:variantNameForThePerson ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:preferredName ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p gnd:preferredNameForThePerson ?name .} union {	?a a stis:Publication .        ?a <http://purl.org/dc/elements/1.1/creator> ?p .        ?p <http://rdvocab.info/ElementsGr2/preferredNameForThePerson> ?name .} FILTER regex(?name, \"'+author+'\",\"i\")}}');
+	} else if (subject!=""){
+		console.log(subject);
+		subject=subject.replace(/%20/g," ");
+		console.log(subject);
+		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?subjectURI ?subjectName where{ ?a a stis:Publication . ?a <http://purl.org/dc/terms/subject> ?subjectURI. ?subjectURI gnd:preferredName ?subjectName FILTER regex(?subjectName, \"'+subject+'\", \"i\").}');
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?subjectURI ?subjectName where{ ?a a stis:Publication . ?a <http://purl.org/dc/terms/subject> ?subjectURI. ?subjectURI gnd:preferredName ?subjectName FILTER regex(?subjectName, \"'+subject+'\", \"i\").}');
 	} else {
 			console.log('No parameters');
 	}

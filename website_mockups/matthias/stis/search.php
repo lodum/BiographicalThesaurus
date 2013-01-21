@@ -87,8 +87,20 @@ include 'common.php';
 			var beginDate = document.getElementById('beginDate').value;
 			var endDate = document.getElementById('endDate').value;
 			var author = document.getElementById('author').value;
-
-			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author;
+			var subject = document.getElementById('subject').value;
+			var lat;
+			var lon;
+			if (marker!=null){
+				lat=marker.getLatLng().lat;
+				lon=marker.getLatLng().lng;
+			} else {
+				lat="";
+				lon="";
+			}
+			
+			console.log(lat);
+			console.log(lon);
+			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author + "&subject=" + subject + "&lat=" + lat + "&lon=" + lon;
 		}
 		
         document.onkeydown = function(event) {
@@ -180,28 +192,31 @@ include 'common.php';
 
 			<form>
 				<fieldset>
-				<legend>Search form</legend>
-				<label>Person</label>
-				<input id="person" type="text" placeholder="Person">
+				<legend><?php echo $lang['SEARCH_TITLE']; ?></legend>
+				<label><?php echo $lang['SEARCH_SUBJECT']; ?></label>
+				<input id="subject" type="text" placeholder="<?php echo $lang['SEARCH_SUBJECT2']; ?>">
+				<label><?php echo $lang['SEARCH_POI']; ?></label>
+				<input id="person" type="text" placeholder="<?php echo $lang['SEARCH_POI2']; ?>">
 				<!--<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
 				<input type="text" placeholder="Happened at which location?">
 				<input type="text" placeholder="Insert timestamp or event here">-->
-				<label>Author</label>
-				<input id="author" type="text" placeholder="Author">
+				<label><?php echo $lang['SEARCH_AUTHOR']; ?></label>
+				<input id="author" type="text" placeholder="<?php echo $lang['SEARCH_AUTHOR2']; ?>">
 				<!--<input type="text" placeholder="Co-Author">-->
-				<label>Publication</label>
-				<input id="publication" type="text" placeholder="Publication">
-				<label>Period/Timestamp (Date format yyyy, as days are not supported yet)</label>
-	            <input type="text" name="beginDate" id="beginDate"  placeholder="Date of the Beginning"/>
+				<label><?php echo $lang['SEARCH_PUB']; ?></label>
+				<input id="publication" type="text" placeholder="<?php echo $lang['SEARCH_PUB2']; ?>">
+				<label><?php echo $lang['SEARCH_PLACE']; ?></label>
+				<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
+				<label><?php echo $lang['SEARCH_TIME']; ?></label>
+	            <select name="beginDate" id="beginDate"></select> 
                 -
-                <input type="text" name="endDate" id="endDate" placeholder="Date of the End"/>        
-				<label>Place</label>
-				<input id="place" type="text" placeholder="Place">
+                <select name="endDate" id="endDate"></select>     
+				
 				</fieldset>
 			</form>
-	<button class="btn btn-primary" onclick="goToResults()">Submit</button>
+	<button class="btn btn-primary" onclick="goToResults()"><?php echo $lang['SEARCH_SUBMIT']; ?></button>
 			
     </div>
 
@@ -231,18 +246,17 @@ include 'common.php';
 
 <script>
  $(function() {
-$( "#beginDate" ).datepicker({
-changeMonth: true,
-changeYear: true,
-dateFormat: "yy",
-yearRange: "-1500:+0"
-});
-$( "#endDate" ).datepicker({
-changeMonth: true,
-changeYear: true,
-dateFormat: "yy",
-yearRange: "-1500:+0"
-});
+	 for (i = new Date().getFullYear(); i > 0; i--)
+		{
+			$('#endDate').append($('<option />').val(i).html(i));
+		}
+		
+	for (i = 1; i < new Date().getFullYear(); i++)
+		{
+			$('#beginDate').append($('<option />').val(i).html(i));
+		}
+	
+	
 });
 </script>
   </body>

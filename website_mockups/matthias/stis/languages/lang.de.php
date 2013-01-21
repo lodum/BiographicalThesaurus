@@ -49,7 +49,20 @@ $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
 $lang['SEARCH_MAP'] = '<h1>Thesaurus Landkarte und Suchformular</h1>
 		<p>Klicken sie auf einen Ort in der Karte um Daten um Informationen zu diesem Ort zu bekommen.</p>';
 
-$lang['SEARCH_FORM'] = '<p>Suchen Sie nach Autoren, Publikationen, Zeit und Ort eines Geschehens für das sie sich interessieren.</br> Das Ergebnis wird in einer Tabelle dargestellt.</p>';
+$lang['SEARCH_FORM'] = '<p>Suchen Sie nach Themen, Personen, Autoren, Publikationen, Zeit oder Ort zu einem Thema das Sie interessiert. Füllen Sie bitte pro Anfrage nur ein Feld (bzw. 2 bei der Zeitintervallsuche).</br></p>';
+$lang['SEARCH_TITLE'] = 'Suchformular';
+$lang['SEARCH_SUBJECT'] = 'Thema';
+$lang['SEARCH_SUBJECT2'] = 'Geben Sie ein Thema ein';
+$lang['SEARCH_POI'] = 'Person (Suche nach Lebensdaten einer Person)';
+$lang['SEARCH_POI2'] = 'Name einer Person';
+$lang['SEARCH_AUTHOR'] = 'Autor (gibt die Publikationen eines Autors zurück)';
+$lang['SEARCH_AUTHOR2'] = 'Name eines Autors';
+$lang['SEARCH_PUB'] = 'Publikation';
+$lang['SEARCH_PUB2'] = 'Name einer Publikation';
+$lang['SEARCH_TIME'] = 'Zeitintervall, mit dem Ergebnisse gefiltert werden (Jahr eingeben)';
+$lang['SEARCH_PLACE'] = 'Ort';
+$lang['SEARCH_PLACE2'] = 'Ort';
+$lang['SEARCH_SUBMIT'] = 'Abschicken';
 	  
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';
@@ -57,6 +70,12 @@ $lang['SPARQL_SUBMIT'] = 'Query senden';
 
 $lang['result_status_success'] = 'Abfrage erfolgreich...';
 $lang['result_status_error'] = 'Fehlerhafte Frage...';
+
+//results.php
+
+$lang['RESULT_HEADER'] = 'Ergebnis der Suche';
+$lang['RESULT_FILTER'] = 'Die folgenden Ergebnisse konnte das System anhand Ihrer Eingaben finden.';
+$lang['RESULT_RESULTSNUMBER'] = 'Anzahl Ergebnisse pro Seite:';
 
 
 ?>
