@@ -114,7 +114,7 @@ select * where{
  ?a a gnd:DifferentiatedPerson.
 }
 				</textarea><br/>
-	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br><div id="loadingDiv"><img src="../assets/img/ajax-loader.gif"></div><br/>
+	<button type="submit" class="btn btn-primary" onclick="submitQuery()"><?php echo $lang['SPARQL_SUBMIT']; ?></button><br/><br><div id="loadingDiv"><img src="images/ajax-loader.gif"></div><br/>
 	<div id="error" style="color:red"></div>
 	<div id="resultdiv"></div>
 			

@@ -195,7 +195,7 @@ include 'common.php';
                       <option>50</option>
                  </select> 
              </div>
-			 <div id="loadingDiv"><img src="../assets/img/ajax-loader.gif"></div>
+			 <div id="loadingDiv"><img src="images/ajax-loader.gif"></div>
             <div id="pages" align="center"></div>
 			<div id="resultdiv"></div>
 			
