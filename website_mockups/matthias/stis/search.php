@@ -207,12 +207,13 @@ include 'common.php';
 				<!--<input type="text" placeholder="Co-Author">-->
 				<label><?php echo $lang['SEARCH_PUB']; ?></label>
 				<input id="publication" type="text" placeholder="<?php echo $lang['SEARCH_PUB2']; ?>">
-				<label><?php echo $lang['SEARCH_TIME']; ?></label>
-	            <input type="text" name="beginDate" id="beginDate"  value="0"/>
-                -
-                <input type="text" name="endDate" id="endDate" value="2100"/>        
 				<label><?php echo $lang['SEARCH_PLACE']; ?></label>
 				<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
+				<label><?php echo $lang['SEARCH_TIME']; ?></label>
+	            <select name="beginDate" id="beginDate"></select> 
+                -
+                <select name="endDate" id="endDate"></select>     
+				
 				</fieldset>
 			</form>
 	<button class="btn btn-primary" onclick="goToResults()"><?php echo $lang['SEARCH_SUBMIT']; ?></button>
@@ -245,18 +246,17 @@ include 'common.php';
 
 <script>
  $(function() {
-$( "#beginDate" ).datepicker({
-changeMonth: true,
-changeYear: true,
-dateFormat: "yy",
-yearRange: "-1500:+0"
-});
-$( "#endDate" ).datepicker({
-changeMonth: true,
-changeYear: true,
-dateFormat: "yy",
-yearRange: "-1500:+0"
-});
+	 for (i = new Date().getFullYear(); i > 0; i--)
+		{
+			$('#endDate').append($('<option />').val(i).html(i));
+		}
+		
+	for (i = 1; i < new Date().getFullYear(); i++)
+		{
+			$('#beginDate').append($('<option />').val(i).html(i));
+		}
+	
+	
 });
 </script>
   </body>
