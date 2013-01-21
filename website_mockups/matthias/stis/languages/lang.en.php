@@ -50,6 +50,19 @@ $lang['SEARCH_MAP'] = '<h1>Thesaurus Search Map and Form</h1>
 		<p>Click on the map to find all datasets that have a relationship to the location that you clicked on.</p>';
 
 $lang['SEARCH_FORM'] = '<p>Search for authors, publications, time and/or places in which you are interested.</br> The results will be published on the map and in a table.</p>';
+$lang['SEARCH_TITLE'] = 'Search form';
+$lang['SEARCH_SUBJECT'] = 'Subject / Field of interest';
+$lang['SEARCH_SUBJECT2'] = 'Enter a subject';
+$lang['SEARCH_POI'] = 'Person of interest';
+$lang['SEARCH_POI2'] = 'Name of the Person';
+$lang['SEARCH_AUTHOR'] = 'Name of an author';
+$lang['SEARCH_AUTHOR2'] = 'Author';
+$lang['SEARCH_PUB'] = 'Publication title';
+$lang['SEARCH_PUB2'] = 'Title';
+$lang['SEARCH_TIME'] = 'Timeperiod that is of interest to you (enter year)';
+$lang['SEARCH_PLACE'] = 'Place you are interested in';
+$lang['SEARCH_PLACE2'] = 'Place';
+$lang['SEARCH_SUBMIT'] = 'Submit';
 
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpoint</h1><br/><h3>Query Submission Form</h3>';
@@ -57,5 +70,13 @@ $lang['SPARQL_SUBMIT'] = 'Submit Query';
 
 $lang['result_status_success'] = 'Query returned succesfully';
 $lang['result_status_error'] = 'Invalid query...';
+
+//results.php
+
+$lang['RESULT_HEADER'] = 'Result Map and Table';
+$lang['RESULT_FILTER'] = 'The following results were found according to the data that you entered in the search form.';
+$lang['RESULT_RESULTSNUMBER'] = 'Results per page:';
+
+
 ?>
 

@@ -181,30 +181,30 @@ include 'common.php';
 
 			<form>
 				<fieldset>
-				<label>Subject / Field of interest</label>
-				<input id="subject" type="text" placeholder="Subject">
-				<legend>Search form</legend>
-				<label>Person of interest</label>
-				<input id="person" type="text" placeholder="Person">
+				<legend><?php echo $lang['SEARCH_TITLE']; ?></legend>
+				<label><?php echo $lang['SEARCH_SUBJECT']; ?></label>
+				<input id="subject" type="text" placeholder="<?php echo $lang['SEARCH_SUBJECT2']; ?>">
+				<label><?php echo $lang['SEARCH_POI']; ?></label>
+				<input id="person" type="text" placeholder="<?php echo $lang['SEARCH_POI2']; ?>">
 				<!--<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
 				<input type="text" placeholder="Happened at which location?">
 				<input type="text" placeholder="Insert timestamp or event here">-->
-				<label>Author</label>
-				<input id="author" type="text" placeholder="Author">
+				<label><?php echo $lang['SEARCH_AUTHOR']; ?></label>
+				<input id="author" type="text" placeholder="<?php echo $lang['SEARCH_AUTHOR2']; ?>">
 				<!--<input type="text" placeholder="Co-Author">-->
-				<label>Publication title</label>
-				<input id="publication" type="text" placeholder="Publication">
-				<label>Period/Timestamp (Date format yyyy, as days are not supported yet)</label>
+				<label><?php echo $lang['SEARCH_PUB']; ?></label>
+				<input id="publication" type="text" placeholder="<?php echo $lang['SEARCH_PUB2']; ?>">
+				<label><?php echo $lang['SEARCH_TIME']; ?></label>
 	            <input type="text" name="beginDate" id="beginDate"  value="0"/>
                 -
                 <input type="text" name="endDate" id="endDate" value="2100"/>        
-				<label>Place</label>
-				<input id="place" type="text" placeholder="Place">
+				<label><?php echo $lang['SEARCH_PLACE']; ?></label>
+				<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
 				</fieldset>
 			</form>
-	<button class="btn btn-primary" onclick="goToResults()">Submit</button>
+	<button class="btn btn-primary" onclick="goToResults()"><?php echo $lang['SEARCH_SUBMIT']; ?></button>
 			
     </div>
 

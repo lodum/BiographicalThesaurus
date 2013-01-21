@@ -155,7 +155,7 @@ include 'common.php';
     </div>
 
 	<div class="container">
-		<h1>Thesaurus Result Map</h1>
+		<h1><?php echo $lang['RESULT_HEADER']; ?></h1>
 	</div>
     <div id="map"></div>
     <div class="container">
@@ -180,14 +180,14 @@ include 'common.php';
     </div>
    
     <div class="container">
-			<h1>Thesaurus Search Results</h1>
-			<p>Filter results depending on the column in the results table.</p>
+			<!--<h1>Thesaurus Search Results</h1>-->
+			<p><?php echo $lang['RESULT_FILTER']; ?></p>
 
 			
 			<div id="error" style="color:red"></div>
 
 			<div id="resultsPerPageContainder" align="right">
-			    Results per page:
+			    <?php echo $lang['RESULT_RESULTSNUMBER']; ?>
 			    <select id="resultsPerPage" style="width: 50pt" onchange="gotoPage(1)">
                       <option>10</option>
                       <option selected>20</option>
