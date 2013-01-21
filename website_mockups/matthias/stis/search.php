@@ -87,8 +87,9 @@ include 'common.php';
 			var beginDate = document.getElementById('beginDate').value;
 			var endDate = document.getElementById('endDate').value;
 			var author = document.getElementById('author').value;
+			var subject = document.getElementById('subject').value;
 
-			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author;
+			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author + "&subject=" + subject;
 		}
 		
         document.onkeydown = function(event) {
@@ -180,8 +181,10 @@ include 'common.php';
 
 			<form>
 				<fieldset>
+				<label>Subject / Field of interest</label>
+				<input id="subject" type="text" placeholder="Subject">
 				<legend>Search form</legend>
-				<label>Person</label>
+				<label>Person of interest</label>
 				<input id="person" type="text" placeholder="Person">
 				<!--<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
@@ -191,12 +194,12 @@ include 'common.php';
 				<label>Author</label>
 				<input id="author" type="text" placeholder="Author">
 				<!--<input type="text" placeholder="Co-Author">-->
-				<label>Publication</label>
+				<label>Publication title</label>
 				<input id="publication" type="text" placeholder="Publication">
 				<label>Period/Timestamp (Date format yyyy, as days are not supported yet)</label>
-	            <input type="text" name="beginDate" id="beginDate"  placeholder="Date of the Beginning"/>
+	            <input type="text" name="beginDate" id="beginDate"  value="0"/>
                 -
-                <input type="text" name="endDate" id="endDate" placeholder="Date of the End"/>        
+                <input type="text" name="endDate" id="endDate" value="2100"/>        
 				<label>Place</label>
 				<input id="place" type="text" placeholder="Place">
 				</fieldset>

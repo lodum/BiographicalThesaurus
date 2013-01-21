@@ -46,8 +46,8 @@ include 'common.php';
     
     function goToResults(){
 		var searchstring = document.getElementById('searchstring').value;
-		
-		location.href="results.php?searchstring="+searchstring;
+		console.log(encodeURI(searchstring));
+		location.href="results.php?searchstring="+encodeURI(searchstring);
 	}
 	
 	
