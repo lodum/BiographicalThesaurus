@@ -341,7 +341,8 @@ function submitTagCloudQuery() {
 		accept : 'application/sparql-results+json'
 	};
 	//get sparql query from textarea
-	request.query = "prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a where{ ?c  gnd:surname ?a.} LIMIT 35";
+	//request.query = "prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a where{ ?c  gnd:surname ?a.} LIMIT 35";
+	request.query = "prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select  distinct ?personUri ?name ?count where{ ?personUri gnd:preferredNameForThePerson ?name{ select ?personUri (count(?personUri) as ?count)  where{{  ?a a stis:Publication; <http://purl.org/dc/elements/1.1/creator> ?personUri. }} GROUP BY ?personUri ORDER BY DESC(?count) limit 10} } ORDER BY DESC(?count) limit 10";
 	console.log('Start Ajax');
 	//sent request
 	$.ajax({
@@ -369,11 +370,17 @@ function callbackTag(results) {
 	//write table body
 	$.each(results.results.bindings, function(index1, value1) {
 		htmlString += "<li>";
-		console.log(index1);
-		console.log(value1);
+		//console.log(index1);
+		//console.log(value1);
 		$.each(results.head.vars, function(index2, value2) {
+			
 			if (value1[value2] != undefined) {
-				htmlString += "<a href\=\"\#\">" + replaceURLWithHTMLLinks(value1[value2].value) + "</a>";
+				//console.log(index2);
+				if (index2==0)
+					htmlString += '<a href\=\"'+value1[value2].value+'\">';
+				if (index2==1)
+					htmlString += value1[value2].value;
+				//htmlString += "<a href\=\"\#\">" + replaceURLWithHTMLLinks(value1[value2].value) + "</a>";
 			}/*else{
 			 htmlString+="<td></td>";
 			 }*/
