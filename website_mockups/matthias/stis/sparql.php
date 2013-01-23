@@ -149,13 +149,7 @@ select * where{
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-    <script language="JavaScript1.2">
-                document.onkeydown = function(event) {
-             if (event.keyCode == 13) {
-                submitQuery();
-             }
-        }
-    </script>
+   
 
   </body>
 </html>
