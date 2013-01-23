@@ -59,7 +59,7 @@ $lang['SEARCH_AUTHOR'] = 'Name of an author';
 $lang['SEARCH_AUTHOR2'] = 'Author';
 $lang['SEARCH_PUB'] = 'Publication title';
 $lang['SEARCH_PUB2'] = 'Title';
-$lang['SEARCH_TIME'] = 'Timeperiod that is of interest to you (enter year)';
+$lang['SEARCH_TIME'] = 'Time period that is of interest to you (enter year)';
 $lang['SEARCH_PLACE'] = 'Place you are interested in';
 $lang['SEARCH_PLACE2'] = 'Place';
 $lang['SEARCH_SUBMIT'] = 'Submit';
@@ -68,7 +68,7 @@ $lang['SEARCH_SUBMIT'] = 'Submit';
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpoint</h1><br/><h3>Query Submission Form</h3>';
 $lang['SPARQL_SUBMIT'] = 'Submit Query';
 
-$lang['result_status_success'] = 'Query returned succesfully';
+$lang['result_status_success'] = 'Query returned successfully';
 $lang['result_status_error'] = 'Invalid query...';
 
 //results.php

@@ -27,7 +27,7 @@ $lang['STIS_HERO_BUTTON2'] = 'Freitextsuche starten! &raquo;';
 $lang['SELECT LANGUAGE'] = 'Sprache: ';
 $lang['STIS_EXPLORE'] = '<h2>Erkunde die Daten</h2><p>Einführung und Erkundung der vorhandenen Daten. Siehe auch die Tag Cloud.</p><p><a class="btn" href="explore.php">Erkunden &raquo;</a></p>';
 
-$lang['STIS_HELP'] =  '<h2>Hilfe</h2><p>Wie benutzt man den Bibliographischen Thesaurus? Was kann ich hier finden? Wie vertraunswürdig sind die Informationen? Wo finde ich weiter Informationen?</p><p><a class="btn" href="#">Details &raquo;</a></p>';
+$lang['STIS_HELP'] =  '<h2>Hilfe</h2><p>Wie benutzt man den Bibliographischen Thesaurus? Was kann ich hier finden? Wie vertrauenswürdig sind die Informationen? Wo finde ich weiter Informationen?</p><p><a class="btn" href="#">Details &raquo;</a></p>';
 
 $lang['STIS_ULB'] =  '<h2>ULB</h2>
           <p>Hier finden Sie mehr Informationen zur Universitäts- und Landesbibliothek Münster.</p>
@@ -38,7 +38,7 @@ $lang['STIS_SPARQL'] = '<h2>Expertenzugang</h2>
           <p><a class="btn" href="sparql.php">SPARQL Endpunkt &raquo;</a></p>';
 		  
 $lang['STIS_CHILDREN'] = '<h2>Zugang für Kinder</h2>
-          <p>Eine spannende Entdeckungreise durch die Geschichte Westfalens.</p>
+          <p>Eine spannende Entdeckungsreise durch die Geschichte Westfalens.</p>
           <p><a class="btn" href="#">Zum Spiel! &raquo;</a></p>';
 
 $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
@@ -66,7 +66,7 @@ $lang['SEARCH_SUBMIT'] = 'Abschicken';
 	  
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';
-$lang['SPARQL_SUBMIT'] = 'Query senden';
+$lang['SPARQL_SUBMIT'] = 'Anfrage senden';
 
 $lang['result_status_success'] = 'Abfrage erfolgreich...';
 $lang['result_status_error'] = 'Fehlerhafte Frage...';
