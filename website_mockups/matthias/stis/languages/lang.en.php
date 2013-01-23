@@ -77,6 +77,10 @@ $lang['RESULT_HEADER'] = 'Result Map and Table';
 $lang['RESULT_FILTER'] = 'The following results were found according to the data that you entered in the search form.';
 $lang['RESULT_RESULTSNUMBER'] = 'Results per page:';
 
+//tag_cloud.php
+
+$lang['CLOUD_TITLE'] = 'Tag Cloud';
+$lang['CLOUD_HELP'] = 'The tag cloud displays the authors with the most publications that are stored in the database. Click on their name to receive information on them.';
 
 ?>
 

@@ -85,13 +85,17 @@ include 'common.php';
               <li><a href="#contact">Contact</a></li>
 -->
             </ul>
+            <div style="padding: 10px 20px 10px;" align="right" class="text"><?php echo $lang['SELECT LANGUAGE']; ?> <a href="?lang=de"><img src="languages/flags/de.png" alt="Deutsch"/></a> <a href="?lang=en"><img src="languages/flags/gb.png" alt="English"/></a></div>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
 	<div class="container">
-		<h1>Tag Cloud</h1>
+		<h1><?php echo $lang['CLOUD_TITLE']; ?></h1>
+	</div>
+	<div class="container">
+		<?php echo $lang['CLOUD_HELP']; ?>
 	</div>
 	<div id="myCanvasContainer">
 	 <canvas width="900" height="400" id="myCanvas">

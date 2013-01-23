@@ -77,6 +77,12 @@ $lang['RESULT_HEADER'] = 'Ergebnis der Suche';
 $lang['RESULT_FILTER'] = 'Die folgenden Ergebnisse konnte das System anhand Ihrer Eingaben finden.';
 $lang['RESULT_RESULTSNUMBER'] = 'Anzahl Ergebnisse pro Seite:';
 
+//tag_cloud.php
+
+$lang['CLOUD_TITLE'] = 'Tag Cloud';
+$lang['CLOUD_HELP'] = 'Die Tag Cloud gibt die Namen der zehn Autoren aus, die in unserem Datenbestand die meisten Publikationen veröffentlicht haben.';
+
+
 
 ?>
 
