@@ -503,6 +503,14 @@ function startQuery(map2){
 		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?subjectURI ?subjectName where{ ?a a stis:Publication . ?a <http://purl.org/dc/terms/subject> ?subjectURI. ?subjectURI gnd:preferredName ?subjectName FILTER regex(?subjectName, \"'+subject+'\", \"i\").}');
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?publicationUri ?subjectURI ?subjectName where{ ?publicationUri a stis:Publication . ?publicationUri <http://purl.org/dc/terms/subject> ?subjectURI. ?subjectURI gnd:preferredName ?subjectName FILTER regex(?subjectName, \"'+subject+'\", "i").}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?publicationUri ?subjectURI ?subjectName where{ ?publicationUri a stis:Publication . ?publicationUri <http://purl.org/dc/terms/subject> ?subjectURI. ?subjectURI gnd:preferredName ?subjectName FILTER regex(?subjectName, \"'+subject+'\", "i").}');
+	} else if ((searchstring=="")&&(person!="")&&(publication=="")&&(place!="")&&(author=="")&&(subject!="")){
+		console.log(person);
+		person=decodeURI(person);
+		console.log(person);
+		place=decodeURI(place);
+		subject=decodeURI(subject);
+		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . FILTER (?c  IN(\"'+person+'\", \"'+place+'\", \"'+subject+'\")) }');
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select * where{ ?a ?b ?c . FILTER (?c  IN(\"'+person+'\", \"'+place+'\", \"'+subject+'\")) }');
 	} else {
 			console.log('No parameters');
 	}
