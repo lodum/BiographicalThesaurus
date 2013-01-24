@@ -76,6 +76,7 @@ $lang['result_status_error'] = 'Invalid query...';
 $lang['RESULT_HEADER'] = 'Result Map and Table';
 $lang['RESULT_FILTER'] = 'The following results were found according to the data that you entered in the search form.';
 $lang['RESULT_RESULTSNUMBER'] = 'Results per page:';
+$lang['RESULT_NUMBER_OF_RESULTS'] = 'Number of Results: ';
 
 //tag_cloud.php
 

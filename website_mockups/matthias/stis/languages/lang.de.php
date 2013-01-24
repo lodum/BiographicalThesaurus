@@ -76,6 +76,7 @@ $lang['result_status_error'] = 'Fehlerhafte Frage...';
 $lang['RESULT_HEADER'] = 'Ergebnis der Suche';
 $lang['RESULT_FILTER'] = 'Die folgenden Ergebnisse konnte das System anhand Ihrer Eingaben finden.';
 $lang['RESULT_RESULTSNUMBER'] = 'Anzahl Ergebnisse pro Seite:';
+$lang['RESULT_NUMBER_OF_RESULTS'] = 'Anzahl der Treffer: ';
 
 //tag_cloud.php
 

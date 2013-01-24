@@ -185,7 +185,7 @@ function displayResults() {
 	var respp = document.getElementById("resultsPerPage");	
 	var resppValue = parseInt(respp.options[respp.selectedIndex].text);
 	var minIndex = (currentPage-1)*resppValue;
-	var pagesHtml = "Total number of results: " +results.results.bindings.length+"<br\>";
+	var pagesHtml = results.results.bindings.length+"<br\>";
 	var numberOfPages = Math.ceil(results.results.bindings.length / resppValue);
 	
 	var i = 1;
@@ -208,8 +208,9 @@ function displayResults() {
 	
 	if(j < numberOfPages)
 		pagesHtml +=" ...";
-	      
+	     
 	$("#pages").html(pagesHtml);
+	$("#pagesContainer").show();
 	
 	$("#resultdiv").empty();
 	//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
@@ -532,6 +533,7 @@ function getParam(variable) {
 	}
 	return (false);
 }
+
 
 // function submitQueries4Autocomplete() {
 	// var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";

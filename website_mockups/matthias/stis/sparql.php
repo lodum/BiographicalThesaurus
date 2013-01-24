@@ -92,7 +92,9 @@ include 'common.php';
               <li><a href="#contact">Contact</a></li>
 -->
             </ul>
-			<div style="padding: 10px 20px 10px;" align="right" class="text"><?php echo $lang['SELECT LANGUAGE']; ?> <a href="?lang=de"><img src="languages/flags/de.png" alt="Deutsch"/></a> <a href="?lang=en"><img src="languages/flags/gb.png" alt="English"/></a></div>
+			<div style="padding: 10px 20px 10px;" align="right" class="text"><?php echo $lang['SELECT LANGUAGE']; ?> 
+                <a href="?lang=de"  title="Deutsch"><img src="languages/flags/de.png" alt="Deutsch"/></a> 
+                <a href="?lang=en"  title="English"><img src="languages/flags/gb.png" alt="English"/></a></div>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -128,7 +130,9 @@ select * where{
 			<option>50</option>
 		</select>
     </div>
-	<div id="pages" align="center"></div>
+    <div id="pagesContainer" align="center" style="display:none">
+                <?php echo $lang['RESULT_NUMBER_OF_RESULTS'];?> <span id="pages"></span>
+     </div>
 	<div id="resultdiv"></div>
 			
     </div>
