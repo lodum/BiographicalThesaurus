@@ -217,7 +217,8 @@ function displayResults() {
 	//write table head
 	htmlString += "<tr>";
 	$.each(results.head.vars, function(index2, value2) {
-		htmlString += "<th>?" + value2 + "</th>";
+
+		htmlString += "<th>" + value2 + "</th>";
 	});
 	htmlString += "</tr>";
 
@@ -442,8 +443,8 @@ function startQuery(map2){
 		//searchstring=searchstring.replace(/%20/g," ");
 		searchstring=decodeURI(searchstring);
 		console.log(searchstring);
-		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
-		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
+		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct (?c as ?Result) (?a as ?Link) where{ ?a ?b ?c . filter regex(?c,\"'+searchstring+'\",\'i\')}');
 	} else if ((searchstring=="")&&(person!="")&&(publication=="")&&(place=="")&&(author=="")&&(subject=="")){
 		console.log(person);
 		person=decodeURI(person);
@@ -532,61 +533,61 @@ function getParam(variable) {
 	return (false);
 }
 
-function submitQueries4Autocomplete() {
-	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
-	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
-	var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
-	var request = {
-		accept : 'application/sparql-results+json'
-	};
-	//get sparql query from textarea
-	request.query = "prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct ?a where{ ?c  gnd:preferredNameForThePerson ?a.}";
-	console.log('Start Ajax');
-	//sent request
-	$.ajax({
-		dataType : "jsonp",
-		//some sparql endpoints do only support "sparql-results+json" instead of simply "json"
-		beforeSend : function(xhrObj) {
-			xhrObj.setRequestHeader("Accept", "application/sparql-results+json");
-		},
-		data : request,
-		url : queryUrl,
-		success : callbackAutocompletePerson,
-		error : function(request, status, error) {
-			//alert(request.responseText);
-						var message = "autocomplete error: "+request.responseText +"\n"+ error + "\nstatus: "+status;
-	-					//$("#error").html(message);
-						console.log(message);
-
-		}
-	});
-}
-
-var persons;
-// = ["Annette von Droste-Hülshoff", "Bernd Stelter"];;
-
-function callbackAutocompletePerson(results) {
-	console.log('Autocomplete Person-callback');
-
-	//result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
-	persons = new Array();
-	for (var i = 0, j = results.results.bindings.length; i < j; i++) {
-		persons[i] = results.results.bindings[i].a;
-	};
-
-	$("#person").autocomplete({
-		source : persons,
-		minLength : 2
-	});
-
-}
-
-// function filterData( data ) {
-	// response($.map(data.results, function(item) {
-		// return {
-			// label : item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
-			// value : item.name
+// function submitQueries4Autocomplete() {
+	// var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+	// //sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
+	// var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
+	// var request = {
+		// accept : 'application/sparql-results+json'
+	// };
+	// //get sparql query from textarea
+	// request.query = "prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct ?a where{ ?c  gnd:preferredNameForThePerson ?a.}";
+	// console.log('Start Ajax');
+	// //sent request
+	// $.ajax({
+		// dataType : "jsonp",
+		// //some sparql endpoints do only support "sparql-results+json" instead of simply "json"
+		// beforeSend : function(xhrObj) {
+			// xhrObj.setRequestHeader("Accept", "application/sparql-results+json");
+		// },
+		// data : request,
+		// url : queryUrl,
+		// success : callbackAutocompletePerson,
+		// error : function(request, status, error) {
+			// //alert(request.responseText);
+						// var message = "autocomplete error: "+request.responseText +"\n"+ error + "\nstatus: "+status;
+	// -					//$("#error").html(message);
+						// console.log(message);
+// 
 		// }
-	// }));
+	// });
 // }
+// 
+// var persons;
+// // = ["Annette von Droste-Hülshoff", "Bernd Stelter"];;
+// 
+// function callbackAutocompletePerson(results) {
+	// console.log('Autocomplete Person-callback');
+// 
+	// //result is a json object http://de.wikipedia.org/wiki/JavaScript_Object_Notation
+	// persons = new Array();
+	// for (var i = 0, j = results.results.bindings.length; i < j; i++) {
+		// persons[i] = results.results.bindings[i].a;
+	// };
+// 
+	// $("#person").autocomplete({
+		// source : persons,
+		// minLength : 2
+	// });
+// 
+// }
+// 
+// // function filterData( data ) {
+	// // response($.map(data.results, function(item) {
+		// // return {
+			// // label : item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+			// // value : item.name
+		// // }
+	// // }));
+// // }
 

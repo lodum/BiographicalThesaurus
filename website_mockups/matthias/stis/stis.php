@@ -188,9 +188,10 @@ include 'common.php';
     <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script language="JavaScript1.2">
     
-  $(function() {
+     
  
-    $( "#searchstring" ).autocomplete({
+    $( "#searchstring" ).autocomplete(
+        {
       source: function( request, response ) {
           //String.split()
           var regex = request.term.split(" ");
@@ -199,7 +200,7 @@ include 'common.php';
             filter+="filter regex(?c, \""+regex[i]+"\",\"i\") ";
           };
           
-          var query ="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct (?c as ?Result) where{ ?a ?b ?c . "+ filter +"} LIMIT 20";
+          var query ="prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select distinct (?c as ?Result) where{ ?a ?b ?c . "+ filter +"} LIMIT 7";
           
         $.ajax({
           url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
@@ -227,9 +228,12 @@ include 'common.php';
         });
       },
       minLength: 2,
-      delay: 500
-    });
-  });
+      delay: 200
+    }
+    );
+ // });
+ 
+
   </script>
 
   </body>

@@ -238,10 +238,9 @@ include 'common.php';
     <script src="../assets/js/bootstrap-typeahead.js"></script> 
 
     <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="search_autocomplete.js" type="text/javascript"></script>
     
-    <script>
-        submitQueries4Autocomplete()
-    </script>
+
  
 
 <script>
@@ -259,5 +258,8 @@ include 'common.php';
 	
 });
 </script>
+
+
+
   </body>
 </html>
