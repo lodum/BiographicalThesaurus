@@ -35,6 +35,13 @@ include 'common.php';
 		}
 
     </style>
+    
+     <style>
+        .ui-autocomplete-loading {
+            background: white url('images/ajax-loader.gif') right center no-repeat;
+        }
+
+    </style>
 
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
