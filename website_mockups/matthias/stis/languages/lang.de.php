@@ -86,7 +86,5 @@ $lang['RESULT_NUMBER_OF_RESULTS'] = 'Anzahl der Treffer: ';
 $lang['CLOUD_TITLE'] = 'Tag Cloud';
 $lang['CLOUD_HELP'] = 'Die Tag Cloud gibt die Namen der zehn Autoren aus, die in unserem Datenbestand die meisten Publikationen veröffentlicht haben.';
 
-
-
 ?>
 

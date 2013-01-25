@@ -62,8 +62,11 @@ $lang['SEARCH_PUB2'] = 'Title';
 $lang['SEARCH_TIME'] = 'Time period that is of interest to you (enter year)';
 $lang['SEARCH_PLACE'] = 'Place you are interested in';
 $lang['SEARCH_PLACE2'] = 'Place';
+$lang['SEARCH_OCC'] = 'Occupation';
+$lang['SEARCH_OCC2'] = 'Occupation of a person';
 $lang['SEARCH_SUBMIT'] = 'Submit';
 
+	  
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpoint</h1><br/><h3>Query Submission Form</h3>';
 $lang['SPARQL_SUBMIT'] = 'Submit Query';
