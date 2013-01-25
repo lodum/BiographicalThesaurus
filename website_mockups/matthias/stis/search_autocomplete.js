@@ -56,11 +56,12 @@ var limit =" Limit 7";
           var regex = request.term.split(" ");
           var filter="";
           for(var i=0,j=regex.length; i<j; i++){
-            filter+="filter regex(?c, \""+regex[i]+"\",\"i\") ";
+            filter+="\nfilter regex(?Result, \""+regex[i]+"\",\"i\"). ";
           };
           
           var query = prefixes+
-          			  "select distinct ?Result where{ ?c  gnd:preferredNameForThePerson ?Result.}"+limit;
+          			  "select distinct ?Result where{ ?c  gnd:preferredNameForThePerson ?Result."
+          			  	+filter+"}"+limit;
         $.ajax({
           url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
           dataType: "jsonp",
@@ -103,7 +104,7 @@ var limit =" Limit 7";
           };
           
           var query = prefixes+
-          					"select distinct (?a as ?publicationUri) ?title ?name where{\r\n" + 
+          					"select distinct ?name where{\r\n" + 
 		"{\r\n" + 
 		" ?a a stis:Publication;\r\n" + 
 		" <http://iflastandards.info/ns/isbd/elements/P1004> ?title\r\n" + 
