@@ -303,10 +303,14 @@ var point2lon;
 
 
 function cb_place(json) {
+	try{
 		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
 		point1lat=json[0].lat;
 		point1lon=json[0].lon;
-		//marker.bindPopup("Birth place").openPopup();		
+		//marker.bindPopup("Birth place").openPopup();
+    }catch (e){
+    	console.log("no place found");
+    }
 };
 
 
@@ -494,9 +498,13 @@ function startQuery(map2){
 		if(lat!="" && lon!=""){ 
 			var marker = L.marker([lat, lon]).addTo(map);
 		}else{
+			try{
 		    var s = document.createElement('script');
 			s.src = 'http://nominatim.openstreetmap.org/search?q='+place+'&format=json&json_callback=cb_place';
 			document.getElementsByTagName('head')[0].appendChild(s);
+			}catch(e){
+				cosole.log("no places found");
+			}
 		}
 		//console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');
 		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');
