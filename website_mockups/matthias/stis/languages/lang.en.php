@@ -19,8 +19,8 @@ $lang['MENU_SPARQL'] = 'SPARQL Endpoint';
 $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="en">';
 $lang['STIS_PAGE_TITLE'] = 'Biographical Thesaurus NRW';
 $lang['STIS_HERO_HEADER'] = 'Welcome';
-$lang['STIS_HERO_TEXT'] = 'This is the Biographical Thesaurus NRW. Here, you will find information on persons, authors and publications. Explore the biographical search application about people with reference to North Rhine-Westphalia (NRW)';
-$lang['STIS_HERO_BUTTON1'] = 'Or go to map and search form! &raquo;';
+$lang['STIS_HERO_TEXT'] = 'This is the Biographical Thesaurus NRW. Here, you will find information on persons which have connections to North Rhine-Westphalia (NRW)';
+$lang['STIS_HERO_BUTTON1'] = 'Go to map and search form! &raquo;';
 $lang['STIS_HERO_FREE_SEARCH'] = 'Try the free text search:';
 $lang['STIS_HERO_FREE_SEARCH_TEXT'] = 'Enter your search string here';
 $lang['STIS_HERO_BUTTON2'] = 'Start free text search! &raquo;';
@@ -42,26 +42,26 @@ $lang['STIS_CHILDREN'] = '<h2>Childrens access</h2>
           <p><a class="btn" href="#">Let\'s play! &raquo;</a></p>';
 
 $lang['STIS_TAG_CLOUD'] = '<h2>Tag cloud</h2>
-          <p>Explore a tagcloud that features prominent entries in the data.</p>
+          <p>Explore a tagcloud that features prominent persons in the data.</p>
           <p><a class="btn" href="tag_cloud.php">Show me the cloud &raquo;</a></p>';
 
 //search.php		  
 $lang['SEARCH_MAP'] = '<h1>Thesaurus Search Map and Form</h1>
-		<p>Click on the map to find all datasets that have a relationship to the location that you clicked on.</p>';
+		<p>Click on the map to find all persons that have a relationship to the location that you clicked on.</p>';
 
-$lang['SEARCH_FORM'] = '<p>Search for authors, publications, time and/or places in which you are interested.</br> The results will be published on the map and in a table.</p>';
+$lang['SEARCH_FORM'] = '<p>Search for persons, persons with a certain occupation or persons who lived at a certain place.</br></p>';
 $lang['SEARCH_TITLE'] = 'Search form';
 $lang['SEARCH_SUBJECT'] = 'Subject / Field of interest';
 $lang['SEARCH_SUBJECT2'] = 'Enter a subject';
-$lang['SEARCH_POI'] = 'Person of interest';
-$lang['SEARCH_POI2'] = 'Name of the Person';
+$lang['SEARCH_POI'] = 'Person';
+$lang['SEARCH_POI2'] = 'Name of the person';
 $lang['SEARCH_AUTHOR'] = 'Name of an author';
 $lang['SEARCH_AUTHOR2'] = 'Author';
 $lang['SEARCH_PUB'] = 'Publication title';
 $lang['SEARCH_PUB2'] = 'Title';
 $lang['SEARCH_TIME'] = 'Time period that is of interest to you (enter year)';
-$lang['SEARCH_PLACE'] = 'Place you are interested in';
-$lang['SEARCH_PLACE2'] = 'Place';
+$lang['SEARCH_PLACE'] = 'Place';
+$lang['SEARCH_PLACE2'] = 'Place of interest';
 $lang['SEARCH_OCC'] = 'Occupation';
 $lang['SEARCH_OCC2'] = 'Occupation of a person';
 $lang['SEARCH_SUBMIT'] = 'Submit';

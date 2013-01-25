@@ -42,7 +42,7 @@ $lang['STIS_CHILDREN'] = '<h2>Zugang für Kinder</h2>
           <p><a class="btn" href="#">Zum Spiel! &raquo;</a></p>';
 
 $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
-          <p>Erkunde die Tag Cloud und finde wichtige Einträge in den Daten.</p>
+          <p>Lassen Sie sich eine Tag Cloud über Personen anzeigen.</p>
           <p><a class="btn" href="tag_cloud.php">Zeige Cloud &raquo;</a></p>';
 
 //search.php
