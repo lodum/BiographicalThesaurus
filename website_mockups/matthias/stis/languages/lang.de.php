@@ -19,7 +19,7 @@ $lang['MENU_SPARQL'] = 'SPARQL Endpunkt';
 $lang['STIS_LANGUAGE'] = '<meta name="Content-Language" content="de">';
 $lang['STIS_PAGE_TITLE'] = 'Biographischer Thesaurus NRW';
 $lang['STIS_HERO_HEADER'] = 'Willkommen';
-$lang['STIS_HERO_TEXT'] = 'Dies ist der biographische Thesaurus NRW. Hier finden Sie Informationen über Personen, Autoren und Veröffentlichungen. Erkunden Sie die biographische Suche nach Personen, die in einer Verbindung zu Nordrhein-Westfalen (NRW) stehen.';
+$lang['STIS_HERO_TEXT'] = 'Dies ist der biographische Thesaurus NRW. Erkunden Sie die biographische Suche nach Personen, die in einer Verbindung zu Nordrhein-Westfalen (NRW) stehen.';
 $lang['STIS_HERO_BUTTON1'] = 'Zur Karten- und Formularsuche &raquo;';
 $lang['STIS_HERO_FREE_SEARCH'] = 'Probieren Sie die Freitextsuche:';
 $lang['STIS_HERO_FREE_SEARCH_TEXT'] = 'Geben Sie hier Ihre Anfrage ein';
@@ -47,22 +47,25 @@ $lang['STIS_TAG_CLOUD'] = '<h2>Tag Cloud</h2>
 
 //search.php
 $lang['SEARCH_MAP'] = '<h1>Thesaurus Landkarte und Suchformular</h1>
-		<p>Klicken sie auf einen Ort in der Karte um Daten um Informationen zu diesem Ort zu bekommen.</p>';
+		<p>Klicken sie auf einen Ort in der Karte um Personen zu finden, die etwas mit diesem Ort zu tun haben.</p>';
 
-$lang['SEARCH_FORM'] = '<p>Suchen Sie nach Themen, Personen, Autoren, Publikationen, Zeit oder Ort zu einem Thema das Sie interessiert. Füllen Sie bitte pro Anfrage nur ein Feld (bzw. 2 bei der Zeitintervallsuche).</br></p>';
+$lang['SEARCH_FORM'] = '<p>Suchen Sie hier nach Personen, nach allen Personen eines Berufsstandes oder nach Personen, die an einem Ort gelebt haben.</br></p>';
 $lang['SEARCH_TITLE'] = 'Suchformular';
 $lang['SEARCH_SUBJECT'] = 'Thema';
 $lang['SEARCH_SUBJECT2'] = 'Geben Sie ein Thema ein';
-$lang['SEARCH_POI'] = 'Person (Suche nach Lebensdaten einer Person)';
+$lang['SEARCH_POI'] = 'Person';
 $lang['SEARCH_POI2'] = 'Name einer Person';
 $lang['SEARCH_AUTHOR'] = 'Autor (gibt die Publikationen eines Autors zurück)';
 $lang['SEARCH_AUTHOR2'] = 'Name eines Autors';
 $lang['SEARCH_PUB'] = 'Publikation';
 $lang['SEARCH_PUB2'] = 'Name einer Publikation';
-$lang['SEARCH_TIME'] = 'Zeitintervall, mit dem Ergebnisse gefiltert werden (Jahr eingeben)';
-$lang['SEARCH_PLACE'] = 'Ort';
+$lang['SEARCH_TIME'] = 'Zeitintervall in dem die Person gelebt hat';
+$lang['SEARCH_PLACE'] = 'Ort, der mit der Person zu tun hat';
 $lang['SEARCH_PLACE2'] = 'Ort';
+$lang['SEARCH_OCC'] = 'Beruf';
+$lang['SEARCH_OCC2'] = 'Beruf der Person';
 $lang['SEARCH_SUBMIT'] = 'Abschicken';
+
 	  
 //sparql.php
 $lang['SPARQL_TOP'] = '<h1>Thesaurus SPARQL Endpunkt</h1><br/><h3>Formular zum Versenden von Queries</h3>';

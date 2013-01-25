@@ -149,9 +149,9 @@ include 'common.php';
         
       </div>-->
         <div class="row">
-		<div class="span4">
+		<!--<div class="span4">
 			<?php echo $lang['STIS_SPARQL']; ?>
-        </div>
+        </div>-->
         
         <div class="span4">
 			<?php echo $lang['STIS_TAG_CLOUD']; ?>

@@ -89,12 +89,13 @@ include 'common.php';
 
 		function goToResults() {
 			var person = document.getElementById('person').value;
-			var publication = document.getElementById('publication').value;
+			//var publication = document.getElementById('publication').value;
 			var place = document.getElementById('place').value;
 			var beginDate = document.getElementById('beginDate').value;
 			var endDate = document.getElementById('endDate').value;
-			var author = document.getElementById('author').value;
-			var subject = document.getElementById('subject').value;
+			var occ = document.getElementById('occ').value;
+			//var author = document.getElementById('author').value;
+			//var subject = document.getElementById('subject').value;
 			var lat;
 			var lon;
 			if (marker!=null){
@@ -107,7 +108,7 @@ include 'common.php';
 			
 			console.log(lat);
 			console.log(lon);
-			location.href = "results.php?person=" + person + "&publication=" + publication + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + author + "&subject=" + subject + "&lat=" + lat + "&lon=" + lon;
+			location.href = "results.php?person=" + person + "&place=" + place + "&beginDate=" + beginDate + "&endDate=" + endDate + "&author=" + "&lat=" + lat + "&lon=" + lon + "&occ=" + occ;
 		}
 		
         document.onkeydown = function(event) {
@@ -203,20 +204,22 @@ include 'common.php';
 			<form>
 				<fieldset>
 				<legend><?php echo $lang['SEARCH_TITLE']; ?></legend>
-				<label><?php echo $lang['SEARCH_SUBJECT']; ?></label>
-				<input id="subject" type="text" placeholder="<?php echo $lang['SEARCH_SUBJECT2']; ?>">
+				<!--<label><?php echo $lang['SEARCH_SUBJECT']; ?></label>
+				<input id="subject" type="text" placeholder="<?php echo $lang['SEARCH_SUBJECT2']; ?>">-->
 				<label><?php echo $lang['SEARCH_POI']; ?></label>
 				<input id="person" type="text" placeholder="<?php echo $lang['SEARCH_POI2']; ?>">
+				<label><?php echo $lang['SEARCH_OCC']; ?></label>
+				<input id="occ" type="text" placeholder="<?php echo $lang['SEARCH_OCC2']; ?>">
 				<!--<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
 				<input type="text" placeholder="Happened at which location?">
 				<input type="text" placeholder="Insert timestamp or event here">-->
-				<label><?php echo $lang['SEARCH_AUTHOR']; ?></label>
-				<input id="author" type="text" placeholder="<?php echo $lang['SEARCH_AUTHOR2']; ?>">
+				<!--<label><?php echo $lang['SEARCH_AUTHOR']; ?></label>
+				<input id="author" type="text" placeholder="<?php echo $lang['SEARCH_AUTHOR2']; ?>">-->
 				<!--<input type="text" placeholder="Co-Author">-->
-				<label><?php echo $lang['SEARCH_PUB']; ?></label>
-				<input id="publication" type="text" placeholder="<?php echo $lang['SEARCH_PUB2']; ?>">
+				<!--<label><?php echo $lang['SEARCH_PUB']; ?></label>
+				<input id="publication" type="text" placeholder="<?php echo $lang['SEARCH_PUB2']; ?>">-->
 				<label><?php echo $lang['SEARCH_PLACE']; ?></label>
 				<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
 				<label><?php echo $lang['SEARCH_TIME']; ?></label>
