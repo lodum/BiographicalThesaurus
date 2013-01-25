@@ -64,8 +64,8 @@ include 'common.php';
 
      <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 
-	
-  
+    
+     <script src="query.js" type="text/javascript"></script>
     <script>
 
 		function init() {
@@ -144,8 +144,8 @@ include 'common.php';
 		}
 
     </script>
-               <!-- dojo framework, documentation: http://dojotoolkit.org-->
-   <script src="query.js" type="text/javascript"></script>
+
+
 
     <script>
 		dojoConfig = {

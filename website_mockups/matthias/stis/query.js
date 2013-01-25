@@ -2,6 +2,9 @@ var searchResults;
 var currentPage;
 var map;
 
+  //A missing console causes errors in Internet Explorer, this line of code fixes the issue:
+ if (!window.console) console = {log: function() {}}; 
+ 
 function gotoPage(number){
 	currentPage=number;
 	displayResults();
@@ -298,6 +301,15 @@ var point1lon;
 var point2lat;
 var point2lon;
 
+
+function cb_place(json) {
+		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
+		point1lat=json[0].lat;
+		point1lon=json[0].lon;
+		//marker.bindPopup("Birth place").openPopup();		
+};
+
+
 function cb1(json) {
 		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
 		point1lat=json[0].lat;
@@ -475,11 +487,17 @@ function startQuery(map2){
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?a as ?publicationUri) (?b as ?name) where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b;} union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
 		submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?a as ?publicationUri) (?b as ?name) where {{ ?a a stis:Publication; <http://iflastandards.info/ns/isbd/elements/P1004> ?b;} union { ?a a stis:Publication; gnd:preferredNameForTheWork ?b.} FILTER regex(?b, \"'+publication+'\", "i")}');
 	} else if ((searchstring=="")&&(person=="")&&(publication=="")&&(place!="")&&(author=="")&&(subject=="")){
-		var marker = L.marker([lat, lon]).addTo(map);
 		console.log(place);
 		place=decodeURI(place);
 		//place=place.replace(/%20/g," ");
 		console.log(place);
+		if(lat!="" && lon!=""){ 
+			var marker = L.marker([lat, lon]).addTo(map);
+		}else{
+		    var s = document.createElement('script');
+			s.src = 'http://nominatim.openstreetmap.org/search?q='+place+'&format=json&json_callback=cb_place';
+			document.getElementsByTagName('head')[0].appendChild(s);
+		}
 		//console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');
 		//submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select ?a ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');
 		console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> select (?a as ?locationUri) ?locationName where{{	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .}union{	?a gnd:placeOfBirth ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDeath ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfBusiness ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:associatedPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:characteristicPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfConferenceOrEvent ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:otherPlace ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:place ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfManufacture ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfExile ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfDiscovery ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfCustody ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.}union{	?a gnd:placeOfActivity ?location.        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.} FILTER regex(?locationName, \"'+place+'\",\"i\")}');

@@ -225,7 +225,7 @@ include 'common.php';
                     }));
                 },
            error: function (request, status, error) {
-                 alert(request.responseText+ error);
+                 console.log(request.responseText+ error);
                   //$("#error").html(request.responseText);
             }
         });
