@@ -65,6 +65,7 @@ $lang['SEARCH_PLACE2'] = 'Place of interest';
 $lang['SEARCH_OCC'] = 'Occupation';
 $lang['SEARCH_OCC2'] = 'Occupation of a person';
 $lang['SEARCH_SUBMIT'] = 'Submit';
+$lang['SEARCH_FOREXAMPLE:'] = 'Example: ';
 
 	  
 //sparql.php
@@ -80,6 +81,8 @@ $lang['RESULT_HEADER'] = 'Result Map and Table';
 $lang['RESULT_FILTER'] = 'The following results were found according to the data that you entered in the search form.';
 $lang['RESULT_RESULTSNUMBER'] = 'Results per page:';
 $lang['RESULT_NUMBER_OF_RESULTS'] = 'Number of Results: ';
+$lang['RESULT_GO_BACK'] = 'go back';
+$lang['RESULT_START_NEW'] = 'start new search';
 
 //tag_cloud.php
 

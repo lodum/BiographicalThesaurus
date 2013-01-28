@@ -246,48 +246,7 @@ var limit =" Limit 7";
           
           var query = prefixes+
 			"select distinct (?locationName as ?Result) where{\r\n" + 
-			"{\r\n" + 
-			"	?a <http://iflastandards.info/ns/isbd/elements/P1016> ?locationName .\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfBirth ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfDeath ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfBusiness ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:associatedPlace ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:characteristicPlace ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfConferenceOrEvent ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:otherPlace ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:place ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfManufacture ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfExile ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfDiscovery ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfCustody ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}union{\r\n" + 
-			"	?a gnd:placeOfActivity ?location.\r\n" + 
-			"        ?location gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n" + 
-			"}\r\n" + 
+              "?a gnd:preferredNameForThePlaceOrGeographicName ?locationName.\r\n"+
 			"FILTER regex(?locationName, \""+request.term+"\",\"i\")\r\n" + 
 			"}" + limit;     				
         $.ajax({
@@ -321,4 +280,49 @@ var limit =" Limit 7";
     );
     
     
+     $( "#occ" ).autocomplete(
+        {
+      source: function( request, response ) {
+          //String.split()
+          var regex = request.term.split(" ");
+          var filter="";
+          for(var i=0,j=regex.length; i<j; i++){
+            filter+="filter regex(?c, \""+regex[i]+"\",\"i\") ";
+          };
+          
+          var query = prefixes+
+			"select distinct (?occupationName as ?Result) where{\r\n" + 
+              "?a gnd:professionOrOccupation ?occupationEntity.\r\n"+
+              "?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName.\r\n"+
+			"FILTER regex(?occupationName, \""+request.term+"\",\"i\").\r\n" + 
+			"}" + limit;     				
+        $.ajax({
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          dataType: "jsonp",
+          beforeSend: function(xhrObj){
+                 xhrObj.setRequestHeader("Accept","application/sparql-results+json");
+                 console.log(query);
+          },
+          data: { accept : 'application/sparql-results+json' ,
+                  query : query
+                 },
+          success: 
+                function filterData( data ) {
+                    response($.map(data.results.bindings, function(item) {
+                        return {
+                            label : item.Result.value,
+                            value : item.Result.value
+                        }
+                    }));
+                },
+           error: function (request, status, error) {
+                 console.log(request.responseText+ error);
+                  //$("#error").html(request.responseText);
+            }
+        });
+      },
+      minLength: 0,
+      delay: 300
+    }
+    );
     

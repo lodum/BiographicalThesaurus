@@ -208,8 +208,10 @@ include 'common.php';
 				<input id="subject" type="text" placeholder="<?php echo $lang['SEARCH_SUBJECT2']; ?>">-->
 				<label><?php echo $lang['SEARCH_POI']; ?></label>
 				<input id="person" type="text" placeholder="<?php echo $lang['SEARCH_POI2']; ?>">
+				<I>&nbsp;<?php echo $lang['SEARCH_FOREXAMPLE:']; ?>Adenauer, Konrad</I>
 				<label><?php echo $lang['SEARCH_OCC']; ?></label>
 				<input id="occ" type="text" placeholder="<?php echo $lang['SEARCH_OCC2']; ?>">
+				<I>&nbsp;<?php echo $lang['SEARCH_FOREXAMPLE:']; ?>Politiker / Lehrer </I>
 				<!--<input type="text" placeholder="Insert text here...">
 				<label>Event</label>
 				<input type="text" placeholder="Event description">
@@ -222,11 +224,12 @@ include 'common.php';
 				<input id="publication" type="text" placeholder="<?php echo $lang['SEARCH_PUB2']; ?>">-->
 				<label><?php echo $lang['SEARCH_PLACE']; ?></label>
 				<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
+				<I>&nbsp;<?php echo $lang['SEARCH_FOREXAMPLE:']; ?>K&ouml;ln</I>
 				<label><?php echo $lang['SEARCH_TIME']; ?></label>
 	            <select name="beginDate" id="beginDate"></select> 
                 -
                 <select name="endDate" id="endDate"></select>     
-				
+                <I>&nbsp;<?php echo $lang['SEARCH_FOREXAMPLE:']; ?>1850-1980</I>				
 				</fieldset>
 			</form>
 	<button class="btn btn-primary" onclick="goToResults()"><?php echo $lang['SEARCH_SUBMIT']; ?></button>

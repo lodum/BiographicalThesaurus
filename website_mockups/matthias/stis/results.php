@@ -156,7 +156,6 @@ include 'common.php';
 		</div>
       </div>
     </div>
-
 	<div class="container">
 		<h1><?php echo $lang['RESULT_HEADER']; ?></h1>
 	</div>
@@ -181,17 +180,17 @@ include 'common.php';
 	-->
 		
     </div>
-   
+  
+
     <div class="container">
+
 			<!--<h1>Thesaurus Search Results</h1>-->
 			<p><?php echo $lang['RESULT_FILTER']; ?></p>
-
-			
-			<div id="error" style="color:red"></div>
-
-			<div id="resultsPerPageContainder" align="right">
-			    <?php echo $lang['RESULT_RESULTSNUMBER']; ?>
-			    <select id="resultsPerPage" style="width: 50pt" onchange="gotoPage(1)">
+                     <span style="padding-left:  0pt"><a href="#" onclick="history.go(-1);return false;">&lt;&lt; <?php echo $lang['RESULT_GO_BACK']; ?></a></span>
+                     <span style="padding-left:  20pt"><a href="search.php">&lt;&lt; <?php echo $lang['RESULT_START_NEW']; ?></a></span>
+			<div id="resultsPerPageContainder" align="right" ">
+                <?php echo $lang['RESULT_RESULTSNUMBER']; ?>
+                <select id="resultsPerPage" style="width: 50pt" onchange="gotoPage(1)">
                       <option>10</option>
                       <option selected>20</option>
                       <option>30</option>
@@ -199,6 +198,9 @@ include 'common.php';
                       <option>50</option>
                  </select> 
              </div>
+			<div id="error" style="color:red"></div>
+
+
 			 <div id="loadingDiv"><img src="images/ajax-loader.gif"></div>
             <div id="pagesContainer" align="center" style="display:none">
                 <?php echo $lang['RESULT_NUMBER_OF_RESULTS'];?> <span id="pages"></span>
