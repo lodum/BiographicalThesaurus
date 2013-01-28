@@ -65,6 +65,7 @@ $lang['SEARCH_PLACE2'] = 'Ort';
 $lang['SEARCH_OCC'] = 'Beruf';
 $lang['SEARCH_OCC2'] = 'Beruf der Person';
 $lang['SEARCH_SUBMIT'] = 'Abschicken';
+$lang['SEARCH_FOREXAMPLE:'] = 'Beispiel: ';
 
 	  
 //sparql.php
@@ -80,6 +81,8 @@ $lang['RESULT_HEADER'] = 'Ergebnis der Suche';
 $lang['RESULT_FILTER'] = 'Die folgenden Ergebnisse konnte das System anhand Ihrer Eingaben finden.';
 $lang['RESULT_RESULTSNUMBER'] = 'Anzahl Ergebnisse pro Seite:';
 $lang['RESULT_NUMBER_OF_RESULTS'] = 'Anzahl der Treffer: ';
+$lang['RESULT_GO_BACK'] = 'zur&uuml;ck';
+$lang['RESULT_START_NEW'] = 'eine neue Suche beginnen';
 
 //tag_cloud.php
 

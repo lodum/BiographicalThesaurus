@@ -303,22 +303,27 @@ var point2lon;
 
 
 function cb_place(json) {
+		try{
 		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
 		point1lat=json[0].lat;
 		point1lon=json[0].lon;
-		//marker.bindPopup("Birth place").openPopup();		
+		//marker.bindPopup("Birth place").openPopup();
+		}catch(e){console.log('Place cannot be displayed');}	
 };
 
 
 function cb1(json) {
-		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
-		point1lat=json[0].lat;
-		point1lon=json[0].lon;
-		marker.bindPopup("Birth place").openPopup();
+		try{
+			var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
+			point1lat=json[0].lat;
+			point1lon=json[0].lon;
+			marker.bindPopup("Birth place").openPopup();
+		}catch(e){console.log('Birth place cannot be displayed')}
 			
 };
 
 function cb2(json) {
+		try{
 		var marker = L.marker([json[0].lat, json[0].lon]).addTo(map);
 		point2lat=json[0].lat;
 		point2lon=json[0].lon;
@@ -343,7 +348,9 @@ function cb2(json) {
 		console.log(meanlat + " " + meanlon);
 		
 		map.setView([meanlat,meanlon],8);*/
-		
+		}catch(e){
+			console.log('Death place cannot be displayed');
+		}
 };
 
 
@@ -413,6 +420,8 @@ function reloadCloud() {
 	// set colour of text and outline of active tag
 	TagCanvas.textColour = '#000000';
 	TagCanvas.outlineColour = '#ff9999';
+	TagCanvas.dragControl = true;
+	
 	TagCanvas.Start('myCanvas');
 	try {
 		TagCanvas.Start('myCanvas');
