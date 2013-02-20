@@ -19,7 +19,7 @@ var limit =" Limit 7";
           
           
         $.ajax({
-          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt",
           dataType: "jsonp",
           beforeSend: function(xhrObj){
                  xhrObj.setRequestHeader("Accept","application/sparql-results+json");
@@ -63,7 +63,7 @@ var limit =" Limit 7";
           			  "select distinct ?Result where{ ?c  gnd:preferredNameForThePerson ?Result."
           			  	+filter+"}"+limit;
         $.ajax({
-          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt",
           dataType: "jsonp",
           beforeSend: function(xhrObj){
                  xhrObj.setRequestHeader("Accept","application/sparql-results+json");
@@ -152,7 +152,7 @@ var limit =" Limit 7";
 		"}"+limit;
 		
         $.ajax({
-          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt",
           dataType: "jsonp",
           beforeSend: function(xhrObj){
                  xhrObj.setRequestHeader("Accept","application/sparql-results+json");
@@ -204,7 +204,7 @@ var limit =" Limit 7";
 					"FILTER regex(?b, \""+ request.term+"\", \"i\")\r\n" + 
 					"}"+limit
         $.ajax({
-          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt",
           dataType: "jsonp",
           beforeSend: function(xhrObj){
                  xhrObj.setRequestHeader("Accept","application/sparql-results+json");
@@ -250,7 +250,7 @@ var limit =" Limit 7";
 			"FILTER regex(?locationName, \""+request.term+"\",\"i\")\r\n" + 
 			"}" + limit;     				
         $.ajax({
-          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt",
           dataType: "jsonp",
           beforeSend: function(xhrObj){
                  xhrObj.setRequestHeader("Accept","application/sparql-results+json");
@@ -297,7 +297,7 @@ var limit =" Limit 7";
 			"FILTER regex(?occupationName, \""+request.term+"\",\"i\").\r\n" + 
 			"}" + limit;     				
         $.ajax({
-          url: "http://jsonp.lodum.de/?endpoint=http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis",
+          url: "http://jsonp.lodum.de/?endpoint=http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt",
           dataType: "jsonp",
           beforeSend: function(xhrObj){
                  xhrObj.setRequestHeader("Accept","application/sparql-results+json");

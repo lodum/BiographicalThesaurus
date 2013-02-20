@@ -11,7 +11,8 @@ function gotoPage(number){
 }
 
 function submitQuery() {
-	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+//	var endpoint = "http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
+var endpoint ="http://data.uni-muenster.de/bt/sparql"
 	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 	var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 	var request = {
@@ -74,7 +75,7 @@ function submitQuery() {
 
 
 function submitCustomQuery(text){
-		var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+		var endpoint="http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		// var endpoint="http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
@@ -355,7 +356,7 @@ function cb2(json) {
 
 
 function submitTagCloudQuery() {
-	var endpoint = "http://giv-stis-2012.uni-muenster.de:8080/openrdf-sesame/repositories/stis";
+	var endpoint = "http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 	var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 	var request = {
