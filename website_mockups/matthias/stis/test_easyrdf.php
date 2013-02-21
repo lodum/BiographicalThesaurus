@@ -30,7 +30,7 @@ EasyRdf_Namespace::set('stis', 'http://localhost/default#');
 EasyRdf_Namespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
 EasyRdf_Namespace::set('gnd', 'http://d-nb.info/standards/elementset/gnd#');
 $sparql = new EasyRdf_Sparql_Client('http://data.uni-muenster.de/bt/sparql');
-$result = $sparql->query('SELECT ?a ?name WHERE {' . '  ?a ?btLiteralIndex "Dortmund" .' . '  ?a gnd:preferredName ?name.' . '} LIMIT 75');
+$result = $sparql->query('SELECT ?a ?name WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 10');
 
 //Create placesOfDeath Index
 
@@ -48,7 +48,7 @@ foreach ($result as $row) {
 
 $index = Zend_Search_Lucene::open('./index_placesOfDeath');
 $queries = array(
-    'Dortmund'
+    'Oedekoven'
 );
 foreach ($queries as $query) {
     $results = $index->find(Zend_Search_Lucene_Search_QueryParser::parse($query));
