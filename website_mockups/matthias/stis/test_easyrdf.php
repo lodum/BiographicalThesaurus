@@ -29,12 +29,43 @@ require 'vendor/autoload.php';
 
     $sparql = new EasyRdf_Sparql_Client('http://data.uni-muenster.de/bt/sparql');
     $result = $sparql->query(
-      'SELECT * WHERE {'.
-      '  ?deathEntity ?btLiteralIndex "Dortmund" .'.
+      'SELECT ?a ?name WHERE {'.
+      '  ?a ?btLiteralIndex "Dortmund" .'.
+      '  ?a gnd:preferredName ?name.'.
       '} LIMIT 75'
     );
+    
+    
+    include_once '/var/www/php/Zend/Loader.php';
+Zend_Loader::registerAutoload();
+ 
+$index = Zend_Search_Lucene::create('./index_placesOfDeath');
+    
     foreach ($result as $row) {
-        #echo "<li>".link_to($row->label, $row->country)."</li>\n";
-	echo $row->deathEntity;
+		#echo "<li>".link_to($row->label, $row->country)."</li>\n";
+		#echo $row->a." ".$row->name."\n";
+		$document = new Zend_Search_Lucene_Document();
+		$document->addField(Zend_Search_Lucene_Field::UnIndexed('URI', $row->a));
+		$document->addField(Zend_Search_Lucene_Field::Text('placeOfDeath', $row->name));
+		$index->addDocument($document);
     }
+    
+    
+$index = Zend_Search_Lucene::open('./index_placesOfDeath');
+ 
+$queries = array('Dortmund');
+ 
+foreach ($queries as $query) {
+    $results = $index->find(
+            Zend_Search_Lucene_Search_QueryParser::parse($query)
+    );
+    echo "Suche: " . $query . "\n";
+    echo count($results) . " Ergebnisse \n\n";
+    foreach ($results as $result) {
+	echo 'URI: ' . $result->URI . "\n";
+        echo 'Place Of Death: ' . $result->placeOfDeath . "\n";
+        #echo 'Score: ' . $result->score . "\n";
+        echo  "\n";
+    }
+}
 ?>
