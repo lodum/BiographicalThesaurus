@@ -48,10 +48,56 @@ var limit =" Limit 7";
     }
     );
     
+    $( "#person" ).autocomplete({
+		source: function( request, response ) {
+			$.getJSON("placesOfDeath.json", function(data) {
+				//console.log(request);
+				//console.log(data.placesOfDeath[1]);
+				//console.log(data.placesOfDeath.length);
+				//console.log(request.term);
+				var searchstring=request.term;
+				var exp = new RegExp(searchstring,"gi");
+				//for(x in data) {
+					for(var i = 0; i < data.placesOfDeath.length; i++){
+						var test = data.placesOfDeath[i].placeOfDeath.match(exp);
+						if (test!=null){
+							console.log(data.placesOfDeath[i].placeOfDeath);
+							console.log(data.placesOfDeath[i].uri);
+						}
+						//if (data.placesOfDeath[i].placeOfDeath.match(/Honnef/gi)!=-1){
+							//console.log(data.placesOfDeath[i].placeOfDeath);
+						//}
+					}
+					//if(data.placesOfDeath[x]==request) {
+					//return data[x].uri;
+					//console.log('found it');
+				//}
+
+			
+			
+			// data is a JavaScript object now. Handle it as such
+			/*$.each(data.placesOfDeath, function(i, v) {
+				//console.log('here');
+				//var varname=request;
+				//var test = v.placeOfDeath.search(new RegExp('\\+'+varname));
+				//console.log(test);
+				if (v.placeOfDeath.search(new RegExp("/"+request+"/i")) != -1) {
+				console.log(v.uri);
+				return;
+			}
+			});*/
+			
+        
+		});
+		}
+     }
+    );
     
-   $( "#person" ).autocomplete(
+    
+   /*$( "#person" ).autocomplete(
         {
       source: function( request, response ) {
+		  
           //String.split()
           var regex = request.term.split(" ");
           var filter="";
@@ -90,7 +136,7 @@ var limit =" Limit 7";
       minLength: 2,
       delay: 200
     }
-    );
+    );*/
     
     
    $( "#author" ).autocomplete(
