@@ -30,7 +30,7 @@ EasyRdf_Namespace::set('stis', 'http://localhost/default#');
 EasyRdf_Namespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
 EasyRdf_Namespace::set('gnd', 'http://d-nb.info/standards/elementset/gnd#');
 $sparql = new EasyRdf_Sparql_Client('http://data.uni-muenster.de/bt/sparql');
-$result = $sparql->query('SELECT ?a ?name WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 10');
+$result = $sparql->query('SELECT * WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 10');
 
 //Create placesOfDeath Index
 
@@ -39,26 +39,37 @@ foreach ($result as $row) {
     #echo "<li>".link_to($row->label, $row->country)."</li>\n";
     #echo $row->a." ".$row->name."\n";
     $document = new Zend_Search_Lucene_Document();
-    $document->addField(Zend_Search_Lucene_Field::UnIndexed('URI', $row->a));
+    $document->addField(Zend_Search_Lucene_Field::UnIndexed('URI', $row->deathEntity));
     $document->addField(Zend_Search_Lucene_Field::Text('placeOfDeath', $row->name));
     $index->addDocument($document);
 }
 
-//Echo placesOfDeath Index
+//Echo placesOfDeath Index into json file
 
 $index = Zend_Search_Lucene::open('./index_placesOfDeath');
 $queries = array(
-    'Oedekoven'
+    '*'
 );
 foreach ($queries as $query) {
+	Zend_Search_Lucene_Search_Query_Wildcard::setMinPrefixLength(0);
     $results = $index->find(Zend_Search_Lucene_Search_QueryParser::parse($query));
     echo "Suche: " . $query . "\n";
     echo count($results) . " Ergebnisse \n\n";
+    $posts=array();
     foreach ($results as $result) {
         echo 'URI: ' . $result->URI . "\n";
+		$uri=$result->URI;
         echo 'Place Of Death: ' . $result->placeOfDeath . "\n";
+        $placeOfDeath=$result->placeOfDeath;
         #echo 'Score: ' . $result->score . "\n";
         echo "\n";
+        $posts[]=array('uri'=>$uri,'placeOfDeath'=>$placeOfDeath);
     }
+    $response=array();
+    $response['placesOfDeath']=$posts;
+    $fp = fopen('placesOfDeath.json', 'w');
+	fwrite($fp, json_encode($response));
+	fclose($fp);
+    
 }
 ?>
