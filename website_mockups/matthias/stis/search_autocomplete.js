@@ -48,7 +48,26 @@ var limit =" Limit 7";
     }
     );
     
-    $( "#person" ).autocomplete({
+    $( "#place" ).autocomplete({
+		source: function( request, response ) {
+			//console.log('here');
+			var string1=request.term;
+			//console.log(string1);
+			$.ajax({
+				type   :"GET",
+				//data   :"?name=test",
+				url    :'getNameFromIndex.php?name='+string1, 
+				success: function(msg){
+				//alert(msg); // here you can get the result from php page
+					//console.log('did it');
+					console.log(msg);
+				}
+});
+			
+		}
+	});
+    
+    /*$( "#person" ).autocomplete({
 		source: function( request, response ) {
 			$.getJSON("placesOfDeath.json", function(data) {
 				//console.log(request);
@@ -85,16 +104,16 @@ var limit =" Limit 7";
 				console.log(v.uri);
 				return;
 			}
-			});*/
+			});
 			
         
 		});
 		}
      }
-    );
+    );*/
     
     
-   /*$( "#person" ).autocomplete(
+   $( "#person" ).autocomplete(
         {
       source: function( request, response ) {
 		  
@@ -136,7 +155,7 @@ var limit =" Limit 7";
       minLength: 2,
       delay: 200
     }
-    );*/
+    );
     
     
    $( "#author" ).autocomplete(
@@ -280,7 +299,7 @@ var limit =" Limit 7";
     );
     
     
-    $( "#place" ).autocomplete(
+    /*$( "#place" ).autocomplete(
         {
       source: function( request, response ) {
           //String.split()
@@ -323,7 +342,7 @@ var limit =" Limit 7";
       minLength: 2,
       delay: 300
     }
-    );
+    );*/
     
     
      $( "#occ" ).autocomplete(
