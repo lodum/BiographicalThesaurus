@@ -35,7 +35,6 @@ $result = $sparql->query('SELECT * WHERE {?a gnd:placeOfDeath ?deathEntity. ?dea
 //Filter results for duplicates
 //[][0] name; [][1]uri
 
-echo "raw results...\n";
 $rawResult = array(array(2));
 $i=0;
 foreach ($result as $row){
@@ -44,78 +43,13 @@ foreach ($result as $row){
 	$i++;
 }
 
-for ($i=0;$i<sizeof($rawResult);$i++){
-	echo $rawResult[$i][0];
-	echo " " ;
-	echo $rawResult[$i][1];
-	echo "\n";
-}
-
-echo "filtering... \n";
-
 $filteredResult = array();
-
-//echo $filteredResult[0];
-//echo "\n";
 
 for($i=0;$i<sizeof($rawResult);$i++) {
 	$name=$rawResult[$i][0];
-	echo $name;
-	echo "\n";
 	$uri=$rawResult[$i][1];
 	$filteredResult[''.$name.'']=$uri;
-	
-	
-	//$found = false;
-	
-	/*for ($j=0;$j<sizeOf($filteredResult);$j++){
-		echo $rawResult[$i][1];
-		echo " ";
-		echo $filteredResult[$j][1];
-		echo "\n";
-	}*/
-	
-	/*for ($j=0;$j<sizeof($filteredResult);$j++){
-		//$filteredResult[i] = new Array();
-		echo $rawResult[$i][1];
-		echo $filteredResult[$j][1];
-		if ($rawResult[$i][1]==$filteredResult[$j][1]){
-			$found=true;
-			echo "found one ";
-			echo $rawResult[$i][1];
-			echo " ";
-			echo $filteredResult[$j][1];
-			echo "\n";
-		}
-	}*/
-	
-	//echo "size: ";
-	//echo sizeof($filteredResult);
-	//echo "\n";
-	
-	/*if ($found==false){
-		$filteredResult[sizeof($filteredResult)][0]=$rawResult[$i][0];
-		$filteredResult[sizeof($filteredResult)][1]=$rawResult[$i][1];
-	}*/
 }
-
-echo "filtered results \n";
-
-foreach ($filteredResult as $name => $uri){
-	echo $name;
-	echo " ";
-	echo $uri;
-	echo "\n";
-}
-
-/*for ($i=0;$i<sizeof($filteredResult);$i++){
-	echo $filteredResult[$i][0];
-	echo " " ;
-	echo $filteredResult[$i][1];
-	echo "\n";
-}*/
-
-echo "create index \n";
 
 //Create placesOfDeath Index
 $index = Zend_Search_Lucene::create('./index_placesOfDeath');
@@ -126,14 +60,9 @@ foreach ($filteredResult as $name => $uri){
     $document->addField(Zend_Search_Lucene_Field::UnIndexed('URI', $uri));
     $document->addField(Zend_Search_Lucene_Field::Text('placeOfDeath', $name));
     $index->addDocument($document);
-    echo "add ";
-    echo $uri;
-    echo " ";
-    echo $name;
-    echo "\n";
 }
 
-//Echo placesOfDeath Index into json file
+$index->commit();
 
 $index = Zend_Search_Lucene::open('./index_placesOfDeath');
 $queries = array(

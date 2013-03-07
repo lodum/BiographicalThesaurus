@@ -44,6 +44,8 @@ foreach ($result as $row) {
     $index->addDocument($document);
 }
 
+$index->commit();
+
 //Echo placesOfDeath Index into json file
 
 $index = Zend_Search_Lucene::open('./index_placesOfDeath');
