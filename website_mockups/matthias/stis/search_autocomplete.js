@@ -60,9 +60,14 @@ var limit =" Limit 7";
 				success: function(msg){
 				//alert(msg); // here you can get the result from php page
 					//console.log('did it');
+					console.log('here');
 					console.log(msg);
+					var returnobject = JSON.parse(msg);
+					console.log(returnobject);
+					console.log(returnobject.placesOfDeath[0].placeOfDeath);
+					//TODO: Popup dropdown menu
 				}
-});
+			});
 			
 		}
 	});
