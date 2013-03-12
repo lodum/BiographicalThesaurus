@@ -48,6 +48,8 @@ var limit =" Limit 7";
     }
     );
     
+    /*
+    
     $( "#place" ).autocomplete({
 		source: function( request, response ) {
 			//console.log('here');
@@ -80,11 +82,11 @@ var limit =" Limit 7";
 				/*error: function (request, status, error) {
                  console.log(request.responseText+ error);
                   //$("#error").html(request.responseText);
-				}*/
+				}
 			});
 			
 		}
-	});
+	});*/
     
     /*$( "#person" ).autocomplete({
 		source: function( request, response ) {
@@ -318,7 +320,7 @@ var limit =" Limit 7";
     );
     
     
-    /*$( "#place" ).autocomplete(
+    $( "#place" ).autocomplete(
         {
       source: function( request, response ) {
           //String.split()
@@ -361,7 +363,7 @@ var limit =" Limit 7";
       minLength: 2,
       delay: 300
     }
-    );*/
+    );
     
     
      $( "#occ" ).autocomplete(
