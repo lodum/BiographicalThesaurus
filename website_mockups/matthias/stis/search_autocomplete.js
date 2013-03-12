@@ -65,8 +65,22 @@ var limit =" Limit 7";
 					var returnobject = JSON.parse(msg);
 					console.log(returnobject);
 					console.log(returnobject.placesOfDeath[0].placeOfDeath);
-					//TODO: Popup dropdown menu
+					console.log(returnobject.placesOfDeath[0].uri);
+					//var i=0;
+					//console.log(msg.length);
+					response($.map(returnobject.placesOfDeath, function(item) {
+						//console.log(i);
+						//i++;
+                        return {
+                            label : returnobject.placesOfDeath[0].placeOfDeath,
+                            value : "Test"
+                        }
+                    }));
 				}
+				/*error: function (request, status, error) {
+                 console.log(request.responseText+ error);
+                  //$("#error").html(request.responseText);
+				}*/
 			});
 			
 		}
