@@ -30,7 +30,7 @@ EasyRdf_Namespace::set('stis', 'http://localhost/default#');
 EasyRdf_Namespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
 EasyRdf_Namespace::set('gnd', 'http://d-nb.info/standards/elementset/gnd#');
 $sparql = new EasyRdf_Sparql_Client('http://data.uni-muenster.de/bt/sparql');
-$result = $sparql->query('SELECT * WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 10');
+$result = $sparql->query('SELECT * WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 6000');
 
 //Filter results for duplicates
 //[][0] name; [][1]uri

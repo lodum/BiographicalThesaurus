@@ -203,7 +203,7 @@ function displayResults() {
 	}
 		
 	for (; i <= j; i++) {
-	  	
+		
 	  if(i==currentPage){
 	  	pagesHtml += "<b><a href=\"javascript:gotoPage("+i+")\"> "+i+"</a></b>";
 	  }else
@@ -516,6 +516,7 @@ function startQuery(map2){
 		}else{
 		    var s = document.createElement('script');
 			s.src = 'http://nominatim.openstreetmap.org/search?q='+place+'&format=json&json_callback=cb_place';
+			//console.log(document);
 			document.getElementsByTagName('head')[0].appendChild(s);
 		}
 		
@@ -591,32 +592,25 @@ function startQuery(map2){
 function getPlaceURI(placename){
 	$.ajax({
 				type   :"GET",
-				//data   :"?name=test",
 				url    :'getNameFromIndex.php?name='+placename, 
 				success: function(msg){
-				//alert(msg); // here you can get the result from php page
-					//console.log('did it');
-					//console.log('here');
-					//console.log(msg);
 					var returnobject = JSON.parse(msg);
-					/*console.log(returnobject);
-					console.log(returnobject.placesOfDeath[0].placeOfDeath);
-					console.log(returnobject.placesOfDeath[0].uri);*/
-					//var i=0;
-					//console.log(msg.length);
-					//response($.map(returnobject.placesOfDeath, function(item) {
-						//console.log(i);
-						//i++;
-                    var place = returnobject.placesOfDeath[0].uri;
-                    console.log(place);
                     
-                    console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> prefix dbpedia-owl:	<http://dbpedia.org/ontology/> SELECT DISTINCT (?a as ?personUri) ?name ?birthPlace ?deathPlace ?birthDate ?deathDate ?occupationName WHERE {{?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfBirth <'+place+'>	. <'+place+'> gnd:preferredName ?birthPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL { ?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName .} OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }UNION {?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfDeath <'+place+'>	. <'+place+'> gnd:preferredName ?deathPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL {?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }} LIMIT 10');
-                    submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> prefix dbpedia-owl:	<http://dbpedia.org/ontology/> SELECT DISTINCT (?a as ?personUri) ?name ?birthPlace ?deathPlace ?birthDate ?deathDate ?occupationName WHERE {{?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfBirth <'+place+'>	. <'+place+'> gnd:preferredName ?birthPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL { ?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName .} OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }UNION {?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfDeath <'+place+'>	. <'+place+'> gnd:preferredName ?deathPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL {?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }} LIMIT 10');
-                    
-                    //}));
+                    try{
+                    	var place = returnobject.placesOfDeath[0].uri;
+	                    console.log(place);
+	                    
+	                    //TODO remove the limit of 10 here by something more useful.
+
+	                    //todo queries that run more than 30 seconds are returned unsuccessfully by the system... this has to be changed.
+
+	                    console.log('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> prefix dbpedia-owl:	<http://dbpedia.org/ontology/> SELECT DISTINCT (?a as ?personUri) ?name ?birthPlace ?deathPlace ?birthDate ?deathDate ?occupationName WHERE {{?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfBirth <'+place+'>	. <'+place+'> gnd:preferredName ?birthPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL { ?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName .} OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }UNION {?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfDeath <'+place+'>	. <'+place+'> gnd:preferredName ?deathPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL {?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }} LIMIT 1000');
+	                    submitCustomQuery('prefix stis:    <http://localhost/default#> prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> prefix gnd:     <http://d-nb.info/standards/elementset/gnd#> prefix dbpedia-owl:	<http://dbpedia.org/ontology/> SELECT DISTINCT (?a as ?personUri) ?name ?birthPlace ?deathPlace ?birthDate ?deathDate ?occupationName WHERE {{?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfBirth <'+place+'>	. <'+place+'> gnd:preferredName ?birthPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL { ?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName .} OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }UNION {?a a stis:Person . ?a gnd:preferredNameForThePerson ?name . ?a  gnd:placeOfDeath <'+place+'>	. <'+place+'> gnd:preferredName ?deathPlace. OPTIONAL {?a gnd:dateOfBirth ?birthDate . } OPTIONAL {?a gnd:dateOfDeath ?deathDate . } OPTIONAL {?a gnd:professionOrOccupation ?occupationEntity . ?occupationEntity gnd:preferredNameForTheSubjectHeading ?occupationName . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:birthDate ?birthDateDB . } OPTIONAL {?a owl:sameAs ?dbpediaresource . ?dbpediaresource dbpedia-owl:deathDate ?deathDateDB . } BIND( COALESCE(?birthDateDB, ?birthDate) AS ?birthDate) . BIND( COALESCE(?deathDateDB, ?deathDate) AS ?deathDate) . }} LIMIT 1000');
+                    } catch(err) {
+                    	console.log("No location specified.");
+                    }
 				}
 			});
-	
 	}
 
 
