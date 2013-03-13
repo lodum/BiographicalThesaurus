@@ -22,7 +22,7 @@ $name     = $_GET["name"];
 
 
 
-$index = Zend_Search_Lucene::open('./index_placesOfDeath');
+$index = Zend_Search_Lucene::open('./index_places');
 
 $queries = array(
     $name
@@ -41,13 +41,13 @@ foreach ($queries as $query) {
         //echo 'URI: ' . $result->URI . "\n";
 		$uri=$result->URI;
         //echo 'Place Of Death: ' . $result->placeOfDeath . "\n";
-        $placeOfDeath=$result->placeOfDeath;
+        $place=$result->place;
         #echo 'Score: ' . $result->score . "\n";
         //echo "\n";
-        $posts[]=array('uri'=>$uri,'placeOfDeath'=>$placeOfDeath);
+        $posts[]=array('uri'=>$uri,'place'=>$place);
     }
     $response=array();
-    $response['placesOfDeath']=$posts;
+    $response['places']=$posts;
     echo json_encode($response);
 }
 

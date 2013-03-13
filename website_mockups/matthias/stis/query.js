@@ -595,9 +595,10 @@ function getPlaceURI(placename){
 				url    :'getNameFromIndex.php?name='+placename, 
 				success: function(msg){
 					var returnobject = JSON.parse(msg);
+					console.log(returnobject);
                     
                     try{
-                    	var place = returnobject.placesOfDeath[0].uri;
+                    	var place = returnobject.places[0].uri;
 	                    console.log(place);
 	                    
 	                    //TODO remove the limit of 10 here by something more useful.

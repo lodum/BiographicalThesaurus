@@ -30,16 +30,22 @@ EasyRdf_Namespace::set('stis', 'http://localhost/default#');
 EasyRdf_Namespace::set('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
 EasyRdf_Namespace::set('gnd', 'http://d-nb.info/standards/elementset/gnd#');
 $sparql = new EasyRdf_Sparql_Client('http://data.uni-muenster.de/bt/sparql');
-$result = $sparql->query('SELECT * WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 6000');
+$result1 = $sparql->query('SELECT * WHERE {?a gnd:placeOfDeath ?deathEntity. ?deathEntity gnd:preferredName ?name.} LIMIT 1000');
+$result2 = $sparql->query('SELECT * WHERE {?a gnd:placeOfBirth ?birthEntity. ?birthEntity gnd:preferredName ?name.} LIMIT 1000');
 
 //Filter results for duplicates
 //[][0] name; [][1]uri
 
 $rawResult = array(array(2));
 $i=0;
-foreach ($result as $row){
+foreach ($result1 as $row){
 	$rawResult[$i][0]=$row->name;
 	$rawResult[$i][1]=$row->deathEntity;
+	$i++;
+}
+foreach ($result2 as $row){
+	$rawResult[$i][0]=$row->name;
+	$rawResult[$i][1]=$row->birthEntity;
 	$i++;
 }
 
@@ -52,19 +58,19 @@ for($i=0;$i<sizeof($rawResult);$i++) {
 }
 
 //Create placesOfDeath Index
-$index = Zend_Search_Lucene::create('./index_placesOfDeath');
+$index = Zend_Search_Lucene::create('./index_places');
 foreach ($filteredResult as $name => $uri){
     #echo "<li>".link_to($row->label, $row->country)."</li>\n";
     #echo $row->a." ".$row->name."\n";
     $document = new Zend_Search_Lucene_Document();
     $document->addField(Zend_Search_Lucene_Field::UnIndexed('URI', $uri));
-    $document->addField(Zend_Search_Lucene_Field::Text('placeOfDeath', $name));
+    $document->addField(Zend_Search_Lucene_Field::Text('place', $name));
     $index->addDocument($document);
 }
 
 $index->commit();
 
-$index = Zend_Search_Lucene::open('./index_placesOfDeath');
+$index = Zend_Search_Lucene::open('./index_places');
 $queries = array(
     '*'
 );
@@ -78,15 +84,15 @@ foreach ($queries as $query) {
     foreach ($results as $result) {
         echo 'URI: ' . $result->URI . "\n";
 		$uri=$result->URI;
-        echo 'Place Of Death: ' . $result->placeOfDeath . "\n";
-        $placeOfDeath=$result->placeOfDeath;
+        echo 'Place: ' . $result->place . "\n";
+        $place=$result->place;
         #echo 'Score: ' . $result->score . "\n";
         echo "\n";
-        $posts[]=array('uri'=>$uri,'placeOfDeath'=>$placeOfDeath);
+        $posts[]=array('uri'=>$uri,'place'=>$place);
     }
     $response=array();
-    $response['placesOfDeath']=$posts;
-    $fp = fopen('placesOfDeath.json', 'w');
+    $response['place']=$posts;
+    $fp = fopen('places.json', 'w');
 	fwrite($fp, json_encode($response));
 	fclose($fp);
     
