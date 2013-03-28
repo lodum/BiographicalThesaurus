@@ -1,4 +1,9 @@
 <?php
+
+/*
+ * This PHP file is a part of the multilinugal plugin of the Biographical Thesaurus.
+ */
+
 session_start();
 header('Cache-control: private'); // IE 6 FIX
 

@@ -1,13 +1,9 @@
 <?php
 
 /*
- * Returns a list of fitting names from the Lucene Index when the name argument is set.
+ * Returns a list (json encoded) of fitting PERSONnames und URIs 
+ * from the Lucene Index when the name argument is set.
  */
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
- 
-//include_once '/var/www/php/Zend/Loader.php';
-//Zend_Loader::registerAutoload();
 
 $zendPath = realpath('stis/stis/Zend/');
 set_include_path($zendPath.PATH_SEPARATOR.get_include_path());
@@ -15,21 +11,10 @@ include 'Zend/Loader/Autoloader.php';
 Zend_Loader_Autoloader::getInstance(); 
  
 $name     = $_GET["name"];
-//echo $name;
-//return $name;
-//$name = "Bad \n";
-//echo $name;
-
-
-
 $index = Zend_Search_Lucene::open('./index_persons');
-
 $queries = array(
     $name
-    
 );
-
-//echo $name;
 
 foreach ($queries as $query) {
 	Zend_Search_Lucene_Search_Query_Wildcard::setMinPrefixLength(0);
