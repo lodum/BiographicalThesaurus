@@ -14,7 +14,7 @@ require_once "EasyRdf.php";
 include_once '/var/www/php/Zend/Loader.php';
 Zend_Loader::registerAutoload();
 //TODO set this to infinity
-//Zend_Search_Lucene::setTermsPerQueryLimit(1000000);
+Zend_Search_Lucene::setTermsPerQueryLimit(1000000);
 
 //Get the triples
 EasyRdf_Namespace::set('stis', 'http://localhost/default#');
