@@ -1,0 +1,244 @@
+<rdf:RDF
+    xmlns="http://d-nb.info/gnd/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:gnd="http://d-nb.info/standards/elementset/gnd#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <gnd:DifferentiatedPerson rdf:about="http://d-nb.info/gnd/118527533">
+    <gnd:variantNameForThePerson>Deluosite-Xuersihuofu, ...</gnd:variantNameForThePerson>
+    <gnd:oldAuthorityNumber>(DE-588a)118527533</gnd:oldAuthorityNumber>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Annette v. Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Anna Elisabeth Franziska Adolphine Wilhelmine Louise Maria</gnd:forename>
+      <gnd:surname>Droste zu Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Anna Elisabeth Francisca Maria Adolphina Wilhelmina Ludovica</gnd:forename>
+      <gnd:surname>Droste zu Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Anna Elisabeth Droste zu</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Xuersihuofu, ... Deluosite-</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Anna Elisabeth v. Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Annette von Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:oldAuthorityNumber>(DE-101c)310052424</gnd:oldAuthorityNumber>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, Anette von</gnd:variantNameForThePerson>
+    <gnd:biographicalOrHistoricalInformation>Dt. Dichterin, auch Liederkomponistin und Zeichnerin</gnd:biographicalOrHistoricalInformation>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>v.</gnd:prefix>
+      <gnd:forename>Anna Elisabeth</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Annette Elisabeth Freiin von  Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste, Annette von</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Anna Elisabeth v. Droste-</gnd:variantNameForThePerson>
+    <gnd:oldAuthorityNumber>(DE-588c)310052424</gnd:oldAuthorityNumber>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>...</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>v.</gnd:prefix>
+      <gnd:forename>Anette</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Annette von Droste</gnd:variantNameForThePerson>
+    <gnd:oldAuthorityNumber>(DE-588c)4013077-0</gnd:oldAuthorityNumber>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>zu</gnd:prefix>
+      <gnd:forename>Anna Elisabeth Droste</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:gender rdf:resource="http://d-nb.info/standards/vocab/gnd/Gender#female"/>
+    <gnd:dateOfBirth>1797</gnd:dateOfBirth>
+    <gnd:placeOfDeath rdf:resource="http://d-nb.info/gnd/4038336-2"/>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:placeOfBirth rdf:resource="http://d-nb.info/gnd/4040608-8"/>
+    <gnd:oldAuthorityNumber>(DE-588a)141365714</gnd:oldAuthorityNumber>
+    <gnd:gndSubjectCategory rdf:resource="http://d-nb.info/vocab/gnd-sc#12.2p"/>
+    <gnd:gndSubjectCategory rdf:resource="http://d-nb.info/vocab/gnd-sc#14.4p"/>
+    <gnd:variantNameForThePerson>Hülshoff, Annette v. Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hyurusuhofu, ... Dorosute-</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Anna Elisabeth</gnd:forename>
+      <gnd:surname>Droste zu Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, Anna Elisabeth v.</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Annette von Droste zu</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, Annette E. von</gnd:variantNameForThePerson>
+    <gnd:dateOfDeath>1848</gnd:dateOfDeath>
+    <gnd:variantNameForThePerson>Hülshoff, Annette von Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Huelshoff, Annette von Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>... Dorosute-</gnd:forename>
+      <gnd:surname>Hyurusuhofu</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:professionOrOccupation rdf:resource="http://d-nb.info/gnd/4394819-4"/>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, A. von</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Elisabeth Anna Droste zu</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, Anette v.</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>A.</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>v.</gnd:prefix>
+      <gnd:forename>Annette Elisabeth</gnd:forename>
+      <gnd:surname>D.-H.</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Annette von Droste-</gnd:forename>
+      <gnd:surname>Huelshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Annette Elisabeth Freiin von  Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste-Huelshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:oldAuthorityNumber>(DE-101c)13436242X</gnd:oldAuthorityNumber>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, Annette v.</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste, Annette</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Annette E.</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Anna Elisabeth Franziska Adolphine Wilhelmine Louise Maria von Droste zu</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>... Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, ... Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>zu</gnd:prefix>
+      <gnd:forename>Anna Elisabeth Franziska Adolphine Wilhelmine Louise Maria von Droste</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:professionOrOccupation rdf:resource="http://d-nb.info/gnd/4032010-8"/>
+    <gnd:preferredNameForThePerson>Droste-Hülshoff, Annette von</gnd:preferredNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Anna Elisabeth von Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Anna Elisabeth von Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Anette von Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Droste zu Hülshoff, Anna Elisabeth</gnd:variantNameForThePerson>
+    <gnd:professionOrOccupation rdf:resource="http://d-nb.info/gnd/4053311-6"/>
+    <gnd:geographicAreaCode rdf:resource="http://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE"/>
+    <gnd:variantNameForThePerson>Hülshoff, A. von Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Anette v. Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Anette von Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Hülshoff, Anna Elisabeth von Droste-</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste Hülshoff, Annette von</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>...</gnd:forename>
+      <gnd:surname>Droste</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:gndSubjectCategory rdf:resource="http://d-nb.info/vocab/gnd-sc#13.4p"/>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>zu</gnd:prefix>
+      <gnd:forename>Annette von Droste</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>zu</gnd:prefix>
+      <gnd:forename>Elisabeth Anna Droste</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste zu Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, ...</gnd:variantNameForThePerson>
+    <gnd:preferredNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:preferredNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Droste zu Hülshoff, Anna Elisabeth Francisca Maria Adolphina Wilhelmina Ludovica von</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste zu Hülshoff, Annette von</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste-Huelshoff, Annette von</gnd:variantNameForThePerson>
+    <gnd:variantNameForThePerson>Droste zu Hülshoff, Anna Elisabeth Franziska Adolphine Wilhelmine Louise Maria von</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Annette von Droste</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Droste-Hülshoff, Anna Elisabeth von</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>... Deluosite-</gnd:forename>
+      <gnd:surname>Xuersihuofu</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Anna Elisabeth</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>Droste, ...</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>v.</gnd:prefix>
+      <gnd:forename>Annette</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:oldAuthorityNumber>(DE-588a)13436242X</gnd:oldAuthorityNumber>
+    <gnd:variantNameForThePerson>Droste zu Hülshoff, Elisabeth Anna</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>...</gnd:forename>
+      <gnd:surname>Deluosite-Xuersihuofu</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:prefix>von</gnd:prefix>
+      <gnd:forename>Anette</gnd:forename>
+      <gnd:surname>Droste-Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>A. von Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameForThePerson>D.-H., Annette Elisabeth v.</gnd:variantNameForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Elisabeth Anna</gnd:forename>
+      <gnd:surname>Droste zu Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:variantNameEntityForThePerson rdf:parseType="Resource">
+      <gnd:forename>Anette v. Droste-</gnd:forename>
+      <gnd:surname>Hülshoff</gnd:surname>
+    </gnd:variantNameEntityForThePerson>
+    <gnd:gndIdentifier>118527533</gnd:gndIdentifier>
+  </gnd:DifferentiatedPerson>
+</rdf:RDF>
+

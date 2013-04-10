@@ -1,0 +1,70 @@
+nietzsche dbpedia
+http://d-nb.info/gnd/118587943
+
+http://www.dhm.de/lemo/html/biografien/NietzscheFriedrich/index.html
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT Distinct ?birthDate ?deathDate
+FROM <http://dbpedia.org/data/Friedrich_Nietzsche.rdf>
+WHERE { ?a <http://dbpedia.org/ontology/birthDate> ?birthDate.
+?a <http://dbpedia.org/ontology/deathDate> ?deathDate.
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX transit: <http://vocab.org/transit/terms/>
+PREFIX ext: <java:org.geospatialweb.arqext.>
+PREFIX gnd: <http://d-nb.info/standards/elementset/gnd#>
+
+SELECT Distinct ?life ?death
+FROM <http://d-nb.info/gnd/118587943/about/rdf.rdf>
+
+WHERE { ?a gnd:dateOfBirth ?life.
+?a gnd:dateOfDeath ?death}
+
+
+
+Annette
+FROM <http://de.dbpedia.org/data/Annette_von_Droste-Hülshoff.rdf>
+FROM <http://d-nb.info/gnd/118527533/about/rdf.rdf>
+
+http://www.dhm.de/ausstellungen/prechtl/wt/5.htm
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX transit: <http://vocab.org/transit/terms/>
+PREFIX ext: <java:org.geospatialweb.arqext.>
+PREFIX gnd: <http://d-nb.info/standards/elementset/gnd#>
+
+SELECT Distinct ?birth ?death
+FROM <http://de.dbpedia.org/data/Annette_von_Droste-Hülshoff.rdf>
+
+
+WHERE { ?a <http://dbpedia.org/ontology/birthDate> ?birth.
+?a <http://dbpedia.org/ontology/deathDate> ?death.
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX transit: <http://vocab.org/transit/terms/>
+PREFIX ext: <java:org.geospatialweb.arqext.>
+PREFIX gnd: <http://d-nb.info/standards/elementset/gnd#>
+
+SELECT Distinct ?life ?death
+FROM <http://d-nb.info/gnd/118527533/about/rdf.rdf>
+
+WHERE { ?a gnd:dateOfBirth ?life.
+?a gnd:dateOfDeath ?death}
+
+
+
+
+
+
+Construct {?a gnd:PlaceOrGeographicNameNew ?newname} WHERE {
+  ?a rdf:type gnd:PlaceOrGeographicName .
+  ?a gnd:preferredNameForThePlaceOrGeographicName ?name .
+  FILTER regex(?name, "<Region>", "i" ) .
+  BIND (STRBEFORE(?name, " <") AS ?newname) .
+}

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='/openrdf-workbench/transformations/query.xsl'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#' xmlns:q='http://www.openrdf.org/schema/qname#'>
+  <head>
+    <link href='info'/>
+    <link href='namespaces'/>
+  </head>
+</sparql>

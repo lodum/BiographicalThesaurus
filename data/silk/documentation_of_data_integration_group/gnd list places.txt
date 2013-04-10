@@ -1,0 +1,286 @@
+http://d-nb.info/gnd/4050926-6; Ruhrgebiet
+http://d-nb.info/gnd/4050923-0; Ruhr
+http://d-nb.info/gnd/4085408-5; Delbrücker Land
+http://d-nb.info/gnd/4049788-4; Rheinland
+http://d-nb.info/gnd/4115388-1; Niederrhein-Gebiet
+http://d-nb.info/gnd/4005659-4; Bergisches Land
+http://d-nb.info/gnd/4085584-3; Ennepetal 
+http://d-nb.info/gnd/4297989-4; Kluterthöhle
+http://d-nb.info/gnd/4076699-8; Rhein-Maas-Gebiet
+http://d-nb.info/gnd/7786999-0; Veynau / Burg Veynau
+http://d-nb.info/gnd/4026840-8; Industriestaaten
+http://d-nb.info/gnd/4475067-5; Lünen 
+http://d-nb.info/gnd/4089169-0; Hattingen 
+http://d-nb.info/gnd/4119982-0; Rhein-Ruhr 
+http://d-nb.info/gnd/4550275-4; Bochum-Engelsburg
+http://d-nb.info/gnd/4550276-6; Bochum-Stahlhausen
+http://d-nb.info/gnd/7770815-5; Aachen  / Mundart
+http://d-nb.info/gnd/4022922-1; Hagen 
+http://d-nb.info/gnd/4258207-6; Siegen 
+http://d-nb.info/gnd/4271819-3; Hamm <Westfalen, Region>
+http://d-nb.info/gnd/4012815-5; Dortmund 
+http://d-nb.info/gnd/4472320-9; Warburg 
+http://d-nb.info/gnd/4374335-3; Vreden 
+http://d-nb.info/gnd/4393317-8; Lank-Latum 
+http://d-nb.info/gnd/4192619-5; Meerbusch 
+http://d-nb.info/gnd/4079215-8; Westeuropa
+http://d-nb.info/gnd/4607554-9; Rheine 
+http://d-nb.info/gnd/4076883-1; Ruhrgebiet <Ost>
+http://d-nb.info/gnd/4246365-8; Niederrhein-Gebiet <West>
+http://d-nb.info/gnd/4000007-2; Aachen 
+http://d-nb.info/gnd/4372814-5; Goch 
+http://d-nb.info/gnd/4092781-7; Gelsenkirchen 
+http://d-nb.info/gnd/4069573-6; Böhmische Länder
+http://d-nb.info/gnd/4101810-2; Beckumer Berge
+http://d-nb.info/gnd/4285767-3; Münsterland <Südwest>
+http://d-nb.info/gnd/4120060-3; Tecklenburg 
+http://d-nb.info/gnd/4040619-2; Münsterland
+http://d-nb.info/gnd/4307346-3; Amt Uerdingen
+http://d-nb.info/gnd/4350185-0; Grafschaft Sayn-Wittgenstein-Wittgenstein
+http://d-nb.info/gnd/4039677-0; Mitteleuropa
+http://d-nb.info/gnd/4347783-5; Massenkalk <Devon>
+http://d-nb.info/gnd/7762966-8; Boker-Heide-Kanal
+http://d-nb.info/gnd/4091756-3; Emscher-Lippe-Gebiet
+http://d-nb.info/gnd/4070431-2; Deutschland <Sowjetische Zone>
+http://d-nb.info/gnd/4028838-9; Jülich 
+http://d-nb.info/gnd/4115816-7; Paderborn 
+http://d-nb.info/gnd/4416657-6; Schmallenberg 
+http://d-nb.info/gnd/4010357-2; Coesfeld 
+http://d-nb.info/gnd/4102272-5; Mülheim <Ruhr, Region>
+http://d-nb.info/gnd/4279087-6; Leverkusen 
+http://d-nb.info/gnd/4672420-5; Hellenthal 
+http://d-nb.info/gnd/4238405-9; Gronau <Westfalen, Region>
+http://d-nb.info/gnd/4282027-3; Minden (Westf) 
+http://d-nb.info/gnd/4212904-7; Ahaus 
+http://d-nb.info/gnd/4714692-8; Nordrhein-Westfalen <Nordwest>
+http://d-nb.info/gnd/4609632-2; Lemgo 
+http://d-nb.info/gnd/4079819-7; Herzogtum Arenberg
+http://d-nb.info/gnd/4471881-0; Nettetal 
+http://d-nb.info/gnd/4041400-0; Naturpark Rheinland
+http://d-nb.info/gnd/7779213-0; Breckerfeld / Vikarien-Mühle
+http://d-nb.info/gnd/4424981-0; Ruhrgebiet <Nord>
+http://d-nb.info/gnd/4625329-4; Bruchhauser Steine
+http://d-nb.info/gnd/4011888-5; Deutschland <Britische Zone>
+http://d-nb.info/gnd/4049776-8; Rheinisches Braunkohlenrevier
+http://d-nb.info/gnd/7779584-2; Krefeld / Hauptbahnhof
+http://d-nb.info/gnd/4086729-8; Glasgow 
+http://d-nb.info/gnd/4043984-7; Osning
+http://d-nb.info/gnd/7779972-0; Lingese-Talsperre
+http://d-nb.info/gnd/4552665-5; Amt Wiedenbrück
+http://d-nb.info/gnd/7780102-7; Wermelskirchen / Berger Mühle
+http://d-nb.info/gnd/7578010-0; Lippeaue bei Damm und Bricht
+http://d-nb.info/gnd/7780323-1; Sengbachtalsperre
+http://d-nb.info/gnd/7780329-2; Lüderich / Barbarakreuz
+http://d-nb.info/gnd/7762132-3; Beckum <Warendorf> / Rathaus
+http://d-nb.info/gnd/7786856-0; Söven
+http://d-nb.info/gnd/7762227-3; Hamm <Westfalen> / Maximilianpark
+http://d-nb.info/gnd/7762241-8; Gereonsweiler
+http://d-nb.info/gnd/4040117-0; Monschau 
+http://d-nb.info/gnd/4285038-1; Westfalen <Nord>
+http://d-nb.info/gnd/4316662-3; Garzweiler II
+http://d-nb.info/gnd/7762666-7; Niederbergisches Land
+http://d-nb.info/gnd/4030227-1; Landkreis Kempen-Krefeld
+http://d-nb.info/gnd/7762163-3; Belecke / Sankt Pankratius
+http://d-nb.info/gnd/7762775-1; Soest / Kohlbrink
+http://d-nb.info/gnd/7762513-4; Blankenstein <Hattingen> / Ratten-Garten
+http://d-nb.info/gnd/7762151-7; Truppenübungsplatz Sennelager
+http://d-nb.info/gnd/7762731-3; Karhofhöhle
+http://d-nb.info/gnd/7762942-5; Grüngürtel <Düren>
+http://d-nb.info/gnd/7744278-7; Orbroicher Bruch
+http://d-nb.info/gnd/7763698-3; Olpebach
+http://d-nb.info/gnd/7763657-0; Nienberge / Hof Große Wiedemann
+http://d-nb.info/gnd/7782547-0; Rotbach <Nordeifel, Fluss>
+http://d-nb.info/gnd/4685769-2; Naturschutzgebiet Rieselfelder Münster
+http://d-nb.info/gnd/7784711-8; Gürzenich <Düren>
+http://d-nb.info/gnd/7763512-7; Worringer Bruch
+http://d-nb.info/gnd/4299599-1; Brackel <Dortmund>
+http://d-nb.info/gnd/4053714-6; Schwalm-Nette
+http://d-nb.info/gnd/7783431-8; Ratheim
+http://d-nb.info/gnd/4077277-9; Schwelm 
+http://d-nb.info/gnd/7784213-3; Jakobwüllesheim
+http://d-nb.info/gnd/7764022-6; Koslar / Sankt Adelgundis
+http://d-nb.info/gnd/7763335-0; Essen / Hafen
+http://d-nb.info/gnd/4234661-7; Emscher-Gebiet
+http://d-nb.info/gnd/7762379-4; Dortmund-Sölde
+http://d-nb.info/gnd/4542750-1; Asseln <Dortmund>
+http://d-nb.info/gnd/7762174-8; Gelsenkirchen-Heßler
+http://d-nb.info/gnd/4085636-7; Euskirchen 
+http://d-nb.info/gnd/4101740-7; Münsterland <Ost>
+http://d-nb.info/gnd/7763909-1; Wesel / Großer Markt
+http://d-nb.info/gnd/7663327-5; Unterer Niederrhein 
+http://d-nb.info/gnd/7762672-2; Gennebreck
+http://d-nb.info/gnd/7764126-7; Gerichtsbezirk Schwelm
+http://d-nb.info/gnd/7764118-8; Schweflinghausen
+http://d-nb.info/gnd/7764276-4; Wanne-Eickel / Bahnhof
+http://d-nb.info/gnd/7762272-8; Herzogtum Jülich-Kleve-Berg
+http://d-nb.info/gnd/7763124-9; Alswede
+http://d-nb.info/gnd/4039404-9; Fürstentum Minden
+http://d-nb.info/gnd/7787127-3; Kempen <Heinsberg>
+http://d-nb.info/gnd/7773921-8; Brüggen <Viersen> / Burg
+http://d-nb.info/gnd/4019896-0; Staat Geldern
+http://d-nb.info/gnd/4024061-7; Heiliges Meer
+http://d-nb.info/gnd/7705600-0; Elmpter Schwalmbruch
+http://d-nb.info/gnd/4317623-9; Ruhr-Emscher-Gebiet
+http://d-nb.info/gnd/7764794-4; Wuppertal / Evangelisch-Reformierte Immanuelskirche
+http://d-nb.info/gnd/7515133-9; Herrschaft Lembeck <Dorsten>
+http://d-nb.info/gnd/7762450-6; Dortmund / Evangelische Nicolai-Kirche
+http://d-nb.info/gnd/4458553-6; Köln <Ost>
+http://d-nb.info/gnd/7764862-6; Rheinberg / Rathaus
+http://d-nb.info/gnd/7780531-8; Eisern-Siegener Eisenbahn
+http://d-nb.info/gnd/4428443-3; Rhein-Erft-Gebiet
+http://d-nb.info/gnd/4013239-0; Düren 
+http://d-nb.info/gnd/7762667-9; Laffeld
+http://d-nb.info/gnd/4256787-7; Emscher Park
+http://d-nb.info/gnd/7786768-3; Landschaftspark NiederRhein
+http://d-nb.info/gnd/7781208-6; Wuppertal-Burgholz
+http://d-nb.info/gnd/4106017-9; Stolberg (Rhld.) 
+http://d-nb.info/gnd/7781369-8; Ronnewinkel / Sankt-Valentins-Kapelle
+http://d-nb.info/gnd/7764580-7; Reuschenberg <Elsdorf, Rhein-Erft-Kreis> / Burg
+http://d-nb.info/gnd/7781427-7; Essen / Haus Stein
+http://d-nb.info/gnd/7781672-9; Hückeswagen / Marktstraße 34
+http://d-nb.info/gnd/4031493-5; Köln 
+http://d-nb.info/gnd/4032953-7; Krefeld 
+http://d-nb.info/gnd/4120266-1; Bergheim, Erft 
+http://d-nb.info/gnd/4064309-8; Wahner Heide
+http://d-nb.info/gnd/4238435-7; Niederwupper-Gebiet
+http://d-nb.info/gnd/4389576-1; Ostseeraum <Südwest>
+http://d-nb.info/gnd/7782058-7; Xanten / Haus Erprath
+http://d-nb.info/gnd/4058452-5; Südpreußen
+http://d-nb.info/gnd/7782213-4; Mülheim <Ruhr> / Villa Jula Thyssen
+http://d-nb.info/gnd/4007330-0; Bochum 
+http://d-nb.info/gnd/7551955-0; Staat Steinbach <Berg, Amt>
+http://d-nb.info/gnd/7782344-8; Marialinden / Sankt Mariä Heimsuchung
+http://d-nb.info/gnd/7761750-2; Castrop 
+http://d-nb.info/gnd/7782430-1; Kastor <Engelskirchen>
+http://d-nb.info/gnd/7782432-5; Essen / Jüdischer Parkfriedhof
+http://d-nb.info/gnd/7782575-5; Mutzbach
+http://d-nb.info/gnd/7782840-9; Dorsten / Judenbusch
+http://d-nb.info/gnd/7782963-3; Neersen <Willich> / Bökel
+http://d-nb.info/gnd/4074902-2; Mittelrhein-Gebiet
+http://d-nb.info/gnd/7783108-1; Warendorf / Affhüppenkapelle
+http://d-nb.info/gnd/7783215-2; Viller / Sankt Antoniuskapelle
+http://d-nb.info/gnd/4448102-0; Ruhrgebiet <Süd>
+http://d-nb.info/gnd/7783266-8; Krefeld / Heilmannshof
+http://d-nb.info/gnd/7761876-2; Diersfordter Waldsee
+http://d-nb.info/gnd/7783300-4; Wallach <Rheinberg> / Zelles-Hof
+http://d-nb.info/gnd/7783309-0; Naturschutzgebiet Bislicher Insel
+http://d-nb.info/gnd/7783784-8; Mülheim <Ruhr> / Kirchenhügel
+http://d-nb.info/gnd/7783850-6; Lintorf <Ratingen> / Hausmannsgut
+http://d-nb.info/gnd/4117144-5; Ruhrgebiet <West>
+http://d-nb.info/gnd/4458188-9; Münsterland <Südost>
+http://d-nb.info/gnd/7784204-2; Miel / Sankt Georg
+http://d-nb.info/gnd/7784232-7; Düren / Rathaus
+http://d-nb.info/gnd/4049742-2; Fürstentum Rheina-Wolbeck
+http://d-nb.info/gnd/4674248-7; Heisterbacher Tal
+http://d-nb.info/gnd/4013263-8; Düsseldorf 
+http://d-nb.info/gnd/7784485-3; Essen-Werden / Haus im Himmel
+http://d-nb.info/gnd/7750599-2; NSG Klostermersch
+http://d-nb.info/gnd/4007668-4; Bonn 
+http://d-nb.info/gnd/7784387-3; NSG Steveraue
+http://d-nb.info/gnd/4266108-0; Mosel-Gebiet
+http://d-nb.info/gnd/7784427-0; Bergisch Gladbach / Kalköfen Cox
+http://d-nb.info/gnd/4037914-0; Masuren
+http://d-nb.info/gnd/7784443-9; Solingen / Hofschaft Nümmen
+http://d-nb.info/gnd/4787211-1; Dekanat Mechernich
+http://d-nb.info/gnd/7784632-1; Dekanat Iserlohn
+http://d-nb.info/gnd/4086627-0; Bergisches Land und Königsforst
+http://d-nb.info/gnd/7784789-1; Haltern / Überfall <1652>
+http://d-nb.info/gnd/4117143-3; Mittleres Ruhrgebiet
+http://d-nb.info/gnd/4066654-2; Wittgensteiner Land
+http://d-nb.info/gnd/4118464-6; Grafschaft Sayn-Wittgenstein-Hohenstein
+http://d-nb.info/gnd/7785112-2; Olpe / Unterste Stadtmühle
+http://d-nb.info/gnd/4372740-2; Yawata <Kitakyushu>
+http://d-nb.info/gnd/7779433-3; Emsaue <Landschaft>
+http://d-nb.info/gnd/7780703-0; Abbabach
+http://d-nb.info/gnd/4039674-5; Mitteldeutschland
+http://d-nb.info/gnd/7782528-7; Mittlerer Niederrhein 
+http://d-nb.info/gnd/7784259-5; Blankenheimerdorf
+http://d-nb.info/gnd/7783578-5; Hombergen / Schloss Krickenbeck / Schlosskapelle
+http://d-nb.info/gnd/7785788-4; Lobberich / Rathaus
+http://d-nb.info/gnd/4552265-0; Achterhoek 
+http://d-nb.info/gnd/4276612-6; Liemers
+http://d-nb.info/gnd/4067138-0; Xanten 
+http://d-nb.info/gnd/7786099-8; Münster <Westfalen> / Roggenmarkt
+http://d-nb.info/gnd/7761987-0; Mülheim <Ruhr> / RWE Rhein-Ruhr-Sporthalle
+http://d-nb.info/gnd/4040614-3; Münster (Westf) 
+http://d-nb.info/gnd/4487985-4; Linksrheinisches Gebiet
+http://d-nb.info/gnd/4105123-3; Rur
+http://d-nb.info/gnd/7784713-1; Stinkenberg
+http://d-nb.info/gnd/7787170-4; Winterburg <Rheinbach> / Haus Winterburg
+http://d-nb.info/gnd/7787171-6; Seelscheid / Hof Seelscheid
+http://d-nb.info/gnd/4070370-8; Deutsches Sprachgebiet
+http://d-nb.info/gnd/7786705-1; Wuppertal-Wallbrecken
+http://d-nb.info/gnd/4049799-9; Rhein-Main-Gebiet
+http://d-nb.info/gnd/4384580-0; Stemwede 
+http://d-nb.info/gnd/7761915-8; Qualburg / Sankt Martinus
+http://d-nb.info/gnd/4031158-2; Kleve <Kleve, Region>
+http://d-nb.info/gnd/7787069-4; Überruhr / Ruhrschleuse Spillenburg
+http://d-nb.info/gnd/4502978-7; Naturpark Maas-Schwalm-Nette
+http://d-nb.info/gnd/7787120-0; Fronderath
+http://d-nb.info/gnd/7787121-2; Gerderath
+http://d-nb.info/gnd/7764079-2; Moorshoven / Kapelle
+http://d-nb.info/gnd/7787392-0; Soest / Kattenhol 8
+http://d-nb.info/gnd/7787183-2; Hückeswagen / Schloss
+http://d-nb.info/gnd/7787218-6; Hückeswagen / Islandstraße 43
+http://d-nb.info/gnd/7711722-0; Wermelskirchen 
+http://d-nb.info/gnd/7787235-6; Herweg <Hückeswagen>
+http://d-nb.info/gnd/7764180-2; Villiprott
+http://d-nb.info/gnd/7787291-5; Pulheim / Rathaus
+http://d-nb.info/gnd/7787359-2; Niederdedinghausen / Stratmann-Hof
+http://d-nb.info/gnd/7787339-7; Krefeld / Luisenstraße
+http://d-nb.info/gnd/4044063-1; Frankreich <Ost>
+http://d-nb.info/gnd/7787401-8; Erlebnistrasse Erzbahn
+http://d-nb.info/gnd/7787418-3; Wuppertal-Elberfeld / Synagoge
+http://d-nb.info/gnd/4021046-7; Grafschaft Gimborn-Neustadt
+http://d-nb.info/gnd/7780802-2; Eburonen
+http://d-nb.info/gnd/7554082-4; Naturpark Ebbegebirge
+http://d-nb.info/gnd/7789063-2; Bünde / Nienburg
+http://d-nb.info/gnd/7788151-5; Fliegerhorst Venloer Heide
+http://d-nb.info/gnd/7789108-9; Detmold / Freiligrathstraße
+http://d-nb.info/gnd/4827383-1; Nordrhein-Westfalen <West>
+http://d-nb.info/gnd/7788219-2; Mettmann / Naturfreibad im Stadtwald
+http://d-nb.info/gnd/7788482-6; Ohl <Wipperfürth>
+http://d-nb.info/gnd/4251565-8; Gocher Heide
+http://d-nb.info/gnd/4725322-8; Nationalpark Eifel
+http://d-nb.info/gnd/4085592-2; Erfttal
+http://d-nb.info/gnd/7789181-8; Köln / Gereonsviertel
+http://d-nb.info/gnd/7711451-6; Eurode
+http://d-nb.info/gnd/7789317-7; Essen / Bonifaciussiedlung
+http://d-nb.info/gnd/4096327-5; Iserlohn 
+http://d-nb.info/gnd/7789471-6; Hilden / Hauptfriedhof
+http://d-nb.info/gnd/4252579-2; Deutschland <Östliche Länder>
+http://d-nb.info/gnd/4291595-8; Nassau-Siegen
+http://d-nb.info/gnd/4378788-5; Ems-Hase-Gebiet
+http://d-nb.info/gnd/7729359-9; Steinbruch Hofermühle-Süd
+http://d-nb.info/gnd/7593714-1; Schleiden 
+http://d-nb.info/gnd/4118186-4; Saar-Nahe-Senke
+http://d-nb.info/gnd/4373614-2; Köln-Bonn 
+http://d-nb.info/gnd/4104800-3; Soest 
+http://d-nb.info/gnd/7662564-3; Mettmann 
+http://d-nb.info/gnd/7790038-8; Mettmann / Siedlung Röttgen
+http://d-nb.info/gnd/4074889-3; Mittelgebirgsschwelle
+http://d-nb.info/gnd/4476073-5; Blomberg <Lippe, Region>
+http://d-nb.info/gnd/7790129-0; Wuppertal / Röckebecke
+http://d-nb.info/gnd/7762264-9; Herrschaft Hardenberg
+http://d-nb.info/gnd/4463538-2; Corvey 
+http://d-nb.info/gnd/4259050-4; Dortmund / Westfalenpark
+http://d-nb.info/gnd/4012869-6; Drachenfels, Siebengebirge
+http://d-nb.info/gnd/7785532-2; Heepen / Sankt Hedwig
+http://d-nb.info/gnd/7564581-6; Sandgrube Schifffahrt
+http://d-nb.info/gnd/4085965-4; Arnsberg 
+http://d-nb.info/gnd/7764250-8; Bochum / Zentrum für Medizinische Ethik
+http://d-nb.info/gnd/4068878-1; Naher Osten
+http://d-nb.info/gnd/7714857-5; Forstbezirk Freudenberg <Siegen-Wittgenstein>
+http://d-nb.info/gnd/4512908-3; Rhein-Wupper-Gebiet
+http://d-nb.info/gnd/7721671-4; Hemmerde 
+http://d-nb.info/gnd/4038707-0; Merfelder Bruch
+http://d-nb.info/gnd/4075739-0; Osteuropa
+http://d-nb.info/gnd/4061303-3; Twente
+http://d-nb.info/gnd/7762793-3; Herrschaft Canstein
+http://d-nb.info/gnd/4336739-2; Brandenburg <Süd>
+http://d-nb.info/gnd/4196244-8; Detmold 
+http://d-nb.info/gnd/7747599-9; NSG Langeloh- In der Hemke
+http://d-nb.info/gnd/4225454-1; Bialystok 
+http://d-nb.info/gnd/4011361-9; Delbrück 
+http://d-nb.info/gnd/4031416-9; Koblenz 
+http://d-nb.info/gnd/4310854-4; Heinsberg 

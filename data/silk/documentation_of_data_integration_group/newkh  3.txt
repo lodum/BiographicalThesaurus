@@ -1,0 +1,18 @@
+
+
+Construct {?a gnd:individualisedPnd ?c} 
+WHERE 
+{
+?a dbpedia-owl:individualisedPnd ?c
+}
+
+
+
+
+<http://de.dbpedia.org/page/Annette_von_Droste-H%C3%BClshoff> dbpedia:aklsdjlka 231222341
+
+<http://d-nb.info/gnd/120490110> owl:sameAs <http://de.dbpedia.org/page/Annette_von_Droste-H%C3%BClshoff>
+
+
+
+Erstellt eine neue Datei "sparql.txt"  und packt da das Construct-Query rein. Dann auf der console mit curl "curl --data-urlencode "query@sparqldbpedia.txt" http://de.dbpedia.org/sparql/ >testdbpedia.nt" 

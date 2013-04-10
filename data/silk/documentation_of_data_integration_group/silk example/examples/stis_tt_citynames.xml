@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+  <Prefixes>
+	  <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+	  <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+	  <Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#" />
+	  <Prefix id="dbpedia" namespace="http://dbpedia.org/ontology/" />
+	  <Prefix id="dbpage" namespace="http://dbpedia.org/resource/" />
+	  <Prefix id="dnb" namespace="http://d-nb.info/" />
+      <Prefix id="lgdp" namespace="http://linkedgeodata.org/property/" />
+      <Prefix id="lgdo" namespace="http://linkedgeodata.org/ontology/" />
+      <Prefix id="georss" namespace="http://www.georss.org/georss/" />
+      <Prefix id="wgs84" namespace="http://www.w3.org/2003/01/geo/wgs84_pos#" />
+	  <Prefix id="gnd" namespace="http://d-nb.info/standards/elementset/gnd#" />
+      <Prefix id="dc" namespace="http://purl.org/dc/elements/1.1/" />
+      <Prefix id="foaf" namespace="http://xmlns.com/foaf/spec/" />
+      <Prefix id="bibo" namespace="http://purl.org/ontology/bibo/" />
+      <Prefix id="isbd" namespace="http://iflastandards.info/ns/isbd/elements/" />
+      <Prefix id="dcterms" namespace="http://purl.org/dc/terms/" />
+      <Prefix id="rdaRelGr2" namespace="http://metadataregistry.org/uri/schema/RDARelationshipsGR2/" />
+      <Prefix id="ddc" namespace="http://d-nb.info/ddc/class/" />
+      <Prefix id="geopol" namespace="http://aims.fao.org/aos/geopolitical.owl#" />
+      <Prefix id="rdaGr2" namespace="http://RDVocab.info/ElementsGr2/" />
+      <Prefix id="rdaFrbr" namespace="http://RDVocab.info/uri/schema/FRBRentitiesRDA/" />
+      <Prefix id="sg" namespace="http://d-nb.info/ddc-sg/" />
+      <Prefix id="relationship" namespace="http://purl.org/vocab/relationship/" />
+      <Prefix id="skos" namespace="http://www.w3.org/2004/02/skos/core#" />
+      <Prefix id="wot" namespace="http://xmlns.com/wot/0.1/" />
+      <Prefix id="vs" namespace="http://www.w3.org/2003/06/sw-vocab-status/ns#" />
+      <Prefix id="msg0" namespace="http://web.resource.org/cc/" />
+      <Prefix id="ov" namespace="http://open.vocab.org/terms/" />
+      <Prefix id="status" namespace="http://www.w3.org/2003/06/sw-vocab-status/ns#" />
+      <Prefix id="dct" namespace="http://purl.org/dc/terms/" />
+      <Prefix id="vann" namespace="http://purl.org/vocab/vann/" />
+      <Prefix id="label" namespace="http://purl.org/net/vocab/2004/03/label#" />
+  </Prefixes>
+
+  <DataSources>
+    <DataSource id="dnbpage" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://giv-stis-2012.uni-muenster.de:8080/openrdf-workbench/repositories/bt/query" />
+      <Param name="retryCount" value="100" />
+      <Param name="retryPause" value="1000" />
+    </DataSource>
+    <DataSource id="dbpedia" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://dbpedia.org/sparql" />
+      <Param name="retryCount" value="2" />
+      <Param name="retryPause" value="3000" />
+	  <Param name="pageSize" value="100" />
+    </DataSource>
+  </DataSources>
+  
+  <Interlinks>
+    <Interlink id="cities">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="dnbpage" var="a">
+        <RestrictTo>
+          ?a rdf:type gnd:PlaceOrGeographicName .
+        </RestrictTo>
+      </SourceDataset>
+      <TargetDataset dataSource="dbpedia" var="b">
+        <RestrictTo>
+		{
+                  ?b a dbpedia:Settlement.
+                  ?b dbpedia:country dbpage:Germany.
+                  ?b dbpedia:federalState dbpage:North_Rhine-Westphalia.
+		}
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkageRule>
+        <Aggregate type="average">
+          <Aggregate type="max" required="true" >
+            <!-- We need two comparators because some resources in LinkedGeoData do not provided an english label -->
+			<Compare metric="levenshteinDistance" threshold="2">
+			  <TransformInput function="replace">
+			    <TransformInput function="removeSpecialChars">
+			      <Input path="?a/gnd:preferredNameForThePlaceOrGeographicName" />
+			    </TransformInput>
+			    <Param name="search" value=" Region" />
+			    <Param name="replace" value="" />
+			  </TransformInput>
+              <Input path="?b/rdfs:label[@lang='de']" />
+            </Compare>
+            <Compare metric="levenshteinDistance" threshold="2">
+              <TransformInput function="replace">
+			    <TransformInput function="removeSpecialChars">
+			      <Input path="?a/gnd:preferredNameForThePlaceOrGeographicName" />
+			    </TransformInput>
+			    <Param name="search" value=" Region" />
+			    <Param name="replace" value="" />
+			  </TransformInput>
+              <Input path="?b/rdfs:label[@lang='']" />
+            </Compare>
+          </Aggregate>
+       </Aggregate>              
+      </LinkageRule>
+
+      <Filter limit="1" />
+
+      <Outputs>
+        <Output type="file">
+          <Param name="file" value="C:/Games/stis_tt_dbpedia_cities.nt"/>
+          <Param name="format" value="ntriples"/>
+        </Output>
+      </Outputs>
+
+    </Interlink>
+  </Interlinks>
+</Silk>

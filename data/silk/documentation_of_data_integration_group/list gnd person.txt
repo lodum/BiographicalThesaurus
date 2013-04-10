@@ -1,0 +1,3441 @@
+http://d-nb.info/gnd/118967940; Ueberhorst, Horst 
+http://d-nb.info/gnd/132677687; Rösch, Hermann 
+http://d-nb.info/gnd/118937200; Miller, Susanne 
+http://d-nb.info/gnd/121565270; Müller, Wilhelm 
+http://d-nb.info/gnd/124004881; Theisen, Rolf-Dieter 
+http://d-nb.info/gnd/123348730; Avenarius, Hermann 
+http://d-nb.info/gnd/118617249; Stein, Erwin 
+http://d-nb.info/gnd/171980042; Blasius, Dirk 
+http://d-nb.info/gnd/172188156; Klassen, Theodor F. 
+http://d-nb.info/gnd/128473274; Dietrich, Theo 
+http://d-nb.info/gnd/118593153; Petersen, Peter 
+http://d-nb.info/gnd/118507907; Becher, Bernd 
+http://d-nb.info/gnd/118507915; Becher, Hilla 
+http://d-nb.info/gnd/118846868; Rauscher, Anton 
+http://d-nb.info/gnd/118013939; Heimann, Heinz-Dieter 
+http://d-nb.info/gnd/119188414; Jetelová, Magdalena 
+http://d-nb.info/gnd/136927556; Poetter, Jochen 
+http://d-nb.info/gnd/118564579; Kofler, Leo 
+http://d-nb.info/gnd/124318649; Giga, Fritz 
+http://d-nb.info/gnd/1015205615; Häker, Fritz 
+http://d-nb.info/gnd/119200376; Stäbler, Gerhard 
+http://d-nb.info/gnd/119004151; Treskow, Elisabeth 
+http://d-nb.info/gnd/115464727; Joppien, Rüdiger 
+http://d-nb.info/gnd/172336724; Rose, Olaf 
+http://d-nb.info/gnd/172374359; Siepmann, Karl E. 
+http://d-nb.info/gnd/119115042; Grimme, Friedrich W. 
+http://d-nb.info/gnd/118741462; Ponsart, Jean-Nicolas-François 
+http://d-nb.info/gnd/118632221; Wibbelt, Augustin 
+http://d-nb.info/gnd/118588427; Nörrenberg, Erich 
+http://d-nb.info/gnd/122554515; Groeben, Annemarie von der 
+http://d-nb.info/gnd/116540168; Rieger, Maria Friederike 
+http://d-nb.info/gnd/118699644; Haacke, Hans 
+http://d-nb.info/gnd/118159623; Schmale, Wolfgang 
+http://d-nb.info/gnd/172445671; Weineck, Silke-Maria 
+http://d-nb.info/gnd/119049376; Musolf, Johannes J. 
+http://d-nb.info/gnd/116955031; Lessmann, Marianne Katharina 
+http://d-nb.info/gnd/118938428; Riemer-Sartory, Erika Maria 
+http://d-nb.info/gnd/134207858; Temme, Heinz-Georg 
+http://d-nb.info/gnd/110594673; Koellmann, Hans P. 
+http://d-nb.info/gnd/189407654; Toenniges, Franz 
+http://d-nb.info/gnd/119052512; Knaus, Hermann 
+http://d-nb.info/gnd/172191955; Koch, Horst G. 
+http://d-nb.info/gnd/137341989; Schulte, Christof 
+http://d-nb.info/gnd/172388309; Strackbein, Ralf 
+http://d-nb.info/gnd/118906291; Katz, Benjamin 
+http://d-nb.info/gnd/109921526; Bienemann, Georg 
+http://d-nb.info/gnd/172358736; Schladoth, Paul 
+http://d-nb.info/gnd/119222051; Stadtbäumer, Pia 
+http://d-nb.info/gnd/172048834; Döhne, Volker 
+http://d-nb.info/gnd/12457713X; Nassehi, Armin 
+http://d-nb.info/gnd/124770452; Simon, Erika 
+http://d-nb.info/gnd/119097435; Schwer, Paul 
+http://d-nb.info/gnd/118601903; Roell, Werner P. 
+http://d-nb.info/gnd/119061880; Sayn-Wittgenstein, Heinrich zu 
+http://d-nb.info/gnd/119126982; Altenhofer, Norbert 
+http://d-nb.info/gnd/118548018; Heine, Heinrich 
+http://d-nb.info/gnd/171978366; Birkigt, Klaus 
+http://d-nb.info/gnd/172383048; Stadler, Marinus M. 
+http://d-nb.info/gnd/172083796; Funck, Hans Joachim 
+http://d-nb.info/gnd/119115174; Zwirner, Ernst Friedrich 
+http://d-nb.info/gnd/119106035; Worgt, Gerhard 
+http://d-nb.info/gnd/119210991; Günther, Harri 
+http://d-nb.info/gnd/119373912; Herre, Volkmar 
+http://d-nb.info/gnd/121771687; Buttlar, Adrian von 
+http://d-nb.info/gnd/122234472; Pracht, Hans-Peter 
+http://d-nb.info/gnd/11850715X; Batz, Eugen 
+http://d-nb.info/gnd/117732931; Alfermann, Armin 
+http://d-nb.info/gnd/122287304; Bullinger, Hans-Jörg 
+http://d-nb.info/gnd/118828584; Bieker, Josef 
+http://d-nb.info/gnd/113092067; Onkelbach, Hans 
+http://d-nb.info/gnd/118521438; Cohn, Ruth C. 
+http://d-nb.info/gnd/174101791; Kaspar, Fred 
+http://d-nb.info/gnd/118873350; Mell, Peter 
+http://d-nb.info/gnd/11543089X; Krempel, Ulrich 
+http://d-nb.info/gnd/142114650; Schoppmann, Beate 
+http://d-nb.info/gnd/120529688; Hettling, Manfred 
+http://d-nb.info/gnd/107341522; Bußmann, Klaus 
+http://d-nb.info/gnd/141809140; Brandenburg, Franz-Josef 
+http://d-nb.info/gnd/172627346; Görler, Hans-Ulrich 
+http://d-nb.info/gnd/124354106; Kreienbaum, Maria Anna 
+http://d-nb.info/gnd/122786777; Rasch, Wilfried 
+http://d-nb.info/gnd/119073854; Küpper, Heinrich 
+http://d-nb.info/gnd/123137136; Fischer, Gert 
+http://d-nb.info/gnd/12101486X; Beeck, Anneliese 
+http://d-nb.info/gnd/172280672; Nabrings, Arie 
+http://d-nb.info/gnd/119431572; Kaiser, Ruth 
+http://d-nb.info/gnd/12364884X; Kühn, Ingrid 
+http://d-nb.info/gnd/119144778; Lemmer, Manfred 
+http://d-nb.info/gnd/120195313; Bloech, Jürgen 
+http://d-nb.info/gnd/119082667; Hagebölling, Wilfried 
+http://d-nb.info/gnd/132222280; Knorre, Alexander von 
+http://d-nb.info/gnd/14344672X; Bartsch, Ingo 
+http://d-nb.info/gnd/119247925; Pöggeler, Christoph 
+http://d-nb.info/gnd/118723103; Kippenberger, Martin 
+http://d-nb.info/gnd/172421713; Tönnis, Gisbert 
+http://d-nb.info/gnd/118623109; Tönnis, Gisbert 
+http://d-nb.info/gnd/115817417; Hammermann, Günter 
+http://d-nb.info/gnd/17271706X; Ostholt-Wipperfeld, Ferdinand 
+http://d-nb.info/gnd/172736803; Geißler, Ute 
+http://d-nb.info/gnd/130583502; Grünwald, Maria 
+http://d-nb.info/gnd/113358733; Synofzik, Thomas 
+http://d-nb.info/gnd/172811856; Stinner, Johannes 
+http://d-nb.info/gnd/172546818; Wever, Heinz 
+http://d-nb.info/gnd/172172586; Jünemann, Reinhardt 
+http://d-nb.info/gnd/118620800; Tappeser, Rainer 
+http://d-nb.info/gnd/113430876; Sunderbrink, Bärbel 
+http://d-nb.info/gnd/11587500X; Fuchs, Peter 
+http://d-nb.info/gnd/124418376; Fischer, Ferdy 
+http://d-nb.info/gnd/113735596; Klaes, Holger 
+http://d-nb.info/gnd/143067419; Ziethen, Horst 
+http://d-nb.info/gnd/171945093; Adam, Clemens 
+http://d-nb.info/gnd/12287983X; Rüther, Peter 
+http://d-nb.info/gnd/118773984; Hentrich, Helmut 
+http://d-nb.info/gnd/11921850X; Virnich, Winfried 
+http://d-nb.info/gnd/128647620; Linsmann, Maria 
+http://d-nb.info/gnd/172198623; Krummacher, Michael 
+http://d-nb.info/gnd/113741197; Blum-Geenen, Sabine 
+http://d-nb.info/gnd/119346796; Overbeck, Egon 
+http://d-nb.info/gnd/115872620; Eller, Roland 
+http://d-nb.info/gnd/123172500; Jenrich, Holger 
+http://d-nb.info/gnd/138267677; Jahnke, Gerburg 
+http://d-nb.info/gnd/138267731; Überall, Stephanie 
+http://d-nb.info/gnd/119261634; Haverkamp, Gabriele 
+http://d-nb.info/gnd/120009897; Buhren, Claus G. 
+http://d-nb.info/gnd/118530186; Emmerich, Anna Katharina 
+http://d-nb.info/gnd/118587374; Neumann, Therese 
+http://d-nb.info/gnd/122571444; Hüssen, Claus-Michael 
+http://d-nb.info/gnd/119333244; Ulbert, Günter 
+http://d-nb.info/gnd/11861164X; Schumann, Clara 
+http://d-nb.info/gnd/119345692; List, Emilie 
+http://d-nb.info/gnd/119345684; List, Elise 
+http://d-nb.info/gnd/1012566803; Wendler, Eugen 
+http://d-nb.info/gnd/11585245X; Behrens, Heidi 
+http://d-nb.info/gnd/109313895; Priamus, Heinz-Jürgen 
+http://d-nb.info/gnd/123138817; Brauch, Hans Günter 
+http://d-nb.info/gnd/172140161; Hoebink, Hein 
+http://d-nb.info/gnd/119363933; Wendels, Franziskus 
+http://d-nb.info/gnd/120248212; Jarren, Otfried 
+http://d-nb.info/gnd/120999803; Wunder, Heide 
+http://d-nb.info/gnd/109307615; Söllner, Alfons 
+http://d-nb.info/gnd/115710574; Wiggermann, Karl-Friedrich 
+http://d-nb.info/gnd/118724398; Kricke, Norbert 
+http://d-nb.info/gnd/119434067; Cladders, Johannes 
+http://d-nb.info/gnd/118510460; Beuys, Joseph 
+http://d-nb.info/gnd/132057255; Feldhoff, Norbert 
+http://d-nb.info/gnd/118583182; Mohn, Reinhard 
+http://d-nb.info/gnd/119216841; Bossle, Lothar 
+http://d-nb.info/gnd/118725386; Kunisch, Hermann 
+http://d-nb.info/gnd/173085075; Pfefferkorn, Else 
+http://d-nb.info/gnd/120910012; Lange, Sophie 
+http://d-nb.info/gnd/173085229; Zimmermann, Birgitta 
+http://d-nb.info/gnd/124689876; Focke, Wenda 
+http://d-nb.info/gnd/109859502; Freitag, Sabine 
+http://d-nb.info/gnd/118712411; Johann Wilhelm <Pfalz, Kurfürst> 
+http://d-nb.info/gnd/115611118; Wessler, Hartmut 
+http://d-nb.info/gnd/172337364; Roß, Dieter 
+http://d-nb.info/gnd/113442289; Tröger, Beate 
+http://d-nb.info/gnd/119498200; Brednich, Rolf Wilhelm 
+http://d-nb.info/gnd/119071525; Schoeps, Julius H. 
+http://d-nb.info/gnd/173136400; Murmann, Heinz 
+http://d-nb.info/gnd/13677881X; Deppe, Joachim 
+http://d-nb.info/gnd/128519932; Wahrig, Bettina 
+http://d-nb.info/gnd/115772227; Kehrer, Jürgen 
+http://d-nb.info/gnd/118159437; Naschold, Frieder 
+http://d-nb.info/gnd/121082539; Sietz, Manfred 
+http://d-nb.info/gnd/143049127; Genger, Angela 
+http://d-nb.info/gnd/172306035; Petras, Harri 
+http://d-nb.info/gnd/118625381; Ulrichs, Timm 
+http://d-nb.info/gnd/12037076X; Hill, Hermann 
+http://d-nb.info/gnd/108111644; Schnöring, Kurt 
+http://d-nb.info/gnd/123075912; Schamp, Matthias 
+http://d-nb.info/gnd/121457516; Voigt, Jutta 
+http://d-nb.info/gnd/11885268X; Fischer, Arno 
+http://d-nb.info/gnd/122214609; Fehlemann, Sabine 
+http://d-nb.info/gnd/118950274; Leverkühne, Silke 
+http://d-nb.info/gnd/129979015; Weiss, Evelyn 
+http://d-nb.info/gnd/119509954; Kohl, Thomas 
+http://d-nb.info/gnd/120196344; Dipper, Christof 
+http://d-nb.info/gnd/120456559; Scharloh, Johann-Peter 
+http://d-nb.info/gnd/111032415; Uelsberg, Gabriele 
+http://d-nb.info/gnd/116860596; Gröhler, Harald 
+http://d-nb.info/gnd/119055899; Drefke, Ekkehard 
+http://d-nb.info/gnd/12006488X; Klieve, Lars Martin 
+http://d-nb.info/gnd/172501393; Lohmeyer, Franz 
+http://d-nb.info/gnd/135534259; Minkenberg, Georg 
+http://d-nb.info/gnd/112190073; Siebigs, Pit 
+http://d-nb.info/gnd/122498321; Krus-Bonazza, Annette 
+http://d-nb.info/gnd/118146114; Ruf, Katharine 
+http://d-nb.info/gnd/122849329; Becker, Helle 
+http://d-nb.info/gnd/115647058; Schätzing, Frank 
+http://d-nb.info/gnd/118569880; Lasker-Schüler, Else 
+http://d-nb.info/gnd/118527533; Droste-Hülshoff, Annette von 
+http://d-nb.info/gnd/120898799; Brocksieper, Heinrich 
+http://d-nb.info/gnd/129348120; Roeder, Horst 
+http://d-nb.info/gnd/120570149; Ströbert, Hilde 
+http://d-nb.info/gnd/120712504; Thiele, Anke 
+http://d-nb.info/gnd/115646450; Noske, Edgar 
+http://d-nb.info/gnd/11853033X; Engelbertus <I., Coloniensis> 
+http://d-nb.info/gnd/11739257X; Simon, Hermann 
+http://d-nb.info/gnd/120921928; Kiel, Marcus 
+http://d-nb.info/gnd/122464516; Wasser, Bruno 
+http://d-nb.info/gnd/119547457; Becker, Gerhard 
+http://d-nb.info/gnd/14130880X; Hartmann, Petra 
+http://d-nb.info/gnd/141309296; Schmitz, Stephan 
+http://d-nb.info/gnd/173050034; Moldehn, Dominique 
+http://d-nb.info/gnd/118547771; Heibel, Axel 
+http://d-nb.info/gnd/11117158X; Huske, Joachim 
+http://d-nb.info/gnd/118198076; Elsenbast, Volker 
+http://d-nb.info/gnd/134224485; Scheilke, Christoph Th. 
+http://d-nb.info/gnd/12148209X; Vormann, Maria 
+http://d-nb.info/gnd/189551399; Borsdorf, Ulrich 
+http://d-nb.info/gnd/118556185; Iwand, Hans Joachim 
+http://d-nb.info/gnd/17204166X; Dettmer, Bettina 
+http://d-nb.info/gnd/114644276; Meis, Manfred 
+http://d-nb.info/gnd/135493455; Hoffmann, Rüdiger 
+http://d-nb.info/gnd/12110981X; Buschmann, Walter 
+http://d-nb.info/gnd/119053063; Heerich, Erwin 
+http://d-nb.info/gnd/121042413; Berg, Stephan 
+http://d-nb.info/gnd/118560980; Keining, Horst 
+http://d-nb.info/gnd/121988767; Heerich, Hildegard 
+http://d-nb.info/gnd/173316301; Meyer, Holger 
+http://d-nb.info/gnd/118563769; Knoebel, Imi 
+http://d-nb.info/gnd/115446303; Bermbach, Udo 
+http://d-nb.info/gnd/121384691; Kemmerling, Krista 
+http://d-nb.info/gnd/118561340; Kempner, Robert M. W. 
+http://d-nb.info/gnd/118532146; Fechenbach, Felix 
+http://d-nb.info/gnd/118803379; Rau, Johannes 
+http://d-nb.info/gnd/121670082; Weikert, Georg Martin 
+http://d-nb.info/gnd/11850066X; Adenauer, Konrad 
+http://d-nb.info/gnd/121682234; Stolte, Wilhelm 
+http://d-nb.info/gnd/121707601; Conrad, Rupert 
+http://d-nb.info/gnd/118602217; Rohlfs, Christian 
+http://d-nb.info/gnd/118565125; Konrad <von Soest> 
+http://d-nb.info/gnd/121012700; Assmann, Aleida 
+http://d-nb.info/gnd/119244128; Huber, Felix Stephan 
+http://d-nb.info/gnd/111930251; Vögele, Christoph 
+http://d-nb.info/gnd/118820400; Homeyer, Josef 
+http://d-nb.info/gnd/1012382494; Merk, Gerhard 
+http://d-nb.info/gnd/118558862; Jung-Stilling, Johann Heinrich 
+http://d-nb.info/gnd/12162840X; Steinbrück, Peer 
+http://d-nb.info/gnd/121742881; Kramm, Herma 
+http://d-nb.info/gnd/12181792X; Schön, Dorothea 
+http://d-nb.info/gnd/121751406; Konen, Heinrich Clemens 
+http://d-nb.info/gnd/121585697; Jasper, Gotthard 
+http://d-nb.info/gnd/12915329X; Holtmann, Everhard 
+http://d-nb.info/gnd/121529193; Kier, Hiltrud 
+http://d-nb.info/gnd/119139936; Jeserich, Kurt G. A. 
+http://d-nb.info/gnd/141081198; Strangmeier, Heinrich 
+http://d-nb.info/gnd/137082479; Mayr, Alois 
+http://d-nb.info/gnd/136186807; Schmitz, Josef 
+http://d-nb.info/gnd/118049747; Stelkens, Paul 
+http://d-nb.info/gnd/142862592; Kallerhoff, Dieter 
+http://d-nb.info/gnd/124380735; Siewert, Klaus 
+http://d-nb.info/gnd/122461924; Becker-Huberti, Manfred 
+http://d-nb.info/gnd/171989430; Brennecke, Ralph 
+http://d-nb.info/gnd/117492949; Spethmann, Hans 
+http://d-nb.info/gnd/114573352; Dellwig, Magnus 
+http://d-nb.info/gnd/118630814; Wellershoff, Dieter 
+http://d-nb.info/gnd/124435114; Bullivant, Keith 
+http://d-nb.info/gnd/118198084; Brandt, Hans Jürgen 
+http://d-nb.info/gnd/118975994; Hengst, Karl 
+http://d-nb.info/gnd/115721851; Krampen, Günter 
+http://d-nb.info/gnd/139461116; Hagemann, Ludwig 
+http://d-nb.info/gnd/118540238; Goethe, Johann Wolfgang von 
+http://d-nb.info/gnd/11861598X; Spee, Friedrich von 
+http://d-nb.info/gnd/118739514; Patze, Hans 
+http://d-nb.info/gnd/172229219; Lobbedey, Uwe 
+http://d-nb.info/gnd/121390926; Lobbedey, Uwe 
+http://d-nb.info/gnd/124479553; Weisgerber, Gerd 
+http://d-nb.info/gnd/118594303; Pieper, Josef 
+http://d-nb.info/gnd/128773014; Frieß-Reimann, Hildegard 
+http://d-nb.info/gnd/172130379; Heckes, Hans-Dieter 
+http://d-nb.info/gnd/118748254; Schäfers, Gottfried 
+http://d-nb.info/gnd/172079403; Franke, Hartwig 
+http://d-nb.info/gnd/135608678; Hardin, James N. 
+http://d-nb.info/gnd/109640225; Waldhoff, Johannes 
+http://d-nb.info/gnd/118087045; Rauschenbach, Thomas 
+http://d-nb.info/gnd/120230976; Galuske, Michael 
+http://d-nb.info/gnd/119329190; Dassmann, Ernst 
+http://d-nb.info/gnd/118501429; Albers, Josef 
+http://d-nb.info/gnd/118830678; Piehl, Kurt 
+http://d-nb.info/gnd/11875565X; Stoob, Heinz 
+http://d-nb.info/gnd/172097800; Gillessen, Leo 
+http://d-nb.info/gnd/108863182; Naßmacher, Hiltrud 
+http://d-nb.info/gnd/118607472; Schieder, Theodor 
+http://d-nb.info/gnd/128930802; Biskup, Marian 
+http://d-nb.info/gnd/115425632; Stöhr, Martin 
+http://d-nb.info/gnd/118654616; Beckmann, Joachim 
+http://d-nb.info/gnd/115581871; Roscher, Volker 
+http://d-nb.info/gnd/108486257; Evers, Adalbert 
+http://d-nb.info/gnd/121478742; Henkel, Gerhard 
+http://d-nb.info/gnd/118555553; Immermann, Karl Leberecht 
+http://d-nb.info/gnd/118540610; Goltzius, Hendrick 
+http://d-nb.info/gnd/118624482; Türk, Karl H. 
+http://d-nb.info/gnd/115734988; Mainzer, Udo 
+http://d-nb.info/gnd/118527215; Drake, Heinrich 
+http://d-nb.info/gnd/118825178; Seibt, Ferdinand 
+http://d-nb.info/gnd/118662090; Bosl, Karl 
+http://d-nb.info/gnd/118651188; Aurin, Kurt 
+http://d-nb.info/gnd/118606921; Scheiner, Jakob 
+http://d-nb.info/gnd/11860693X; Scheiner, Wilhelm 
+http://d-nb.info/gnd/119333287; Henning, Friedrich-Wilhelm 
+http://d-nb.info/gnd/119244047; Pollard, Sidney 
+http://d-nb.info/gnd/118164252; Bellers, Jürgen 
+http://d-nb.info/gnd/110041569; Kaldewei, Gerhard 
+http://d-nb.info/gnd/118503820; Widukind 
+http://d-nb.info/gnd/122240014; Bader, Reinhard 
+http://d-nb.info/gnd/12877696X; Habel, Werner 
+http://d-nb.info/gnd/11875324X; Steinert, Otto 
+http://d-nb.info/gnd/115623833; Kiedrowski, Rainer 
+http://d-nb.info/gnd/11312130X; Strümper, Walter 
+http://d-nb.info/gnd/131610589; Fischer, Hans Georg 
+http://d-nb.info/gnd/118570145; Lauer, Wilhelm 
+http://d-nb.info/gnd/12360432X; Johanek, Peter 
+http://d-nb.info/gnd/123561655; Fries, Fritz 
+http://d-nb.info/gnd/118880829; Fries, Fritz Rudolf 
+http://d-nb.info/gnd/118542818; Grün, Max von der 
+http://d-nb.info/gnd/172146720; Huckenbeck, Ernst 
+http://d-nb.info/gnd/118908529; Hüls, Wilhelm 
+http://d-nb.info/gnd/120942348; Krause-Vilmar, Dietfrid 
+http://d-nb.info/gnd/118539442; Giordano, Ralph 
+http://d-nb.info/gnd/120761599; Kohl, Wilhelm 
+http://d-nb.info/gnd/115699163; Faßbender, Hermann J. 
+http://d-nb.info/gnd/118575864; Macke, August 
+http://d-nb.info/gnd/109191412; Stupperich, Reinhard 
+http://d-nb.info/gnd/140336710; Burghardt, Werner 
+http://d-nb.info/gnd/11873816X; Nauen, Heinrich 
+http://d-nb.info/gnd/123856760; Aschoff, Diethard 
+http://d-nb.info/gnd/124004911; Müller, Arnold 
+http://d-nb.info/gnd/121171027; Haustein-Bartsch, Eva 
+http://d-nb.info/gnd/172266092; Müllejans, Rita 
+http://d-nb.info/gnd/111706572; Habermann-Nieße, Klaus 
+http://d-nb.info/gnd/11881947X; Mertes, Alois 
+http://d-nb.info/gnd/118590472; Osterman, Andrej I. 
+http://d-nb.info/gnd/118666878; Kankrin, Egor F. 
+http://d-nb.info/gnd/118544063; Haass, Friedrich Joseph 
+http://d-nb.info/gnd/134055470; Bronny, Horst 
+http://d-nb.info/gnd/172061229; Eiynck, Andreas 
+http://d-nb.info/gnd/172083176; Fuchs, Eginhard 
+http://d-nb.info/gnd/115455205; Knippenberg, Günter 
+http://d-nb.info/gnd/118767240; Werth, Johann von 
+http://d-nb.info/gnd/119202123; Oberndörfer, Dieter 
+http://d-nb.info/gnd/120717549; Brebeck, Wulff E. 
+http://d-nb.info/gnd/172145961; Hüser, Karl 
+http://d-nb.info/gnd/189564547; Ortmanns, Kurt 
+http://d-nb.info/gnd/120490110; Lehmann, Hartmut 
+http://d-nb.info/gnd/118830945; Diers, Michael 
+http://d-nb.info/gnd/122037359; Beyer, Andreas 
+http://d-nb.info/gnd/172567270; Waumans, Wim 
+http://d-nb.info/gnd/119122480; König, Balthasar 
+http://d-nb.info/gnd/172584221; Capellan, Frank 
+http://d-nb.info/gnd/115887849; Amlung, Ullrich 
+http://d-nb.info/gnd/101423713; Scholten, Robert 
+http://d-nb.info/gnd/115792090; Hansmann, Wilfried 
+http://d-nb.info/gnd/118154001; Schäfke, Werner 
+http://d-nb.info/gnd/118761129; Dahn, Walter 
+http://d-nb.info/gnd/171977904; Billstein, Aurel 
+http://d-nb.info/gnd/121870456; ?ol?ov, Shulamit 
+http://d-nb.info/gnd/12879335X; Zotz, Thomas 
+http://d-nb.info/gnd/131883925; Böckmann, Wilhelm 
+http://d-nb.info/gnd/172099021; Glaser, Rüdiger 
+http://d-nb.info/gnd/119167336; Hagedorn, Horst 
+http://d-nb.info/gnd/113543964; Koch, Ulrich 
+http://d-nb.info/gnd/128729821; Bering, Kunibert 
+http://d-nb.info/gnd/123226341; Ehbrecht, Wilfried 
+http://d-nb.info/gnd/133429636; Blab, Josef 
+http://d-nb.info/gnd/120228122; Wollenhaupt, Gabriella 
+http://d-nb.info/gnd/119058987; Zimmermann, Hans Helmut 
+http://d-nb.info/gnd/172303842; Peetz, Sylvia 
+http://d-nb.info/gnd/119508109; Kaldenhoff, Helmut 
+http://d-nb.info/gnd/119035618; Lohse, Hartwig 
+http://d-nb.info/gnd/120775530; Fey, Jörg Michael 
+http://d-nb.info/gnd/17282057X; Schimmer, Hannes 
+http://d-nb.info/gnd/1015623077; Pätzold, Günter 
+http://d-nb.info/gnd/172384850; Steimle, Fritz 
+http://d-nb.info/gnd/119097885; Gigas, Johann Michael 
+http://d-nb.info/gnd/118634224; Klemens August <Köln, Erzbischof> 
+http://d-nb.info/gnd/119496615; Reinhard, Wolfgang 
+http://d-nb.info/gnd/135732182; Brinkmann, Maleen 
+http://d-nb.info/gnd/118515470; Brinkmann, Rolf Dieter 
+http://d-nb.info/gnd/123202892; Hartmann, Wilfried 
+http://d-nb.info/gnd/136344488; Kraus, Stefan 
+http://d-nb.info/gnd/172248019; Mannheims, Hildegard 
+http://d-nb.info/gnd/120639025; Mehlhausen, Joachim 
+http://d-nb.info/gnd/119305453; Nicolaisen, Carsten 
+http://d-nb.info/gnd/118807501; Winckler, Josef 
+http://d-nb.info/gnd/119279509; Romberg, Giesbert von 
+http://d-nb.info/gnd/171988116; Brandt, Hans Jürgen 
+http://d-nb.info/gnd/118558064; Johannes Paul <II., Papst> 
+http://d-nb.info/gnd/172995000; Rudersdorf, Markus 
+http://d-nb.info/gnd/119014963; Gössmann, Wilhelm 
+http://d-nb.info/gnd/115660461; Duchhardt, Heinz 
+http://d-nb.info/gnd/172357926; Schill, Wolfgang 
+http://d-nb.info/gnd/119479273; Selten, Reinhard 
+http://d-nb.info/gnd/122849175; Franke, Alexa 
+http://d-nb.info/gnd/172859611; Schulte, Iris 
+http://d-nb.info/gnd/173068200; Mietzner, Erhard 
+http://d-nb.info/gnd/118004395; Frankewitz, Stefan 
+http://d-nb.info/gnd/115186794; Lingens, Peter 
+http://d-nb.info/gnd/129407739; Merkens, Hans 
+http://d-nb.info/gnd/123281601; Michel, Georg 
+http://d-nb.info/gnd/124396488; Starke, Günter 
+http://d-nb.info/gnd/120132931; Willmes, Bernd 
+http://d-nb.info/gnd/172151295; Hantsche, Irmgard 
+http://d-nb.info/gnd/115618406; Bardmann, Theodor M. 
+http://d-nb.info/gnd/172183987; Kersting, Heinz J. 
+http://d-nb.info/gnd/119493144; Kersting, Heinz J. 
+http://d-nb.info/gnd/128648899; Heineberg, Heinz 
+http://d-nb.info/gnd/121132374; Kampmann, Ricarda 
+http://d-nb.info/gnd/113877560; Spielkamp, Alfred 
+http://d-nb.info/gnd/121239225; Ganzelewski, Michael 
+http://d-nb.info/gnd/119520796; Gregor <von Cerchiara> 
+http://d-nb.info/gnd/118119052; Althöfer, Ulrich 
+http://d-nb.info/gnd/119549085; Siebold, Karl 
+http://d-nb.info/gnd/115687068; Vonhoff, Hans-Joachim 
+http://d-nb.info/gnd/172765897; Walther, Dietmar 
+http://d-nb.info/gnd/119558246; Diepenbrock, Conrad Joseph 
+http://d-nb.info/gnd/119405121; Angermann, Norbert 
+http://d-nb.info/gnd/118833510; Nahrstedt, Wolfgang 
+http://d-nb.info/gnd/173189032; Michels, Hubertus 
+http://d-nb.info/gnd/118171984; Schnabel-Schüle, Helga 
+http://d-nb.info/gnd/172103061; Graevenitz, Gerhart von 
+http://d-nb.info/gnd/120231174; Önnerfors, Alf 
+http://d-nb.info/gnd/11585102X; Kruse, Heinrich Wilhelm 
+http://d-nb.info/gnd/120618761; Brey, Heinrich 
+http://d-nb.info/gnd/115518428; Jonak, Ulf 
+http://d-nb.info/gnd/118163655; Weiß, Klaus-Dieter 
+http://d-nb.info/gnd/120337282; Klein, Marie-Luise 
+http://d-nb.info/gnd/11942004X; Schneider, Gregor 
+http://d-nb.info/gnd/118060864; Mehringer, Hartmut 
+http://d-nb.info/gnd/120703815; Schappert, Roland 
+http://d-nb.info/gnd/172754844; Röger, Ralf 
+http://d-nb.info/gnd/110311825; Werners, Brigitte 
+http://d-nb.info/gnd/11918480X; Pies, Eike 
+http://d-nb.info/gnd/123989485; Blotevogel, Hans Heinrich 
+http://d-nb.info/gnd/111040825; Deinet, Ulrich 
+http://d-nb.info/gnd/120926369; Große Hovest, Benedikt 
+http://d-nb.info/gnd/119215292; Walz, Rolf 
+http://d-nb.info/gnd/140530843; Kohrs, Klaus Heinrich 
+http://d-nb.info/gnd/115694781; Kapustin, Peter 
+http://d-nb.info/gnd/121236765; Weinbrenner, Peter 
+http://d-nb.info/gnd/136344313; Plotzek, Joachim M. 
+http://d-nb.info/gnd/110600959; Heitmeyer, Erika 
+http://d-nb.info/gnd/121081079; Schmalor, Hermann-Josef 
+http://d-nb.info/gnd/118864629; Bienefeld, Heinz 
+http://d-nb.info/gnd/171968573; Baur, Rupprecht S. 
+http://d-nb.info/gnd/128491191; Blaufuß, Dietrich 
+http://d-nb.info/gnd/172479975; Bonny Duala-M'bedy, Leopold-Joseph 
+http://d-nb.info/gnd/13139200X; Höltershinken, Dieter 
+http://d-nb.info/gnd/121421503; Jörn, Nils 
+http://d-nb.info/gnd/11952998X; Böckenförde, Ernst-Wolfgang 
+http://d-nb.info/gnd/134241789; Court, Jürgen 
+http://d-nb.info/gnd/11856319X; Klemperer, Victor 
+http://d-nb.info/gnd/121491013; Pfläging, Kurt 
+http://d-nb.info/gnd/118617273; Stein, Karl vom und zum 
+http://d-nb.info/gnd/121871290; Fisch, Michael 
+http://d-nb.info/gnd/118758721; Schnell, Robert Wolfgang 
+http://d-nb.info/gnd/121414663; Lepsky, Sabine 
+http://d-nb.info/gnd/121414655; Nußbaum, Norbert 
+http://d-nb.info/gnd/119166852; Büttner, Manfred 
+http://d-nb.info/gnd/119272938; Pohl, Hans 
+http://d-nb.info/gnd/121390853; Krafft, Fritz 
+http://d-nb.info/gnd/118529226; Ehmann, Wilhelm 
+http://d-nb.info/gnd/11574326X; Arnold, Heinz Ludwig 
+http://d-nb.info/gnd/121206017; Helfrich, Cilly 
+http://d-nb.info/gnd/118829211; Ausländer, Rose 
+http://d-nb.info/gnd/124108725; Harzheim, Gabriele 
+http://d-nb.info/gnd/118008382; Borchard, Klaus 
+http://d-nb.info/gnd/172192870; Kokalj, Ljuba 
+http://d-nb.info/gnd/120540711; Kay, Rosemarie 
+http://d-nb.info/gnd/12169528X; Blömeke, Sigrid 
+http://d-nb.info/gnd/121884031; Domke, Britta 
+http://d-nb.info/gnd/118798316; Sprickmann, Anton Matthias 
+http://d-nb.info/gnd/113603355; Bobinac, Marijan 
+http://d-nb.info/gnd/115639403; Žmegac, Viktor 
+http://d-nb.info/gnd/122799631; Faassen, Dina van 
+http://d-nb.info/gnd/129713023; Schütze, Yvonne 
+http://d-nb.info/gnd/124274501; Henseler, Paul 
+http://d-nb.info/gnd/173106587; Grandke, Uwe 
+http://d-nb.info/gnd/120484803; Coenen, Ulrich 
+http://d-nb.info/gnd/172248930; Marenberg, Günter 
+http://d-nb.info/gnd/123951402; Stickel, Gerhard 
+http://d-nb.info/gnd/121680525; Arndt, Karl 
+http://d-nb.info/gnd/1012596486; Hartig, Joachim 
+http://d-nb.info/gnd/118514547; Braubach, Max 
+http://d-nb.info/gnd/118534084; Flume, Werner 
+http://d-nb.info/gnd/111340675; Strahl, Alfred 
+http://d-nb.info/gnd/123230543; Jászai, Géza 
+http://d-nb.info/gnd/17213465X; Herberhold, Franz 
+http://d-nb.info/gnd/120921529; Scotti, Johann Josef 
+http://d-nb.info/gnd/115565140; Boor, Wolfgang de 
+http://d-nb.info/gnd/118153986; Euler-Schmidt, Michael 
+http://d-nb.info/gnd/11390472X; Brunert, Maria-Elisabeth 
+http://d-nb.info/gnd/118564390; König, René 
+http://d-nb.info/gnd/106257692; Sauermann, Dietmar 
+http://d-nb.info/gnd/11854523X; Hamann, Johann Georg 
+http://d-nb.info/gnd/131490990; Thiergart, Michael 
+http://d-nb.info/gnd/119558971; Imhof, Wilhelm 
+http://d-nb.info/gnd/119558963; Wurm, Heinrich 
+http://d-nb.info/gnd/119558955; Schuitz, Edmund 
+http://d-nb.info/gnd/118996940; Imhof, Robert 
+http://d-nb.info/gnd/119558920; Senge, Günter 
+http://d-nb.info/gnd/123039665; Bilski, Emily D. 
+http://d-nb.info/gnd/172710774; Olasz-Eke, Dagmar 
+http://d-nb.info/gnd/108129780; Cepl-Kaufmann, Gertrude 
+http://d-nb.info/gnd/10940257X; Meiszies, Winrich 
+http://d-nb.info/gnd/121589838; Rudolph, Dirk 
+http://d-nb.info/gnd/115673466; Eikenbusch, Gerhard 
+http://d-nb.info/gnd/124348149; Wolf, Irmgard 
+http://d-nb.info/gnd/124348165; Engelhardt, Manfred 
+http://d-nb.info/gnd/121523020; Gabriel, Christina 
+http://d-nb.info/gnd/172047307; Dossmann, Ernst 
+http://d-nb.info/gnd/172655285; Dornschneider, Winfried 
+http://d-nb.info/gnd/121831620; Langenberg, Willy 
+http://d-nb.info/gnd/141309512; Allkemper, Alo 
+http://d-nb.info/gnd/12074242X; Steinecke, Hartmut 
+http://d-nb.info/gnd/118584162; Moritz, Karl Philipp 
+http://d-nb.info/gnd/119137143; Erlbruch, Wolf 
+http://d-nb.info/gnd/118754246; Scheel, Udo 
+http://d-nb.info/gnd/120619059; Franken, Gabriele 
+http://d-nb.info/gnd/118579703; Mazarin, Jules 
+http://d-nb.info/gnd/120157845; Zweyer, Jan 
+http://d-nb.info/gnd/118582054; Meysenbug, Malwida von 
+http://d-nb.info/gnd/115451021; Hering, Sabine 
+http://d-nb.info/gnd/173132642; Freund, Susanne 
+http://d-nb.info/gnd/118643525; Aachen, Hans von 
+http://d-nb.info/gnd/171974506; Bernard, Birgit 
+http://d-nb.info/gnd/118605364; Sander, August 
+http://d-nb.info/gnd/172048427; Dräger, Monika 
+http://d-nb.info/gnd/111924871; Növer, Rainer 
+http://d-nb.info/gnd/117209376; Wegeler, Franz Gerhard 
+http://d-nb.info/gnd/11905065X; Rautert, Timm 
+http://d-nb.info/gnd/120602555; Wolf, Herta 
+http://d-nb.info/gnd/122243617; Haberbeck, Auguste 
+http://d-nb.info/gnd/124836321; Johlen, Beate 
+http://d-nb.info/gnd/140365826; Kroemer, Michael 
+http://d-nb.info/gnd/189528044; Aretz, Gerd 
+http://d-nb.info/gnd/122356055; Wagner-Kyora, Georg 
+http://d-nb.info/gnd/122221869; Roß-Nickoll, Martina 
+http://d-nb.info/gnd/121827135; Bab, Bettina 
+http://d-nb.info/gnd/128479434; Lünterbusch, Christoph Hermann 
+http://d-nb.info/gnd/173388132; Schonefeld, Ludwig 
+http://d-nb.info/gnd/124119689; Gleba, Gudrun 
+http://d-nb.info/gnd/115812008; Rakoczy, Csaba Peter 
+http://d-nb.info/gnd/108456862; Custodis, Paul-Georg 
+http://d-nb.info/gnd/189528796; Custodis, Max Joseph Hubert 
+http://d-nb.info/gnd/189527978; Ern, Paul 
+http://d-nb.info/gnd/119101882; Ziese, Stefan 
+http://d-nb.info/gnd/171986113; Botzenhart, Manfred 
+http://d-nb.info/gnd/122341910; Schulze-Becking, Martin 
+http://d-nb.info/gnd/189529121; Goetsch, Otto 
+http://d-nb.info/gnd/17340300X; Quanz, Constanze 
+http://d-nb.info/gnd/118540041; Goebbels, Joseph 
+http://d-nb.info/gnd/173395724; Vorwerk, Christian Andree 
+http://d-nb.info/gnd/132259095; Schneider, Frank 
+http://d-nb.info/gnd/142469408; Gödden, Walter 
+http://d-nb.info/gnd/122384466; Schöning, Alexander 
+http://d-nb.info/gnd/113182996; Pfleger, Susanne 
+http://d-nb.info/gnd/118909142; Fritsch, Katharina 
+http://d-nb.info/gnd/122088123; Janssens, Wijnand 
+http://d-nb.info/gnd/172140935; Hoffmann, Walter 
+http://d-nb.info/gnd/115554521; Sturzbecher, Dietmar 
+http://d-nb.info/gnd/124618316; Bleibtreu, Karl August Leopold 
+http://d-nb.info/gnd/120770628; Wassenberg, Eberhard 
+http://d-nb.info/gnd/106943723; Heimberg, Ursula 
+http://d-nb.info/gnd/1018807233; Springhorn, Rainer 
+http://d-nb.info/gnd/119135760; Tucholski, Edmund 
+http://d-nb.info/gnd/123319463; Kremer, Bruno P. 
+http://d-nb.info/gnd/173071929; Wienkämper, Wieland 
+http://d-nb.info/gnd/121095045; Beutin, Wolfgang 
+http://d-nb.info/gnd/133813568; Konersmann, Frank 
+http://d-nb.info/gnd/121723461; Strätling-Tölle, Helga 
+http://d-nb.info/gnd/121311341; Seidel, Jürgen 
+http://d-nb.info/gnd/118743228; Quirinus <von Neuss> 
+http://d-nb.info/gnd/172190061; Klötzer, Ralf 
+http://d-nb.info/gnd/172715628; Menrad, Klaus 
+http://d-nb.info/gnd/173171257; Bührer, Susanne 
+http://d-nb.info/gnd/118629867; Wedekind, Frank 
+http://d-nb.info/gnd/173411215; Seuthe, Thomas 
+http://d-nb.info/gnd/12253736X; Schumacher, Bernard N. 
+http://d-nb.info/gnd/115378928; Albrecht, Thorsten 
+http://d-nb.info/gnd/189405570; Maiworm, Rudolf 
+http://d-nb.info/gnd/118851985; Meisner, Joachim 
+http://d-nb.info/gnd/111935210; Goch, Stefan 
+http://d-nb.info/gnd/172447577; Wensky, Margret 
+http://d-nb.info/gnd/118541676; Graubner, Gotthard 
+http://d-nb.info/gnd/118700898; Halbfas, Hubertus 
+http://d-nb.info/gnd/172131987; Heintze, Bernd 
+http://d-nb.info/gnd/119456958; Neusüss, Floris M. 
+http://d-nb.info/gnd/119102722; Angela Maria <vom Heiligsten Herzen Jesu> 
+http://d-nb.info/gnd/118562827; Klee, Paul 
+http://d-nb.info/gnd/121291200; Osterwold, Tilman 
+http://d-nb.info/gnd/118577158; Mann, Klaus 
+http://d-nb.info/gnd/118542850; Gründgens, Gustaf 
+http://d-nb.info/gnd/119408945; Schaller, Fritz 
+http://d-nb.info/gnd/118898965; Doempke, Boris 
+http://d-nb.info/gnd/139197427; Grotans, Anna A. 
+http://d-nb.info/gnd/189530766; Aretz, Joseph 
+http://d-nb.info/gnd/143994255; Kampherm, Ruth 
+http://d-nb.info/gnd/12105053X; Mißelbeck, Reinhold 
+http://d-nb.info/gnd/172742331; Sturm, Jürgen 
+http://d-nb.info/gnd/115521984; Ossendorf, Karlheinz 
+http://d-nb.info/gnd/172144078; Horstmann, Theo 
+http://d-nb.info/gnd/11923999X; Thünker, Axel 
+http://d-nb.info/gnd/115590900; Honnef, Klaus 
+http://d-nb.info/gnd/172330130; Reul, Ulrich 
+http://d-nb.info/gnd/120062569; Zucker, Ruth 
+http://d-nb.info/gnd/115571787; Meul, Britta 
+http://d-nb.info/gnd/123442842; Woesler, Winfried 
+http://d-nb.info/gnd/111169291; Nayhauß, Mainhardt von 
+http://d-nb.info/gnd/118679589; Dinnendahl, Hans 
+http://d-nb.info/gnd/12337894X; Wehling, Hans-Werner 
+http://d-nb.info/gnd/143370928; Zeppenfeld, Burkhard 
+http://d-nb.info/gnd/171976029; Beuels, Franz-Rudolf 
+http://d-nb.info/gnd/122525973; Vogeler, Jörg-Eckart 
+http://d-nb.info/gnd/123745861; Gohr, Siegfried 
+http://d-nb.info/gnd/118940805; Gursky, Andreas 
+http://d-nb.info/gnd/118702823; Höfer, Candida 
+http://d-nb.info/gnd/118554476; Hütte, Axel 
+http://d-nb.info/gnd/118833693; Ruff, Thomas 
+http://d-nb.info/gnd/118840592; Struth, Thomas 
+http://d-nb.info/gnd/115401849; Neeb, Horst 
+http://d-nb.info/gnd/122620232; Weck, Wilhelm 
+http://d-nb.info/gnd/11864842X; Altfrid <von Hildesheim> 
+http://d-nb.info/gnd/119359111; Gerswid <von Essen> 
+http://d-nb.info/gnd/189531606; Rheidt, Melchior von 
+http://d-nb.info/gnd/119050730; Martin, Helmut 
+http://d-nb.info/gnd/118552422; Hoffmann, Alfred 
+http://d-nb.info/gnd/118738828; Otto, Teo 
+http://d-nb.info/gnd/119002779; Lückeroth, Jupp 
+http://d-nb.info/gnd/120051443; Braun, Alexander 
+http://d-nb.info/gnd/119136856; Streuli, Beat 
+http://d-nb.info/gnd/118881787; Wurm, Erwin 
+http://d-nb.info/gnd/122613317; Willamowski, Gerd 
+http://d-nb.info/gnd/118193678; Ahland, Frank 
+http://d-nb.info/gnd/118594206; Picasso, Pablo 
+http://d-nb.info/gnd/118574981; Ludwig, Peter 
+http://d-nb.info/gnd/115713026; Oesterreich, Peter L. 
+http://d-nb.info/gnd/18941474X; Scherer, Georg 
+http://d-nb.info/gnd/109883047; Bleyl, Matthias 
+http://d-nb.info/gnd/119412721; Hasenclever, Erich 
+http://d-nb.info/gnd/115634061; Reininghaus, Wilfried 
+http://d-nb.info/gnd/118545973; Harkort, Friedrich 
+http://d-nb.info/gnd/129272450; Beckmann, Dietmar 
+http://d-nb.info/gnd/118936301; Boeckhorst, Jan 
+http://d-nb.info/gnd/118600419; Richter, Gerhard 
+http://d-nb.info/gnd/124257038; Kessemeier, Siegfried 
+http://d-nb.info/gnd/189416866; VandeVelde, Henry 
+http://d-nb.info/gnd/189416912; Bernardus <Claraevallensis> 
+http://d-nb.info/gnd/123933552; Lorentz, Lore 
+http://d-nb.info/gnd/119273136; Sönnecken, Manfred 
+http://d-nb.info/gnd/107938626; Westermann-Angerhausen, Hiltrud 
+http://d-nb.info/gnd/189417536; Arnold <Meister, 15. Jh.> 
+http://d-nb.info/gnd/171933265; Butzin, Bernhard 
+http://d-nb.info/gnd/133557421; Kunzmann, Klaus R. 
+http://d-nb.info/gnd/119117711; Berke, Sybille 
+http://d-nb.info/gnd/189417897; Mand, Andreas 
+http://d-nb.info/gnd/189450851; Pielen, Johann Heinrich 
+http://d-nb.info/gnd/189451033; Söhn, Sebastian 
+http://d-nb.info/gnd/128418079; Bücker, Vera 
+http://d-nb.info/gnd/143632051; Osmann, Horst-Ulrich 
+http://d-nb.info/gnd/189451467; Angenendt, Reinhard 
+http://d-nb.info/gnd/142455628; Herzog, Irmela 
+http://d-nb.info/gnd/118564978; Kolping, Adolph 
+http://d-nb.info/gnd/189451742; Stein, Friedrich 
+http://d-nb.info/gnd/118042890; Jansen, Leonhard 
+http://d-nb.info/gnd/189418893; Jansen, Leonhard 
+http://d-nb.info/gnd/119265753; Honert, Martin 
+http://d-nb.info/gnd/118527525; Droese, Felix 
+http://d-nb.info/gnd/189452080; Lang, Rainer 
+http://d-nb.info/gnd/171933494; Herkenrath, Peter 
+http://d-nb.info/gnd/119105357; Lübbe, Gustav 
+http://d-nb.info/gnd/118526340; Dörpfeld, Friedrich Wilhelm 
+http://d-nb.info/gnd/189452307; Müller, Gustav Wilhelm von 
+http://d-nb.info/gnd/119174340; Schmidt, Albert 
+http://d-nb.info/gnd/189419830; Manskopf, Hermann 
+http://d-nb.info/gnd/118831178; Grinten, Hans van der 
+http://d-nb.info/gnd/122242017; Cox, Heinrich Leonhard 
+http://d-nb.info/gnd/118636448; Zender, Matthias 
+http://d-nb.info/gnd/13226904X; Felten, Franz J. 
+http://d-nb.info/gnd/118502182; Alt, Otmar 
+http://d-nb.info/gnd/189453168; Freytag, Adolf 
+http://d-nb.info/gnd/118838075; Scheele, Paul-Werner 
+http://d-nb.info/gnd/118516914; Bücker, Heinrich Gerhard 
+http://d-nb.info/gnd/189453583; Reis, Betty 
+http://d-nb.info/gnd/189453648; Langerbeins, Peter 
+http://d-nb.info/gnd/118501755; Aldegrever, Heinrich 
+http://d-nb.info/gnd/17193346X; Schürmann, Wilhelm 
+http://d-nb.info/gnd/118566210; Kratz, Max 
+http://d-nb.info/gnd/11656671X; Krug, Konrad Maria 
+http://d-nb.info/gnd/118617125; Steger, Milly 
+http://d-nb.info/gnd/171936515; Heidemann, Lutz 
+http://d-nb.info/gnd/119142546; Schieffer, Theodor 
+http://d-nb.info/gnd/135938201; Schlickau, Stephan 
+http://d-nb.info/gnd/118618350; Stockhausen, Karlheinz 
+http://d-nb.info/gnd/189448369; Stehkämper, Hugo 
+http://d-nb.info/gnd/189531835; Scherer, Wingolf 
+http://d-nb.info/gnd/118800108; Fürstenberg, Kaspar von 
+http://d-nb.info/gnd/134009991; Looz-Corswarem, Clemens von 
+http://d-nb.info/gnd/189422610; Brandt, Otto 
+http://d-nb.info/gnd/189423099; Schlenker, Max Martin 
+http://d-nb.info/gnd/171936752; Bopf, Britta 
+http://d-nb.info/gnd/189455373; Esser, Karl 
+http://d-nb.info/gnd/189408928; Rocholl, Eduard 
+http://d-nb.info/gnd/189456019; Westphal, Alexander 
+http://d-nb.info/gnd/189456094; Schwarzmann, Heinrich 
+http://d-nb.info/gnd/189456086; Gohla, Hans Peter 
+http://d-nb.info/gnd/189456116; Derichs, Johann 
+http://d-nb.info/gnd/118757571; Stupperich, Robert 
+http://d-nb.info/gnd/118660470; Bodelschwingh, Ernst von 
+http://d-nb.info/gnd/118512250; Bodelschwingh, Friedrich von 
+http://d-nb.info/gnd/189456329; Levy, Alex 
+http://d-nb.info/gnd/189424419; Carthaus, Emil 
+http://d-nb.info/gnd/119233355; Kaufmann, Franz-Xaver 
+http://d-nb.info/gnd/141745894; Wißkirchen, Josef 
+http://d-nb.info/gnd/189436336; Ruckes, Magdalena 
+http://d-nb.info/gnd/118753061; Steil, Ludwig 
+http://d-nb.info/gnd/121713563; Hehl, Ulrich von 
+http://d-nb.info/gnd/118822233; Leuw, Friedrich H. de 
+http://d-nb.info/gnd/189457546; Herder, Johanna Maria 
+http://d-nb.info/gnd/118577573; Marcks, Gerhard 
+http://d-nb.info/gnd/171933524; Brink-Kloke, Henriette 
+http://d-nb.info/gnd/12265322X; Meyer, Dietrich 
+http://d-nb.info/gnd/118715097; Kortum, Carl Arnold 
+http://d-nb.info/gnd/135983983; Müller, Irmgard 
+http://d-nb.info/gnd/111537401; Hanke, Hans H. 
+http://d-nb.info/gnd/189425393; Volkhart, Friedrich August 
+http://d-nb.info/gnd/140237798; Ripgin, Weisgin 
+http://d-nb.info/gnd/118945408; Weinsberg, Hermann von 
+http://d-nb.info/gnd/189453176; Dickmann, Heinz 
+http://d-nb.info/gnd/122498216; Pöppinghege, Rainer 
+http://d-nb.info/gnd/109949463; Heimeshoff, Jörg A. E. 
+http://d-nb.info/gnd/121858626; Hoffmann, Godehard 
+http://d-nb.info/gnd/119155907; Preusse, August 
+http://d-nb.info/gnd/112608825; Gehlen, Dirk von 
+http://d-nb.info/gnd/189459646; Funke, Otto 
+http://d-nb.info/gnd/189459654; Hoffmann, Ernst 
+http://d-nb.info/gnd/189421339; Laakes, Monika 
+http://d-nb.info/gnd/118530895; Ernst, Max 
+http://d-nb.info/gnd/189460016; Schaarwächter, Hans 
+http://d-nb.info/gnd/189460113; Wauer, Fritz 
+http://d-nb.info/gnd/189460121; Hanebeck, Gerd 
+http://d-nb.info/gnd/189460377; Kirch, Pauline 
+http://d-nb.info/gnd/119473674; Seibertz, Johann Suibert 
+http://d-nb.info/gnd/118611429; Schultze, Bernard 
+http://d-nb.info/gnd/171932056; Hesse, Josef 
+http://d-nb.info/gnd/118612654; Seehaus, Paul Adolf 
+http://d-nb.info/gnd/108158055; Mielke, Heinz-Peter 
+http://d-nb.info/gnd/118723340; Klapheck, Konrad 
+http://d-nb.info/gnd/189436824; Gravelott, B. 
+http://d-nb.info/gnd/189479434; Jasper, Martin 
+http://d-nb.info/gnd/129586684; Schmitt, Christa 
+http://d-nb.info/gnd/118504932; Attersee, Christian Ludwig 
+http://d-nb.info/gnd/189478721; Hülder, Hermann Christian 
+http://d-nb.info/gnd/118575449; Luther, Martin 
+http://d-nb.info/gnd/171936183; Zedelius, Volker 
+http://d-nb.info/gnd/118683624; Finke, Heinrich 
+http://d-nb.info/gnd/118677489; Cürten, Gregor 
+http://d-nb.info/gnd/108450554; Knieriem, Michael 
+http://d-nb.info/gnd/118762109; Schücking, Levin 
+http://d-nb.info/gnd/12005289X; Gutschow, Niels 
+http://d-nb.info/gnd/128618043; Krins, Franz 
+http://d-nb.info/gnd/11856238X; Kirchhoff, Kilian 
+http://d-nb.info/gnd/124999158; Hartlieb von Wallthor, Alfred 
+http://d-nb.info/gnd/124155715; Knirim, Helmut 
+http://d-nb.info/gnd/189478713; Hühnerbein, Friedrich Wilhelm 
+http://d-nb.info/gnd/140782184; Schappe, Josef 
+http://d-nb.info/gnd/124044646; Tauch, Max 
+http://d-nb.info/gnd/189466472; Bährens, Johann Christian Friedrich 
+http://d-nb.info/gnd/118060872; Reulecke, Jürgen 
+http://d-nb.info/gnd/117297623; Lüning, Otto 
+http://d-nb.info/gnd/118713574; Kohl, Gottfried 
+http://d-nb.info/gnd/189497653; Schweizer, Renate 
+http://d-nb.info/gnd/189497645; Schweizer, Hans 
+http://d-nb.info/gnd/129526010; Schweizer, Thomas 
+http://d-nb.info/gnd/171935381; Fleischer, Helga 
+http://d-nb.info/gnd/118588494; Nolde, Emil 
+http://d-nb.info/gnd/189486325; Maßner, Hanns-Joachim 
+http://d-nb.info/gnd/189470658; Farina, Johann Maria 
+http://d-nb.info/gnd/118502409; Amat, Frederic 
+http://d-nb.info/gnd/171935179; Reichel, Hans 
+http://d-nb.info/gnd/123800587; Reichel, Hans 
+http://d-nb.info/gnd/171933850; Münch, Willi 
+http://d-nb.info/gnd/189417382; Münch, Willi 
+http://d-nb.info/gnd/189489480; Nordmann, Hans 
+http://d-nb.info/gnd/118767364; Vater, Axel 
+http://d-nb.info/gnd/142240133; Gmurzynska, Krystyna 
+http://d-nb.info/gnd/189420693; Hugot, Leo 
+http://d-nb.info/gnd/189467312; Coronelli, Vincentio Maria 
+http://d-nb.info/gnd/103972617; Dorfmüller, Joachim 
+http://d-nb.info/gnd/118723707; Knappertsbusch, Hans 
+http://d-nb.info/gnd/135095859; Hellfaier, Detlev 
+http://d-nb.info/gnd/116513268; Hasenkamp, Gottfried 
+http://d-nb.info/gnd/118537210; Galen, Clemens August von 
+http://d-nb.info/gnd/189470275; Escherich, Oskar 
+http://d-nb.info/gnd/139769781; Luckhardt, Jochen 
+http://d-nb.info/gnd/109483030; Lehmann, Klaus Michael 
+http://d-nb.info/gnd/118571915; Lerche, Horst 
+http://d-nb.info/gnd/120150646; Obier, Uwe 
+http://d-nb.info/gnd/120857782; Zimmermann, Michael 
+http://d-nb.info/gnd/189491922; Prünte, Johann 
+http://d-nb.info/gnd/189504528; Wiese, Wilhelm 
+http://d-nb.info/gnd/133653927; Esser, Elke 
+http://d-nb.info/gnd/120711524; Treibel, Annette 
+http://d-nb.info/gnd/143338420; Claussen, Hilde 
+http://d-nb.info/gnd/189501804; Unterberg, Reinhold 
+http://d-nb.info/gnd/12315586X; Burghardt, Franz J. 
+http://d-nb.info/gnd/118760211; Schwippert, Kurt 
+http://d-nb.info/gnd/189447982; Feinendegen, Reinhard 
+http://d-nb.info/gnd/118660888; Boettcher, Erik 
+http://d-nb.info/gnd/118974602; Goeters, J. F. Gerhard 
+http://d-nb.info/gnd/118579568; Mayer, Hans 
+http://d-nb.info/gnd/189479159; Jacobs, Artur 
+http://d-nb.info/gnd/121456013; Jung, Hermann 
+http://d-nb.info/gnd/11877798X; Kreis, Wilhelm 
+http://d-nb.info/gnd/118571117; Lehmbruck, Wilhelm 
+http://d-nb.info/gnd/189479388; Janssen, Carl 
+http://d-nb.info/gnd/118934406; Buscher, Clemens 
+http://d-nb.info/gnd/189470488; Ewan, Johann 
+http://d-nb.info/gnd/137801211; Fleermann-Dörrenberg, Walburga 
+http://d-nb.info/gnd/11880698X; Wolf, Ernst 
+http://d-nb.info/gnd/11803281X; Friedrichs, Jürgen 
+http://d-nb.info/gnd/128912510; Georgen, Theresa 
+http://d-nb.info/gnd/118835904; Marx-Colsman, Lotte 
+http://d-nb.info/gnd/189432012; Marx-Colsmann, Lotte 
+http://d-nb.info/gnd/189451513; Wieber, Franz 
+http://d-nb.info/gnd/189471395; Flume, Günther 
+http://d-nb.info/gnd/189483199; Kroos, Franz 
+http://d-nb.info/gnd/139471162; Tröps, Dieter 
+http://d-nb.info/gnd/11853369X; Flaskamp, Franz 
+http://d-nb.info/gnd/11904899X; Schmidhagen, Reinhard 
+http://d-nb.info/gnd/118617230; Stein, Edith 
+http://d-nb.info/gnd/172445035; Weichardt, Jürgen 
+http://d-nb.info/gnd/189433027; Schmidt-Stein, Michael 
+http://d-nb.info/gnd/171939581; Güllenstern, Eleonore 
+http://d-nb.info/gnd/118591533; Pankok, Otto 
+http://d-nb.info/gnd/171932560; Schmidt, Günter 
+http://d-nb.info/gnd/122133803; Weiskirch, Willi 
+http://d-nb.info/gnd/124377025; Hoogen, Matthias 
+http://d-nb.info/gnd/118904205; Statz, Vinzenz 
+http://d-nb.info/gnd/189485205; Lickfeld, Hermann 
+http://d-nb.info/gnd/171932889; Günter, Roland 
+http://d-nb.info/gnd/108355276; Günter, Janne 
+http://d-nb.info/gnd/189475005; Hagemann, Walter 
+http://d-nb.info/gnd/189432225; Mommer von Raemsdonck, Nikolaus 
+http://d-nb.info/gnd/124874266; Harlan, Volker 
+http://d-nb.info/gnd/110941268; Bachem, Georg Andreas 
+http://d-nb.info/gnd/121348024; Köhler, Wolfram 
+http://d-nb.info/gnd/189412178; Schulte vom Brühl, Walther 
+http://d-nb.info/gnd/110275535; Krupp, Hans W. 
+http://d-nb.info/gnd/118590480; Ostermann, Willi 
+http://d-nb.info/gnd/119274051; Gruber, Leo Fritz 
+http://d-nb.info/gnd/121544303; Nattermüller, Ulrike 
+http://d-nb.info/gnd/108714241; Reimann, Wolfgang R. 
+http://d-nb.info/gnd/118512676; Böll, Heinrich 
+http://d-nb.info/gnd/189505079; Wirtgen, Heinz 
+http://d-nb.info/gnd/141217855; Bott, Karl Heinz 
+http://d-nb.info/gnd/119317559; Krian, Erich 
+http://d-nb.info/gnd/123411025; Hegemann, Erwin 
+http://d-nb.info/gnd/118605488; Santarossa, Hella 
+http://d-nb.info/gnd/117415537; Treue, Wilhelm 
+http://d-nb.info/gnd/189488301; Mülhens, Ferdinand 
+http://d-nb.info/gnd/118791729; Pferdmenges, Robert 
+http://d-nb.info/gnd/189432748; Reitzenstein, Alexander Gustav Otto Robert von 
+http://d-nb.info/gnd/119131099; Neuser, Wilhelm H. 
+http://d-nb.info/gnd/171931734; Timm, Willy 
+http://d-nb.info/gnd/189496606; Schneider, Joseph 
+http://d-nb.info/gnd/171938100; Muhle, Josef 
+http://d-nb.info/gnd/140211292; Schröder, August 
+http://d-nb.info/gnd/118697919; Grochowiak, Thomas 
+http://d-nb.info/gnd/119464136; Binding, Günther 
+http://d-nb.info/gnd/11774557X; Wynand, Paul 
+http://d-nb.info/gnd/119356899; Knaust, Rainer 
+http://d-nb.info/gnd/121509087; Eschelbacher, Max 
+http://d-nb.info/gnd/189478586; Hussing, Peter 
+http://d-nb.info/gnd/189450827; Gobbers, Wilhelm 
+http://d-nb.info/gnd/118536079; Frings, Joseph 
+http://d-nb.info/gnd/189495359; Schellenberg, Johann Peter 
+http://d-nb.info/gnd/130403555; Quarg, Gunter 
+http://d-nb.info/gnd/189501421; Trippen, Peter Paul 
+http://d-nb.info/gnd/119063727; Groote, Eberhard von 
+http://d-nb.info/gnd/189480645; Kaufmann, Otto 
+http://d-nb.info/gnd/189478624; Hymmen, Reinhard 
+http://d-nb.info/gnd/109842758; Oellers, Adam C. 
+http://d-nb.info/gnd/189432721; Reitinger-Arnolds, Marianne 
+http://d-nb.info/gnd/132922126; Ungers, Sibylle 
+http://d-nb.info/gnd/172432510; Venner, Gerard H. A. 
+http://d-nb.info/gnd/119356864; Hoefs, Klaus 
+http://d-nb.info/gnd/120176378; Ufer, Christian 
+http://d-nb.info/gnd/189478659; Häußling, Josef M. 
+http://d-nb.info/gnd/118608924; Schmidt, Siegfried J. 
+http://d-nb.info/gnd/118824783; Webels, Wilhelm 
+http://d-nb.info/gnd/116354623; Kracht, August 
+http://d-nb.info/gnd/118551108; Hille, Peter 
+http://d-nb.info/gnd/189433191; Schulte, Winfried 
+http://d-nb.info/gnd/132110857; Kirsch, Wolfgang 
+http://d-nb.info/gnd/171932064; Hartmann, Elmar 
+http://d-nb.info/gnd/189431466; Kersting-Vorenweg, Johann 
+http://d-nb.info/gnd/121868451; Ratering, Werner 
+http://d-nb.info/gnd/119140497; Eichinger, Henning 
+http://d-nb.info/gnd/118999990; Billinger, Manfred H. 
+http://d-nb.info/gnd/102341206; Wiegelmann, Günter 
+http://d-nb.info/gnd/121341348; Ellerbrock, Karl-Peter 
+http://d-nb.info/gnd/118773240; Zuccalmaglio, Anton Wilhelm Florentin von 
+http://d-nb.info/gnd/141158735; Janßen, Anton 
+http://d-nb.info/gnd/123573637; Schmidt, Albert 
+http://d-nb.info/gnd/189416602; Kaiser, Josef 
+http://d-nb.info/gnd/172493404; Beutling, Werner 
+http://d-nb.info/gnd/113582161; Dautermann, Christoph 
+http://d-nb.info/gnd/189495693; Schillings, Otto Julius 
+http://d-nb.info/gnd/119350556; Kronenberg, Christian 
+http://d-nb.info/gnd/189492163; Röing, Johan 
+http://d-nb.info/gnd/189482729; Krall, Karl 
+http://d-nb.info/gnd/118844016; Samuel, Salomon 
+http://d-nb.info/gnd/118844008; Samuel, Anna 
+http://d-nb.info/gnd/11885027X; Genzken, Isa 
+http://d-nb.info/gnd/123089557; Schwarz, Dieter 
+http://d-nb.info/gnd/121816745; Tietzel, Brigitte 
+http://d-nb.info/gnd/118625616; Ursula <Heilige> 
+http://d-nb.info/gnd/118611720; Schurz, Carl 
+http://d-nb.info/gnd/10660113X; Schwering, Max-Leo 
+http://d-nb.info/gnd/172773555; Linthicum, John 
+http://d-nb.info/gnd/171934024; Hartung, Karl 
+http://d-nb.info/gnd/189489707; Oelieden, Emil 
+http://d-nb.info/gnd/118618245; Stirnberg, Bonifatius 
+http://d-nb.info/gnd/110707338; Putsch, Jochem 
+http://d-nb.info/gnd/11586458X; Grimme, Ernst Günther 
+http://d-nb.info/gnd/171933435; Falken, Herbert 
+http://d-nb.info/gnd/118531859; Falken, Herbert 
+http://d-nb.info/gnd/189432977; Schickenberges, Göbel 
+http://d-nb.info/gnd/119207931; Schöller, Peter 
+http://d-nb.info/gnd/171939123; Beier, Ernst 
+http://d-nb.info/gnd/189498099; Seiwert, Joseph 
+http://d-nb.info/gnd/189479523; Jeup, Joseph 
+http://d-nb.info/gnd/128851430; Heydemann, Jörg 
+http://d-nb.info/gnd/189490896; Perl, Thomas 
+http://d-nb.info/gnd/189458933; Böckmann, Berthold 
+http://d-nb.info/gnd/120201828; Rehberg, Silke 
+http://d-nb.info/gnd/189417307; Janßen, Georg 
+http://d-nb.info/gnd/105972940; Westhoff-Krummacher, Hildegard 
+http://d-nb.info/gnd/189459638; Rosenbohm, Günter 
+http://d-nb.info/gnd/119419173; Haxthausen, Werner von 
+http://d-nb.info/gnd/11160740X; Trischler, Helmuth 
+http://d-nb.info/gnd/189519355; Hadrian <Römischer Kaiser> 
+http://d-nb.info/gnd/118578006; Markov, Walter 
+http://d-nb.info/gnd/11855445X; Hüsing, Marie 
+http://d-nb.info/gnd/189505362; Wolff, Heinz 
+http://d-nb.info/gnd/18949994X; Strotmann, Franz-Josef 
+http://d-nb.info/gnd/189501685; Ulenberg, Caspar 
+http://d-nb.info/gnd/189490608; Pannen, H. Dieter 
+http://d-nb.info/gnd/118677160; Couven, Johann Joseph 
+http://d-nb.info/gnd/118881175; Rosswog, Martin 
+http://d-nb.info/gnd/171936876; Girke, Raimund 
+http://d-nb.info/gnd/118539558; Girke, Raimund 
+http://d-nb.info/gnd/118834509; Olevian, Caspar 
+http://d-nb.info/gnd/118586688; Neander, Joachim 
+http://d-nb.info/gnd/189467363; Crasselius, Bartholomäus 
+http://d-nb.info/gnd/120034905; Krummacher, Gottfried Daniel 
+http://d-nb.info/gnd/118577662; Marées, Hans von 
+http://d-nb.info/gnd/189474459; Günther, Monika 
+http://d-nb.info/gnd/189411368; Leuw, Friedrich August de 
+http://d-nb.info/gnd/189492236; Röttgen, Bernhard 
+http://d-nb.info/gnd/189501200; Titz, Johann Henricus 
+http://d-nb.info/gnd/119357801; Storsberg, Klaus 
+http://d-nb.info/gnd/110187571; Finzsch, Norbert 
+http://d-nb.info/gnd/120273772; Mühleisen, Horst 
+http://d-nb.info/gnd/118844709; Lersner, Kurt von 
+http://d-nb.info/gnd/130018589; Kamburg, Petra 
+http://d-nb.info/gnd/118906054; Krichbaum, Jörg 
+http://d-nb.info/gnd/189501057; Tiemann, Wolfgang 
+http://d-nb.info/gnd/189463503; Bergis, Petrus de 
+http://d-nb.info/gnd/11890907X; Erning, Adolf 
+http://d-nb.info/gnd/118909061; Erning, Johanna 
+http://d-nb.info/gnd/18946478X; Born, Michael 
+http://d-nb.info/gnd/189499362; Steiner, Maximilian 
+http://d-nb.info/gnd/115851755; Conrady, Karl Otto 
+http://d-nb.info/gnd/118656783; Bertram, Ernst 
+http://d-nb.info/gnd/118728024; Leyen, Friedrich von der 
+http://d-nb.info/gnd/122711211; Carstensen, Jan 
+http://d-nb.info/gnd/189467762; Dahm, Matthias 
+http://d-nb.info/gnd/189482699; Kraemer, Konrad 
+http://d-nb.info/gnd/18948618X; Lütgenau, August 
+http://d-nb.info/gnd/189486198; Lütgenau, Clara 
+http://d-nb.info/gnd/112001513; Klaaßen-Mielke, Renate 
+http://d-nb.info/gnd/118883720; Fährmann, Willi 
+http://d-nb.info/gnd/189465123; Brakel, Agnes van 
+http://d-nb.info/gnd/189501731; Ulrich, Rudolf 
+http://d-nb.info/gnd/120235366; Steininger, Rolf 
+http://d-nb.info/gnd/171939492; Gläsker, Horst 
+http://d-nb.info/gnd/118539620; Gläsker, Horst 
+http://d-nb.info/gnd/129741574; Beuting, Sigrid 
+http://d-nb.info/gnd/112164153; Ackermann, Volker 
+http://d-nb.info/gnd/189467231; Contzen, Wilhelm von 
+http://d-nb.info/gnd/118535196; Freiligrath, Ferdinand 
+http://d-nb.info/gnd/119026066; Sauer, Friedrich Adolph 
+http://d-nb.info/gnd/189465786; Brockpähler, Renate 
+http://d-nb.info/gnd/118931180; Bloch, Peter 
+http://d-nb.info/gnd/118522132; Corfey, Lambert Friedrich 
+http://d-nb.info/gnd/118991175; Koerbecke, Johann 
+http://d-nb.info/gnd/171933540; Thiemann, Walter 
+http://d-nb.info/gnd/189478047; Holtzwart, Ludwig 
+http://d-nb.info/gnd/189502673; Vorst, Johann Urban von 
+http://d-nb.info/gnd/12394676X; Helbeck, Gerd 
+http://d-nb.info/gnd/118525484; Diesterweg, Adolph 
+http://d-nb.info/gnd/171939557; Grober-Glück, Gerda 
+http://d-nb.info/gnd/118511971; Blume, Bernhard 
+http://d-nb.info/gnd/118973991; Blume, Anna 
+http://d-nb.info/gnd/118521187; Clemen, Paul 
+http://d-nb.info/gnd/189484780; Lehnsen, Heinrich 
+http://d-nb.info/gnd/189473320; Goldenberg, Wilhelm 
+http://d-nb.info/gnd/120288923; Schoppmann, Claudia 
+http://d-nb.info/gnd/11895783X; Siemsen, Anna 
+http://d-nb.info/gnd/119260514; Aloni, Jenny 
+http://d-nb.info/gnd/120542358; Kappler, Ekkehard 
+http://d-nb.info/gnd/121899470; Münster-Schröer, Erika 
+http://d-nb.info/gnd/189502568; Volmert, Theo 
+http://d-nb.info/gnd/189470712; Fedkovic, Nikolaj 
+http://d-nb.info/gnd/189506091; Zuccalmaglio, Salentin von 
+http://d-nb.info/gnd/119111144; Zuccalmaglio, Vincenz Jacob von 
+http://d-nb.info/gnd/118729330; Luchtenberg, Paul 
+http://d-nb.info/gnd/189487682; Meyer, Hermann 
+http://d-nb.info/gnd/118560034; Karl <I., Römisch-Deutsches Reich, Kaiser> 
+http://d-nb.info/gnd/189409274; Agatha <Heilige> 
+http://d-nb.info/gnd/189475579; Hartmann, Paul 
+http://d-nb.info/gnd/189475587; Hartmann, Walter 
+http://d-nb.info/gnd/137531311; Pechau, Jochem 
+http://d-nb.info/gnd/121012751; Domizlaff, Hildegard 
+http://d-nb.info/gnd/189504439; Wiehen, Therese 
+http://d-nb.info/gnd/118568973; Lammert, Will 
+http://d-nb.info/gnd/18950241X; Voßschulte, Alfred 
+http://d-nb.info/gnd/189488514; Mürmann, Franz 
+http://d-nb.info/gnd/189480548; Kastner, Peter Anton 
+http://d-nb.info/gnd/123220807; Peuckmann, Heinrich 
+http://d-nb.info/gnd/171935276; Schütze, Peter 
+http://d-nb.info/gnd/123646189; Sieverts, Thomas 
+http://d-nb.info/gnd/118826433; Drewermann, Eugen 
+http://d-nb.info/gnd/120773198; Nicke, Herbert 
+http://d-nb.info/gnd/189473975; Grohnke, Johann 
+http://d-nb.info/gnd/118554387; Huelsenbeck, Richard 
+http://d-nb.info/gnd/189476850; Herder, Max 
+http://d-nb.info/gnd/119215411; Krauskopf, Karl Heinz 
+http://d-nb.info/gnd/141856521; Tutlies, Petra 
+http://d-nb.info/gnd/142493643; Jenter, Susanne 
+http://d-nb.info/gnd/119103842; Piel, Harry 
+http://d-nb.info/gnd/118799711; Corsten, Severin 
+http://d-nb.info/gnd/118791877; Philipp <von Heinsberg> 
+http://d-nb.info/gnd/189447737; Janssen, Heinrich 
+http://d-nb.info/gnd/189500956; Thun, Ferdinand 
+http://d-nb.info/gnd/189486627; Marceau, François-Séverin 
+http://d-nb.info/gnd/189455578; Heckmanns, Franz 
+http://d-nb.info/gnd/119108623; Reihl, Friedebert 
+http://d-nb.info/gnd/119436221; Florian, Klaus 
+http://d-nb.info/gnd/119108615; Schernstein, Walter 
+http://d-nb.info/gnd/119108607; Voß, Alexander 
+http://d-nb.info/gnd/18949493X; Schaberg, Rolf 
+http://d-nb.info/gnd/189458046; Luhr, Ewald 
+http://d-nb.info/gnd/189452161; Arnold, Horst 
+http://d-nb.info/gnd/189423455; Jordan, Hanna 
+http://d-nb.info/gnd/118840886; Dollerschell, Eduard 
+http://d-nb.info/gnd/118953869; Hüsch, Hanns Dieter 
+http://d-nb.info/gnd/171931882; Huber, Thomas 
+http://d-nb.info/gnd/189414774; Huber, Thomas 
+http://d-nb.info/gnd/189434090; Wolff Metternich, Franz Graf 
+http://d-nb.info/gnd/118562762; Klauke, Jürgen 
+http://d-nb.info/gnd/118562657; Kiwitz, Heinz 
+http://d-nb.info/gnd/133894886; Plötz, Robert 
+http://d-nb.info/gnd/118569538; Langhoff, Wolfgang 
+http://d-nb.info/gnd/189489057; Neumann, Hartwig 
+http://d-nb.info/gnd/122561791; Franke, Karl 
+http://d-nb.info/gnd/108985563; Deisting, Heinrich Josef 
+http://d-nb.info/gnd/118993550; Wagner, Ulrich 
+http://d-nb.info/gnd/119018241; Ochse, Wilhelm 
+http://d-nb.info/gnd/111268273; Briesen, Detlef 
+http://d-nb.info/gnd/189497599; Schwarz, David 
+http://d-nb.info/gnd/118655841; Berg, Carl 
+http://d-nb.info/gnd/189493976; Rosencranz, Johannes 
+http://d-nb.info/gnd/119466201; Kuhne, Wilhelm 
+http://d-nb.info/gnd/171931831; Wahle, Walter 
+http://d-nb.info/gnd/11909990X; Joseph Clemens <Köln, Erzbischof> 
+http://d-nb.info/gnd/189409584; Spickermann, Heinrich 
+http://d-nb.info/gnd/123200296; Tenfelde, Klaus 
+http://d-nb.info/gnd/119135590; Hildegard <von Büren> 
+http://d-nb.info/gnd/171935063; Geck, Helmut 
+http://d-nb.info/gnd/189435410; Polo 
+http://d-nb.info/gnd/118199803; Cless, Olaf 
+http://d-nb.info/gnd/119019930; Benzenberg, Johann Friedrich 
+http://d-nb.info/gnd/119438615; Oellers, Norbert 
+http://d-nb.info/gnd/13150603X; Oberhoff, Ernst 
+http://d-nb.info/gnd/14401582X; Joneit, Frank 
+http://d-nb.info/gnd/130407577; Neuhaus, Volker 
+http://d-nb.info/gnd/138794804; Belderbusch, Kaspar Anton von 
+http://d-nb.info/gnd/118708007; Huhnen, Fritz 
+http://d-nb.info/gnd/121233081; Beuckers, Klaus Gereon 
+http://d-nb.info/gnd/1012619095; Grebe, Peter 
+http://d-nb.info/gnd/189421681; Zedelius, Volker 
+http://d-nb.info/gnd/189412356; Stuwe, Albert 
+http://d-nb.info/gnd/189435690; Brügelmann, Dorothea Sophie 
+http://d-nb.info/gnd/189494697; Samans, Otto 
+http://d-nb.info/gnd/18950773X; Möller, Werner 
+http://d-nb.info/gnd/112197507; Bruyn-Ouboter, Hans Joachim de 
+http://d-nb.info/gnd/189412941; Erntges, Peter 
+http://d-nb.info/gnd/118600400; Richter, Eugen 
+http://d-nb.info/gnd/171931793; Schmidt, Albert 
+http://d-nb.info/gnd/140777318; Heuter, Christoph 
+http://d-nb.info/gnd/116382996; Fahrenkamp, Emil 
+http://d-nb.info/gnd/11925414X; Peiner, Werner 
+http://d-nb.info/gnd/189437219; Rensing, Bernhard Ambrosius Benedikt 
+http://d-nb.info/gnd/124046134; Dross, Fritz 
+http://d-nb.info/gnd/119390671; Schmela, Alfred 
+http://d-nb.info/gnd/111413508; Schilp, Thomas 
+http://d-nb.info/gnd/119364433; Jäger, Wilhelm 
+http://d-nb.info/gnd/118551493; Hirsch, Helmut 
+http://d-nb.info/gnd/119440415; Weitkamp, Bernd 
+http://d-nb.info/gnd/171937058; Joist, Conrad-Peter 
+http://d-nb.info/gnd/118611550; Schumacher, Emil 
+http://d-nb.info/gnd/118631195; Wenders, Wim 
+http://d-nb.info/gnd/108786196; Mohrmann, Ruth-Elisabeth 
+http://d-nb.info/gnd/119501163; Siuts, Hinrich 
+http://d-nb.info/gnd/189439319; Schophoff, Friedrich Wilhelm 
+http://d-nb.info/gnd/189452846; Kelm, Hermann 
+http://d-nb.info/gnd/132988054; Sayn-Wittgenstein, Ludwig zu <der Ältere> 
+http://d-nb.info/gnd/189509902; Rederscheidt, Anna Catharina 
+http://d-nb.info/gnd/142495573; Wippern, Jobst J. M. 
+http://d-nb.info/gnd/119417529; Rüth, Walter 
+http://d-nb.info/gnd/171941837; Laurinat, Jutta 
+http://d-nb.info/gnd/131675176; Fehse, Monika 
+http://d-nb.info/gnd/189459557; Engelbert, Arthur 
+http://d-nb.info/gnd/189451769; Engels, Emil 
+http://d-nb.info/gnd/189508523; Büren, Johanna von 
+http://d-nb.info/gnd/171933877; Busch, Helmut 
+http://d-nb.info/gnd/10212809X; Christian <Braunschweig-Lüneburg, Herzog, 1599-1626> 
+http://d-nb.info/gnd/189440589; Neym, Hinrick van 
+http://d-nb.info/gnd/118636049; Zadek, Peter 
+http://d-nb.info/gnd/120128896; Koepff, Gerda 
+http://d-nb.info/gnd/120208008; Sternburg, Wilhelm von 
+http://d-nb.info/gnd/139360921; Uleer, Christoph 
+http://d-nb.info/gnd/11854568X; Hansemann, David 
+http://d-nb.info/gnd/11856224X; Kinkel, Gottfried 
+http://d-nb.info/gnd/189430427; Ester, Karl d' 
+http://d-nb.info/gnd/118569910; Lassalle, Ferdinand 
+http://d-nb.info/gnd/118546767; Hatzfeldt, Sophie von 
+http://d-nb.info/gnd/122146573; Speer, Florian 
+http://d-nb.info/gnd/112995217; Baum, Marlene 
+http://d-nb.info/gnd/121579638; Stachelhaus, Heiner 
+http://d-nb.info/gnd/142821764; Moos, Michael 
+http://d-nb.info/gnd/104563257; Boberach, Heinz 
+http://d-nb.info/gnd/141159693; Schulenberg, Gaby 
+http://d-nb.info/gnd/189442999; Hesse, Peter Joseph 
+http://d-nb.info/gnd/189443057; Wiedmann, Bernhard 
+http://d-nb.info/gnd/107962829; Roth, Hermann Josef 
+http://d-nb.info/gnd/12027499X; Wedding, Christoph 
+http://d-nb.info/gnd/119534665; Mittler, Mauritius 
+http://d-nb.info/gnd/142504491; Gechter-Jones, Jennifer 
+http://d-nb.info/gnd/14284800X; Ibeling, Thomas 
+http://d-nb.info/gnd/118179632; Griese, Rainer 
+http://d-nb.info/gnd/118547801; Heidelbach, Nikolaus 
+http://d-nb.info/gnd/17193413X; Stutenkemper, Egon 
+http://d-nb.info/gnd/189409231; Bäumker, Wilhelm 
+http://d-nb.info/gnd/1013285697; Müller, Rudolf H. 
+http://d-nb.info/gnd/119170574; Hellner, Franz Xaver 
+http://d-nb.info/gnd/123125715; Mengelberg, Wilhelm 
+http://d-nb.info/gnd/173233163; Bedaux, Jan Cornelis 
+http://d-nb.info/gnd/100290132; Hegius, Alexander 
+http://d-nb.info/gnd/135622964; Nasemann, Silke 
+http://d-nb.info/gnd/115715681; Nuhr, Dieter 
+http://d-nb.info/gnd/189470097; Ennen, Leonard 
+http://d-nb.info/gnd/189444355; Horst zu Düssel und Rosau, Johann Dietrich von der 
+http://d-nb.info/gnd/118971026; Dokoupil, Jirí G. 
+http://d-nb.info/gnd/128918845; Weyer, Klaus van de 
+http://d-nb.info/gnd/118508288; Beethoven, Ludwig van 
+http://d-nb.info/gnd/189444584; Stael-Holstein, Johann 
+http://d-nb.info/gnd/11876585X; Weber, Helene 
+http://d-nb.info/gnd/189444959; Lohoff, Immanuel Moritz 
+http://d-nb.info/gnd/189431814; Loë, Friedrich Karl Walter Degenhardt von 
+http://d-nb.info/gnd/189541172; Bier, Moses 
+http://d-nb.info/gnd/189414251; Weyers, Leo 
+http://d-nb.info/gnd/121575233; Vloten, Willem van 
+http://d-nb.info/gnd/142063096; Sendhoff, Magda 
+http://d-nb.info/gnd/189445963; Schöndorff, Hermann 
+http://d-nb.info/gnd/189445955; Schöndorff, Albert 
+http://d-nb.info/gnd/118634801; Wolff, Jeanette 
+http://d-nb.info/gnd/12205427X; Spiegel, Marga 
+http://d-nb.info/gnd/119521911; Loos, Christoph 
+http://d-nb.info/gnd/12033822X; Neuhäuser, Hanni 
+http://d-nb.info/gnd/141167173; Jöbges, Michael 
+http://d-nb.info/gnd/118622315; Thorn Prikker, Johan 
+http://d-nb.info/gnd/118633627; Wind, Gerhard 
+http://d-nb.info/gnd/118739557; Paul, Bruno 
+http://d-nb.info/gnd/189414464; Weber, Franz 
+http://d-nb.info/gnd/17218682X; Kirchhoff, Hans Georg 
+http://d-nb.info/gnd/117271578; Stenger, Erich 
+http://d-nb.info/gnd/118599771; Rensch, Bernhard 
+http://d-nb.info/gnd/122982061; Kenkmann, Alfons 
+http://d-nb.info/gnd/118602675; Rosenbach, Ulrike 
+http://d-nb.info/gnd/143406884; Molitor, Maria 
+http://d-nb.info/gnd/189447109; Pfund, Romely 
+http://d-nb.info/gnd/140324925; Preuß, Andreas 
+http://d-nb.info/gnd/189539690; Bröcker, Andreas 
+http://d-nb.info/gnd/129315168; Henschenius, Godefridus 
+http://d-nb.info/gnd/189490659; Papebroch, Daniel 
+http://d-nb.info/gnd/119487985; Küpper, Utz Ingo 
+http://d-nb.info/gnd/128868309; Aufricht, Johanne 
+http://d-nb.info/gnd/128867809; Aufricht, Erna 
+http://d-nb.info/gnd/120783525; Ruddat, Günter 
+http://d-nb.info/gnd/116139390; Disselhoff, Julius August Gottfried 
+http://d-nb.info/gnd/189538406; Barthold, Carl 
+http://d-nb.info/gnd/119146401; Waffenschmidt, Horst 
+http://d-nb.info/gnd/11443705X; Paust, Bettina 
+http://d-nb.info/gnd/113241917; Hopp, Detlef 
+http://d-nb.info/gnd/119050587; Schriefers, Werner 
+http://d-nb.info/gnd/119134365; Schriefers, Margret 
+http://d-nb.info/gnd/173439969; Gymnich, Helmut 
+http://d-nb.info/gnd/189531800; Plum, Lambertus 
+http://d-nb.info/gnd/123546508; Sokol, Bettina 
+http://d-nb.info/gnd/118732935; Menne, Albert 
+http://d-nb.info/gnd/122670191; Löwenstein, Otto 
+http://d-nb.info/gnd/121279847; Schmid-Schickhardt, Horst 
+http://d-nb.info/gnd/119132796; Schickhardt, Heinrich 
+http://d-nb.info/gnd/124325645; Gerhards, Albert 
+http://d-nb.info/gnd/121611469; Schumann, Inge 
+http://d-nb.info/gnd/122768736; Birmanns, Jürgen 
+http://d-nb.info/gnd/120838656; Tomicek, Jürgen 
+http://d-nb.info/gnd/124209459; Frielingsdorf, Volker 
+http://d-nb.info/gnd/120058642; Herzig, Bardo 
+http://d-nb.info/gnd/171942914; Ortlinghaus, Ruth 
+http://d-nb.info/gnd/121726282; Aguado, Karin 
+http://d-nb.info/gnd/122792742; Henrici, Gert 
+http://d-nb.info/gnd/189531770; Crous, Helmut A. 
+http://d-nb.info/gnd/189532300; Jacobs, Anjo 
+http://d-nb.info/gnd/189414596; Schamoni, Victor 
+http://d-nb.info/gnd/130895903; Haudel, Matthias 
+http://d-nb.info/gnd/189532548; Jungbecker, Hans 
+http://d-nb.info/gnd/134217586; Ludorff, Albert 
+http://d-nb.info/gnd/189532610; Becker, Wilhelm 
+http://d-nb.info/gnd/121177386; Schlembach, Gerda 
+http://d-nb.info/gnd/123325099; Benad, Matthias 
+http://d-nb.info/gnd/124682049; Altena, Thorsten 
+http://d-nb.info/gnd/173544088; Jüngling, Thomas 
+http://d-nb.info/gnd/173378196; Wiktorin, Dorothea 
+http://d-nb.info/gnd/173080286; Palentien, Christian 
+http://d-nb.info/gnd/118177311; Hitzler, Ronald 
+http://d-nb.info/gnd/137576498; Röllinghoff, Silke 
+http://d-nb.info/gnd/1012189082; Lampen, Ludger 
+http://d-nb.info/gnd/118191705; Wolf, Hubert 
+http://d-nb.info/gnd/122834518; Yaldai Rezai, Sarkhadun 
+http://d-nb.info/gnd/173243665; Gerszewski, Stefanie 
+http://d-nb.info/gnd/122777700; Heise, Steffen 
+http://d-nb.info/gnd/12021685X; Fischer, Jörg Axel 
+http://d-nb.info/gnd/172228166; List, Juliane 
+http://d-nb.info/gnd/12397805X; Oerters, Rita 
+http://d-nb.info/gnd/172091012; Gaida, Wolfgang 
+http://d-nb.info/gnd/122955870; Felsmann, Klaus-Dieter 
+http://d-nb.info/gnd/12071941X; Schreiner, Peter 
+http://d-nb.info/gnd/12092191X; Zirlewagen, Marc 
+http://d-nb.info/gnd/118611267; Schulenburg, Tisa von der 
+http://d-nb.info/gnd/109238702; Brusis, Ilse 
+http://d-nb.info/gnd/109236858; Ruempler, Götz 
+http://d-nb.info/gnd/122596234; Rauer, Kornelia 
+http://d-nb.info/gnd/110159357; Boye, Peter 
+http://d-nb.info/gnd/118618830; Stramm, August 
+http://d-nb.info/gnd/141210982; Nellen, Dieter 
+http://d-nb.info/gnd/140898522; Butter, Werner 
+http://d-nb.info/gnd/11081911X; Budde, Reinhold 
+http://d-nb.info/gnd/131551485; Beeck, Karl-Hermann 
+http://d-nb.info/gnd/120874393; Dettmar, Jörg 
+http://d-nb.info/gnd/144016974; Bofinger, Trude 
+http://d-nb.info/gnd/140322116; Wagner, Johannes Volker 
+http://d-nb.info/gnd/11858300X; Mölders, Werner 
+http://d-nb.info/gnd/125575238; Ritter, Gertrud 
+http://d-nb.info/gnd/123892988; Schulze, Ursula 
+http://d-nb.info/gnd/122840887; Beikircher, Konrad 
+http://d-nb.info/gnd/138187843; Engelskirchen, Lutz 
+http://d-nb.info/gnd/118822675; Ehringhausen, Willy 
+http://d-nb.info/gnd/11566596X; Unkelbach, Ingo 
+http://d-nb.info/gnd/118582291; Mies van der Rohe, Ludwig 
+http://d-nb.info/gnd/118724258; Koekkoek, Barend Cornelis 
+http://d-nb.info/gnd/172447739; Werd, Guido de 
+http://d-nb.info/gnd/118547356; Haydn, Joseph 
+http://d-nb.info/gnd/122953037; Henry, Walburga 
+http://d-nb.info/gnd/173470688; Paridon, C. W. A. M. van 
+http://d-nb.info/gnd/173387039; Sans, Oda 
+http://d-nb.info/gnd/173387012; Schniedenharn, Tanja 
+http://d-nb.info/gnd/172196175; Krause, Markus 
+http://d-nb.info/gnd/118003674; Lammert, Norbert 
+http://d-nb.info/gnd/142557455; Voß, Arnold 
+http://d-nb.info/gnd/118159380; Bogumil, Jörg 
+http://d-nb.info/gnd/115475389; Kißler, Leo 
+http://d-nb.info/gnd/134196716; Aßkamp, Rudolf 
+http://d-nb.info/gnd/112840329; Kemper, Gretel 
+http://d-nb.info/gnd/189534540; Ohm, Günther 
+http://d-nb.info/gnd/101191493X; Dapprich, Gerd 
+http://d-nb.info/gnd/172483638; Simsa, Christiane 
+http://d-nb.info/gnd/118177796; Weisbach, Wolf-Rüdiger 
+http://d-nb.info/gnd/120635135; Thamer, Hans-Ulrich 
+http://d-nb.info/gnd/189534575; Wilhelmine Luise <Preußen, Prinzessin> 
+http://d-nb.info/gnd/173078419; Kükenshöner, Günter 
+http://d-nb.info/gnd/173459471; Braun, Andreas 
+http://d-nb.info/gnd/173385591; Kradepohl, Peter 
+http://d-nb.info/gnd/124615066; Rennen-Allhoff, Beate 
+http://d-nb.info/gnd/122703693; Härle, Carl 
+http://d-nb.info/gnd/120742756; Schmauder, Michael 
+http://d-nb.info/gnd/173475167; Hellenkemper, Nicolas 
+http://d-nb.info/gnd/135928427; Ocklenburg, Ulrich 
+http://d-nb.info/gnd/122227786; Günter, Bernd 
+http://d-nb.info/gnd/10107977X; Arnold, Udo 
+http://d-nb.info/gnd/109490312; Boer, Hans-Peter 
+http://d-nb.info/gnd/123048575; Dartsch, Michael 
+http://d-nb.info/gnd/189534982; Demtröder, Otto 
+http://d-nb.info/gnd/119399016; Frölich, Rose 
+http://d-nb.info/gnd/189535067; Pleiger, Paul 
+http://d-nb.info/gnd/172472148; Zemter, Wolfgang 
+http://d-nb.info/gnd/123808219; Nettmann, Wilhelm 
+http://d-nb.info/gnd/118508849; Bender, Hans 
+http://d-nb.info/gnd/118626175; Varnhagen, Rahel 
+http://d-nb.info/gnd/12281990X; Uexküll, Gösta von 
+http://d-nb.info/gnd/171989988; Bridger, Clive 
+http://d-nb.info/gnd/11874612X; Boßler, Heinrich Philipp 
+http://d-nb.info/gnd/120524333; Thol, Peter 
+http://d-nb.info/gnd/115515771; Voigt, Corneel 
+http://d-nb.info/gnd/143508245; Beleke, Norbert 
+http://d-nb.info/gnd/118591339; Palermo 
+http://d-nb.info/gnd/172003431; Bernhardt, Günter 
+http://d-nb.info/gnd/141226528; Illgen, Karl Reiner 
+http://d-nb.info/gnd/171986504; Bousack, Bruno 
+http://d-nb.info/gnd/121544540; Brocke, Michael 
+http://d-nb.info/gnd/173492568; Schmitt, Reinhard 
+http://d-nb.info/gnd/124251048; Lepiorz, Wolf-Dieter 
+http://d-nb.info/gnd/171938399; Jung, Werner 
+http://d-nb.info/gnd/123403960; Schikorra, Christa 
+http://d-nb.info/gnd/189535911; Brögelmann, Johann Peter 
+http://d-nb.info/gnd/123677181; Lange-Helms, Brigitte 
+http://d-nb.info/gnd/108127389; Mai, Ekkehard 
+http://d-nb.info/gnd/115641696; Clive, Harry Peter 
+http://d-nb.info/gnd/173343805; Klein, Erhard 
+http://d-nb.info/gnd/172188229; Klauke, Jürgen 
+http://d-nb.info/gnd/1012434508; Küpper, Tassilo 
+http://d-nb.info/gnd/120921731; Hax, Herbert 
+http://d-nb.info/gnd/118664972; Bunk, Holger 
+http://d-nb.info/gnd/172466725; Wollheim, Gert Heinrich 
+http://d-nb.info/gnd/118635026; Wollheim, Gert H. 
+http://d-nb.info/gnd/123347106; Figgemeier, Bernd 
+http://d-nb.info/gnd/122617320; Hollender, Martin 
+http://d-nb.info/gnd/173311997; Hillen, Christian 
+http://d-nb.info/gnd/123869196; Wenke, Martin 
+http://d-nb.info/gnd/115817077; Horster, Detlef 
+http://d-nb.info/gnd/118544209; Habermas, Jürgen 
+http://d-nb.info/gnd/189536233; Viering, Johannette Elisabeth 
+http://d-nb.info/gnd/189536241; Rautenbach, Gottlieb 
+http://d-nb.info/gnd/120304899; Andermann, Kurt 
+http://d-nb.info/gnd/189536276; Frank, Rosine 
+http://d-nb.info/gnd/189536357; Dudas, Lajos 
+http://d-nb.info/gnd/117433365; Tuch, Hannes 
+http://d-nb.info/gnd/119142473; Berens-Totenohl, Josefa 
+http://d-nb.info/gnd/12247127X; Ottenhues, Hanni 
+http://d-nb.info/gnd/118540572; Goller, Bruno 
+http://d-nb.info/gnd/115489126; Hentschel, Martin 
+http://d-nb.info/gnd/124943888; Ahrens, Christian 
+http://d-nb.info/gnd/123249961; Wieczorek, Reinhard 
+http://d-nb.info/gnd/120058081; Schwinzer, Ellen 
+http://d-nb.info/gnd/118877232; Rellecke, Horst 
+http://d-nb.info/gnd/17352642X; Vechtel, Anne 
+http://d-nb.info/gnd/112527809; Quellmalz, Heinz 
+http://d-nb.info/gnd/135914744; Wermert, Josef 
+http://d-nb.info/gnd/173081959; Schmidt, Gustav-Adolf 
+http://d-nb.info/gnd/173510434; Hendrich, Jörn-Hanno 
+http://d-nb.info/gnd/120509903; Fischer-Essen, Alfred 
+http://d-nb.info/gnd/128940115; Fischer, Ludger 
+http://d-nb.info/gnd/119238802; Zimmerli, Walther Ch. 
+http://d-nb.info/gnd/172779464; Kronshage, Andreas 
+http://d-nb.info/gnd/10727101X; Derks, Paul 
+http://d-nb.info/gnd/122698436; Küpper, Heinz 
+http://d-nb.info/gnd/17290501X; Krausch, Christian 
+http://d-nb.info/gnd/119254778; Rasche, Ernst 
+http://d-nb.info/gnd/12450700X; Gass, Lars Henrik 
+http://d-nb.info/gnd/118673882; Brepohl, Wilhelm 
+http://d-nb.info/gnd/118530496; Ennen, Edith 
+http://d-nb.info/gnd/128862521; Sudhoff, Dieter 
+http://d-nb.info/gnd/110038487; Schock-Werner, Barbara 
+http://d-nb.info/gnd/118604139; Rumpf, Gernot 
+http://d-nb.info/gnd/115490310; Jansen-Winkeln, Annette 
+http://d-nb.info/gnd/118517953; Buschulte, Wilhelm 
+http://d-nb.info/gnd/171934806; Heinrich, Claudia 
+http://d-nb.info/gnd/118963503; Gonschior, Kuno 
+http://d-nb.info/gnd/189536853; Lemmen, Goerd 
+http://d-nb.info/gnd/12335658X; Tischler, Matthias M. 
+http://d-nb.info/gnd/124941710; Rader, Olaf B. 
+http://d-nb.info/gnd/118877925; Müller-Mertens, Eckhard 
+http://d-nb.info/gnd/123774853; Seegers, Lu 
+http://d-nb.info/gnd/119009579; Rhein, Eduard 
+http://d-nb.info/gnd/109420454; Karliczek, Rainer 
+http://d-nb.info/gnd/11543688X; Overath, Joseph 
+http://d-nb.info/gnd/14014465X; Weishoff, Marita 
+http://d-nb.info/gnd/189405783; Delvos, Christian Hubert Thaddäus 
+http://d-nb.info/gnd/118883070; Neudeck, Rupert 
+http://d-nb.info/gnd/118985493; Wertenbruch, Ludwig 
+http://d-nb.info/gnd/189537019; Lepper-Behl, Lisa 
+http://d-nb.info/gnd/129396222; Lepper, Johannes 
+http://d-nb.info/gnd/18953706X; Hassel, Heinz 
+http://d-nb.info/gnd/137879865; Steeger, Peter 
+http://d-nb.info/gnd/17351765X; Herbrand, Ludwig 
+http://d-nb.info/gnd/121468704; Ebel-Zepezauer, Wolfgang 
+http://d-nb.info/gnd/135578590; Haas, Stefan 
+http://d-nb.info/gnd/189529105; Stambolis, Barbara 
+http://d-nb.info/gnd/118710524; Hensel, Luise 
+http://d-nb.info/gnd/141671327; Iserloh, Franz 
+http://d-nb.info/gnd/115480048; Wüstenbecker, Horst 
+http://d-nb.info/gnd/135657148; Schmidt, Burghart 
+http://d-nb.info/gnd/138174717; Freckmann, Klaus 
+http://d-nb.info/gnd/172783542; Tillmann, Walter 
+http://d-nb.info/gnd/133387542; Leise, Britta 
+http://d-nb.info/gnd/171991052; Brög, Hans 
+http://d-nb.info/gnd/172450276; Wichelhaus, Barbara 
+http://d-nb.info/gnd/11931455X; Wichelhaus, Barbara 
+http://d-nb.info/gnd/189537264; Pieperhoff, Klara 
+http://d-nb.info/gnd/171935012; Tillmann, Walter 
+http://d-nb.info/gnd/189537191; Kemper, Bernhard 
+http://d-nb.info/gnd/189537205; Hermeier, Gottfried 
+http://d-nb.info/gnd/173520375; Kimmeskamp, Arno 
+http://d-nb.info/gnd/189537582; Jucho, Caspar Heinrich 
+http://d-nb.info/gnd/171997662; Buske, Stefan 
+http://d-nb.info/gnd/121058786; Overhoff, Frank 
+http://d-nb.info/gnd/189441747; Schäfer, Helmut 
+http://d-nb.info/gnd/132759993; Weber, Andreas 
+http://d-nb.info/gnd/106409972; Timmermann, Franz Hubert 
+http://d-nb.info/gnd/123320755; Timmermann, Leni 
+http://d-nb.info/gnd/120608510; Jürgensmeier, Friedhelm 
+http://d-nb.info/gnd/116201347; Bleibtreu, Max 
+http://d-nb.info/gnd/116168080; Pflüger, Eduard Friedrich Wilhelm 
+http://d-nb.info/gnd/120748703; Luda, Manfred 
+http://d-nb.info/gnd/12369082X; Irrgang, Christian G. 
+http://d-nb.info/gnd/123690846; Süskind, Martin E. 
+http://d-nb.info/gnd/123449197; Priebs, Axel 
+http://d-nb.info/gnd/122399099; Ridder, Heinrich 
+http://d-nb.info/gnd/18943564X; Fritsche, Burkhard 
+http://d-nb.info/gnd/115646906; Hesse, Thomas 
+http://d-nb.info/gnd/12055044X; Düwell, Kurt 
+http://d-nb.info/gnd/173531369; Schauff, Gerhard 
+http://d-nb.info/gnd/124222560; Schauff, Gerhard 
+http://d-nb.info/gnd/118179918; Ribhegge, Wilhelm 
+http://d-nb.info/gnd/118611305; Schult, HA 
+http://d-nb.info/gnd/189538228; Wester, Johan 
+http://d-nb.info/gnd/189538260; Schliephake, Walther 
+http://d-nb.info/gnd/112609945; Adolphs, Volker 
+http://d-nb.info/gnd/172100984; Golinski, Hans Günter 
+http://d-nb.info/gnd/118687344; Finkeldei, Bernd 
+http://d-nb.info/gnd/12000335X; Boebers, Jürgen 
+http://d-nb.info/gnd/121393577; Fremer, Torsten 
+http://d-nb.info/gnd/123983444; Theophanu <von Essen> 
+http://d-nb.info/gnd/120333821; Sengpiel, Markus 
+http://d-nb.info/gnd/120377586; Burkard, Christoph 
+http://d-nb.info/gnd/118614576; Simrock, Karl 
+http://d-nb.info/gnd/172229561; Löttgers, Rolf 
+http://d-nb.info/gnd/114145342; Nöllenheidt, Achim 
+http://d-nb.info/gnd/122884302; Blasius, Tobias 
+http://d-nb.info/gnd/120326264; Isensee, Josef 
+http://d-nb.info/gnd/172362814; Schoppmeyer, Heinrich 
+http://d-nb.info/gnd/173324274; Scholz, Dietmar 
+http://d-nb.info/gnd/106187562; Hinrichs, Ernst 
+http://d-nb.info/gnd/17353838X; Jouy, Toni 
+http://d-nb.info/gnd/123484014; Kühn, Christine 
+http://d-nb.info/gnd/119155117; Mense, Carlo 
+http://d-nb.info/gnd/172025958; Cornelissen, Georg 
+http://d-nb.info/gnd/119234084; Mühl, Karl Otto 
+http://d-nb.info/gnd/122805100; Heermann, Herbert W. 
+http://d-nb.info/gnd/124030416; Haug, Ute 
+http://d-nb.info/gnd/173547192; Koch, Rüdiger 
+http://d-nb.info/gnd/124184219; Matzerath, Horst 
+http://d-nb.info/gnd/172782724; Plaßmann, Otmar 
+http://d-nb.info/gnd/118661957; Borromeo, Carlo 
+http://d-nb.info/gnd/171978021; Bingener, Andreas 
+http://d-nb.info/gnd/189411953; Roeber, Friedrich 
+http://d-nb.info/gnd/121260054; Karas, Fritz 
+http://d-nb.info/gnd/133742156; Maier, Helmut 
+http://d-nb.info/gnd/120927357; Ehrenpreis, Stefan 
+http://d-nb.info/gnd/118039350; Paravicini, Werner 
+http://d-nb.info/gnd/118560026; Karl <Burgund, Herzog> 
+http://d-nb.info/gnd/121477827; Weber, Jürgen 
+http://d-nb.info/gnd/119554151; Jacob, Benno 
+http://d-nb.info/gnd/124535178; Leuze, Dieter 
+http://d-nb.info/gnd/128652365; Taubken, Hans 
+http://d-nb.info/gnd/171931645; Schenk, Lis 
+http://d-nb.info/gnd/118626167; Varnhagen von Ense, Karl August 
+http://d-nb.info/gnd/123937914; Tilp, Berndt 
+http://d-nb.info/gnd/116239131; Düntzer, Heinrich 
+http://d-nb.info/gnd/122729110; Buchloh, Benjamin H. D. 
+http://d-nb.info/gnd/139133607; Meschede, Angelika 
+http://d-nb.info/gnd/119441365; Grosse, Katharina 
+http://d-nb.info/gnd/173560350; Brandt, Martin 
+http://d-nb.info/gnd/112622232; Köhne-Lindenlaub, Renate 
+http://d-nb.info/gnd/123304423; Alt, Josef 
+http://d-nb.info/gnd/118557017; Janssen, Arnold 
+http://d-nb.info/gnd/174265743; Rüth, Uwe 
+http://d-nb.info/gnd/140527877; Stempel, Karin 
+http://d-nb.info/gnd/119450577; Prasse, Karl 
+http://d-nb.info/gnd/172037417; Dascher, Ottfried 
+http://d-nb.info/gnd/189539518; Schmitz, Hans 
+http://d-nb.info/gnd/17207276X; Fehrmann, Georg 
+http://d-nb.info/gnd/119529556; Baum, Richard 
+http://d-nb.info/gnd/124096980; Keusen, Ellen 
+http://d-nb.info/gnd/172451361; Wiesinger, Peter 
+http://d-nb.info/gnd/123068606; Faulstich, Peter 
+http://d-nb.info/gnd/118165968; Langenhorst, Georg 
+http://d-nb.info/gnd/189539976; Nattke, Gerhard 
+http://d-nb.info/gnd/120328445; Gerß, Wolfgang 
+http://d-nb.info/gnd/115456929; Büssing, André 
+http://d-nb.info/gnd/124154050; Drodofsky, Anita 
+http://d-nb.info/gnd/124154042; Hegendörfer, Katrin 
+http://d-nb.info/gnd/12489416X; Bisping, Ruth 
+http://d-nb.info/gnd/118831429; Wallraf, Ferdinand Franz 
+http://d-nb.info/gnd/118558404; Joseph <II., Römisch-Deutsches Reich, Kaiser> 
+http://d-nb.info/gnd/124224849; Tromnau, Gernot 
+http://d-nb.info/gnd/12413968X; Struck, Thomas 
+http://d-nb.info/gnd/118749536; Rolevinck, Werner 
+http://d-nb.info/gnd/173568696; Kreft, Thomas 
+http://d-nb.info/gnd/119496402; Klegin, Thomas 
+http://d-nb.info/gnd/118971778; Jaunsudrabinš, Janis 
+http://d-nb.info/gnd/171937392; Bechert, Tilmann 
+http://d-nb.info/gnd/189540621; Peters, Moritz 
+http://d-nb.info/gnd/124139922; Rüttgers, Gottfried 
+http://d-nb.info/gnd/122231864; Schiffer, Hans Peter 
+http://d-nb.info/gnd/173474152; Schmidt-Waldbauer, Klaus Martin 
+http://d-nb.info/gnd/122507487; Reinirkens, Leonhard 
+http://d-nb.info/gnd/112508138; Schmude, Henner 
+http://d-nb.info/gnd/189413484; David, Moritz 
+http://d-nb.info/gnd/10878827X; Wacker, Bernd 
+http://d-nb.info/gnd/133546802; Wacker, Marie-Theres 
+http://d-nb.info/gnd/119132109; Quitzow, Hans Wilhelm 
+http://d-nb.info/gnd/173492576; Ridder, Karl 
+http://d-nb.info/gnd/123910668; Weitz-Eichhoff, Richard 
+http://d-nb.info/gnd/11855185X; Höckelmann, Antonius 
+http://d-nb.info/gnd/172452023; Wilhelmy, Herbert 
+http://d-nb.info/gnd/123093058; Plieth, Martina 
+http://d-nb.info/gnd/172301351; Parent, Thomas 
+http://d-nb.info/gnd/140276475; Schatz-Bergfeld, Marianne 
+http://d-nb.info/gnd/12057022X; Zierden, Josef 
+http://d-nb.info/gnd/111815991; Priddy, Bennie H. 
+http://d-nb.info/gnd/172296072; Ostendorf, Thomas 
+http://d-nb.info/gnd/172283787; Neumann-Mahlkau, Peter 
+http://d-nb.info/gnd/119250225; Schäfer, Horst 
+http://d-nb.info/gnd/123185637; Groß, Harald 
+http://d-nb.info/gnd/18954208X; Lange, Johann Gustav 
+http://d-nb.info/gnd/110263065; Knuth, Matthias 
+http://d-nb.info/gnd/124367399; Precht, Gundolf 
+http://d-nb.info/gnd/173587941; Drecker, Martina 
+http://d-nb.info/gnd/118684981; Enters, Hermann 
+http://d-nb.info/gnd/118588095; Nicolaus <de Cusa> 
+http://d-nb.info/gnd/120026481; Beaugrand, Günter 
+http://d-nb.info/gnd/172811066; Feußner, Heinz 
+http://d-nb.info/gnd/12436506X; Emrich, Gabriele 
+http://d-nb.info/gnd/118107135; Koopmann, Helmut 
+http://d-nb.info/gnd/173596053; Beckmann, Werner 
+http://d-nb.info/gnd/189542349; Hopp, Karl 
+http://d-nb.info/gnd/122672720; Besser, Wilfried 
+http://d-nb.info/gnd/124424368; Büdenbender, Ulrich 
+http://d-nb.info/gnd/120532247; Baur, Jürgen F. 
+http://d-nb.info/gnd/115288759; Lieven, Jens 
+http://d-nb.info/gnd/189542683; Jordan <von Monement> 
+http://d-nb.info/gnd/120445573; Herzog, Petra 
+http://d-nb.info/gnd/123619475; Balz, Irmtraut 
+http://d-nb.info/gnd/124446833; Franck, Salomo 
+http://d-nb.info/gnd/124445802; Friedt, Gerd 
+http://d-nb.info/gnd/118818740; Neuy, Heinrich 
+http://d-nb.info/gnd/124758452; Henneke-Weischer, Andrea 
+http://d-nb.info/gnd/118500260; Abs, Hermann Josef 
+http://d-nb.info/gnd/118734113; Mintrop, Theodor 
+http://d-nb.info/gnd/172336708; Rose, Margaret A. 
+http://d-nb.info/gnd/11943251X; Adriani, Götz 
+http://d-nb.info/gnd/121646637; Melcher, Ralph 
+http://d-nb.info/gnd/133024903; Brandt, Karsten 
+http://d-nb.info/gnd/124530117; Juchelka, Rudolf 
+http://d-nb.info/gnd/142087866; Schreiber, Theo 
+http://d-nb.info/gnd/124355994; Klocke-Daffa, Sabine 
+http://d-nb.info/gnd/118559168; Kaempfer, Engelbert 
+http://d-nb.info/gnd/189543353; Halfmann, Doris 
+http://d-nb.info/gnd/129613398; Lanfer, Mathias 
+http://d-nb.info/gnd/172481597; Ehrenwerth, Manfrid 
+http://d-nb.info/gnd/121161005; Magner, Michael 
+http://d-nb.info/gnd/124548490; Sossou, Pierre Kadi 
+http://d-nb.info/gnd/118520814; Cicero, Marcus Tullius 
+http://d-nb.info/gnd/189543442; Teutenberg, Sven 
+http://d-nb.info/gnd/118197282; Wippich, Rolf-Harald 
+http://d-nb.info/gnd/124600077; Helmer-Denzel, Andrea 
+http://d-nb.info/gnd/118840851; Kirchhoff, Karl-Heinz 
+http://d-nb.info/gnd/189412062; Scherer, Conrad 
+http://d-nb.info/gnd/173463991; Räker, Jörg 
+http://d-nb.info/gnd/122149416; Hennigs, Annette 
+http://d-nb.info/gnd/12494695X; Holze, Jürgen W. 
+http://d-nb.info/gnd/124946976; Holze, Hildegard 
+http://d-nb.info/gnd/17193962X; Henning, Hansjoachim 
+http://d-nb.info/gnd/119186160; Heyne, Maren 
+http://d-nb.info/gnd/118631640; Werthmann, Friederich 
+http://d-nb.info/gnd/120272016; Klinkhammer, Carl 
+http://d-nb.info/gnd/118576801; Mallinckrodt, Pauline von 
+http://d-nb.info/gnd/118607278; Franziska <von Aachen> 
+http://d-nb.info/gnd/124136524; Sachse, Guido 
+http://d-nb.info/gnd/189544104; Matthes, Ludwig 
+http://d-nb.info/gnd/118696920; Graeff, Werner 
+http://d-nb.info/gnd/124892299; Badenberg, Albertine 
+http://d-nb.info/gnd/119003252; Hopmann, Antonie 
+http://d-nb.info/gnd/172256666; Metz-Göckel, Sigrid 
+http://d-nb.info/gnd/189544333; Wember, Peter 
+http://d-nb.info/gnd/189414073; Savels, Beda 
+http://d-nb.info/gnd/123046157; Keller, Heinke 
+http://d-nb.info/gnd/189410477; Dietrich, Ernst 
+http://d-nb.info/gnd/124761003; Spengler, Dietmar 
+http://d-nb.info/gnd/123757924; Heynen, Julian 
+http://d-nb.info/gnd/124772730; Degode, Wilhelm 
+http://d-nb.info/gnd/129075884; Führer, Karl Christian 
+http://d-nb.info/gnd/115396756; Saul, Klaus 
+http://d-nb.info/gnd/123127386; Lampe, Angela 
+http://d-nb.info/gnd/111430232; Sturzenhecker, Benedikt 
+http://d-nb.info/gnd/12351245X; Meyer, Gabriele Undine 
+http://d-nb.info/gnd/1013908732; Voigt, Günther 
+http://d-nb.info/gnd/122111435; Allende-Blin, Juan 
+http://d-nb.info/gnd/12487780X; Klüppelholz, Werner 
+http://d-nb.info/gnd/17363396X; Waldhoff, Stephan 
+http://d-nb.info/gnd/119011905; Jaeggi, Urs 
+http://d-nb.info/gnd/189544775; Rehse, Ludwig 
+http://d-nb.info/gnd/118946943; Kaiser, Matthias 
+http://d-nb.info/gnd/128497874; Kasper, Astrid 
+http://d-nb.info/gnd/189545828; Aertsen, Jan A. 
+http://d-nb.info/gnd/124821308; Schymiczek, Regina E. G. 
+http://d-nb.info/gnd/115479686; Schulmeyer, Heribert 
+http://d-nb.info/gnd/118611666; Schumann, Robert 
+http://d-nb.info/gnd/124821774; Volmer, Horst 
+http://d-nb.info/gnd/118677810; Deppe, Gustav 
+http://d-nb.info/gnd/172576733; Liesenklas, Birgit 
+http://d-nb.info/gnd/124122442; Knapp, Hans Dieter 
+http://d-nb.info/gnd/12851342X; Haddad, Rami 
+http://d-nb.info/gnd/120811251; Murken, Jens 
+http://d-nb.info/gnd/118101323; Vom Orde, Klaus 
+http://d-nb.info/gnd/118524429; Deitenbeck, Paul 
+http://d-nb.info/gnd/120954702; Battafarano, Italo Michele 
+http://d-nb.info/gnd/121869962; Eilert, Hildegard 
+http://d-nb.info/gnd/128843284; Beise, Arnd 
+http://d-nb.info/gnd/11586895X; Freidank, Carl-Christian 
+http://d-nb.info/gnd/12839286X; Siepmann, Helmut 
+http://d-nb.info/gnd/118554468; Hütt, Wolfgang 
+http://d-nb.info/gnd/112178537; Wieberneit, El-Shalom 
+http://d-nb.info/gnd/172107458; Grotkamp-Schepers, Barbara 
+http://d-nb.info/gnd/124922023; Marquardt, Klaus 
+http://d-nb.info/gnd/124835201; Kappel, Jürgen 
+http://d-nb.info/gnd/111030021; Fließ, Sabine 
+http://d-nb.info/gnd/12237973X; Heinrichs, Wolfgang E. 
+http://d-nb.info/gnd/124934889; Schrader, Margarete 
+http://d-nb.info/gnd/172335914; Roloff, Christine 
+http://d-nb.info/gnd/118749765; Rosenberg, Ludwig 
+http://d-nb.info/gnd/173647847; Bleszynski, Christina 
+http://d-nb.info/gnd/172092965; Gatter, Nikolaus 
+http://d-nb.info/gnd/129537675; Wolff, Armin 
+http://d-nb.info/gnd/112613691; Pyta, Wolfram 
+http://d-nb.info/gnd/172302676; Paul, Hansjürgen 
+http://d-nb.info/gnd/121076458; Amm, Gaby 
+http://d-nb.info/gnd/128454695; Hilgers, Heribert A. 
+http://d-nb.info/gnd/136707572; Thissen, Bert 
+http://d-nb.info/gnd/118895028; Ando, Tadao 
+http://d-nb.info/gnd/120942283; Langen, Marianne 
+http://d-nb.info/gnd/122141156; Zelger-Hoffa, Lotte 
+http://d-nb.info/gnd/118089765; Battenfeld, Beate 
+http://d-nb.info/gnd/120983524; Herbers, Klaus 
+http://d-nb.info/gnd/118556800; Jakobus <der Ältere> 
+http://d-nb.info/gnd/138993092; Bäumer, Gerd 
+http://d-nb.info/gnd/128416866; Schuh, Christian 
+http://d-nb.info/gnd/128619929; Clasing, Heinrich 
+http://d-nb.info/gnd/171934997; Loskill, Jörg 
+http://d-nb.info/gnd/120651386; Donhauser, Michael 
+http://d-nb.info/gnd/119353377; Kühn, Johannes 
+http://d-nb.info/gnd/129213632; Katz, Eberhard 
+http://d-nb.info/gnd/121177009; Ullrich, Ferdinand 
+http://d-nb.info/gnd/189546603; Lobbes, Johann Rudolf 
+http://d-nb.info/gnd/118621513; Thaer, Albrecht Daniel 
+http://d-nb.info/gnd/122639359; Kortländer, Bernd 
+http://d-nb.info/gnd/142867853; Ziegeler, Peter 
+http://d-nb.info/gnd/17365956X; Finke, Christel 
+http://d-nb.info/gnd/113408587; Knüpfer, Uwe 
+http://d-nb.info/gnd/128760516; Beuser, Arndt 
+http://d-nb.info/gnd/115486755; Somplatzki, Herbert 
+http://d-nb.info/gnd/132777541; Schattkowsky, Martina 
+http://d-nb.info/gnd/122046617; Menzel-Severing, Hans 
+http://d-nb.info/gnd/129099171; Beyer, Heike 
+http://d-nb.info/gnd/124096700; Wolter, Christina 
+http://d-nb.info/gnd/122214498; Spohn, Thomas 
+http://d-nb.info/gnd/120733986; Dörner, Reinhard 
+http://d-nb.info/gnd/132895641; Schmidt, Wilhelm Richard 
+http://d-nb.info/gnd/118056190; Bohn, Nicolette 
+http://d-nb.info/gnd/118652923; Bartsch, Jürgen 
+http://d-nb.info/gnd/172134072; Henning, Michael 
+http://d-nb.info/gnd/124529682; Jankrift, Kay Peter 
+http://d-nb.info/gnd/13601996X; Schwarz, Michael 
+http://d-nb.info/gnd/128874139; Gottschalk, Raymund 
+http://d-nb.info/gnd/128988622; Simonis, Annette 
+http://d-nb.info/gnd/122852885; Schaum, Konrad 
+http://d-nb.info/gnd/119432072; Johann <IV., Osnabrück, Bischof> 
+http://d-nb.info/gnd/189547634; Sigewin <Köln, Erzbischof> 
+http://d-nb.info/gnd/11557977X; Semsek, Hans-Günter 
+http://d-nb.info/gnd/13714816X; Hollenbach, Nicole 
+http://d-nb.info/gnd/133352552; Harney, Klaus 
+http://d-nb.info/gnd/118702572; Feldhaus, Irmgard 
+http://d-nb.info/gnd/112504981; Jelich, Franz-Josef 
+http://d-nb.info/gnd/120632578; Ewers, Hans-Jürgen 
+http://d-nb.info/gnd/172025125; Conzen, Susanne 
+http://d-nb.info/gnd/129703680; Voswinkel, Brigitte 
+http://d-nb.info/gnd/130049573; Voswinkel, Manfred 
+http://d-nb.info/gnd/173027741; Klostermann, Rolf 
+http://d-nb.info/gnd/118556967; Janscha, Lorenz 
+http://d-nb.info/gnd/118636758; Ziegler, Johann 
+http://d-nb.info/gnd/118091506; Kappler, Arno 
+http://d-nb.info/gnd/105846163; Jacobs, Dore 
+http://d-nb.info/gnd/142522589; Sauer-Schiffer, Ursula 
+http://d-nb.info/gnd/173683258; Czarnetta, Oliver 
+http://d-nb.info/gnd/129008982; Götting, Gottfried 
+http://d-nb.info/gnd/118555537; Immendorff, Jörg 
+http://d-nb.info/gnd/119486741; Wilmes, Ulrich 
+http://d-nb.info/gnd/143421255; Reinking, Lars 
+http://d-nb.info/gnd/128963921; Rumpe, Johann Caspar 
+http://d-nb.info/gnd/189548053; Elverfeldt, Levin von 
+http://d-nb.info/gnd/128963883; Elverfeldt, Ludwig von 
+http://d-nb.info/gnd/172619696; Teske, Gunnar 
+http://d-nb.info/gnd/128964065; Brüninghaus, Johann Caspar 
+http://d-nb.info/gnd/128964081; Brüninghaus, Peter 
+http://d-nb.info/gnd/18954810X; Knecht, Peter 
+http://d-nb.info/gnd/113698305; Rieker, Yvonne 
+http://d-nb.info/gnd/189547502; Düsberg, Anna Gertrud 
+http://d-nb.info/gnd/173690610; Jacobi, Benno 
+http://d-nb.info/gnd/112451330; Buchsteiner, Ilona 
+http://d-nb.info/gnd/136923615; Willemsen, Annemarieke 
+http://d-nb.info/gnd/123558271; Kerkhoff, Engelbert 
+http://d-nb.info/gnd/118983172; Helling, Fritz 
+http://d-nb.info/gnd/120638835; Garber, Klaus 
+http://d-nb.info/gnd/11850181X; Alewyn, Richard 
+http://d-nb.info/gnd/128586389; Kowalski, Heinz 
+http://d-nb.info/gnd/128586427; Herkenrath, Peter 
+http://d-nb.info/gnd/119314576; Richter, Evelyn 
+http://d-nb.info/gnd/128713585; Schwandt, Daniel 
+http://d-nb.info/gnd/124849970; Ganz, David 
+http://d-nb.info/gnd/128722398; Müssemeier, Ulrike 
+http://d-nb.info/gnd/12912754X; Haba, Kornelia 
+http://d-nb.info/gnd/128550732; Colmer, Willi 
+http://d-nb.info/gnd/118822586; Löbach, Bernd 
+http://d-nb.info/gnd/128822651; Thomczyk, Willi 
+http://d-nb.info/gnd/117471747; Seipp, Bettina 
+http://d-nb.info/gnd/123952670; Wittkowski, Joachim 
+http://d-nb.info/gnd/118640259; Kopelev, Lev Z. 
+http://d-nb.info/gnd/118811746; Orlova, Raisa D. 
+http://d-nb.info/gnd/122527127; Belz, Albrecht 
+http://d-nb.info/gnd/17369943X; Engelke, Lutz 
+http://d-nb.info/gnd/121875970; Brandt, Robert 
+http://d-nb.info/gnd/118751433; Sombart, Werner 
+http://d-nb.info/gnd/128890444; Gay, Jutta 
+http://d-nb.info/gnd/119071746; Morsey, Rudolf 
+http://d-nb.info/gnd/173710824; Herling, Olaf 
+http://d-nb.info/gnd/120029588; Severit, Frauke 
+http://d-nb.info/gnd/122580249; Runzheimer, Bruno 
+http://d-nb.info/gnd/12420628X; Leidinger, Paul 
+http://d-nb.info/gnd/189409355; Bergkemper, Heinz 
+http://d-nb.info/gnd/189411902; Riese, Bernhard 
+http://d-nb.info/gnd/120075628; Bilz, Fritz 
+http://d-nb.info/gnd/121412407; Kammann, Bruno 
+http://d-nb.info/gnd/129911143; Rothenpieler, Hans Jörg 
+http://d-nb.info/gnd/120824574; Beckers, Hans Georg 
+http://d-nb.info/gnd/121640833; Schallenburger, Holger 
+http://d-nb.info/gnd/124643183; Frater, Harald 
+http://d-nb.info/gnd/172306701; Pfeifer, Frank 
+http://d-nb.info/gnd/124425542; Bertelsmeier, Marcus 
+http://d-nb.info/gnd/122933575; Kleinhanß, Werner 
+http://d-nb.info/gnd/122839986; Retterath, Ingrid 
+http://d-nb.info/gnd/115781870; Angenendt, Arnold 
+http://d-nb.info/gnd/129378739; Flammer, Thomas 
+http://d-nb.info/gnd/128379626; Kulbach-Fricke, Karina 
+http://d-nb.info/gnd/120799871; König, Wolfgang 
+http://d-nb.info/gnd/117139858; Intze, Otto 
+http://d-nb.info/gnd/118632892; Wilhelm <II., Deutsches Reich, Kaiser> 
+http://d-nb.info/gnd/128897058; Bluma, Lars 
+http://d-nb.info/gnd/115636331; Przigoda, Stefan 
+http://d-nb.info/gnd/122674502; Mathias, Regine 
+http://d-nb.info/gnd/120915022; Pauer, Erich 
+http://d-nb.info/gnd/120262924; Reichard, Christoph 
+http://d-nb.info/gnd/173711634; Siebart, Patricia 
+http://d-nb.info/gnd/107783940; Schweikert, Uwe 
+http://d-nb.info/gnd/107234742; Bockemühl, Petrus 
+http://d-nb.info/gnd/119412004; Riphahn, Wilhelm 
+http://d-nb.info/gnd/122646134; Zitzwitz, Thomas 
+http://d-nb.info/gnd/121470830; Krieger, Günter 
+http://d-nb.info/gnd/122615875; Börste, Norbert 
+http://d-nb.info/gnd/118686755; Ferdinand <II., Paderborn, Bischof> 
+http://d-nb.info/gnd/137587279; Pfeiffer, Götz J. 
+http://d-nb.info/gnd/129452432; Joggerst, Monika 
+http://d-nb.info/gnd/122123905; Dieckmann, Heinrich 
+http://d-nb.info/gnd/116209046; Plaut, Joseph 
+http://d-nb.info/gnd/122650417; Bleicher, Wilhelm 
+http://d-nb.info/gnd/171940830; Böltken, Wilm 
+http://d-nb.info/gnd/173717225; Zlatkov, Wladimir 
+http://d-nb.info/gnd/129932612; Zlatkov, Wladimir 
+http://d-nb.info/gnd/109937678; Folkerts, Liselotte 
+http://d-nb.info/gnd/106288369; Schneider, Gerwulf 
+http://d-nb.info/gnd/104625074; Höroldt, Dietrich 
+http://d-nb.info/gnd/118844369; Schwickerath, Peter 
+http://d-nb.info/gnd/121489744; Rüth, Uwe 
+http://d-nb.info/gnd/129451487; Durry, Andrea 
+http://d-nb.info/gnd/132938863; Sareika, Rüdiger 
+http://d-nb.info/gnd/123120802; Zeh, Juli 
+http://d-nb.info/gnd/117531014; Kolbe, Hermann Julius 
+http://d-nb.info/gnd/118609009; Schmidtbonn, Wilhelm 
+http://d-nb.info/gnd/117155896; Loeschcke, Georg 
+http://d-nb.info/gnd/129423823; Zimmermann, Ylva-Maria 
+http://d-nb.info/gnd/120132257; Müller-Böling, Detlef 
+http://d-nb.info/gnd/109026845; Anderbrügge, Klaus 
+http://d-nb.info/gnd/11801529X; Flagge, Ingeborg 
+http://d-nb.info/gnd/112181201; Kift, Dagmar 
+http://d-nb.info/gnd/120301210; Artmann, Heinz-Günther 
+http://d-nb.info/gnd/131385763; Obladen-Kauder, Julia 
+http://d-nb.info/gnd/124391214; Becker, Hans-Josef 
+http://d-nb.info/gnd/189551550; Hoffmann, Hiltrud 
+http://d-nb.info/gnd/189551542; Brückersteinkuhl, Martha 
+http://d-nb.info/gnd/106211943; Erichsen, Hans-Uwe 
+http://d-nb.info/gnd/120298139; Grasskamp, Walter 
+http://d-nb.info/gnd/121677346; Cluse, Christoph 
+http://d-nb.info/gnd/121070646; Schwedt, Herbert 
+http://d-nb.info/gnd/118633821; Winter, Fritz 
+http://d-nb.info/gnd/14162499X; Biermann, Axel 
+http://d-nb.info/gnd/189551887; Broickwy von Königstein, Antonius 
+http://d-nb.info/gnd/120733250; Belitz, Wolfgang 
+http://d-nb.info/gnd/121076326; Ketelsen, Uwe-Karsten 
+http://d-nb.info/gnd/113959001; Wallraff, Horst 
+http://d-nb.info/gnd/189551984; Houben, Heinrich 
+http://d-nb.info/gnd/123142091; Schulte, Jan Erik 
+http://d-nb.info/gnd/111854598; Wölk, Ingrid 
+http://d-nb.info/gnd/189552077; Schnell, Horst-Günther 
+http://d-nb.info/gnd/12957239X; Simonsmeier, Helga 
+http://d-nb.info/gnd/189552085; Godry, Johann Josef 
+http://d-nb.info/gnd/118173545; Reden, Dankward von 
+http://d-nb.info/gnd/173732755; Stracke, Daniel 
+http://d-nb.info/gnd/122836189; Lienenbecker, Heinz 
+http://d-nb.info/gnd/189481706; Kleinewächter, Wilhelm 
+http://d-nb.info/gnd/129635812; Nikitakis, Vasilios Nick 
+http://d-nb.info/gnd/120738279; Kruse, Joseph A. 
+http://d-nb.info/gnd/121503615; Berres, Frieder 
+http://d-nb.info/gnd/171979184; Bérenger, Daniel 
+http://d-nb.info/gnd/189552212; Lissauer, Doris 
+http://d-nb.info/gnd/121593681; Beyer, Jan de 
+http://d-nb.info/gnd/123891868; Gassmann, Michael 
+http://d-nb.info/gnd/121904075; Kerner, Max 
+http://d-nb.info/gnd/11550902X; Fusenig, Annette 
+http://d-nb.info/gnd/13277660X; Dams, Carsten 
+http://d-nb.info/gnd/113788347; Pause, Carl 
+http://d-nb.info/gnd/12856640X; Demandt, Philipp 
+http://d-nb.info/gnd/137075960; Biesenbach, Klaus 
+http://d-nb.info/gnd/123304121; Rath, Jochen 
+http://d-nb.info/gnd/189410442; Didon, Johann Anton 
+http://d-nb.info/gnd/119489430; Kleinhans, Bernhard 
+http://d-nb.info/gnd/129677736; Brüggemann, Werner 
+http://d-nb.info/gnd/118983776; Kopisch, August 
+http://d-nb.info/gnd/119444224; Tharlet, Eve 
+http://d-nb.info/gnd/128700602; Schulte vom Brühl, Walther 
+http://d-nb.info/gnd/12587264X; Ridder, Martin 
+http://d-nb.info/gnd/109377966; Watermann, Rainer 
+http://d-nb.info/gnd/189555661; Chung, Yong-Chang 
+http://d-nb.info/gnd/129507121; Biehl, Werner 
+http://d-nb.info/gnd/115523820; Gall, Lothar 
+http://d-nb.info/gnd/171932749; Clemen, Paul 
+http://d-nb.info/gnd/122837878; Körner, Hans 
+http://d-nb.info/gnd/124218385; Meisenberg, Peter 
+http://d-nb.info/gnd/173742815; Eiteneuer, Robert 
+http://d-nb.info/gnd/139207473; Sodmann, Timothy 
+http://d-nb.info/gnd/131730266; Fear, Jeffrey R. 
+http://d-nb.info/gnd/119092298; Thyssen, August 
+http://d-nb.info/gnd/127557415; Dinkelbach, Heinrich 
+http://d-nb.info/gnd/129800104; Strähler, Christian Georg 
+http://d-nb.info/gnd/189540575; Peters, Johann 
+http://d-nb.info/gnd/11812918X; Hofmann, Friedhelm 
+http://d-nb.info/gnd/131876449; Ropp, Inge von der 
+http://d-nb.info/gnd/128378646; Weiguny, Bettina 
+http://d-nb.info/gnd/112008038; Seidel, Hans-Christoph 
+http://d-nb.info/gnd/173746152; Bärmann, Tobias 
+http://d-nb.info/gnd/118973959; Wehler, Hans-Ulrich 
+http://d-nb.info/gnd/117744301; Mommsen, Wolfgang J. 
+http://d-nb.info/gnd/18955343X; Schmithals, Johann Jakob 
+http://d-nb.info/gnd/14048552X; Sierau, Ullrich 
+http://d-nb.info/gnd/121905055; Kleymann, Siegfried 
+http://d-nb.info/gnd/116023473; Daniels, Heinrich Gottfried Wilhelm 
+http://d-nb.info/gnd/129445967; Becker, Christoph 
+http://d-nb.info/gnd/11687483X; Grotemeyer, Fritz 
+http://d-nb.info/gnd/120915200; Omphalius, Jakob 
+http://d-nb.info/gnd/107122480; Meister, Helga 
+http://d-nb.info/gnd/128748907; Skupin, Klaus 
+http://d-nb.info/gnd/120121751; Freund, Winfried 
+http://d-nb.info/gnd/129739367; Wirooks, Ludger 
+http://d-nb.info/gnd/115283226; Welbers, Ulrich 
+http://d-nb.info/gnd/129932450; Wildt, Johannes 
+http://d-nb.info/gnd/118512366; Böckler, Hans 
+http://d-nb.info/gnd/11872861X; Ludgerus <Monasteriensis> 
+http://d-nb.info/gnd/129403571; Tiefenbach, Heinrich 
+http://d-nb.info/gnd/129843776; Jovanovic, Dusan 
+http://d-nb.info/gnd/173754376; Lück, Bernhard 
+http://d-nb.info/gnd/189553928; Goebel, Hugo 
+http://d-nb.info/gnd/189553936; Mohn, Friedrich 
+http://d-nb.info/gnd/120575957; Ernesti, Jörg 
+http://d-nb.info/gnd/129901911; Emmrich, Julia 
+http://d-nb.info/gnd/13414872X; Grote, Udo 
+http://d-nb.info/gnd/122689933; Lechtreck, Hans-Jürgen 
+http://d-nb.info/gnd/119035804; Dohr, Günter 
+http://d-nb.info/gnd/113836155; Blomberg, Katja 
+http://d-nb.info/gnd/11858006X; Meier, Harri 
+http://d-nb.info/gnd/189554150; Jakobs, Konrad 
+http://d-nb.info/gnd/124926479; Gailing, Ludger 
+http://d-nb.info/gnd/171933788; Precht, Gundolf 
+http://d-nb.info/gnd/124410308; Küther, Kurt 
+http://d-nb.info/gnd/123248612; Schröder, Stefan 
+http://d-nb.info/gnd/141110856; Roepstorff, Jens 
+http://d-nb.info/gnd/189554355; Smend, Günther 
+http://d-nb.info/gnd/113918968; Schmoeckel, Mathias 
+http://d-nb.info/gnd/129652547; Heinze, Meinhard 
+http://d-nb.info/gnd/118195611; Schwabe, Cornelia 
+http://d-nb.info/gnd/124154778; Overgaauw, Eef 
+http://d-nb.info/gnd/118696033; Götz, Karl Otto 
+http://d-nb.info/gnd/172194970; Kottsieper, Jürgen 
+http://d-nb.info/gnd/121135748; Jessewitsch, Rolf 
+http://d-nb.info/gnd/121280365; Schneider, Gerhard 
+http://d-nb.info/gnd/124186696; Gückelhorn, Wolfgang 
+http://d-nb.info/gnd/189554517; Esch, Ernst 
+http://d-nb.info/gnd/122423380; Koch, Wilfried 
+http://d-nb.info/gnd/118767321; Varus, Publius Quinctilius 
+http://d-nb.info/gnd/12334199X; Uerscheln, Gabriele 
+http://d-nb.info/gnd/114314241; Pohle, Frank 
+http://d-nb.info/gnd/173754228; Blokesch, Renate 
+http://d-nb.info/gnd/189554800; Conrad, Oliver 
+http://d-nb.info/gnd/121394271; Bers, Günter 
+http://d-nb.info/gnd/134003373; Lieberknecht, Rolf 
+http://d-nb.info/gnd/130165662; Brügge, Sophie an der 
+http://d-nb.info/gnd/122147383; Loy, Johannes 
+http://d-nb.info/gnd/112226426; Peperhowe, Jürgen 
+http://d-nb.info/gnd/118598546; Benedikt <XVI., Papst> 
+http://d-nb.info/gnd/173765939; Hastenrath, Karin 
+http://d-nb.info/gnd/124004261; Schaller, Annekatrin 
+http://d-nb.info/gnd/129462454; Strickling, Hildegard 
+http://d-nb.info/gnd/120239116; Blankertz, Stefan 
+http://d-nb.info/gnd/118796267; Serra, Richard 
+http://d-nb.info/gnd/119055902; Reinartz, Dirk 
+http://d-nb.info/gnd/120433370; Müller-Mundt, Gabriele 
+http://d-nb.info/gnd/189554967; Bönnighausen, Helmut 
+http://d-nb.info/gnd/139886648; Schaffer, Wolfgang 
+http://d-nb.info/gnd/129449830; Fleermann, Bastian 
+http://d-nb.info/gnd/123726921; Penzl, Gerald 
+http://d-nb.info/gnd/121170985; Schwerhoff, Gerd 
+http://d-nb.info/gnd/129968110; Gönnewicht, Daniela 
+http://d-nb.info/gnd/12207016X; Hostert, Walter 
+http://d-nb.info/gnd/130446807; Trautmann, Markus 
+http://d-nb.info/gnd/129676640; Braun, Michael 
+http://d-nb.info/gnd/106773402; Goeke, Hugo 
+http://d-nb.info/gnd/121957446; Speier, Martin 
+http://d-nb.info/gnd/173774180; Henninger, Sascha 
+http://d-nb.info/gnd/121533921; Niewels, Andrea 
+http://d-nb.info/gnd/118729918; Mack, Heinz 
+http://d-nb.info/gnd/121887456; Schwarzer, Yvonne 
+http://d-nb.info/gnd/130095648; Scheidtmann, August 
+http://d-nb.info/gnd/129673374; Kaiser, Gert 
+http://d-nb.info/gnd/13139438X; Marienberg, Sabine 
+http://d-nb.info/gnd/118626833; Vico, Giambattista 
+http://d-nb.info/gnd/115427120; Hupfer, Cordula 
+http://d-nb.info/gnd/113507755; Reuber, Paul 
+http://d-nb.info/gnd/189530081; Stappert, Michael 
+http://d-nb.info/gnd/189555564; Asen, Johannes 
+http://d-nb.info/gnd/13031014X; Nierhaus, Barbara 
+http://d-nb.info/gnd/114391416; Bartl, Andrea 
+http://d-nb.info/gnd/118732404; Mayröcker, Friederike 
+http://d-nb.info/gnd/189555467; Heimannsberg, Bruno 
+http://d-nb.info/gnd/121962016; Hilger, Susanne 
+http://d-nb.info/gnd/189555491; Schmidt, Emil 
+http://d-nb.info/gnd/189555505; Hupertz, Peter 
+http://d-nb.info/gnd/189555513; Lukat, Otto 
+http://d-nb.info/gnd/123987458; Tuchen, Bernd 
+http://d-nb.info/gnd/173510620; Sprave, Christoph 
+http://d-nb.info/gnd/118575414; Luther, Adolf 
+http://d-nb.info/gnd/129432806; Lechner, Christel 
+http://d-nb.info/gnd/130536784; Beilecke, François 
+http://d-nb.info/gnd/107256568; Bock, Hans Manfred 
+http://d-nb.info/gnd/189555777; Lucas, Otto 
+http://d-nb.info/gnd/115471588; Uhlenbrock, Klaus 
+http://d-nb.info/gnd/119359170; Dahlhausen, Christoph 
+http://d-nb.info/gnd/120119749; Trinkaus, Petra 
+http://d-nb.info/gnd/129942448; Sawatzki, Frank 
+http://d-nb.info/gnd/173487815; Schneider, Hubert 
+http://d-nb.info/gnd/121003094; Vom Venn, Hubert 
+http://d-nb.info/gnd/104863404; Wentzlaff-Eggebert, Christian 
+http://d-nb.info/gnd/128795069; Köhler, Tanja 
+http://d-nb.info/gnd/130449822; Wank, Norbert 
+http://d-nb.info/gnd/111549353; Krudewig, Helmut 
+http://d-nb.info/gnd/130394688; Weber, Thomas 
+http://d-nb.info/gnd/115759700; Brinke, Margit 
+http://d-nb.info/gnd/115759735; Kränzle, Peter 
+http://d-nb.info/gnd/120191083; Kabasci, Kirstin 
+http://d-nb.info/gnd/118828940; Raschdorff, Julius 
+http://d-nb.info/gnd/119504065; Haverkamp, Alfred 
+http://d-nb.info/gnd/130377368; Sielisch, Gisela 
+http://d-nb.info/gnd/124080952; Remmen, Karl 
+http://d-nb.info/gnd/117766984; Baehr, Paul 
+http://d-nb.info/gnd/118575082; Lüpertz, Markus 
+http://d-nb.info/gnd/124695590; Schürings, Ute 
+http://d-nb.info/gnd/124453562; Sawitzki, Volker 
+http://d-nb.info/gnd/11546221X; Burggraaff, Peter 
+http://d-nb.info/gnd/12057957X; Piorr, Ralf 
+http://d-nb.info/gnd/172886406; Eggenstein, Georg 
+http://d-nb.info/gnd/123785839; Knorr, Petra 
+http://d-nb.info/gnd/12410665X; Coelen, Ina 
+http://d-nb.info/gnd/124837077; Altura, Nessa 
+http://d-nb.info/gnd/119265516; Hübner, Hans 
+http://d-nb.info/gnd/12445125X; Lamkemeyer, Thomas 
+http://d-nb.info/gnd/114110042; Seresse, Volker 
+http://d-nb.info/gnd/121758729; Lutterbach, Hubertus 
+http://d-nb.info/gnd/119330962; Liefmann, Jürgen 
+http://d-nb.info/gnd/111331757; Ettlich, Wolfgang 
+http://d-nb.info/gnd/112123317; Miller-Kipp, Gisela 
+http://d-nb.info/gnd/120359308; Spies, Werner 
+http://d-nb.info/gnd/122160746; Büttner, Nils 
+http://d-nb.info/gnd/132093987; Rumpler, Ursula 
+http://d-nb.info/gnd/123274222; Matenaer, Ursula 
+http://d-nb.info/gnd/130554685; Heuser-Hauck, Sabine 
+http://d-nb.info/gnd/123970881; Krings, Heinrich 
+http://d-nb.info/gnd/111738024; Dräbing, Reinhard 
+http://d-nb.info/gnd/113051808; Whiting, Charles 
+http://d-nb.info/gnd/124949754; Röhl, Klaus F. 
+http://d-nb.info/gnd/118580450; Meistermann, Georg 
+http://d-nb.info/gnd/124630820; Brüchert, Hedwig 
+http://d-nb.info/gnd/118690914; Gerstein, Kurt 
+http://d-nb.info/gnd/129946664; Groneck, Christoph 
+http://d-nb.info/gnd/123484286; Sattler, Dorothea 
+http://d-nb.info/gnd/115645497; Haefs, Gisbert 
+http://d-nb.info/gnd/173804144; Spanuth, Ilse 
+http://d-nb.info/gnd/189556633; Hecker, Axel 
+http://d-nb.info/gnd/120235080; Schubert, Ernst 
+http://d-nb.info/gnd/17193895X; Oetzel, Sabine 
+http://d-nb.info/gnd/129790559; Brüning, Helmut 
+http://d-nb.info/gnd/173806325; Roth, Wolfgang 
+http://d-nb.info/gnd/118633465; Wilms, Johann Wilhelm 
+http://d-nb.info/gnd/12867024X; Schuster, Hermann Josef 
+http://d-nb.info/gnd/18955682X; Steinbach, Wilhelm 
+http://d-nb.info/gnd/173681530; Niepagenkemper, Olaf 
+http://d-nb.info/gnd/122509226; Meyer, Elisabeth I. 
+http://d-nb.info/gnd/120363771; Ristow, Sebastian 
+http://d-nb.info/gnd/122495632; Schüller, Martin 
+http://d-nb.info/gnd/173809774; Polifka, Manfred 
+http://d-nb.info/gnd/189556889; Berg, Elsbeth van den 
+http://d-nb.info/gnd/189556897; Luchtenberg, Else 
+http://d-nb.info/gnd/14358409X; Hilden, Hans Dieter 
+http://d-nb.info/gnd/173810020; Pierini, Karl Ulrich 
+http://d-nb.info/gnd/130688347; Hülsbusch, Werner 
+http://d-nb.info/gnd/11860922X; Schmitt, Carl 
+http://d-nb.info/gnd/106305972; Leder, Klaus 
+http://d-nb.info/gnd/129922293; Neumann, Gabriele 
+http://d-nb.info/gnd/121532291; Augustinski, Peer 
+http://d-nb.info/gnd/18955729X; Greve, Johann 
+http://d-nb.info/gnd/111664446; Althoff, Gertrud 
+http://d-nb.info/gnd/143290002; Heinze, Jutta 
+http://d-nb.info/gnd/136520871; Hepprich, Arnd 
+http://d-nb.info/gnd/136520359; Konrad, Hans-Walter 
+http://d-nb.info/gnd/121713016; Brinkmann, Jan 
+http://d-nb.info/gnd/173815979; Claser, Christof 
+http://d-nb.info/gnd/173816002; Müller, Christian 
+http://d-nb.info/gnd/173816274; Tophoven, Irmgard 
+http://d-nb.info/gnd/131387340; Schulze Temming, Sophia 
+http://d-nb.info/gnd/114077835; Davey, Peter 
+http://d-nb.info/gnd/114454442; Müllejans-Dickmann, Rita 
+http://d-nb.info/gnd/189557729; Begas, Oskar 
+http://d-nb.info/gnd/118907549; Ikemura, Leiko 
+http://d-nb.info/gnd/12312249X; Hiller, Bettina 
+http://d-nb.info/gnd/133916995; Beierkuhnlein, Carl 
+http://d-nb.info/gnd/112873073; Gregor, Thomas 
+http://d-nb.info/gnd/115456066; Haafke, Udo 
+http://d-nb.info/gnd/189557761; Gellwitzki, Ralph 
+http://d-nb.info/gnd/130497142; Barthels, Thomas 
+http://d-nb.info/gnd/130497215; Möller, Armin 
+http://d-nb.info/gnd/130497193; Barthels, Klaus 
+http://d-nb.info/gnd/13563783X; Eggeling, Ute 
+http://d-nb.info/gnd/120624494; Belgin, Tayfun 
+http://d-nb.info/gnd/120709813; Becking, Horst 
+http://d-nb.info/gnd/17194092X; Bowien, Erwin 
+http://d-nb.info/gnd/116300167; Bowien, Erwin 
+http://d-nb.info/gnd/118690892; Gerresheim, Bert 
+http://d-nb.info/gnd/128783400; Füllenbach, Elias H. 
+http://d-nb.info/gnd/118007211; Smidt, Wolbert 
+http://d-nb.info/gnd/189558067; Dortkampf, H. W. 
+http://d-nb.info/gnd/189558091; Haunhorst, Julius 
+http://d-nb.info/gnd/118932047; Kirchhoff, Hans Georg 
+http://d-nb.info/gnd/138789142; Priever, Andreas 
+http://d-nb.info/gnd/189538295; Becker, Carl 
+http://d-nb.info/gnd/114435227; Jolk, Michael 
+http://d-nb.info/gnd/11668125X; Correns, Erich 
+http://d-nb.info/gnd/118571222; Leibl, Wilhelm 
+http://d-nb.info/gnd/189558334; Hartzheim, Daniel 
+http://d-nb.info/gnd/115867503; Dechau, Wilfried 
+http://d-nb.info/gnd/131579452; Müller-Schneck, Elke 
+http://d-nb.info/gnd/128576464; Hüttner, Bernd 
+http://d-nb.info/gnd/11923968X; Goebel, Klaus 
+http://d-nb.info/gnd/118513214; Bonhoeffer, Dietrich 
+http://d-nb.info/gnd/189558423; Dornseifer, Gerhard 
+http://d-nb.info/gnd/189558512; Schroeder, Wilhelm Heinrich 
+http://d-nb.info/gnd/189558679; Strünckmann, Matthias Wilhelm 
+http://d-nb.info/gnd/189558660; Kolkmann, Anna Catharina 
+http://d-nb.info/gnd/128645792; Peters, Sebastian 
+http://d-nb.info/gnd/120166690; Bauschinger, Sigrid 
+http://d-nb.info/gnd/121486125; Laufer, Ulrike 
+http://d-nb.info/gnd/129902764; Schreiber, Birgit 
+http://d-nb.info/gnd/13039095X; Junkernheinrich, Martin 
+http://d-nb.info/gnd/171933761; Micosatt, Gerhard 
+http://d-nb.info/gnd/1011338033; Haep, Christoph 
+http://d-nb.info/gnd/173827195; Franz, Roman 
+http://d-nb.info/gnd/124606164; Botzet, Rolf 
+http://d-nb.info/gnd/140356029; Schumann, Brigitte 
+http://d-nb.info/gnd/173409369; Tönjes, Bernd 
+http://d-nb.info/gnd/118574469; Lortzing, Albert 
+http://d-nb.info/gnd/189548142; Landé, Hugo 
+http://d-nb.info/gnd/18955889X; Garschagen, Bertha 
+http://d-nb.info/gnd/101651350X; Schrader, Ulrike 
+http://d-nb.info/gnd/189558903; Kleeberg, Minna 
+http://d-nb.info/gnd/131437836; Rüffer-Lukowicz, Christiane 
+http://d-nb.info/gnd/131437887; Rüffer, Jochen 
+http://d-nb.info/gnd/130441740; Baumeister, Pilar 
+http://d-nb.info/gnd/115636307; Farrenkopf, Michael 
+http://d-nb.info/gnd/115852670; Bargheer, Friedrich W. 
+http://d-nb.info/gnd/173834930; Behrens, Sonja von 
+http://d-nb.info/gnd/11085232X; Grözinger, Elvira 
+http://d-nb.info/gnd/129029203; Thomes, Paul 
+http://d-nb.info/gnd/123222990; Lechtape, Andreas 
+http://d-nb.info/gnd/114948577; Frommert, Christian 
+http://d-nb.info/gnd/120063913; Doig, Peter 
+http://d-nb.info/gnd/120657252; Klein, Jochen 
+http://d-nb.info/gnd/17382983X; Zache, Dirk 
+http://d-nb.info/gnd/189559039; Zache, Dirk 
+http://d-nb.info/gnd/172231612; Löhr, Wolfgang 
+http://d-nb.info/gnd/121839362; Franke, Birgit 
+http://d-nb.info/gnd/118748033; Reinold <Heiliger> 
+http://d-nb.info/gnd/130506583; Heineken, Edgar 
+http://d-nb.info/gnd/17217869X; Kalt, Gero 
+http://d-nb.info/gnd/135867541; Roggausch, Werner 
+http://d-nb.info/gnd/11944853X; Heinrichs, Hans-Jürgen 
+http://d-nb.info/gnd/115870997; Opitz, Marion 
+http://d-nb.info/gnd/111046742; Scheffler, Ingrid 
+http://d-nb.info/gnd/117445983; Wolf, Thomas 
+http://d-nb.info/gnd/129808504; Dickmann, Ines 
+http://d-nb.info/gnd/121094960; Imhof, Michael 
+http://d-nb.info/gnd/173834787; Bergmann, Bruno 
+http://d-nb.info/gnd/115524592; Schmitt, Jean-Claude 
+http://d-nb.info/gnd/108997448; Blank-Sangmeister, Ursula 
+http://d-nb.info/gnd/100946054; Hermannus <Coloniensis> 
+http://d-nb.info/gnd/12965342X; Eckstein, Markus 
+http://d-nb.info/gnd/110298225; Schneider, Hans-Günther 
+http://d-nb.info/gnd/110684192; Päffgen, Bernd 
+http://d-nb.info/gnd/129898783; Wendt, Karl Peter 
+http://d-nb.info/gnd/131658468; Hövener, Willi 
+http://d-nb.info/gnd/131431358; Leonhardt, Joachim 
+http://d-nb.info/gnd/173838502; Schmidt, Thomas 
+http://d-nb.info/gnd/131683128; Lisner, Wiebke 
+http://d-nb.info/gnd/12139199X; Käufer, Hugo Ernst 
+http://d-nb.info/gnd/131740407; Schnabel, Nikodemus C. 
+http://d-nb.info/gnd/118503634; Apollinaire, Guillaume 
+http://d-nb.info/gnd/11474694X; Siekmann, Birgit 
+http://d-nb.info/gnd/121324699; Schmidtsiefer, Peter 
+http://d-nb.info/gnd/125844476; Baums, Theodor 
+http://d-nb.info/gnd/121466612; Huber, Ulrich 
+http://d-nb.info/gnd/133279618; Schneider, Günter 
+http://d-nb.info/gnd/118772155; Zado, Reinhard 
+http://d-nb.info/gnd/121545083; Korte-Böger, Andrea 
+http://d-nb.info/gnd/13175971X; Homann, Christof 
+http://d-nb.info/gnd/13014391X; Arndt, Claudia Maria 
+http://d-nb.info/gnd/124690599; Nitschke, Ralf 
+http://d-nb.info/gnd/120658348; Lepie, Herta 
+http://d-nb.info/gnd/114014868; Münchow, Ann 
+http://d-nb.info/gnd/172149215; Habel, Bernd 
+http://d-nb.info/gnd/129956031; Patzke, Harald 
+http://d-nb.info/gnd/120135590; Elben, Helga 
+http://d-nb.info/gnd/120352680; Schulze Waltrup, Wilhelm 
+http://d-nb.info/gnd/173845932; Pilkmann, Reinhard 
+http://d-nb.info/gnd/11556294X; Alemann, Ulrich von 
+http://d-nb.info/gnd/121742989; Franck von Franckenstein, Valentin 
+http://d-nb.info/gnd/10808664X; Spiegel, Helmut 
+http://d-nb.info/gnd/124492223; Künzel, Christine 
+http://d-nb.info/gnd/122732243; Verspohl, Franz-Joachim 
+http://d-nb.info/gnd/111644747; Hänsel, Sylvaine 
+http://d-nb.info/gnd/118506730; Barth, Carl 
+http://d-nb.info/gnd/173408257; Adler, Jörg 
+http://d-nb.info/gnd/115383204; Siebenhaar, Klaus 
+http://d-nb.info/gnd/115383247; Damm, Steffen 
+http://d-nb.info/gnd/123103436; Haarmann, Hermann 
+http://d-nb.info/gnd/105134988; Albertin, Lothar 
+http://d-nb.info/gnd/11855042X; Hesse, Hermann 
+http://d-nb.info/gnd/132398249; Denkler, Markus 
+http://d-nb.info/gnd/122025385; Büscher, Tobias 
+http://d-nb.info/gnd/131243683; Hayit, Ertay 
+http://d-nb.info/gnd/119492407; Schimmel, Barbara 
+http://d-nb.info/gnd/113515103; Hübner, Jörg 
+http://d-nb.info/gnd/118721038; Karrenberg, Friedrich 
+http://d-nb.info/gnd/123039576; Haunfelder, Bernd 
+http://d-nb.info/gnd/172916976; Olliges-Wieczorek, Ute 
+http://d-nb.info/gnd/119175002; Roscheck, Ingrid 
+http://d-nb.info/gnd/1011660601; Gellner, Uwe-Jens 
+http://d-nb.info/gnd/13931010X; Baumgärtel, Bettina 
+http://d-nb.info/gnd/117711926; Heidenreich, Ulrich 
+http://d-nb.info/gnd/11873475X; Nicolai, Philipp 
+http://d-nb.info/gnd/140910689; Rößler, Helmut 
+http://d-nb.info/gnd/134658841; Ladenburger, Michael 
+http://d-nb.info/gnd/123866995; Bodmer, Hans C. 
+http://d-nb.info/gnd/112575943; Läufer, Bernd 
+http://d-nb.info/gnd/115826629; Jung, Martin H. 
+http://d-nb.info/gnd/117281859; Schlatter, Anna 
+http://d-nb.info/gnd/11548048X; Beyer, Marcel 
+http://d-nb.info/gnd/13238888X; Jenkner, Marina 
+http://d-nb.info/gnd/13238891X; Müller, Christoph 
+http://d-nb.info/gnd/120688158; Neu, Peter 
+http://d-nb.info/gnd/119231301; Eckhard, Wolfgang 
+http://d-nb.info/gnd/104301139; Lindner, Werner 
+http://d-nb.info/gnd/189560851; Pollmann, Sigmund Richard 
+http://d-nb.info/gnd/121877914; Purpus, Elke 
+http://d-nb.info/gnd/129496227; Kramer, Johannes 
+http://d-nb.info/gnd/124384617; Kirschbaum, Peter J. 
+http://d-nb.info/gnd/124057357; Bartolosch, Thomas A. 
+http://d-nb.info/gnd/129616680; Giring, Susanne 
+http://d-nb.info/gnd/118680013; Döhl, Reinhard 
+http://d-nb.info/gnd/114047723; Meißner, Burghard 
+http://d-nb.info/gnd/132115859; Auert, Christiane 
+http://d-nb.info/gnd/118583042; Möller, Franz 
+http://d-nb.info/gnd/121490475; Yang, Qi 
+http://d-nb.info/gnd/128579420; Maschke, Sabine 
+http://d-nb.info/gnd/109230027; Gernert, Klaus-Dieter 
+http://d-nb.info/gnd/120127822; Dux, Holger A. 
+http://d-nb.info/gnd/122530845; Buslau, Oliver 
+http://d-nb.info/gnd/118798715; Stephan, Heinrich von 
+http://d-nb.info/gnd/104982721; Brockhaus, Christoph 
+http://d-nb.info/gnd/131536192; Siepert, Hans-Jörg 
+http://d-nb.info/gnd/124593542; Killing, Wolfgang 
+http://d-nb.info/gnd/189561025; Röse, Hans-Martin 
+http://d-nb.info/gnd/115475168; Sterzl, Anton 
+http://d-nb.info/gnd/105890456; Müllejans, Hans 
+http://d-nb.info/gnd/115876065; Beckert, Jens 
+http://d-nb.info/gnd/107954540; Streeck, Wolfgang 
+http://d-nb.info/gnd/121486796; Janßen-Schnabel, Elke 
+http://d-nb.info/gnd/106916734; Keipert, Helmut 
+http://d-nb.info/gnd/123604133; Sautmann, Richard 
+http://d-nb.info/gnd/118512269; Bodelschwingh, Friedrich von 
+http://d-nb.info/gnd/121662721; Holtappels, Heinz Günter 
+http://d-nb.info/gnd/136235107; Lohre, Wilfried 
+http://d-nb.info/gnd/10976210X; Gerking, Willy 
+http://d-nb.info/gnd/130169218; Hengstler, Karl-Heinz 
+http://d-nb.info/gnd/115651632; Stahl, Enno 
+http://d-nb.info/gnd/132499835; Doxie Delaubell, Marion 
+http://d-nb.info/gnd/124294820; Jakob, Friedrich 
+http://d-nb.info/gnd/107726122; Baroth, Hans Dieter 
+http://d-nb.info/gnd/118545795; Hansing, Ernst Günter 
+http://d-nb.info/gnd/118592076; Paul <VI., Papst> 
+http://d-nb.info/gnd/138496870; Sicherl, Bernhard 
+http://d-nb.info/gnd/123575613; Durst, Michael 
+http://d-nb.info/gnd/173887031; Diezun, Michael 
+http://d-nb.info/gnd/17388704X; Strunk, Sandra 
+http://d-nb.info/gnd/118559214; Kätelhön, Hermann 
+http://d-nb.info/gnd/119427850; Kalthoff, Horst 
+http://d-nb.info/gnd/12318231X; Klingenheben, August 
+http://d-nb.info/gnd/11105964X; Ludwig, Hartmut 
+http://d-nb.info/gnd/189561629; Niedlich, Hermann 
+http://d-nb.info/gnd/115381457; Graf, Angela 
+http://d-nb.info/gnd/132451964; Heidermann, Horst 
+http://d-nb.info/gnd/115379819; Zimmermann, Rüdiger 
+http://d-nb.info/gnd/172431948; Veddeler, Peter 
+http://d-nb.info/gnd/18956198X; Aarts, Chris 
+http://d-nb.info/gnd/110779983; Ostendorf, Thomas 
+http://d-nb.info/gnd/122203755; Parello, Daniel 
+http://d-nb.info/gnd/132324741; Scheidemann, Christian 
+http://d-nb.info/gnd/129776483; Ergün, Nazire 
+http://d-nb.info/gnd/119295083; Barney, Matthew 
+http://d-nb.info/gnd/172449146; Wetzstein, Margot 
+http://d-nb.info/gnd/111795214; Bergmann, Jens 
+http://d-nb.info/gnd/106962116; Mihm, Arend 
+http://d-nb.info/gnd/114096147; Elmentaler, Michael 
+http://d-nb.info/gnd/123688191; Waldecker, Christoph 
+http://d-nb.info/gnd/13285144X; Herkendell, Johann 
+http://d-nb.info/gnd/1014197325; Rebscher, Susanne 
+http://d-nb.info/gnd/124099157; Rüthing, Heinrich 
+http://d-nb.info/gnd/111013216; Eisel, Stephan 
+http://d-nb.info/gnd/128944870; Kneppe, Cornelia 
+http://d-nb.info/gnd/128383437; Skudelny, Steffen 
+http://d-nb.info/gnd/12846254X; Mefferdatis, Laurenz 
+http://d-nb.info/gnd/122701860; Antlfinger, Mathias 
+http://d-nb.info/gnd/119538989; Cincinnius, Johannes 
+http://d-nb.info/gnd/128473894; Büttner, Annett 
+http://d-nb.info/gnd/189561602; Schriever, Auguste 
+http://d-nb.info/gnd/139189785; Mackes, Karl L. 
+http://d-nb.info/gnd/110882342; Schnittger, Klaus Thomas 
+http://d-nb.info/gnd/122924932; Franken, Gisbert 
+http://d-nb.info/gnd/111649730; Berg, Axel von 
+http://d-nb.info/gnd/173899927; Hillgruber, Kurt Felix 
+http://d-nb.info/gnd/129624586; Paul, Detlev 
+http://d-nb.info/gnd/123175216; Rohde, Anke 
+http://d-nb.info/gnd/113635303; Woopen, Christiane 
+http://d-nb.info/gnd/120130602; Sollbach, Gerhard E. 
+http://d-nb.info/gnd/119356333; Sassen, Beatrix 
+http://d-nb.info/gnd/120058138; Gesing, Martin 
+http://d-nb.info/gnd/121816672; Hensgen, Angelika 
+http://d-nb.info/gnd/173462022; Reinewardt, Klaus-Jürgen 
+http://d-nb.info/gnd/122192877; Dörries-Höher, Inge 
+http://d-nb.info/gnd/111814898; Deppner, Martin Roman 
+http://d-nb.info/gnd/118526383; Dörries, Bernhard 
+http://d-nb.info/gnd/119483548; Reger, Erik 
+http://d-nb.info/gnd/132819635; Kellermann, Guido 
+http://d-nb.info/gnd/118739530; Paul <V., Papst> 
+http://d-nb.info/gnd/12035540X; Baumann, Richard 
+http://d-nb.info/gnd/18956203X; Wagner, Friedrich 
+http://d-nb.info/gnd/11940513X; Schaefler, Fritz 
+http://d-nb.info/gnd/137307837; Kleu, Heinrich 
+http://d-nb.info/gnd/139021043; Herborn, Wolfgang 
+http://d-nb.info/gnd/105500771; Eufinger, Heinrich 
+http://d-nb.info/gnd/11130623X; Liesbrock, Heinz 
+http://d-nb.info/gnd/119092999; Brohm, Joachim 
+http://d-nb.info/gnd/137708998; Sassen, Andreas 
+http://d-nb.info/gnd/131714333; Sassen, Claudia 
+http://d-nb.info/gnd/130420093; Hüsch, Anette 
+http://d-nb.info/gnd/13385969X; Bismarck, Beatrice von 
+http://d-nb.info/gnd/130533807; Dörre, Klaus 
+http://d-nb.info/gnd/115814418; Röttger, Bernd 
+http://d-nb.info/gnd/118557432; Jérôme <Westfalen, König> 
+http://d-nb.info/gnd/173913717; Feicht, Andreas 
+http://d-nb.info/gnd/189562412; Feicht, Andreas 
+http://d-nb.info/gnd/10969385X; Diedenhofen, Maria 
+http://d-nb.info/gnd/173199216; Koepp, Hans-Joachim 
+http://d-nb.info/gnd/124479227; Brauer, Theodor 
+http://d-nb.info/gnd/131759876; Diego, Estrella de 
+http://d-nb.info/gnd/131515632; Schröder, Lothar 
+http://d-nb.info/gnd/119423545; Moszkowicz, Imo 
+http://d-nb.info/gnd/121082415; Nölle-Hornkamp, Iris 
+http://d-nb.info/gnd/173919650; Weitensteiner, Josef 
+http://d-nb.info/gnd/115639705; Hauschild, Jan-Christoph 
+http://d-nb.info/gnd/118038028; Boeddinghaus, Gerhard 
+http://d-nb.info/gnd/11130508X; Veltzke, Veit 
+http://d-nb.info/gnd/113780060; Koheil, Susanne 
+http://d-nb.info/gnd/133024202; Pirke, Klaus 
+http://d-nb.info/gnd/120823306; Wilhelm, Karin 
+http://d-nb.info/gnd/121402606; Kraemer, Friedrich Wilhelm 
+http://d-nb.info/gnd/118807358; Wilhelm <V., Jülich-Kleve-Berg, Herzog> 
+http://d-nb.info/gnd/118742469; Piene, Otto 
+http://d-nb.info/gnd/115797025; Herzogenrath, Wulf 
+http://d-nb.info/gnd/109210174; Arntz, Hans-Dieter 
+http://d-nb.info/gnd/173924077; Czapski, Holger 
+http://d-nb.info/gnd/173927173; Castor, Martin 
+http://d-nb.info/gnd/124821316; Klümpen, Robert 
+http://d-nb.info/gnd/142089702; Urban, Thomas 
+http://d-nb.info/gnd/119035960; Zimmermann, Peter 
+http://d-nb.info/gnd/121951642; Brehm, Margrit 
+http://d-nb.info/gnd/133656985; Ortmanns, Kurt 
+http://d-nb.info/gnd/119394367; Stohrer, Peter 
+http://d-nb.info/gnd/120454688; Stubbe- da Luz, Helmut 
+http://d-nb.info/gnd/12070935X; Becker, Andreas 
+http://d-nb.info/gnd/114279330; Birkmeyer, Jens 
+http://d-nb.info/gnd/133074269; Hoffmann, Thomas 
+http://d-nb.info/gnd/132886219; Sonntag, Volker Heinrich Horst 
+http://d-nb.info/gnd/120090066; Elisabeth <Pfalz-Simmern, Pfalzgräfin> 
+http://d-nb.info/gnd/118524844; Descartes, René 
+http://d-nb.info/gnd/123107105; Zwirner, Rudolf 
+http://d-nb.info/gnd/173953387; Schweda, Alexandra Agnes 
+http://d-nb.info/gnd/173953395; Wybierek, Paul Anton 
+http://d-nb.info/gnd/120925427; Laak, Dirk van 
+http://d-nb.info/gnd/113066252; Frenz, Walter 
+http://d-nb.info/gnd/131902407; Studlar, Bernhard 
+http://d-nb.info/gnd/133602532; Barta, Stefan 
+http://d-nb.info/gnd/123828902; Becker, Fred G. 
+http://d-nb.info/gnd/109502949; Stevens, Ulrich 
+http://d-nb.info/gnd/115822054; Küchler, Felicitas von 
+http://d-nb.info/gnd/135647622; Worthen, John 
+http://d-nb.info/gnd/123389577; Bönig, Winfried 
+http://d-nb.info/gnd/123872472; Bretschneider, Wolfgang 
+http://d-nb.info/gnd/115434933; Roth, Hans Jürgen 
+http://d-nb.info/gnd/130864005; Isselmann, Michael 
+http://d-nb.info/gnd/133274403; Fartwsi, Hafiz al- 
+http://d-nb.info/gnd/13019395X; Peters, Ulrike Katrin 
+http://d-nb.info/gnd/12160277X; Raab, Karsten-Thilo 
+http://d-nb.info/gnd/128919140; Bahr, Petra 
+http://d-nb.info/gnd/120932393; Buetti, Daniele 
+http://d-nb.info/gnd/119010844; Eickholt, Heinz 
+http://d-nb.info/gnd/113949863; Danelzik-Brüggemann, Christoph 
+http://d-nb.info/gnd/118546333; Hartmann, Robert 
+http://d-nb.info/gnd/173011799; Tiegel-Hertfelder, Petra 
+http://d-nb.info/gnd/115411305; Alfter, Dieter 
+http://d-nb.info/gnd/128868503; Almus, Georg 
+http://d-nb.info/gnd/11705979X; Jaeschke, Emil 
+http://d-nb.info/gnd/138294682; Nowosadtko, Jutta 
+http://d-nb.info/gnd/110108558; Petrak, Michael 
+http://d-nb.info/gnd/173956599; Bing, Norbert 
+http://d-nb.info/gnd/129788988; Kindler, Jürgen 
+http://d-nb.info/gnd/129789011; Lewe, Wolfgang 
+http://d-nb.info/gnd/133845036; Hölzel, Fritz 
+http://d-nb.info/gnd/135700027; Zellner, Leo 
+http://d-nb.info/gnd/136519210; Seidelmann, Uwe 
+http://d-nb.info/gnd/131922998; Lee, Yun 
+http://d-nb.info/gnd/134234219; Kreuzer, Stefanie 
+http://d-nb.info/gnd/124787061; Kiel, Ernst-Friedrich 
+http://d-nb.info/gnd/122781368; Vetter, Klaus-Jürgen 
+http://d-nb.info/gnd/133937968; Meindl, Ralf 
+http://d-nb.info/gnd/118951890; Koch, Erich 
+http://d-nb.info/gnd/132623870; Niedzwicki, Matthias 
+http://d-nb.info/gnd/120871610; Schulz, Hermann 
+http://d-nb.info/gnd/112800068; Grabe, Wilhelm 
+http://d-nb.info/gnd/110384652; Weidner, Marcus 
+http://d-nb.info/gnd/118560573; Katharina <von Alexandria> 
+http://d-nb.info/gnd/13377502X; Jüstel, Reinhard 
+http://d-nb.info/gnd/115690115; Beuse, Stefan 
+http://d-nb.info/gnd/120905914; Greule, Albrecht 
+http://d-nb.info/gnd/107050161; Haubrichs, Wolfgang 
+http://d-nb.info/gnd/110857607; Wiegandt, Claus-Christian 
+http://d-nb.info/gnd/13352535X; Mehmel, Astrid 
+http://d-nb.info/gnd/118791923; Philippson, Alfred 
+http://d-nb.info/gnd/120982129; Heckel, Martin 
+http://d-nb.info/gnd/115506187; Schlaich, Klaus 
+http://d-nb.info/gnd/140950079; Schmidt, Hans-Werner 
+http://d-nb.info/gnd/17339244X; Sauerborn, Josef 
+http://d-nb.info/gnd/131965212; Jahnke, Katharina 
+http://d-nb.info/gnd/120613077; Kade, Jochen 
+http://d-nb.info/gnd/110513770; Nolda, Sigrid 
+http://d-nb.info/gnd/141247924; Biederbeck, Martina 
+http://d-nb.info/gnd/120277700; Holterman, Dirk 
+http://d-nb.info/gnd/110130065; Herzog, Harald 
+http://d-nb.info/gnd/118573853; Löns, Hermann 
+http://d-nb.info/gnd/119283328; Bonin, Cosima von 
+http://d-nb.info/gnd/121076466; Laufenberg, Gerda 
+http://d-nb.info/gnd/121342700; Beierlorzer, Henry 
+http://d-nb.info/gnd/128781599; Neuwöhner, Andreas 
+http://d-nb.info/gnd/122796683; Gündchen, Robert 
+http://d-nb.info/gnd/116423889; Braun-Fock, Beatrice 
+http://d-nb.info/gnd/122969294; Goosen, Frank 
+http://d-nb.info/gnd/189563192; Blühm, Andreas 
+http://d-nb.info/gnd/119273322; Dolron, Désirée 
+http://d-nb.info/gnd/122747836; Wrede, Thomas 
+http://d-nb.info/gnd/133608484; Schmitt, Peter 
+http://d-nb.info/gnd/133234126; Schumacher, Franz H. 
+http://d-nb.info/gnd/129471941; Topp, Arnold 
+http://d-nb.info/gnd/120330806; Sha?ar, Gil 
+http://d-nb.info/gnd/121242560; Steiner, Barbara 
+http://d-nb.info/gnd/115360166; Silberschlag, Johann Esaias 
+http://d-nb.info/gnd/134140486; Vogt, Christine 
+http://d-nb.info/gnd/130550434; Welkens, Ekkehard 
+http://d-nb.info/gnd/122513169; Skai, Hollow 
+http://d-nb.info/gnd/124187285; Müller-Schallenberg, Ralph 
+http://d-nb.info/gnd/124187307; Knemeyer, Markus H.-D. 
+http://d-nb.info/gnd/135691109; Schmidt, Daniel 
+http://d-nb.info/gnd/115379614; Ronte, Dieter 
+http://d-nb.info/gnd/124009387; Denk, Andreas 
+http://d-nb.info/gnd/133161242; Weidner, Klaus 
+http://d-nb.info/gnd/133427358; Eltrop, Heinrich 
+http://d-nb.info/gnd/128853131; Kümper, Hiram 
+http://d-nb.info/gnd/110498259; Schäfer, Gerd E. 
+http://d-nb.info/gnd/118757296; Thomas, Norbert 
+http://d-nb.info/gnd/1013227972; Lucks, Lothar 
+http://d-nb.info/gnd/133547949; Pramor, Jörg 
+http://d-nb.info/gnd/133547965; Juhr, Daniel 
+http://d-nb.info/gnd/133619176; Ehlers, Gertrude Andrea Nicole 
+http://d-nb.info/gnd/173980953; Rosenberger, Ruth 
+http://d-nb.info/gnd/119519585; Ganser, Karl 
+http://d-nb.info/gnd/173981186; Labrianidis, Dimitrios 
+http://d-nb.info/gnd/173981194; Sandri, Alessandro 
+http://d-nb.info/gnd/121687872; Brülls, Holger 
+http://d-nb.info/gnd/124363423; Klos, Joachim 
+http://d-nb.info/gnd/119069229; Prokot, Inge 
+http://d-nb.info/gnd/106835874; Baßler, Wolfgang 
+http://d-nb.info/gnd/133850862; Becker, Thomas 
+http://d-nb.info/gnd/115826882; Meyer, Jürgen 
+http://d-nb.info/gnd/123042291; Mundt, Wilhelm 
+http://d-nb.info/gnd/11128676X; Scotti, Roland 
+http://d-nb.info/gnd/118606433; Schallück, Paul 
+http://d-nb.info/gnd/134121287; Runberger, Maik 
+http://d-nb.info/gnd/120208075; Frahm, Jan-Peter 
+http://d-nb.info/gnd/133885089; Cordemann, Martin 
+http://d-nb.info/gnd/133885100; Paul, Ralf 
+http://d-nb.info/gnd/131584685; Scholz, Dietmar 
+http://d-nb.info/gnd/117456705; Woeste, Friedrich 
+http://d-nb.info/gnd/108440664; Peiffer, Lorenz 
+http://d-nb.info/gnd/173991076; Willaschek, Thomas 
+http://d-nb.info/gnd/107930250; Stolle, Volker 
+http://d-nb.info/gnd/127003126; Mützelfeldt, Karl 
+http://d-nb.info/gnd/173990371; Hestermann, Gustav 
+http://d-nb.info/gnd/11946344X; Staufenbiel, Gerhard 
+http://d-nb.info/gnd/140434909; Poettgen, Jörg 
+http://d-nb.info/gnd/124574114; Biermann, Werner 
+http://d-nb.info/gnd/124574157; Klönne, Arno 
+http://d-nb.info/gnd/133885496; Schmidt-Wilcke, Heinrich-Aloysius 
+http://d-nb.info/gnd/118599690; Renger-Patzsch, Albert 
+http://d-nb.info/gnd/121071685; Freudenberg, Matthias 
+http://d-nb.info/gnd/132364859; Strunz, Verena Anna 
+http://d-nb.info/gnd/121735842; Rehder, Stefan 
+http://d-nb.info/gnd/130438014; Backes, Reinhard 
+http://d-nb.info/gnd/119411970; König, Ralf 
+http://d-nb.info/gnd/133849228; Neu, Marc 
+http://d-nb.info/gnd/132225522; Meier-Drave, Christa 
+http://d-nb.info/gnd/173996531; Melzer, Angelika 
+http://d-nb.info/gnd/118072587; Jarass, Hans D. 
+http://d-nb.info/gnd/137804075; Schneider-Hartmann, Gunnar-Volkmar 
+http://d-nb.info/gnd/133989240; Dreyer-Dowe, Edith 
+http://d-nb.info/gnd/118616099; Spener, Philipp Jakob 
+http://d-nb.info/gnd/117161381; Joch, Johann Georg 
+http://d-nb.info/gnd/124124488; Hosenfeld, Ingmar 
+http://d-nb.info/gnd/133058816; Rothland, Martin 
+http://d-nb.info/gnd/111015863; Wurzel, Angelika 
+http://d-nb.info/gnd/134158318; Hülsberg, Jennifer 
+http://d-nb.info/gnd/109088735; Güse, Ernst-Gerhard 
+http://d-nb.info/gnd/121404773; Becher, Matthias 
+http://d-nb.info/gnd/133758338; Schübbe, Caspar H. 
+http://d-nb.info/gnd/125964439; Twenhöven, Jörg 
+http://d-nb.info/gnd/118926179; Ney, Elisabet 
+http://d-nb.info/gnd/122973100; Heyden, Ulrich van der 
+http://d-nb.info/gnd/133873323; Flasse, Folker 
+http://d-nb.info/gnd/124130690; Cortjaens, Wolfgang 
+http://d-nb.info/gnd/124401546; Seeger, Kerstin 
+http://d-nb.info/gnd/108358771; Hamel, Winfried 
+http://d-nb.info/gnd/141262303; Kuhna, Martin 
+http://d-nb.info/gnd/122927982; Zschaler, Frank 
+http://d-nb.info/gnd/111311640; Werling, Michael 
+http://d-nb.info/gnd/174004168; Bartmann, Ina 
+http://d-nb.info/gnd/136201814; Henkel, Fritz 
+http://d-nb.info/gnd/124671772; Furthmann, Walter 
+http://d-nb.info/gnd/133949931; Priemel, Kim Christian 
+http://d-nb.info/gnd/133869946; Günter, Roland 
+http://d-nb.info/gnd/130228842; Arnolds, Willi 
+http://d-nb.info/gnd/118709453; Hecker, Peter 
+http://d-nb.info/gnd/115852484; Reichling, Norbert 
+http://d-nb.info/gnd/122421647; Gogos, Manuel 
+http://d-nb.info/gnd/143854380; Hagemann, Manuel 
+http://d-nb.info/gnd/134207149; Johann <von Kleve> 
+http://d-nb.info/gnd/134158458; Vootz, Hubert 
+http://d-nb.info/gnd/122110978; Laabs, Annegret 
+http://d-nb.info/gnd/11874173X; Prangenberg, Norbert 
+http://d-nb.info/gnd/111284546; Franken, Irene 
+http://d-nb.info/gnd/131506463; Hoffmann, Monika 
+http://d-nb.info/gnd/118905724; Matz, Reinhard 
+http://d-nb.info/gnd/130026247; Hallenberger, Gerd 
+http://d-nb.info/gnd/11105639X; Scholz, Rembrandt D. 
+http://d-nb.info/gnd/128862122; Kopleck, Maik 
+http://d-nb.info/gnd/128870400; Essl, Karlheinz 
+http://d-nb.info/gnd/115806989; Musolff, Hans-Ulrich 
+http://d-nb.info/gnd/141855568; Bermges, Stephanie 
+http://d-nb.info/gnd/122044274; Viehoff, Jochen 
+http://d-nb.info/gnd/118507680; Bausch, Pina 
+http://d-nb.info/gnd/143987917; Harding, Elizabeth 
+http://d-nb.info/gnd/116374233; Reden, Franz von 
+http://d-nb.info/gnd/132601648; Nickel, Oliver 
+http://d-nb.info/gnd/129883506; Stauder, Peter 
+http://d-nb.info/gnd/104843268; Mühlberg, Fried 
+http://d-nb.info/gnd/121949966; Dierks, Christian 
+http://d-nb.info/gnd/114426201; Steickmann, Elfi 
+http://d-nb.info/gnd/130407437; Gronimus, Andreas 
+http://d-nb.info/gnd/113138768; Assel, Heinrich 
+http://d-nb.info/gnd/12900703X; Bader, Günter 
+http://d-nb.info/gnd/134140249; Roth, Lynette 
+http://d-nb.info/gnd/118612972; Seiwert, Franz Wilhelm 
+http://d-nb.info/gnd/118552198; Hoerle, Heinrich 
+http://d-nb.info/gnd/118504355; Arntz, Gerd 
+http://d-nb.info/gnd/140907939; Neuheuser, Hanns Peter 
+http://d-nb.info/gnd/112122132; Nothoff, Dirk 
+http://d-nb.info/gnd/118535749; Friedrich <II., Preußen, König> 
+http://d-nb.info/gnd/118520148; Chargesheimer 
+http://d-nb.info/gnd/119122715; Drese, Claus Helmut 
+http://d-nb.info/gnd/122898400; Winges, Stefan 
+http://d-nb.info/gnd/129056553; Tratnik, Josef 
+http://d-nb.info/gnd/121207129; Märtin, Ralf-Peter 
+http://d-nb.info/gnd/122128354; Puschmann, Claudia 
+http://d-nb.info/gnd/133887944; Bodelschwingh, Ida von 
+http://d-nb.info/gnd/108960064; Barsch, Achim 
+http://d-nb.info/gnd/13043308X; Seibert, Peter 
+http://d-nb.info/gnd/122699343; Weber, Michael 
+http://d-nb.info/gnd/130275131; Niemann, Lars 
+http://d-nb.info/gnd/173063276; Todrowski, Christiane 
+http://d-nb.info/gnd/124303102; Assmann, Rainer 
+http://d-nb.info/gnd/132205890; Akgün, Lale 
+http://d-nb.info/gnd/130880337; Müller, Wolfgang 
+http://d-nb.info/gnd/110989988; Schmitt-Riegraf, Cornelia 
+http://d-nb.info/gnd/120122642; Finckh, Gerhard 
+http://d-nb.info/gnd/135767709; Tosin, Anja 
+http://d-nb.info/gnd/129722103; Okroy, Michael 
+http://d-nb.info/gnd/120563975; Düding, Dieter 
+http://d-nb.info/gnd/135972566; Unschuld, Dirk 
+http://d-nb.info/gnd/129683167; Hardt, Thomas 
+http://d-nb.info/gnd/122279581; Noppeney, Hanns G. 
+http://d-nb.info/gnd/122348907; Wilbertz, Gisela 
+http://d-nb.info/gnd/135896495; Clauss, David <der Ältere> 
+http://d-nb.info/gnd/133094812; Knöll, Stefanie 
+http://d-nb.info/gnd/120796945; Ferrauti, Alexander 
+http://d-nb.info/gnd/118139770; Schwalm, Hans-Jürgen 
+http://d-nb.info/gnd/117154946; Löns, Lisa H. 
+http://d-nb.info/gnd/119132966; Rotermund, Elfriede 
+http://d-nb.info/gnd/119209705; Schmit, Tomas 
+http://d-nb.info/gnd/132677598; Lukatsch, Wilma 
+http://d-nb.info/gnd/119116960; Engels, Odilo 
+http://d-nb.info/gnd/134042980; Müllejans, Anni 
+http://d-nb.info/gnd/138925402; Hennig, Maria 
+http://d-nb.info/gnd/110696824; Kehm, Barbara M. 
+http://d-nb.info/gnd/139553983; Bosinski, Gerhard 
+http://d-nb.info/gnd/134668103; Lesche, Günter 
+http://d-nb.info/gnd/13586030X; Nowoczin, Harald 
+http://d-nb.info/gnd/133687074; Vögele, Jörg 
+http://d-nb.info/gnd/111037158; Hilmar, Jirí 
+http://d-nb.info/gnd/120729059; Franz, Erich 
+http://d-nb.info/gnd/123284015; Blossey, Hans 
+http://d-nb.info/gnd/131963279; Bizer, Christoph 
+http://d-nb.info/gnd/114496145; Mandel, Birgit 
+http://d-nb.info/gnd/135977851; Khostevan, Alireza 
+http://d-nb.info/gnd/135870054; Berewinkel, Jan 
+http://d-nb.info/gnd/132352613; Struve, Tilman 
+http://d-nb.info/gnd/118750895; Salier 
+http://d-nb.info/gnd/133452816; Bölling-Ahrens, Anne 
+http://d-nb.info/gnd/121903494; Wingen, Sascha 
+http://d-nb.info/gnd/136194850; Pfandhöfer, Johann Eberhard 
+http://d-nb.info/gnd/136225322; Kroos, Peter 
+http://d-nb.info/gnd/132314088; Farwick, Christa 
+http://d-nb.info/gnd/132314096; Riese, Adam 
+http://d-nb.info/gnd/122369939; Rademacher, Jörg W. 
+http://d-nb.info/gnd/136115241; Lögering, Markus Josef 
+http://d-nb.info/gnd/118745255; Riesener, Jean Henri 
+http://d-nb.info/gnd/189558474; Richartz, Theodor Hubert Maria 
+http://d-nb.info/gnd/118632043; Wier, Johannes 
+http://d-nb.info/gnd/133979202; Lange, William 
+http://d-nb.info/gnd/136181449; Wocker, Theodor 
+http://d-nb.info/gnd/136181295; Wocker, Caspar 
+http://d-nb.info/gnd/131540874; Mick, Elisabeth 
+http://d-nb.info/gnd/115518134; Schmidt-Brümmer, Horst 
+http://d-nb.info/gnd/172850142; Riechert, Hansjörg 
+http://d-nb.info/gnd/113905092; Nonn, Christoph 
+http://d-nb.info/gnd/123530652; Heppekausen, Wolfgang 
+http://d-nb.info/gnd/124220053; Dib, Amin el- 
+http://d-nb.info/gnd/134170938; Reddeker, Jens 
+http://d-nb.info/gnd/13643214X; Fiedler, Susanne 
+http://d-nb.info/gnd/135961009; Ziruolo, Luciana 
+http://d-nb.info/gnd/133588114; Hünemeyer, Heiko 
+http://d-nb.info/gnd/133588084; Arens, Esther Helena 
+http://d-nb.info/gnd/122481798; Raidt, Matthias 
+http://d-nb.info/gnd/12248178X; Haußner, Christoph 
+http://d-nb.info/gnd/108165620; Kirschbaum, Juliane 
+http://d-nb.info/gnd/128581980; Steinert, Mark Alexander 
+http://d-nb.info/gnd/133235831; Götte, Gisela 
+http://d-nb.info/gnd/118756613; Teuwen, Wilhelm 
+http://d-nb.info/gnd/136778518; Löppenberg, Bernhard 
+http://d-nb.info/gnd/136528066; Reuschke, Darja 
+http://d-nb.info/gnd/118164244; Spies, Britta Esther Mathilde 
+http://d-nb.info/gnd/13261779X; Twardowski, Daniel 
+http://d-nb.info/gnd/124304729; Elert, Sigurd 
+http://d-nb.info/gnd/130331740; Wells, Peter S. 
+http://d-nb.info/gnd/122951352; Bendikowski, Tillmann 
+http://d-nb.info/gnd/118504037; Arminius 
+http://d-nb.info/gnd/136892604; Springer, Johannes 
+http://d-nb.info/gnd/120133725; Deekeling, Egbert 
+http://d-nb.info/gnd/124484301; Liebrand, Claudia 
+http://d-nb.info/gnd/133962369; Oelmann, Hubertus 
+http://d-nb.info/gnd/10877614X; Gebauer, Hans Dieter 
+http://d-nb.info/gnd/135960185; Sechtig, Daniela 
+http://d-nb.info/gnd/115514031; Eversheim, Walter 
+http://d-nb.info/gnd/123244579; Schuh, Günther 
+http://d-nb.info/gnd/120115883; Heyden, Thomas 
+http://d-nb.info/gnd/136788998; Rabenort, Kathrin 
+http://d-nb.info/gnd/113730659; Threuter, Christina 
+http://d-nb.info/gnd/122168976; Sommer, Michael 
+http://d-nb.info/gnd/173381103; Wurm, Dieter 
+http://d-nb.info/gnd/189534184; Ohly, Wilma 
+http://d-nb.info/gnd/136326420; Gläser, Leonhard Philipp 
+http://d-nb.info/gnd/122768205; Brachthäuser, Christian 
+http://d-nb.info/gnd/132712539; Schilgen, Jost 
+http://d-nb.info/gnd/122928172; Hantsche, Irmgard 
+http://d-nb.info/gnd/124300006; Gillessen, Leo 
+http://d-nb.info/gnd/121772276; Faulenbach, Bernd 
+http://d-nb.info/gnd/108801853; Haun, Gerhard 
+http://d-nb.info/gnd/109073819; Kroh, Heinz 
+http://d-nb.info/gnd/172979110; Seidel, Heinrich Ulrich 
+http://d-nb.info/gnd/113260148; Höting, Ingeborg 
+http://d-nb.info/gnd/115438815; Izquierdo, Andreas 
+http://d-nb.info/gnd/113465300; Vosen, Klaus-Peter 
+http://d-nb.info/gnd/130194069; Körber-Leupold, Celia 
+http://d-nb.info/gnd/137167911; Theis, Kerstin 
+http://d-nb.info/gnd/121754189; Koepplin, Dieter 
+http://d-nb.info/gnd/128796898; Schäfer, Ingrid 
+http://d-nb.info/gnd/121039919; Endicott, Josephine Ann 
+http://d-nb.info/gnd/133632121; Schäfer, Joseph 
+http://d-nb.info/gnd/13372459X; Wessel, Volker 
+http://d-nb.info/gnd/121050971; Baegert, Jan 
+http://d-nb.info/gnd/118918753; Lappe, Josef 
+http://d-nb.info/gnd/13747671X; Schneider, Bernd Jürgen 
+http://d-nb.info/gnd/121007928; Jena, Detlef 
+http://d-nb.info/gnd/13707767X; Brand, Martin 
+http://d-nb.info/gnd/12391809X; Arns, Inke 
+http://d-nb.info/gnd/120998874; Böhn, Andreas 
+http://d-nb.info/gnd/120761114; Wild, Reiner 
+http://d-nb.info/gnd/1013801687; Link, Olaf 
+http://d-nb.info/gnd/128555580; Bayerdörfer, Hans-Peter 
+http://d-nb.info/gnd/13629538X; Hartmann, Frank 
+http://d-nb.info/gnd/136295878; Waltering, Stefan 
+http://d-nb.info/gnd/130632430; Burkhardt, Johannes 
+http://d-nb.info/gnd/122458087; Stücke, Jochen 
+http://d-nb.info/gnd/137375344; Racherbäumer, Kathrin 
+http://d-nb.info/gnd/121522768; Banck-Burgess, Johanna 
+http://d-nb.info/gnd/140980326; Brass, Friedrich 
+http://d-nb.info/gnd/1023704560; Mintert, David Magnus 
+http://d-nb.info/gnd/118934589; Körding, Herma 
+http://d-nb.info/gnd/12368885X; Hirth, Peter 
+http://d-nb.info/gnd/108218716; Brämer, Rainer 
+http://d-nb.info/gnd/105950491; Jeschke, Lebrecht 
+http://d-nb.info/gnd/137492472; Preuss, Uli 
+http://d-nb.info/gnd/125827458; Kaiser, Matthias 
+http://d-nb.info/gnd/120804255; Loos, Götz Heinrich 
+http://d-nb.info/gnd/119202859; Benoist, Alain de 
+http://d-nb.info/gnd/138609217; Alt, Constanze 
+http://d-nb.info/gnd/133834344; Schmidt-Hensel, Roland Dieter 
+http://d-nb.info/gnd/118580779; Mendelssohn Bartholdy, Felix 
+http://d-nb.info/gnd/136901387; Steden, Günter 
+http://d-nb.info/gnd/122720830; Pertz, Dietmar 
+http://d-nb.info/gnd/132094509; Roehr, Hartmut 
+http://d-nb.info/gnd/137614306; Bolthausen, Julius 
+http://d-nb.info/gnd/136342779; Reischl, Roland 
+http://d-nb.info/gnd/133726754; Katzmarzik, Heike 
+http://d-nb.info/gnd/11472959X; Bettermann, Silke 
+http://d-nb.info/gnd/137737092; Steingens, Daniel 
+http://d-nb.info/gnd/137752040; Kirschner, Achim 
+http://d-nb.info/gnd/137150237; Kley, Siegfried 
+http://d-nb.info/gnd/119153815; Speck, Reiner 
+http://d-nb.info/gnd/134003217; Achenbach, Helge 
+http://d-nb.info/gnd/118830686; Andre, Carl 
+http://d-nb.info/gnd/123471028; Büsing, Wolfgang 
+http://d-nb.info/gnd/117351784; Schwartz, Hubertus 
+http://d-nb.info/gnd/115523839; Röttger, Ulrike 
+http://d-nb.info/gnd/11869362X; Friedrich Wilhelm <II., Preußen, König> 
+http://d-nb.info/gnd/116215585; Bodelschwingh, Karl von 
+http://d-nb.info/gnd/138132828; Holtzbrinck, Heinrich Wilhelm von 
+http://d-nb.info/gnd/124108741; Pfeifer, Maria A. 
+http://d-nb.info/gnd/120757451; Sen, Faruk 
+http://d-nb.info/gnd/132362546; Heinzmann, Guido 
+http://d-nb.info/gnd/120188473; Alfers, Josef 
+http://d-nb.info/gnd/124219950; Hermanns, Hen 
+http://d-nb.info/gnd/120639750; Göttert, Karl-Heinz 
+http://d-nb.info/gnd/118144065; Hofmann, Paul 
+http://d-nb.info/gnd/114293465; Driessen, Christoph 
+http://d-nb.info/gnd/137936672; Berg, Oliver 
+http://d-nb.info/gnd/138031819; Benner, Katja 
+http://d-nb.info/gnd/134183401; Rasel, Thomas 
+http://d-nb.info/gnd/13418341X; Rasel, Sabine 
+http://d-nb.info/gnd/110526090; Kösters, Klaus 
+http://d-nb.info/gnd/118512390; Böckstiegel, Peter August 
+http://d-nb.info/gnd/142747386; Gabbert, Andreas 
+http://d-nb.info/gnd/138103194; Hülswitt, Brigitte 
+http://d-nb.info/gnd/120756447; Wächter, Hartmut 
+http://d-nb.info/gnd/112580297; Jochmann-Döll, Andrea 
+http://d-nb.info/gnd/130081418; Brink, Henning van den 
+http://d-nb.info/gnd/108827755; Strasser, Hermann 
+http://d-nb.info/gnd/133462889; Spindler, Wolfgang 
+http://d-nb.info/gnd/115473904; Schaumburg, Harald 
+http://d-nb.info/gnd/138105219; Babon, Ingrid 
+http://d-nb.info/gnd/120944898; Frei, Norbert 
+http://d-nb.info/gnd/118533959; Flick, Friedrich 
+http://d-nb.info/gnd/137978413; Chon, Seung-Hun 
+http://d-nb.info/gnd/141679891; Gravius, Manuela 
+http://d-nb.info/gnd/130632309; Zimmermann, Rainer 
+http://d-nb.info/gnd/143409573; Gahrmann, Friederike 
+http://d-nb.info/gnd/12062723X; Amanshauser, Hildegund 
+http://d-nb.info/gnd/118597787; Raffaello <Sanzio> 
+http://d-nb.info/gnd/121326497; Calleen, Justinus Maria 
+http://d-nb.info/gnd/119390728; Skiba, Ansgar 
+http://d-nb.info/gnd/121177882; Abelshauser, Werner 
+http://d-nb.info/gnd/128884479; Brandi, Ernst 
+http://d-nb.info/gnd/1020294779; Stern, Annemarie 
+http://d-nb.info/gnd/189539410; Wohlgemuth, Hildegard 
+http://d-nb.info/gnd/189409118; Kibgis, Ilse 
+http://d-nb.info/gnd/118621947; Thielicke, Helmut 
+http://d-nb.info/gnd/139343334; Fleiter, Dirk 
+http://d-nb.info/gnd/123948851; Zöller-Greer, Peter 
+http://d-nb.info/gnd/138368821; Engberding, Rainer 
+http://d-nb.info/gnd/132948125; Assion, Peter 
+http://d-nb.info/gnd/118013726; Meiering, Dominik M. 
+http://d-nb.info/gnd/121419088; Oepen, Joachim 
+http://d-nb.info/gnd/114072280; Schmidt-Czaia, Bettina 
+http://d-nb.info/gnd/12175166X; Plassmann, Max 
+http://d-nb.info/gnd/130091413; Hohenstein, Adolf 
+http://d-nb.info/gnd/124266622; Trees, Wolfgang 
+http://d-nb.info/gnd/111281474; Eissenhauer, Michael 
+http://d-nb.info/gnd/109286995; Adamski, Peter 
+http://d-nb.info/gnd/138737258; Thomas, Paul 
+http://d-nb.info/gnd/134032667; Stumpf, Marcus 
+http://d-nb.info/gnd/138733066; Leenen, Günter 
+http://d-nb.info/gnd/138517649; Bursch, Horst 
+http://d-nb.info/gnd/136107087; Maaßen, German Hubert Christian 
+http://d-nb.info/gnd/124146066; Heske, Henning 
+http://d-nb.info/gnd/13928852X; Winkler, Vera-Sabine 
+http://d-nb.info/gnd/132381141; Welzel, Barbara 
+http://d-nb.info/gnd/138764484; Overbeck, Anne 
+http://d-nb.info/gnd/1020247975; M’Ahesa, Sent 
+http://d-nb.info/gnd/118939726; Bohnenberger, Stefan 
+http://d-nb.info/gnd/129409189; Römer, Peter 
+http://d-nb.info/gnd/118500155; Abendroth, Wolfgang 
+http://d-nb.info/gnd/132643731; Ruland, Wolfgang 
+http://d-nb.info/gnd/139776311; Schrader, Walter 
+http://d-nb.info/gnd/136551793; Schmid, Wolfgang 
+http://d-nb.info/gnd/139192743; Erhart, Friederike 
+http://d-nb.info/gnd/137037465; Pleines, Stefani 
+http://d-nb.info/gnd/112218113; Letzner, Wolfram 
+http://d-nb.info/gnd/136527906; Wolfertz, Gudrun 
+http://d-nb.info/gnd/139008411; Wilmius, Johannes 
+http://d-nb.info/gnd/118575015; Lübke, Heinrich 
+http://d-nb.info/gnd/123714583; Keil, Lars-Broder 
+http://d-nb.info/gnd/118863371; Hart, Heinrich 
+http://d-nb.info/gnd/11872052X; Hart, Julius 
+http://d-nb.info/gnd/132423782; Hüter, Michael 
+http://d-nb.info/gnd/139047913; Keune, Martin 
+http://d-nb.info/gnd/139074449; Rudolph, Axel 
+http://d-nb.info/gnd/123347807; Dam, Harmjan 
+http://d-nb.info/gnd/139076751; Naber, Renate 
+http://d-nb.info/gnd/130182028; Ehses, Cornelia 
+http://d-nb.info/gnd/139078479; Kötter, Anna 
+http://d-nb.info/gnd/118538748; Germanicus <Caesar> 
+http://d-nb.info/gnd/118795740; Schwarzenberg, Adam von 
+http://d-nb.info/gnd/138971617; Welzel, Andreas 
+http://d-nb.info/gnd/120432390; Schmoeckel, Gisela 
+http://d-nb.info/gnd/12885667X; Goecke, Sebastian 
+http://d-nb.info/gnd/129602841; Schüpbach, Marianne 
+http://d-nb.info/gnd/139132554; Shen, Xiaomeng 
+http://d-nb.info/gnd/115726225; Liebau, Eckart 
+http://d-nb.info/gnd/123391946; Mensing, Roman 
+http://d-nb.info/gnd/121324508; Sonnabend, Holger 
+http://d-nb.info/gnd/11861830X; Stock, Franz 
+http://d-nb.info/gnd/111608708; Speer, Andreas 
+http://d-nb.info/gnd/119514672; Bueck, Henry Axel 
+http://d-nb.info/gnd/137773013; Feser, Dennis 
+http://d-nb.info/gnd/128471174; Viehweger, Wolfgang 
+http://d-nb.info/gnd/137350023; Koldewey, Bernd 
+http://d-nb.info/gnd/133511316; Gitmans, Daniel 
+http://d-nb.info/gnd/119175797; Ortheil, Hanns-Josef 
+http://d-nb.info/gnd/129563528; Ottmann, Peter 
+http://d-nb.info/gnd/122339401; Röhrig, Eberhard 
+http://d-nb.info/gnd/124374484; Hesse, Helmut 
+http://d-nb.info/gnd/132011972; Niemeyer, Matthias 
+http://d-nb.info/gnd/138132747; Bodemann, Stefan 
+http://d-nb.info/gnd/1018200819; Chlosta, Christoph 
+http://d-nb.info/gnd/133783979; Baeumer, Albert 
+http://d-nb.info/gnd/120555573; Bekker, Alfred 
+http://d-nb.info/gnd/114135517; Hausmanns, Ulf 
+http://d-nb.info/gnd/143565117; Schick, Ulrike 
+http://d-nb.info/gnd/118909118; Umberg, Günter 
+http://d-nb.info/gnd/120358379; Vary, Elisabeth 
+http://d-nb.info/gnd/119516802; Nagel, Peter 
+http://d-nb.info/gnd/123406986; Bongartz, Barbara 
+http://d-nb.info/gnd/119046636; Nagel, Peter 
+http://d-nb.info/gnd/134559061; Winter, Klaus 
+http://d-nb.info/gnd/189564024; Nagel, Dietrich Hermann von 
+http://d-nb.info/gnd/120620421; Otzen, Hans 
+http://d-nb.info/gnd/139447741; Tendyck, Roland 
+http://d-nb.info/gnd/189424192; Schüchtermann, Heinrich 
+http://d-nb.info/gnd/134232186; Basse, Michael 
+http://d-nb.info/gnd/139850023; Berend, Sarah Elena 
+http://d-nb.info/gnd/123847966; Imgrund, Bernd 
+http://d-nb.info/gnd/118686178; Faßbender, Joseph 
+http://d-nb.info/gnd/119318296; Bolles-Wilson, Julia 
+http://d-nb.info/gnd/110860055; Lütke-Daldrup, Engelbert 
+http://d-nb.info/gnd/1011195631; Lethmate, Gudrun 
+http://d-nb.info/gnd/136692885; Aschenbach, Sepp 
+http://d-nb.info/gnd/138709572; Himmes, Karl Rüdiger 
+http://d-nb.info/gnd/136343236; Roth, Volker 
+http://d-nb.info/gnd/130248290; Uschmann, Oliver 
+http://d-nb.info/gnd/124318703; Köhler, Werner 
+http://d-nb.info/gnd/128971606; Lem, Dorissa 
+http://d-nb.info/gnd/111739756; Isenberg, Wolfgang 
+http://d-nb.info/gnd/124250246; Kadel, David 
+http://d-nb.info/gnd/130603821; Faust, Manfred 
+http://d-nb.info/gnd/134988078; Kopitz, Klaus Martin 
+http://d-nb.info/gnd/137076029; Ludewig, Thomas 
+http://d-nb.info/gnd/118591916; Pasqualini, Alessandro 
+http://d-nb.info/gnd/118741063; Plessing, Friedrich Victor Leberecht 
+http://d-nb.info/gnd/116878622; Leidenfrost, Johann Gottlob 
+http://d-nb.info/gnd/122892836; Süssmuth, Richard 
+http://d-nb.info/gnd/139800212; Dirks, Hans-Werner 
+http://d-nb.info/gnd/119016567; Lucas, Wilhelm 
+http://d-nb.info/gnd/138830843; Konejung, Cornelia 
+http://d-nb.info/gnd/134189140; Kadereit, Hans 
+http://d-nb.info/gnd/122934806; Marx, Birgit 
+http://d-nb.info/gnd/130882526; Bhatt, Christa 
+http://d-nb.info/gnd/130882453; Herrwegen, Alice 
+http://d-nb.info/gnd/109700066; Vogtmeier, Michael 
+http://d-nb.info/gnd/132124246; Grothues, Rudolf 
+http://d-nb.info/gnd/129414166; Trost, Ralph 
+http://d-nb.info/gnd/138709580; Zanger, Octavia 
+http://d-nb.info/gnd/133580741; Fischer, Thomas 
+http://d-nb.info/gnd/137931735; Klein, Walter 
+http://d-nb.info/gnd/130883670; Florin, Melanie 
+http://d-nb.info/gnd/14000274X; Nahrhaft, Gustav 
+http://d-nb.info/gnd/174041128; Reimann, Christina Karla 
+http://d-nb.info/gnd/114040583; Staatz, Peter 
+http://d-nb.info/gnd/110046986; Dewitz, Bodo von 
+http://d-nb.info/gnd/13997167X; Saenger, Johanna Elisabeth Doris 
+http://d-nb.info/gnd/14100276X; Berger, Andreas 
+http://d-nb.info/gnd/128466324; Hänel, Dagmar 
+http://d-nb.info/gnd/120163489; Serke, Jürgen 
+http://d-nb.info/gnd/121834972; Gerwing, Manfred 
+http://d-nb.info/gnd/118705431; Hödl, Ludwig 
+http://d-nb.info/gnd/131485059; Döring, Alois 
+http://d-nb.info/gnd/124444660; Gebhardt, Dirk 
+http://d-nb.info/gnd/115544658; Brinkemper, Peter V. 
+http://d-nb.info/gnd/118633333; Williams, Tennessee 
+http://d-nb.info/gnd/11479491X; Mauczik, Leo 
+http://d-nb.info/gnd/100219756; Neigebaur, Johann Daniel Ferdinand 
+http://d-nb.info/gnd/138933871; Baume, Sandrine 
+http://d-nb.info/gnd/140144854; Grabe, Gunther 
+http://d-nb.info/gnd/134060865; Hülsewig-Johnen, Jutta 
+http://d-nb.info/gnd/119339366; Sprute, Bernhard 
+http://d-nb.info/gnd/132372002; Brune, Walter 
+http://d-nb.info/gnd/123861780; Pump-Uhlmann, Holger 
+http://d-nb.info/gnd/14123539X; Seifert, Alrun 
+http://d-nb.info/gnd/129797219; Klum, Heidi 
+http://d-nb.info/gnd/121504603; Kleine-Weischede, Klaus 
+http://d-nb.info/gnd/133332543; Schmitz, Wolfgang 
+http://d-nb.info/gnd/11917913X; Meuthen, Erich 
+http://d-nb.info/gnd/113831188; Dilcher, Bettina 
+http://d-nb.info/gnd/137360363; John, Stefan 
+http://d-nb.info/gnd/111184827; Moenikes, Bernd 
+http://d-nb.info/gnd/140394354; Powell, Hugh 
+http://d-nb.info/gnd/140395075; Brüggemann, Marie-Louise 
+http://d-nb.info/gnd/119079402; Gall, Louise von 
+http://d-nb.info/gnd/172073197; Feldmann, Reinhard 
+http://d-nb.info/gnd/115590749; Staas, Stefan 
+http://d-nb.info/gnd/14029838X; Henrici, Christoph 
+http://d-nb.info/gnd/13133669X; Weffer, Herbert 
+http://d-nb.info/gnd/122960866; Müntefering, Franz 
+http://d-nb.info/gnd/140405437; Lenders, Helmut 
+http://d-nb.info/gnd/140399496; Hoffmann, Dirk Johannes 
+http://d-nb.info/gnd/120259540; Hannappel, Werner J. 
+http://d-nb.info/gnd/110310691; Kutsch, Arnulf 
+http://d-nb.info/gnd/121352854; Averbeck-Lietz, Stefanie 
+http://d-nb.info/gnd/171931696; Grütter, Heinrich Theodor 
+http://d-nb.info/gnd/130531049; Bolten, Michael 
+http://d-nb.info/gnd/130531065; Langer, Marco 
+http://d-nb.info/gnd/133277623; Rittinghausen, Moritz 
+http://d-nb.info/gnd/119093022; Weski, Thomas 
+http://d-nb.info/gnd/118695797; Goerdeler, Carl Friedrich 
+http://d-nb.info/gnd/12872918X; Kröpelin, Julia 
+http://d-nb.info/gnd/130610836; Schick, Martin 
+http://d-nb.info/gnd/140544151; Eickelmann, Birgit 
+http://d-nb.info/gnd/118027581; Olschewski, Ursula 
+http://d-nb.info/gnd/111583292; Boschung, Dietrich 
+http://d-nb.info/gnd/120022699; Lerm Hayes, Christa-Maria 
+http://d-nb.info/gnd/119310007; Sebald, Winfried G. 
+http://d-nb.info/gnd/119220679; Dean, Tacita 
+http://d-nb.info/gnd/122476573; Ulshöfer, Gotlind 
+http://d-nb.info/gnd/140332472; Birkner, Oliver 
+http://d-nb.info/gnd/120780402; Stricker, Hans-Heinrich 
+http://d-nb.info/gnd/118531751; Fabricius Hildanus, Wilhelm 
+http://d-nb.info/gnd/104349301; Wrede, Adam 
+http://d-nb.info/gnd/130230162; Morawe, Bodo 
+http://d-nb.info/gnd/122221133; Richelmann, Dirk 
+http://d-nb.info/gnd/129257389; Klevinghaus, Wilma 
+http://d-nb.info/gnd/116311436; Kolbe, Heinrich 
+http://d-nb.info/gnd/123047137; Cramer, Dietmar 
+http://d-nb.info/gnd/140689664; Heusner, Ludwig 
+http://d-nb.info/gnd/119079097; Telljohann, Peter 
+http://d-nb.info/gnd/121416003; Matzigkeit, Michael 
+http://d-nb.info/gnd/140977732; Arend, Rudolf 
+http://d-nb.info/gnd/118589423; Oehlen, Albert 
+http://d-nb.info/gnd/131336037; Schuster, Nicole 
+http://d-nb.info/gnd/133955117; Körer, Dieter 
+http://d-nb.info/gnd/133955184; Bremen, René H. 
+http://d-nb.info/gnd/123191823; Krings, Ulrich 
+http://d-nb.info/gnd/140791868; Busch, Wolfgang 
+http://d-nb.info/gnd/112490565; Kopper, Christopher 
+http://d-nb.info/gnd/117639176; Budde, Hermann von 
+http://d-nb.info/gnd/123536227; Büch, Gabriele 
+http://d-nb.info/gnd/119508311; Mertens-Schaaffhausen, Sibylle 
+http://d-nb.info/gnd/118659200; Böhm, Gottfried 
+http://d-nb.info/gnd/120568861; Dülffer, Jost 
+http://d-nb.info/gnd/14083401X; Zweiffel, Caspar von 
+http://d-nb.info/gnd/118679805; Dirx, Willi 
+http://d-nb.info/gnd/114857725; Schmickler, Wilfried 
+http://d-nb.info/gnd/128588373; Kost, Andreas 
+http://d-nb.info/gnd/140861807; Marschall, Nina 
+http://d-nb.info/gnd/140865535; Spänhoff, Christiane 
+http://d-nb.info/gnd/140968652; Fahling, Matthias 
+http://d-nb.info/gnd/115795405; Pätzold, Stefan 
+http://d-nb.info/gnd/135990459; Thiemermann, Franz-Josef 
+http://d-nb.info/gnd/140915567; Bölling, Heinrich 
+http://d-nb.info/gnd/131465201; Preußer, Heinz-Peter 
+http://d-nb.info/gnd/140961720; Furth, Rainer 
+http://d-nb.info/gnd/11868857X; Elfes, Wilhelm 
+http://d-nb.info/gnd/173848591; Brenscheidt, Juliane 
+http://d-nb.info/gnd/140972072; Kampendonk, Hermann 
+http://d-nb.info/gnd/12107577X; Sowa, Reiner M. 
+http://d-nb.info/gnd/124666485; Eickhoff, Matthias 
+http://d-nb.info/gnd/113244142; Ewers-Schultz, Ina 
+http://d-nb.info/gnd/118816888; Rissa 
+http://d-nb.info/gnd/118504398; Arp, Hans 
+http://d-nb.info/gnd/118509608; Berke, Hubert 
+http://d-nb.info/gnd/131565389; Kolodziej, Axel 
+http://d-nb.info/gnd/129424323; Emons, Thomas 
+http://d-nb.info/gnd/119357925; Brakelmann, Günter 
+http://d-nb.info/gnd/118622498; Thyssen, Fritz 
+http://d-nb.info/gnd/189486457; Maisenbacher, Jürgen 
+http://d-nb.info/gnd/121879925; Kammler, Clemens 
+http://d-nb.info/gnd/115593462; Gaida, Wolfgang 
+http://d-nb.info/gnd/141835869; Grothe, Helmut 
+http://d-nb.info/gnd/109825012; Böker, Hans Josef 
+http://d-nb.info/gnd/141224924; Seewitz, Joachim von 
+http://d-nb.info/gnd/137789742; Everts, Evert 
+http://d-nb.info/gnd/135845335; Taubenböck, Hannes 
+http://d-nb.info/gnd/115392408; Bruns, Nicola 
+http://d-nb.info/gnd/124471064; Klein-Zirbes, Arnd 
+http://d-nb.info/gnd/104655461; Bachem, Rolf 
+http://d-nb.info/gnd/141277874; Mielke, Patrick 
+http://d-nb.info/gnd/118185918; Kampmann, Jürgen 
+http://d-nb.info/gnd/115474404; Grüne, Hardy 
+http://d-nb.info/gnd/118656317; Bernays, Jacob 
+http://d-nb.info/gnd/118550772; Heyse, Paul 
+http://d-nb.info/gnd/122129296; Calder, William M. 
+http://d-nb.info/gnd/124492711; Kramer, Sven 
+http://d-nb.info/gnd/11851363X; Born, Nicolas 
+http://d-nb.info/gnd/12098136X; Backhausen, Manfred 
+http://d-nb.info/gnd/123855500; Siepe, Franz 
+http://d-nb.info/gnd/139233806; Elliesen-Kliefoth, Imke 
+http://d-nb.info/gnd/120946459; Clasen, Carola 
+http://d-nb.info/gnd/119363488; Schäferdiek, Knut 
+http://d-nb.info/gnd/110804171; Langmack, Bernd 
+http://d-nb.info/gnd/14177245X; Konrad, Sandra 
+http://d-nb.info/gnd/10785466X; Schmitz-Ehmke, Ruth 
+http://d-nb.info/gnd/137631391; Herzog, Monika 
+http://d-nb.info/gnd/141664819; Klein, Carsten 
+http://d-nb.info/gnd/124339026; Friedrich, Rudolf 
+http://d-nb.info/gnd/13241130X; Ales Bello, Angela 
+http://d-nb.info/gnd/118820176; Thümmel, Gerhard 
+http://d-nb.info/gnd/141706155; Johnsdorf, Günter 
+http://d-nb.info/gnd/113739478; Kaminsky, Uwe 
+http://d-nb.info/gnd/136963919; L'Écotais, Emmanuelle de 
+http://d-nb.info/gnd/141737018; Hoffmann, Kathrin 
+http://d-nb.info/gnd/129968374; Granados, Mayarí 
+http://d-nb.info/gnd/120355671; Opll, Ferdinand 
+http://d-nb.info/gnd/100092624; Corvinus, Johann August 
+http://d-nb.info/gnd/119334690; Rugendas, Georg Philipp 
+http://d-nb.info/gnd/129101990; Drentwett, Abraham 
+http://d-nb.info/gnd/133410471; Flügge, Matthias 
+http://d-nb.info/gnd/118647377; Agrippa von Nettesheim, Heinrich Cornelius 
+http://d-nb.info/gnd/113268246; Sättler, Franz 
+http://d-nb.info/gnd/120264854; Berlis, Angela 
+http://d-nb.info/gnd/118599488; Reinkens, Joseph Hubert 
+http://d-nb.info/gnd/11600245X; Abendroth, Hermann 
+http://d-nb.info/gnd/142109088; Freiburg, Steffen 
+http://d-nb.info/gnd/141785543; Pischke, Heinz 
+http://d-nb.info/gnd/141785578; Heinze, Nadine 
+http://d-nb.info/gnd/141785624; Dietschreit, Marc 
+http://d-nb.info/gnd/142061301; Huppertz, Johann Jacob 
+http://d-nb.info/gnd/109469577; Glandt, Dieter 
+http://d-nb.info/gnd/142103845; Cremer, Anna Margaretha 
+http://d-nb.info/gnd/124240976; Steinwich, Lambert 
+http://d-nb.info/gnd/124151981; Pörksen, Bernhard 
+http://d-nb.info/gnd/119135787; Simonis, Heide 
+http://d-nb.info/gnd/120077329; Foxius, Armin 
+http://d-nb.info/gnd/133787516; Wessel, Friedhelm 
+http://d-nb.info/gnd/130876488; Hackhausen, Anton 
+http://d-nb.info/gnd/128488549; Gyseke, Gernot 
+http://d-nb.info/gnd/133202887; Bischoff, Ulrich 
+http://d-nb.info/gnd/118920154; Lindenberg, Erich 
+http://d-nb.info/gnd/118042718; Spohr, Gregor 
+http://d-nb.info/gnd/11162908X; Vom Hofe, Mark 
+http://d-nb.info/gnd/122911164; Schmiedt, Helmut 
+http://d-nb.info/gnd/129996920; Mandel, Schewa 
+http://d-nb.info/gnd/130401064; Wagner, Guido 
+http://d-nb.info/gnd/139824251; Schneider, Sigrid 
+http://d-nb.info/gnd/124493734; Kaufmann, Birgit 
+http://d-nb.info/gnd/12356851X; Kirsch, Wolfgang 
+http://d-nb.info/gnd/142497185; Hartke, Georg 
+http://d-nb.info/gnd/142497215; Romussi, Marco 
+http://d-nb.info/gnd/132727471; Minck, Edda 
+http://d-nb.info/gnd/118160397; Hartung, Hans Rudolf 
+http://d-nb.info/gnd/142968196; Jüsten-Mertens, Margrit 
+http://d-nb.info/gnd/137255705; Westhoff, Johannes 
+http://d-nb.info/gnd/104980257; Voss, Ferdinand 
+http://d-nb.info/gnd/136033881; Gero <Köln, Erzbischof> 
+http://d-nb.info/gnd/108152960; Cate, Abraham P. ten 
+http://d-nb.info/gnd/115840516; Kürschner, Wilfried 
+http://d-nb.info/gnd/121894460; Madesta, Andrea 
+http://d-nb.info/gnd/189475390; Hansmann, Wilhelm 
+http://d-nb.info/gnd/137609442; Krumme, Hans U. 
+http://d-nb.info/gnd/11402751X; Breidenbach, Nicolaus J. 
+http://d-nb.info/gnd/133602087; Schwarz, Karin 
+http://d-nb.info/gnd/129731773; Kautz, Manfred-Walter 
+http://d-nb.info/gnd/137278543; Binkowski, Helmut 
+http://d-nb.info/gnd/106369318; Renné, Rudi 
+http://d-nb.info/gnd/111700361; Elten, Josef van 
+http://d-nb.info/gnd/119512416; Filz, Walter 
+http://d-nb.info/gnd/118660632; Böhm, Dominikus 
+http://d-nb.info/gnd/122916751; Jung, Werner 
+http://d-nb.info/gnd/132483270; Schläger, Gregor 
+http://d-nb.info/gnd/13691649X; Mechthold, Rudi 
+http://d-nb.info/gnd/115852522; Feldenkirchen, Wilfried 
+http://d-nb.info/gnd/130874248; Holz, Gerda 
+http://d-nb.info/gnd/139376313; Gerlach, Renate 
+http://d-nb.info/gnd/133015106; Pétrequin, Pierre 
+http://d-nb.info/gnd/121078477; Käppner, Joachim 
+http://d-nb.info/gnd/118842056; Beitz, Berthold 
+http://d-nb.info/gnd/121079252; Stegemann, Heinrich 
+http://d-nb.info/gnd/142486299; Janssens, Jan 
+http://d-nb.info/gnd/142861278; Tenberg, Ina 
+http://d-nb.info/gnd/141748176; Kassem, Marcel el- 
+http://d-nb.info/gnd/122736060; Bemmann, Jan 
+http://d-nb.info/gnd/141578750; Kobe, Janina 
+http://d-nb.info/gnd/141578785; Volsek, Jörg 
+http://d-nb.info/gnd/142903981; Arora, Surendra K. 
+http://d-nb.info/gnd/133020487; Sauer, Sabine 
+http://d-nb.info/gnd/130379913; Winkler, Eva 
+http://d-nb.info/gnd/142455229; Giemsch, Liane 
+http://d-nb.info/gnd/120428881; Kaufmann, Ursula 
+http://d-nb.info/gnd/142913766; Nantke, Katja Corinna 
+http://d-nb.info/gnd/142914967; Aeissen, Martha 
+http://d-nb.info/gnd/142915211; Görür, Zafer 
+http://d-nb.info/gnd/142924318; Mildenberger, Ilka 
+http://d-nb.info/gnd/142959359; Zumkley, Annette 
+http://d-nb.info/gnd/115404821; Schwikart, Georg 
+http://d-nb.info/gnd/137263023; Leenen, Stefan 
+http://d-nb.info/gnd/11949938X; Magdanz, Andreas 
+http://d-nb.info/gnd/142974870; Biermeier, Stefan 
+http://d-nb.info/gnd/119821273; Schmid, Joachim 
+http://d-nb.info/gnd/1019650222; Frank, Thomas 
+http://d-nb.info/gnd/12102752X; Köster, Markus 
+http://d-nb.info/gnd/116037970; Davidis, Henriette 
+http://d-nb.info/gnd/133819973; Treeck, Dieter 
+http://d-nb.info/gnd/140883770; Brüggler, Marion 
+http://d-nb.info/gnd/14302115X; Ciesielski, Stefan 
+http://d-nb.info/gnd/138748373; Potthoff, Tanja 
+http://d-nb.info/gnd/131611267; Fabian, Claudia 
+http://d-nb.info/gnd/120512467; Mütter, Bernd 
+http://d-nb.info/gnd/116011793; Daenell, Ernst 
+http://d-nb.info/gnd/142576530; Vogt-Werling, Marianne 
+http://d-nb.info/gnd/135860695; Baumeister, Klaus 
+http://d-nb.info/gnd/142626740; Werheid, Doris 
+http://d-nb.info/gnd/142626767; Seyffarth, Jörg 
+http://d-nb.info/gnd/142626724; Krauthäuser, Jan 
+http://d-nb.info/gnd/11853596X; Friedrich Wilhelm <Brandenburg, Kurfürst> 
+http://d-nb.info/gnd/143944657; Caelius, Marcus 
+http://d-nb.info/gnd/118576127; Mager, Karl 
+http://d-nb.info/gnd/120877805; Heckl, Jens 
+http://d-nb.info/gnd/12263179X; Lenz, Albert 
+http://d-nb.info/gnd/121812383; Eßer, Albert 
+http://d-nb.info/gnd/143212257; Schöler, Robert 
+http://d-nb.info/gnd/143232770; Brokinkel, Benjamin Legolas 
+http://d-nb.info/gnd/105815640; Hilz, Helmut 
+http://d-nb.info/gnd/114305331; Gilson, Norbert 
+http://d-nb.info/gnd/136804845; Schöttler, Sonja 
+http://d-nb.info/gnd/136059627; Froese, Sebastian A. 
+http://d-nb.info/gnd/136059686; Michelchen, Gunnar 
+http://d-nb.info/gnd/115471251; Trimborn, Jürgen 
+http://d-nb.info/gnd/118514938; Breker, Arno 
+http://d-nb.info/gnd/14332182X; Jurke, Helga Annette 
+http://d-nb.info/gnd/120266830; Jaeger, Falk 
+http://d-nb.info/gnd/139554750; Ruf, Oliver 
+http://d-nb.info/gnd/143361090; Baum, Irmhild 
+http://d-nb.info/gnd/122852044; Clemens, Wilhelm 
+http://d-nb.info/gnd/123431611; Stratmann, Ludger 
+http://d-nb.info/gnd/13242374X; Groth-Lindenberg, Christina 
+http://d-nb.info/gnd/12066531X; Tillmann, Klaus-Jürgen 
+http://d-nb.info/gnd/143368885; Leschinsky, Marion 
+http://d-nb.info/gnd/122233514; Schröder, Joachim 
+http://d-nb.info/gnd/143430696; Woitzik, Jürgen Paul 
+http://d-nb.info/gnd/132917114; Reicher, Christa 
+http://d-nb.info/gnd/1011932334; Niemann, Lars 
+http://d-nb.info/gnd/136058523; Uttke, Angela 
+http://d-nb.info/gnd/136774350; Klaus, Monica 
+http://d-nb.info/gnd/114297533; Ennuschat, Jörg 
+http://d-nb.info/gnd/123248574; Buhlmann, Michael 
+http://d-nb.info/gnd/130828092; Sudmann, Stefan 
+http://d-nb.info/gnd/105829757; Holtappel, Rudolf 
+http://d-nb.info/gnd/122029267; Kläber, Thomas 
+http://d-nb.info/gnd/141796227; Berswordt-Wallrabe, Silke von 
+http://d-nb.info/gnd/115469788; Benrath, Gustav Adolf 
+http://d-nb.info/gnd/118621378; Tersteegen, Gerhard 
+http://d-nb.info/gnd/133458962; Erlenkamp, Billie 
+http://d-nb.info/gnd/143164902; Habets, Renate 
+http://d-nb.info/gnd/111229979; Kessel, Verena 
+http://d-nb.info/gnd/121050343; Laschet, Armin 
+http://d-nb.info/gnd/140894756; Kühl, Richard 
+http://d-nb.info/gnd/143588354; Glauche, Lisa 
+http://d-nb.info/gnd/133460967; Löwe, Matthias 
+http://d-nb.info/gnd/110719948; Krings, Hans P. 
+http://d-nb.info/gnd/123160642; Hanten, Sasa 
+http://d-nb.info/gnd/119389797; Willing, Martin 
+http://d-nb.info/gnd/143649639; Roters, Margret 
+http://d-nb.info/gnd/115865381; Strobelt, Rainer 
+http://d-nb.info/gnd/1015055451; Seidler, Martin 
+http://d-nb.info/gnd/131959603; Schäfer, Klaus 
+http://d-nb.info/gnd/130686433; Schneider, Wolfgang 
+http://d-nb.info/gnd/120039346; Höhmann, Hans-Hermann 
+http://d-nb.info/gnd/124036422; Diekel, Hain Eric 
+http://d-nb.info/gnd/173508464; Harms, Udo 
+http://d-nb.info/gnd/118607626; Schiller, Friedrich 
+http://d-nb.info/gnd/118571389; Leisner, Karl 
+http://d-nb.info/gnd/123489954; Jacobi, Anne 
+http://d-nb.info/gnd/109333896; Haar, Heinrich von der 
+http://d-nb.info/gnd/142006483; Weber, Bernhard 
+http://d-nb.info/gnd/118580973; Mercator, Gerhard 
+http://d-nb.info/gnd/13254329X; Schäfer, Ulrich 
+http://d-nb.info/gnd/124312799; Korte, Hermann 
+http://d-nb.info/gnd/133558983; Zimmer, Ilonka 
+http://d-nb.info/gnd/122884604; Jakob, Hans-Joachim 
+http://d-nb.info/gnd/143934163; Ergenzinger, Kerstin 
+http://d-nb.info/gnd/110942809; Hiekisch-Picard, Sepp 
+http://d-nb.info/gnd/124115888; Söhn, Gunhild 
+http://d-nb.info/gnd/129251879; Macharski, Christian 
+http://d-nb.info/gnd/133873412; Becker, Christoph 
+http://d-nb.info/gnd/123860431; Bein, Thomas 
+http://d-nb.info/gnd/137588720; Raskob, Simone 
+http://d-nb.info/gnd/144023652; Wecker, Sascha 
+http://d-nb.info/gnd/114822670; Wachowiak, Helmut 
+http://d-nb.info/gnd/118693301; Freyse, Heinrich Johann 
+http://d-nb.info/gnd/1011279819; Brandis, Katharina 
+http://d-nb.info/gnd/120552264; Burghardt, Oskar 
+http://d-nb.info/gnd/118575872; Macke, Helmuth 
+http://d-nb.info/gnd/10932014X; Grotkamp-Schepers, Barbara 
+http://d-nb.info/gnd/143849247; Rodenkirchen, Hans Karl 
+http://d-nb.info/gnd/141118725; Kraft, Hannelore 
+http://d-nb.info/gnd/110503082; Sassin, Horst R. 
+http://d-nb.info/gnd/1011211718; Wiesenthal, Cyla 
+http://d-nb.info/gnd/118003275; Luyken, Gunda 
+http://d-nb.info/gnd/144006065; Geiger, Stephan 
+http://d-nb.info/gnd/1011348659; Simon, Hans 
+http://d-nb.info/gnd/118173634; Heith, Holger 
+http://d-nb.info/gnd/1011377918; Galetzka, Eva 
+http://d-nb.info/gnd/11172600X; Pöllmann, Annette 
+http://d-nb.info/gnd/159962226; Martinsohn, Anna 
+http://d-nb.info/gnd/118958739; Nöfer, Werner 
+http://d-nb.info/gnd/124791727; Zerull, Ludwig 
+http://d-nb.info/gnd/140325689; Timm, Miriam 
+http://d-nb.info/gnd/138744696; Vanderheiden Berndt, Petra 
+http://d-nb.info/gnd/133938883; Mathias, Stan 
+http://d-nb.info/gnd/117225312; Steeger, Albert 
+http://d-nb.info/gnd/120786087; Klostermann, Josef 
+http://d-nb.info/gnd/1013102436; Anand, Shaina 
+http://d-nb.info/gnd/120563495; Kersting, Volker 
+http://d-nb.info/gnd/143485040; Robben, Siegfried 
+http://d-nb.info/gnd/172691222; Schmidt, Uta C. 
+http://d-nb.info/gnd/133019748; Wiersing, Erhard 
+http://d-nb.info/gnd/123886759; Fink, Hanns-Peter 
+http://d-nb.info/gnd/121671623; Fleischhack, Ernst 
+http://d-nb.info/gnd/172555515; Buschbaum, Friedhelm 
+http://d-nb.info/gnd/1012429741; Kümpers, Floriyan 
+http://d-nb.info/gnd/116187913; Dorow, Wilhelm 
+http://d-nb.info/gnd/116033290; Baedeker, Karl 
+http://d-nb.info/gnd/115748288; Schindelbeck, Dirk 
+http://d-nb.info/gnd/124947522; Böseke, Harry 
+http://d-nb.info/gnd/118028057; Kramp, Ralf 
+http://d-nb.info/gnd/12122838X; Brdenk, Peter 
+http://d-nb.info/gnd/122193776; Breuer, Günter 
+http://d-nb.info/gnd/143003860; Schleper, Thomas 
+http://d-nb.info/gnd/1011999633; Brandenburg, Christina 
+http://d-nb.info/gnd/12140529X; Bausenwein, Christoph 
+http://d-nb.info/gnd/119333708; Demnig, Gunter 
+http://d-nb.info/gnd/111604451; Stemplewski, Jochen 
+http://d-nb.info/gnd/122316320; Welkoborsky, Horst 
+http://d-nb.info/gnd/1020033649; Herget, Gunnar 
+http://d-nb.info/gnd/113613776; Heußner, Hermann K. 
+http://d-nb.info/gnd/143543326; Scholten, Hans 
+http://d-nb.info/gnd/120556790; Klenke, Dietmar 
+http://d-nb.info/gnd/137041802; Körber, Wolfgang 
+http://d-nb.info/gnd/11851556X; Brock, Bazon 
+http://d-nb.info/gnd/135818613; Paziorek, Peter 
+http://d-nb.info/gnd/1013093127; Mensing, Karsten 
+http://d-nb.info/gnd/1012879984; Jancak, Rolf-Michael 
+http://d-nb.info/gnd/1012953017; Corneli, Eduard 
+http://d-nb.info/gnd/142112828; Overbeck, Franz-Josef 
+http://d-nb.info/gnd/101295434X; Landsberg-Velen, Ignaz-Wessel von 
+http://d-nb.info/gnd/120302233; Schwedt, Georg 
+http://d-nb.info/gnd/128788283; Vormbaum, Thomas 
+http://d-nb.info/gnd/1017765359; Baege, Roland 
+http://d-nb.info/gnd/140759956; Danielzyk, Rainer 
+http://d-nb.info/gnd/13949152X; Kemming, Herbert 
+http://d-nb.info/gnd/138863377; Reimer, Mario 
+http://d-nb.info/gnd/123724449; Hoeren, Thomas 
+http://d-nb.info/gnd/142860778; Herlyn, Edzard 
+http://d-nb.info/gnd/1013573471; Falk, Birgitta 
+http://d-nb.info/gnd/130930571; Mathilde 
+http://d-nb.info/gnd/130500763; Ernst, Thomas 
+http://d-nb.info/gnd/115195092; Heimböckel, Dieter 
+http://d-nb.info/gnd/1013811879; Schenk, Volker 
+http://d-nb.info/gnd/1013812506; Bettgens, Dirk 
+http://d-nb.info/gnd/121699757; Lenz, Ralf 
+http://d-nb.info/gnd/1013895517; Bae, Sunyoung 
+http://d-nb.info/gnd/132515237; Zylla, Elsbeth 
+http://d-nb.info/gnd/124615856; Schwaderlapp, Dominik 
+http://d-nb.info/gnd/120757516; Boecker, Robert 
+http://d-nb.info/gnd/118541579; Grass, Günter 
+http://d-nb.info/gnd/140406034; Schäffer, Hendrik 
+http://d-nb.info/gnd/141919000; Peter, Gösta Clemens 
+http://d-nb.info/gnd/113495285; Frauns, Elke 
+http://d-nb.info/gnd/119358549; Haaren, Bettina van 
+http://d-nb.info/gnd/118517872; Busch, Fritz 
+http://d-nb.info/gnd/118876759; Busch, Adolf 
+http://d-nb.info/gnd/119040557; Brecht, Martin 
+http://d-nb.info/gnd/137391013; Berger, Bettina 
+http://d-nb.info/gnd/111674077; Degkwitz, Andreas 
+http://d-nb.info/gnd/12053715X; Zaimoglu, Feridun 
+http://d-nb.info/gnd/140876774; Räderscheidt, Marta Angelika Felicitas 
+http://d-nb.info/gnd/122868986; Everling, Stephan 
+http://d-nb.info/gnd/189562714; Calis, Nuran David 
+http://d-nb.info/gnd/130838721; Grimm, Sabine 
+http://d-nb.info/gnd/138319499; Pauli, Claudia 
+http://d-nb.info/gnd/118541269; Gräsel, Friedrich 
+http://d-nb.info/gnd/11948174X; Severin <Köln, Bischof> 
+http://d-nb.info/gnd/189554185; Kamp, Hermann Adam von 
+http://d-nb.info/gnd/122832434; Meineke, Eckhard 
+http://d-nb.info/gnd/130468983; Schütz, Erhard 
+http://d-nb.info/gnd/128986212; Kniehase, Hans-Friedrich 
+http://d-nb.info/gnd/120209470; Grothmann, Detlef 
+http://d-nb.info/gnd/107916479; Pump, Günter 
+http://d-nb.info/gnd/121789322; Jahn, Hajo 
+http://d-nb.info/gnd/118528009; Duisberg, Carl 
+http://d-nb.info/gnd/129629197; Böröcz, Zoltán Kálmán 
+http://d-nb.info/gnd/1015880630; Bischoff, Guido 
+http://d-nb.info/gnd/101512853X; Wichfrid <Köln, Erzbischof> 
+http://d-nb.info/gnd/121843939; Johler, Reinhard 
+http://d-nb.info/gnd/120868180; Winkels, Hubert 
+http://d-nb.info/gnd/140720359; Moritz, Sabine 
+http://d-nb.info/gnd/120656779; Obrist, Hans Ulrich 
+http://d-nb.info/gnd/141657006; Blindow, Martin 
+http://d-nb.info/gnd/110244028; Lauschke, Karl 
+http://d-nb.info/gnd/129863475; Bitzegeio, Ursula 
+http://d-nb.info/gnd/11920438X; Tollens, Peter 
+http://d-nb.info/gnd/13861914X; Jonas, Justus 
+http://d-nb.info/gnd/11907172X; Marioni, Joseph 
+http://d-nb.info/gnd/133920437; Janssen, Karl 
+http://d-nb.info/gnd/1016528221; Grimm, Anne 
+http://d-nb.info/gnd/105035440; Weiß, Peter Josef 
+http://d-nb.info/gnd/132762447; Vahrenkamp, Richard 
+http://d-nb.info/gnd/137831684; Peltz, Uwe 
+http://d-nb.info/gnd/111061083; Schalles, Hans-Joachim 
+http://d-nb.info/gnd/130153311; Grote, Martina 
+http://d-nb.info/gnd/1017102384; Raffel, Winfried 
+http://d-nb.info/gnd/12963574X; Fischer, Annette 
+http://d-nb.info/gnd/115861459; Strackbein, Ralf 
+http://d-nb.info/gnd/118556312; Jacobi, Friedrich Heinrich 
+http://d-nb.info/gnd/12989432X; Tieck, Ludwig 
+http://d-nb.info/gnd/129806528; Andrack, Manuel 
+http://d-nb.info/gnd/1017465967; Graßt, Christiane 
+http://d-nb.info/gnd/1017466033; Husmann, Julia 
+http://d-nb.info/gnd/1017466084; Marx, Peter 
+http://d-nb.info/gnd/118724789; Krummacher, Friedrich Adolf 
+http://d-nb.info/gnd/121664384; Freitag, Werner 
+http://d-nb.info/gnd/115582673; Thenior, Ralf 
+http://d-nb.info/gnd/17428764X; Weller, Peter 
+http://d-nb.info/gnd/121494799; Gerlhof, Hans 
+http://d-nb.info/gnd/132058952; Pollmann, Bernhard 
+http://d-nb.info/gnd/118558870; Junker, Karl 
+http://d-nb.info/gnd/133022757; Mundt, Franz-Josef 
+http://d-nb.info/gnd/13557692X; Vreden, Helmut 
+http://d-nb.info/gnd/1017901740; Ahrens, Theodor 
+http://d-nb.info/gnd/122934067; Zieglgänsberger, Roman 
+http://d-nb.info/gnd/1017469881; Busch, Carl Wilhelm Christian 
+http://d-nb.info/gnd/1017665672; Klein, Michael 
+http://d-nb.info/gnd/133900142; Lechtermann, Dirk 
+http://d-nb.info/gnd/109854942; Hagspiel, Wolfram 
+http://d-nb.info/gnd/121529258; Esch, Hans Georg 
+http://d-nb.info/gnd/133164926; Trautner, Peter 
+http://d-nb.info/gnd/111608872; Auler, Jost 
+http://d-nb.info/gnd/120847418; Baumkötter, Stephan 
+http://d-nb.info/gnd/132813378; Schmitt, Florian 
+http://d-nb.info/gnd/128813326; Degens, Marc 
+http://d-nb.info/gnd/120260581; Keller, Ruth 
+http://d-nb.info/gnd/1013054822; Hoorens, Vera 
+http://d-nb.info/gnd/1018303499; Watrinet, Lothar 
+http://d-nb.info/gnd/1018318046; Krummenast, Manfred 
+http://d-nb.info/gnd/1018317929; Grell, Anna Christine 
+http://d-nb.info/gnd/115864016; Oebbecke, Janbernd 
+http://d-nb.info/gnd/124458440; Stecker, Raimund 
+http://d-nb.info/gnd/1019500727; Stoll, Katrin 
+http://d-nb.info/gnd/120579936; Leggewie, Claus 
+http://d-nb.info/gnd/131893262; Merz, Brigitte 
+http://d-nb.info/gnd/136330525; Kühler, Michael 
+http://d-nb.info/gnd/1015751865; Trenkle, Klaus 
+http://d-nb.info/gnd/134165462; Geßmann, Rolf 
+http://d-nb.info/gnd/141623373; Moor, Marente de 
+http://d-nb.info/gnd/111047102; Beuningen, Helga van 
+http://d-nb.info/gnd/101959354; Leesch, Wolfgang 
+http://d-nb.info/gnd/118547135; Hausmann, Manfred 
+http://d-nb.info/gnd/173692869; Rosenbohm, Lars 
+http://d-nb.info/gnd/13402690X; Eikhoff, Jürgen 
+http://d-nb.info/gnd/120958953; Wörgötter, Markus 
+http://d-nb.info/gnd/118183419; Grimm, Gunter E. 
+http://d-nb.info/gnd/108236315; Schober, Otmar 
+http://d-nb.info/gnd/123131405; Müller-Grote, Dominique 
+http://d-nb.info/gnd/129563781; Linden, Fritz-Peter 
+http://d-nb.info/gnd/174017677; Dürhager, Hans 
+http://d-nb.info/gnd/105256137; Galen, Franz von 
+http://d-nb.info/gnd/128785349; Busse, Klaus-Peter 
+http://d-nb.info/gnd/119522713; De Cesco, Federica 
+http://d-nb.info/gnd/142990787; Enting, Klaus 
+http://d-nb.info/gnd/1019862459; Eberwein, Georg 
+http://d-nb.info/gnd/172900271; Black-Veldtrup, Mechthild 
+http://d-nb.info/gnd/118627120; Vincke, Ludwig von 
+http://d-nb.info/gnd/115440453; Mielke, Thomas R. P. 
+http://d-nb.info/gnd/118720910; Karl <Martell> 
+http://d-nb.info/gnd/171938984; Escher, Gudrun 
+http://d-nb.info/gnd/139493360; Krueger, Thomas 
+http://d-nb.info/gnd/17348526X; Buberl-Mensing, Heide 
+http://d-nb.info/gnd/130423661; Schubert, Herbert 
+http://d-nb.info/gnd/1019630426; Hamburger, Gabriele 
+http://d-nb.info/gnd/141379286; Scheideler, Jan-Alexander 
+http://d-nb.info/gnd/12018737X; Merchel, Joachim 
+http://d-nb.info/gnd/128898380; Pamme, Hildegard 
+http://d-nb.info/gnd/112007066; Ant, Marc 
+http://d-nb.info/gnd/104930918; Brachmann, Botho 
+http://d-nb.info/gnd/123011612; Frantz, Christiane 
+http://d-nb.info/gnd/1021253618; Leo, Natascha 
+http://d-nb.info/gnd/129063738; Liebold, Norman 
+http://d-nb.info/gnd/132336790; Schenk, Winfried 
+http://d-nb.info/gnd/1021438774; Siering, Anne 
+http://d-nb.info/gnd/132907151; Abels, Roswitha 
+http://d-nb.info/gnd/123844665; Hegeler, Hartmut 
+http://d-nb.info/gnd/189408537; Schultheiß, Heinrich von 
+http://d-nb.info/gnd/173944868; Meyer, Bettina 
+http://d-nb.info/gnd/1020722649; Baltes, Gisbert 
+http://d-nb.info/gnd/134205391; Kube, Johannes 
+http://d-nb.info/gnd/12257530X; Gapski, Harald 
+http://d-nb.info/gnd/121194841; Kükenshöner, Günter 
+http://d-nb.info/gnd/143717308; Reuther, Manfred 
+http://d-nb.info/gnd/135644577; Bertig, Rudolf 
+http://d-nb.info/gnd/13929578X; Lommatzsch, Erik 
+http://d-nb.info/gnd/118539779; Globke, Hans 
+http://d-nb.info/gnd/13841422X; Bérenger, Daniel 
+http://d-nb.info/gnd/1023314401; Schmidt, Wolfgang 
+http://d-nb.info/gnd/11873864X; Neumann, Hartmut 
+http://d-nb.info/gnd/13005691X; Holtkötter, Stefan 
+http://d-nb.info/gnd/122948688; Overbeck, Gerta 
+http://d-nb.info/gnd/122691687; Oelfke, Heinz 
+http://d-nb.info/gnd/1028327455; Weyersberg, Heinz 
+http://d-nb.info/gnd/1025210093; Petrasch, Friedrich 
+http://d-nb.info/gnd/189482516; Koppel, Uta 
+http://d-nb.info/gnd/11263883X; Adrichem, Jan van 
+http://d-nb.info/gnd/100952089; Levoldus <de Northof> 
+http://d-nb.info/gnd/119205386; Knörzer, Karl-Heinz 
+http://d-nb.info/gnd/122213750; Hedtke, Reinhold 
+http://d-nb.info/gnd/114829152; Geissmar-Brandi, Christoph 
+http://d-nb.info/gnd/121659038; Niethammer, Lutz 
+http://d-nb.info/gnd/107973065; Zweite, Armin 
+http://d-nb.info/gnd/1026847826; Reichert, Franz-Rudolf 
+http://d-nb.info/gnd/1025749545; Koske, Marga 
+http://d-nb.info/gnd/142575453; Deventer, Jörg 
+http://d-nb.info/gnd/107388014; Geuenich, Dieter 
+http://d-nb.info/gnd/143266624; Hakenjos, Bernd 
+http://d-nb.info/gnd/1024334201; Flink, Robert 
+http://d-nb.info/gnd/102549993X; Schraetz, Ernst 
+http://d-nb.info/gnd/118554808; Hundt, Theo 
+http://d-nb.info/gnd/1025333764; Hohensee, Heinz 
+http://d-nb.info/gnd/1024597741; Meurers-Balke, Jutta 
+http://d-nb.info/gnd/113221738; Robeck, Ulrike 
+http://d-nb.info/gnd/1026761654; Paul, Hans-Holger 
+http://d-nb.info/gnd/133320693; Voigt, Wolfgang 
