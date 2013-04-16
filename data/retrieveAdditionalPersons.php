@@ -55,6 +55,12 @@ for($i=0;$i<sizeof($rawResultBT);$i++) {
  * Step 2
  * For each person in the array, identify the DBPedia URI
  * Anette: 118527533
+ * 
+ * select * where {
+ * ?person a dbpedia-owl:Person.
+ * ?person dbpprop:pnd 10208467.
+ * } LIMIT 1
+ * 
  */
 EasyRdf_Namespace::set('dbpedia', 'http://dbpedia.org/ontology/');
 EasyRdf_Namespace::set('dbpprop', 'http://dbpedia.org/property/');
