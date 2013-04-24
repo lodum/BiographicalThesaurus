@@ -8,12 +8,15 @@ f = open('out.txt','r')
 errors = open('errors.txt','w')
 
 for line in f.readlines():
-        filename = line.split('/')[-1]
+        filename = line.split('/')[-3]
+        filename = filename+('.rdf');
+        print filename
         if not (os.path.isfile('out/'+filename[:-1])):
                 try:
                         r = urllib2.urlopen(line)
                         rdf = r.read()
-                        out_file = open('out/'+filename[:-1],'w')
+                        #out_file = open('out/'+filename[:-1],'w')
+                        out_file = open('out/'+filename,'w')
                         out_file.write(rdf)
                         out_file.close()
                         #print 'done loading '+filename[:-1]

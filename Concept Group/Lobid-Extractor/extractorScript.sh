@@ -1,5 +1,6 @@
 for file in *.nt; do
-	echo "$file"
+	#echo "$file"
 	java LineExtractor "$file"
 	cat out.txt >> results.txt
 done
+mv results.txt out.txt

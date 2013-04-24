@@ -23,7 +23,8 @@ public class LineExtractor {
 					try {
 						String gnd = strLine.substring(strLine.indexOf("http://d-nb.info/gnd/"), strLine.indexOf(">", strLine.indexOf("http://d-nb.info/gnd/")));
 						String filename = gnd.substring(21);
-						out.write(gnd + "/about/" + filename + ".rdf\n");
+						//out.write(gnd + "/about/" + filename + ".rdf\n");
+						out.write(gnd + "/about/" + "rdf\n");
 					} catch (Exception e) {// Catch exception if any
 						System.err.println("Error: " + e.getMessage());
 					}
