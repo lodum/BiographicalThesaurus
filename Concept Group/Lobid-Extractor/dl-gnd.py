@@ -5,7 +5,7 @@ import os.path
 import sys
 
 #f = open('out.txt','r')
-f=sys.argv[1]
+f=open(sys.argv[1],'r')
 errors = open('errors.txt','w')
 
 for line in f.readlines():
