@@ -55,7 +55,7 @@ function getParam(variable) {
  
 //Fucntion that submits the query in the "text"-parameter to the endpoint.
 function submitCustomQuery(text){
-		var endpoint="http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
+		var endpoint="http://data.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 		//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 		var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 		var request = { accept : 'application/sparql-results+json' };
@@ -247,7 +247,7 @@ function submitTagCloudQuery() {
 	
 	//TODO: Does not work because there are no stis:Publication anymore
 	
-	var endpoint = "http://giv-lodum.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
+	var endpoint = "http://data.uni-muenster.de:8080/openrdf-sesame/repositories/bt";
 	//sent request over jsonp proxy (some endpoints are not cors enabled http://en.wikipedia.org/wiki/Same_origin_policy)
 	var queryUrl = "http://jsonp.lodum.de/?endpoint=" + endpoint;
 	var request = {
