@@ -1,5 +1,6 @@
 BIOGRAPHICAL THESAURUS NRW
 Created by Jakob Moellers
+Institute for Geoinformatics, University of Muenster, Germany
 
 Folder Structure
 ----------------
@@ -25,6 +26,7 @@ website/
 		search_autocomplete: Code for the autocomplete-functions
 		*.json: Dumps of index
 		index_* folders: Folders that contain the generated lucene index
+		common.php: This provides the multi-language support for the page.
 
 Obsolete:
 
