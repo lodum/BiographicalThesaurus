@@ -1,0 +1,8 @@
+/* Personalized css for printing the website */
+
+/* hiding the print button before printing the page */
+#printButton
+{   
+	   display:none;
+
+} 

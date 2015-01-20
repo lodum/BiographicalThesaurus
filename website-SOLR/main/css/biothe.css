@@ -1,0 +1,133 @@
+/* Personalized css file for the website of the Biothesaurus. The css overwrites some of the settings of Bootstrap */
+
+
+/* ------------------------------ css ids (in alphabetical order) ------------------------------ */
+
+    #loadingDiv{
+		display:none;
+	  }
+	
+	/* specifying the characteristics for the logos*/
+	#logo1{
+		float:left;
+		height:79px;
+		width:13.125em;
+		margin-left:1%;
+		position: absolute;
+	}
+
+	#logo2{
+		margin-right:1%;
+		float:right;
+		height:79px;
+		width:11.9375em;
+	}
+	
+	#map {
+		width: 45%;
+		height: 500px;
+		margin: 0;
+	}
+	img {
+		max-width: none
+	}
+
+	/* properties of the message displayed when there are some errors in the query sent by the user*/	
+	#result_error{	
+		background-color: red;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+
+	/* properties of the message displayed when a query returns some results*/	 
+	#result_success{
+		background-color: green;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+	  
+/* ------------------------------ css classes (in alphabetical order) ------------------------------ */
+
+	/* specifying the properties of dropdown list (for dropdown buttons) */
+	.dropdown-menu {
+	  z-index: 1000;
+	  display: none;
+	  margin-left: 77%;
+	  color: #ffffff; 
+	}
+
+	 /* specifying the properties of the divider of the dropdown list (for dropdown buttons) */
+	.dropdown-menu .divider {
+	  margin: 1px 1px;
+	}
+	
+	/* specifying the properties for the text at the top (left) of the page*/
+	.navbar .brand
+	{
+		border-right: 2px solid rgb(255, 255, 255);  
+        overflow: visible;
+		padding-left: 7px; 
+	}
+
+	/* adding a white border at the right of each tab*/
+	.navbar .nav > li
+	{
+		border-right: 2px solid rgb(255, 255, 255);
+	}
+
+	/* specifying the colour of the text for the tabs at the top of the page */
+	.navbar .nav > li > a
+	{     
+		 color: white;
+	}
+	
+	/* specifying the properties for the banner at the top of the page */
+	.navbar .navbar-inner,
+	.navbar-inverse .navbar-inner
+	{
+	   background-color: rgb(67, 69, 83);
+	   background-image: none;
+	   color: white;
+	   filter: none;
+	}
+
+	/* specifying the properties for the tab that is currently active*/
+	.navbar-inverse .nav .active > a, 
+	.navbar .nav > li .active > a:focus,
+	.navbar .nav > li > a:hover 
+	{ 
+		background-color: rgb(160, 1, 12);	
+	}
+
+	.navbar-inverse .nav .active > a:hover,
+	.navbar-inverse .nav .active > a:focus
+	{
+		color: #ffffff;
+		background-color: rgb(160, 1, 12);
+	 }
+	
+    .navbar-inverse .nav-collapse .nav > li > a:hover,
+    .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+      background-color: rgb(160, 1, 12);	
+     }
+	 
+	.ui-autocomplete-loading 
+	{
+		background: white url('images/ajax-loader.gif') right center no-repeat;
+	}
+ 
+	 /* class useful to specify the colour of the message 
+	    displayed when one wants to send a warning to the user */
+	 .warning{	
+	    background-color: #49afcd;
+		color: white;
+		z-index: 20000;
+		left: 0px;
+		padding: 10px;
+		display:none;
+	  }
+	 
