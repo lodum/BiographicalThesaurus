@@ -27,9 +27,15 @@ $(document).ready(function () {
 		try {
 			place = decodeURI(place);
 			place = JSON.parse(place);
+			if(place.type == "Circle") {
+				place.wkt = "CIRCLE(" + place.coordinates + " d=" + place.radius + ")";
+			}
 		} catch(e) {
 			// place is no object, so place is a city and not a polygon or circle
 			place = tmp;
+		}
+		if(typeof place != 'string') {
+			map.drawShape(place.wkt, place.type);
 		}
 		query.setSpatial(place);
 	}
@@ -48,8 +54,12 @@ $(document).ready(function () {
 	}
 	var placeType = getParam('pType');
 	if(placeType && placeType != "") {
-		tmp = 'placeOf' + placeType
-		query.setSpatialField(tmp);
+		placeType = placeType.split(",");
+		query.initSpatialField();
+		$.each(placeType, function (index) {
+			tmp = 'placeOf' + placeType[index];
+			query.addSpatialField(tmp);
+		});
 	}
 	
 	//query.execute()
@@ -113,7 +123,6 @@ $(document).ready(function () {
 			}
 		});
 		map.addMarkerLayer();
-		console.log(map);
 		map.showMiniMap();
 	}
 

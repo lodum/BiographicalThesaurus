@@ -28,8 +28,12 @@ Query.prototype.setSpatial = function (spatial) {
 	this.spatial = spatial;
 };
 
-Query.prototype.setSpatialField = function (spatialField) {
-	this.spatialField = spatialField;
+Query.prototype.addSpatialField = function (spatialField) {
+	this.spatialField.push(spatialField);
+};
+
+Query.prototype.initSpatialField = function () {
+	this.spatialField = [];
 };
 
 Query.prototype.setPerson = function (person) {
@@ -118,35 +122,34 @@ Query.prototype.buildURL = function () {
 	var spatialUrl = "";
 
 	//Add Spatial Restraints
+	var that = this;
 	if(this.spatial) {
-
-		//If the drawn Shape is a Circle (type= Point + Radius)
-		if(this.spatial.type == 'Circle') {
-			//Extract lat and lng from wkt
-			wkt = this.spatial.wkt;
-			tmp = wkt.split('Point(');
-			tmp = tmp[1].split(')');
-			tmp = tmp[0].split(' ');
-			lat = tmp[0];
-			lng = tmp[1];
-			rad = this.spatial.radius;
-
-			spatialUrl += '&fq={!geofilt sfield=' + this.spatialField + '_geom}&pt=' + lat + ',' + lng + '&d=' + rad;
-		} else {
-			if(this.spatial.type == 'Polygon') {
-				//If the drawn Shape is no Circle. Then it is a Polygon (Polygon or Rectangle)
-				spatialUrl += '&fq=' + this.spatialField + '_geom:"IsWithin(' + this.spatial.wkt + ' distErrPct=0"'
-			}
-			else {
-				if(attributeUsed) {
-					srchstrng += ' AND ';
+		if(this.spatial.type == "Circle" || this.spatial.type == "Polygon") {
+			$.each(this.spatialField, function (index) {
+				if(index == 0)  {
+					spatialUrl += '&fq=' + that.spatialField[index] + '_geom:"IsWithin(' + that.spatial.wkt + ') distErrPct=0"';
+				} else {
+					spatialUrl += ' OR ';
+					spatialUrl += that.spatialField[index] + '_geom:"IsWithin(' + that.spatial.wkt + ') distErrPct=0"';
 				}
-				srchstrng += this.spatialField + ":" + this.spatial;
-				attributeUsed = true;
-			}			
+			});
+		} else {
+			console.log("ja");
+			if(attributeUsed) {
+				srchstrng += ' AND ';
+			}
+			$.each(this.spatialField, function (index) {
+				if(index == 0) {
+					srchstrng += that.spatialField[index] + ":" + that.spatial;
+				} else {
+					srchstrng += ' OR '
+					srchstrng += that.spatialField[index] + ":" + that.spatial;
+				}
+			});
+			
+			attributeUsed = true;
 		}
-	}
-
+	}		
 
 
 	if(!attributeUsed) {

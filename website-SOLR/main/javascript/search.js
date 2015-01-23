@@ -32,15 +32,15 @@ $(document).ready(function () {
 		}
 
 		//has to be redone
-		placetype = "";
+		placetype = [];
 		if ($('#box_deathplace').is(':checked')) {
-			placetype = "Death";
+			placetype.push("Death");
 		}
 		if ($('#box_activityplace').is(':checked')) {
-		   placetype = "Activity";
+		   placetype.push("Activity");
 		}
 		if ($('#box_birthplace').is(':checked')) {
-		   placetype = "Birth";   
+		   placetype.push("Birth");   
 		}
 		var startdate = null;
 		var enddate = null;
@@ -84,13 +84,21 @@ $(document).ready(function () {
 			}
 			target += "occ=" + occ;
 		}
-		if (placetype && placetype != "") {
-			if(target != targetControl) {
-				target += "&"
-			}
-			target += "pType=" + placetype;
-		}
 		if (place && place != "") {
+
+			if (placetype && placetype != "") {
+				if(target != targetControl) {
+					target += "&"
+				}
+				target += "pType=" + placetype[0];
+				$.each(placetype, function (index) {
+					if(index > 0) {
+						target += "," + placetype[index];
+					}
+				});
+				
+			}
+
 			if(target != targetControl) {
 				target += "&"
 			}

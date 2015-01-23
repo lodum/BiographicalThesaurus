@@ -44,7 +44,7 @@ var Map = L.Map.extend({
 		iconCreateFunction: function(cluster) {
 	        var childCount = cluster.getChildCount();
 
-	        className = 'marker-cluster-activity marker-cluster-xs'      
+	        className = 'marker-cluster-activity marker-cluster'      
 
 	        divicon = new L.DivIcon({ 
 	        	html: '<div><span>' + childCount + '</span></div>', 
@@ -141,9 +141,13 @@ var Map = L.Map.extend({
 				lat = spatial._layers[Object.keys(spatial._layers)[0]]._latlng.lat;
 				lng = spatial._layers[Object.keys(spatial._layers)[0]]._latlng.lng;
 				rad = spatial._layers[Object.keys(spatial._layers)[0]]._mRadius / 1000;
+
+				//rad: km to degree
+				rad = rad / 40000 * 360;
+
 				geom = {
 					type: "Circle",
-					wkt: "Point(" + lat + " " + lng + ")",
+					coordinates: lat + "," + lng ,
 					radius: rad
 				};
 			} else {
@@ -158,12 +162,13 @@ var Map = L.Map.extend({
 					}
 					wkt += latlng[0] + ' ' + latlng[1];
 				});
-				wkt += ')))';
+				wkt += '))';
 				geom = {
 					type: "Polygon",
 					wkt: wkt
 				};
 			}
+
 			geom = JSON.stringify(geom);
 			return geom;
 		} else {
@@ -227,6 +232,45 @@ var Map = L.Map.extend({
 		var osmAttrib='Map data &copy; OpenStreetMap contributors';
 		var minimapLayer = new L.TileLayer(osmUrl, {minZoom: 0, maxZoom: 13, attribution: osmAttrib});
 		var miniMap = new L.Control.MiniMap(minimapLayer, {toggleDisplay:true, zoomLevelFixed:10}).addTo(this);
+	},
+
+
+	drawShape: function (wkt, type) {
+		if(type == "Polygon") {
+			tmp = wkt.split("POLYGON((");
+			tmp = tmp[1].split("))");
+
+			coordinates = tmp[0].split(",");
+
+			polygonPoints = [];
+			$.each(coordinates, function (index) {
+				coordinate = coordinates[index].split(" ");
+				lat = coordinate[1];
+				lng = coordinate[0];
+				polygonPoints.push(new L.LatLng(lat, lng));
+			});
+
+			var polygon = new L.Polygon(polygonPoints);
+			this.layersControl.addOverlay(polygon, 'Shape');
+        	this.addLayer(polygon);     
+			
+
+		} else if (type == "Circle") {
+			tmp = wkt.split("CIRCLE(");
+			tmp = tmp[1].split(")");
+			tmp = tmp[0].split(" d=");
+			coordinates = tmp[0].split(",");
+			lat = coordinates[0]
+			lng = coordinates[1]
+			rad = tmp[1];
+
+			//rad: degree to m
+			rad = rad * 40000 / 360 * 1000;
+
+			var circle = new L.Circle(new L.LatLng(lat, lng), rad);
+			this.layersControl.addOverlay(circle, 'Shape');
+         	this.addLayer(circle);
+		}
 	}
 
 });

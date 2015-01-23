@@ -19,14 +19,6 @@
 	background-color: rgba(241, 128, 23, 0.6);
 }
 
-.marker-cluster-xs {
-	width: 22px;
-	height:22px;
-	line-height:22px;
-	text-align:center;
-	border-radius:22px;
-}
-
 .marker-cluster {
 	background-clip: padding-box;
 	border-radius: 20px;
