@@ -74,12 +74,10 @@
 	background-image:url('icons-classic/label.png');
 	background-position:bottom center;
 	background-repeat:no-repeat;
-    white-space: nowrap;
-    bottom:20px;
-    /* padding: 3px 6px 7px; */
-    padding:3px 6px; /* modified on January 14, 2014 */
-    cursor:col-resize;
-    font-size:5px; /* modified on January 14, 2014 */
+  white-space: nowrap;
+  bottom:20px;
+  padding:3px 6px 7px;
+  cursor:col-resize;
 }
 
 .ui-rangeSlider-label-inner{
@@ -91,9 +89,7 @@
  */
 
 input.ui-editRangeSlider-inputValue{
-	width:3em; 
+	width:3em;
 	vertical-align: middle;
 	text-align:center;
-	font-size:15px; /*modified on January 14, 2014*/  
- 
 }

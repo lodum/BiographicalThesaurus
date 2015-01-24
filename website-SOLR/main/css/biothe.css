@@ -24,10 +24,10 @@
 	}
 	
 	#map {
-		width: 45%;
 		height: 500px;
 		margin: 0;
 	}
+
 	img {
 		max-width: none
 	}

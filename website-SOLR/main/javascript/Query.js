@@ -134,7 +134,6 @@ Query.prototype.buildURL = function () {
 				}
 			});
 		} else {
-			console.log("ja");
 			if(attributeUsed) {
 				srchstrng += ' AND ';
 			}

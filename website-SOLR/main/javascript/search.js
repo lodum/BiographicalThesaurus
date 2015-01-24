@@ -11,15 +11,94 @@ $(document).ready(function () {
 	);
 	map.addTileLayer(tilelayer);
 	map.initLeafletDraw();
+	var selectedDate = null;
+	initSlider();
 
+	$("[rel='tooltip']").tooltip();
 
 	$('#box_birthplace').prop('checked', true);
 	$('#box_deathplace').prop('checked', true);
 	$('#box_activityplace').prop('checked', true);
 
 	$('#btn-search').on('click', function () {
+		console.log("click");
 		goToResults();
 	});
+
+	$("#checkbox_slider").on('click', function () {
+		// uncheck the checkbox related to the slider
+		$("#checkbox_slider").prop('checked', false);
+		// hide the div which contains the checkbox related to the slider
+		$("#box_slider").hide();
+		// update the status of the date selection to false
+		sliderDateSelection=false;
+		$("#slider").rangeSlider("values", 1100, 1400);
+		$("#eraSelector")[0][0].text = "...";
+		$("#eraSelector")[0].selectedIndex = 0;
+	});
+
+	$("#eraSelector").on('change', function (e, data) {
+		timetext = $("#eraSelector").val();
+		timetext = timetext.split("(");
+		timetext = timetext[1].split(")");
+		time = timetext[0].split("-");
+		startdate = 0;
+		enddate = 0;
+		if(time.length == 1) {
+			time = time[0].split(" ");
+			startdate = time[0];
+			enddate = new Date().getFullYear();
+		} else {
+			startdate = time[0];
+			enddate = time[1];
+		}
+		$("#slider").rangeSlider("values", startdate, enddate);
+		selectedDate = {min: startdate, max: enddate}
+	});
+
+	function initSlider() {
+		$("#slider").rangeSlider({
+			bounds: {min: 0, max: new Date().getFullYear()},
+			defaultValues:{min: 1100, max: 1400},
+			arrows:false,
+			symmetricPositionning: true,
+  			range: {min: 0},
+  			step:5,
+			scales: [
+				// Primary scale
+				{
+					first: function(val){ return val; },
+					next: function(val){ return val + 500; },
+					stop: function(val){ return false; },
+					label: function(val){ return val; },
+					format: function(tickContainer, tickStart, tickEnd){ 
+						tickContainer.addClass("myCustomClass");
+					}
+				},
+				// Secondary scale
+				{
+					first: function(val){ return val; },
+					next: function(val){
+						if (val % 10 === 9){
+							return val + 2;
+						}
+						return val + 100;
+					},
+					stop: function(val){ return false; },
+					label: function(){ return null; }
+				}
+			]
+		});
+
+
+		$("#slider").bind("valuesChanging", function(e, data){
+			$("#eraSelector")[0][0].text = data.values.min + "-" + data.values.max;
+			$("#eraSelector")[0].selectedIndex = 0;
+			selectedDate = {min: data.values.min, max: data.values.max}
+			sliderDateSelection = true;
+			$("#box_slider").show();
+		});
+	}
 
 
 	function goToResults() {
@@ -41,25 +120,14 @@ $(document).ready(function () {
 		}
 		if ($('#box_birthplace').is(':checked')) {
 		   placetype.push("Birth");   
+		}	
+		
+		startdate = null;
+		enddate = null;
+		if(selectedDate) {
+			startdate = selectedDate.min;
+			enddate = selectedDate.max;
 		}
-		var startdate = null;
-		var enddate = null;
-		eraStart = [null, 1800, 1500, 800, 400];
-		currentYear = new Date().getFullYear(); // get the current year
-		eraEnd=[null, currentYear, 1800, 1500, 800]
-		eraSelector = $('#eraSelector')["0"].selectedIndex;
-		if (sliderDateSelection) {
-			timetext = ($("#currentTimeInterval").text());
-			timetext = timetext.split("[ ");
-			timetext = timetext[1].split(" ]");
-			time = timetext[0].split(" - ");
-			startdate = time[0];
-			enddate = time[1];
-		} else {
-			startdate = eraStart[eraSelector];
-			enddate = eraEnd[eraSelector];
-		}
-
 
 		var target = "results.php?";
 		var targetControl = target;
@@ -107,54 +175,4 @@ $(document).ready(function () {
 		
 		window.location = target;
 	}
-
-
-	// this function hides the checkbox when the user decides not to specify a time period for his query
-	function hideSliderCheckbox()
-	{
-		 // uncheck the checkbox related to the slider
-		 $("#checkbox_slider").prop('checked', false);
-		 // hide the div which contains the checkbox related to the slider
-		 $("#box_slider").hide();
-		 // update the status of the date selection to false
-		 sliderDateSelection=false;
-		 // display the message that a time period has not been selected 
-		 $("#currentTimeInterval").text(timeIntervalNotSelected); 
-	}
-
-
-
-
-	// function useful to activate the tooltips when displaying possible examples of queries
-	$(function () {
-		$("[rel='tooltip']").tooltip();
-	});
-
-	// for the slider
-	$(function() {
-
-		sliderDateSelection = false;
-		var min_year = 0;
-		var max_year = new Date().getFullYear(); // get the current year
-		var min_defaultvalue= 1600; 
-		var max_defaultvalue = 1750;
-
-		// get the text to display when no time period has been selected (in german or english)
-		timeIntervalNotSelected =   $("#currentTimeInterval").text(); 
-		//$("#currentTimeInterval").text("[ "+min_defaultvalue + " - "+ max_defaultvalue+ " ]");
-
-		$("#slider").slider({
-			range: true,
-			min: min_year,
-			max: max_year,
-			values: [ min_defaultvalue, max_defaultvalue ], 
-			slide : function( event, ui) {
-				$("#currentTimeInterval").text("[ "+ui.values[0] + " - " + ui.values[1]+ " ]");
-				// as soon as the slider has been used, it is considered that the user has selected a time period
-				sliderDateSelection = true;
-				// show the checkbox related to the slider. This gives the user the possibility NOT to specify a time period after having interacted with the slider
-				$("#box_slider").show();
-			}
-		});
-	});
 });
