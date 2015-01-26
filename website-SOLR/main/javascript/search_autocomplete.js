@@ -9,7 +9,7 @@ $( "#person" ).autocomplete(
     source: function( request, response ) {
       suggester = new Suggester();
       suggester.setField("preferredNameForThePerson");
-      suggester.setCore("test");
+      suggester.setCore("test_all");
       suggester.setSearchTerm(request.term.toLowerCase());
 
       $.getJSON(suggester.buildURL(), function(result){

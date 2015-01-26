@@ -13,11 +13,23 @@ var Map = L.Map.extend({
 		spiderfyDistanceMultiplier:2, 
 		iconCreateFunction: function(cluster) {
 	        var childCount = cluster.getChildCount();
-			divicon = new L.DivIcon({ 
-	        	html: '<div><span>' + childCount + '</span></div>', 
-	        	className: 'marker-cluster marker-cluster-birth', 
-	        	iconSize: new L.Point(40, 40) 
-	        });
+	        var classname = "";
+	        var size = null;
+	        if(childCount == 1) {
+	        	classname = "marker-cluster-s marker-cluster-birth";
+	        	size = new L.Point(20, 20);
+	        } else if(childCount < 10) {
+	        	classname = "marker-cluster-m marker-cluster-birth";
+	        	size = new L.Point(30, 30);
+	        } else {
+	        	classname = "marker-cluster-l marker-cluster-birth";
+	        	size = new L.Point(40, 40);
+	        }
+	        divicon = new L.DivIcon({ 
+		        	html: '<div><span>' + childCount + '</span></div>', 
+		        	className: classname, 
+		        	iconSize: size 
+		        });
 	        return divicon;
 		}
 	}),
@@ -28,11 +40,23 @@ var Map = L.Map.extend({
 		spiderfyDistanceMultiplier:2, 
 		iconCreateFunction: function(cluster) {
 	        var childCount = cluster.getChildCount();
+	        var classname = "";
+	        var size = null;
+	        if(childCount == 1) {
+	        	classname = "marker-cluster-s marker-cluster-death";
+	        	size = new L.Point(20, 20);
+	        } else if(childCount < 10) {
+	        	classname = "marker-cluster-m marker-cluster-death";
+	        	size = new L.Point(30, 30);
+	        } else {
+	        	classname = "marker-cluster-l marker-cluster-death";
+	        	size = new L.Point(40, 40);
+	        }
 	        divicon = new L.DivIcon({ 
-	        	html: '<div><span>' + childCount + '</span></div>', 
-	        	className: 'marker-cluster marker-cluster-death', 
-	        	iconSize: new L.Point(40, 40) 
-	        });
+		        	html: '<div><span>' + childCount + '</span></div>', 
+		        	className: classname, 
+		        	iconSize: size 
+		        });
 	        return divicon;
 		}
 	}),
@@ -43,14 +67,23 @@ var Map = L.Map.extend({
 		spiderfyDistanceMultiplier:2, 
 		iconCreateFunction: function(cluster) {
 	        var childCount = cluster.getChildCount();
-
-	        className = 'marker-cluster-activity marker-cluster'      
-
+	        var classname = "";
+	        var size = null;
+	        if(childCount == 1) {
+	        	classname = "marker-cluster-s marker-cluster-activity";
+	        	size = new L.Point(20, 20);
+	        } else if(childCount < 10) {
+	        	classname = "marker-cluster-m marker-cluster-activity";
+	        	size = new L.Point(30, 30);
+	        } else {
+	        	classname = "marker-cluster-l marker-cluster-activity";
+	        	size = new L.Point(40, 40);
+	        }
 	        divicon = new L.DivIcon({ 
-	        	html: '<div><span>' + childCount + '</span></div>', 
-	        	className: className, 
-	        	iconSize: new L.Point(40, 40) 
-	        });
+		        	html: '<div><span>' + childCount + '</span></div>', 
+		        	className: classname, 
+		        	iconSize: size 
+		        });
 	        return divicon;
 		}
 	}),

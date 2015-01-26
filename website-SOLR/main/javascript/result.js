@@ -12,7 +12,7 @@ $(document).ready(function () {
 	map.addTileLayer(tilelayer);
 	
 	var query = new Query();	
-	query.setCore("test");
+	query.setCore("test_all");
 	query.setRows("999");
 
 	var searchstring = getParam('searchstring');

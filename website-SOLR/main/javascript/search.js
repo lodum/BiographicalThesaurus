@@ -92,7 +92,7 @@ $(document).ready(function () {
 
 
 		$("#slider").bind("valuesChanging", function(e, data){
-			$("#eraSelector")[0][0].text = data.values.min + "-" + data.values.max;
+			$("#eraSelector")[0][0].text = "(" + data.values.min + "-" + data.values.max + ")";
 			$("#eraSelector")[0].selectedIndex = 0;
 			selectedDate = {min: data.values.min, max: data.values.max}
 			sliderDateSelection = true;
