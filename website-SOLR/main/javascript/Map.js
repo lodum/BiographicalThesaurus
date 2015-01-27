@@ -248,14 +248,26 @@ var Map = L.Map.extend({
 	/** Add all layer of marker to the map. Display them.
 	*
 	*/
-	addMarkerLayer: function () {
-		//add the places layers to store results
+	addMarkerLayer: function (placeType) {
 		this.layersControl.addOverlay(this.birthplaces, 'Birth');
-		this.addLayer(this.birthplaces);
 		this.layersControl.addOverlay(this.deathplaces, 'Death');
-		this.addLayer(this.deathplaces);
 		this.layersControl.addOverlay(this.activityplaces, 'Activity');
-		this.addLayer(this.activityplaces);
+		var that = this;
+		if(placeType) {
+			$.each(placeType, function (index) {
+				if(placeType[index] == 'Birth') {
+					that.addLayer(that.birthplaces);
+				} else if(placeType[index] == 'Death') {
+					that.addLayer(that.deathplaces);
+				}else if(placeType[index] == 'Activity') {
+					that.addLayer(that.activityplaces);
+				}
+			});	
+		} else {
+			that.addLayer(that.birthplaces);
+			that.addLayer(that.deathplaces);
+			that.addLayer(that.activityplaces);
+		}
 
 		this.addControl(this.layersControl);
 	},

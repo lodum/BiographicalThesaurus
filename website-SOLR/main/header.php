@@ -14,7 +14,7 @@
 
 	<!-- external css file useful for the time slider -->
 	<!-- <link href="css/iThing.css" rel="stylesheet" type="text/css" /> -->
-	<link href="css/classic.css" rel="stylesheet" type="text/css" />
+	<link href="css/iThing.css" rel="stylesheet" type="text/css" />
 	
 	<!-- css file used to personalize the design of the website -->
     <link href="css/biothe.css" rel="stylesheet" type="text/css" />
@@ -34,7 +34,7 @@
     <!-- use leaflet for the map -->	
 	<link rel="stylesheet" href="../assets/leaflet-0.6.4/leaflet.css" type="text/css"/>
 	
-	<script src="../assets/leaflet-0.6.4/leaflet.js"></script>
+	
 	
      <link rel="stylesheet" href="../assets/css/jQuery-1.10.3/jquery-ui.css" type="text/css" /> 
 </head>

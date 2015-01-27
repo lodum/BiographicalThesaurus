@@ -122,7 +122,7 @@ $(document).ready(function () {
 				map.addMarker(lat, lng, dat.preferredNameForThePerson, "activity", dat.id);
 			}
 		});
-		map.addMarkerLayer();
+		map.addMarkerLayer(placeType);
 		map.showMiniMap();
 	}
 

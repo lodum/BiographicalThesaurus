@@ -17,7 +17,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#"><?php echo $lang['STIS_PAGE_TITLE']; ?></a>
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse">
             <ul class="nav">
 			  	<?php
 					// change the navigation tab according to the current page
