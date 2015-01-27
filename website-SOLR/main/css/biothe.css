@@ -131,3 +131,21 @@
 		display:none;
 	  }
 	 
+
+	 #datatable td.details-control {
+	 	background-image: url("../images/down_16.png");
+	 	background-repeat: no-repeat;
+	 	background-position: center;
+	 }
+
+	 #datatable td.details-control.shown {
+	 	background-image: url("../images/up_16.png");
+	 }
+
+	 #datatable td.details-control.headrow {
+	 	background-image: none;
+	 }
+
+	 table.dataTable table.personDetails td {
+	 	padding: 4px;
+	 }
