@@ -39,6 +39,21 @@ $(document).ready(function () {
 		}
 		query.setSpatial(place);
 	}
+
+
+	$("#btn-toggle-map").click(function (e) {
+		if($("#btn-toggle-map").text() == "<") {
+			$("#btn-toggle-map").text(">");
+			$("#map").show();
+			$("#result-container").attr("class","col-xs-8 col-md-8 pull-left");
+		} else {
+			$("#btn-toggle-map").text("<");
+			$("#map").hide();
+			$("#result-container").attr("class","col-xs-12 col-md-12 pull-left");
+			console.log();
+		}
+		
+	});
 	
 	var begindate = getParam('beginDate');
 	if(begindate) {
@@ -144,7 +159,14 @@ $(document).ready(function () {
 		$("#pagesContainer").show();
 		$("#resultsPerPageContainer").show();
 		$hline.append( $( "<td></td>" ).html( "<b>Name</b>" ) );
-		$hline.append($("<td></td>").html("<b>Id</b>"));
+		$hline.append($("<td></td>").html("<b>Geb. Ort</b>"));
+		$hline.append($("<td></td>").html("<b>Akt. Ort</b>"));
+		$hline.append($("<td></td>").html("<b>Ster. Ort</b>"));
+		$hline.append($("<td></td>").html("<b>Geb. Datum</b>"));
+		$hline.append($("<td></td>").html("<b>Ster. Ort</b>"));
+		$hline.append($("<td></td>").html("<b>Beruf</b>"));
+		$hline.append($("<td></td>").html("<b>GND ID</b>"));
+
 		$hline.append($("<td class=\"details-control sorting_disabled headrow\" rowspan=\"1\" colspan=\"1\" aria-label=\"\" style=\"width: 18px;\"></td>").html(""));
 		$head.append($hline);
 		$table.append($head);
@@ -152,7 +174,23 @@ $(document).ready(function () {
 		$.each(data, function (index, dat) {
 			var $bline = $( "<tr></tr>" );
 			$bline.append( $( "<td></td>" ).html( dat.preferredNameForThePerson ) );
+			$bline.append( $( "<td></td>" ).html( dat.placeOfBirth ) );
+			$bline.append( $( "<td></td>" ).html( dat.placeOfActivity ) );
+			$bline.append( $( "<td></td>" ).html( dat.placeOfDeath ) );
+			$bline.append( $( "<td></td>" ).html( dat.dateOfBirth ) );
+			$bline.append( $( "<td></td>" ).html( dat.dateOfDeath ) );
+			var occ = "";
+			if(dat.professionOrOccupation) {
+				$.each(dat.professionOrOccupation, function (index) {
+					if(occ != "") {
+						occ += ", "
+					}
+					occ += dat.professionOrOccupation[index];
+				});
+			}
+			$bline.append( $( "<td></td>" ).html( occ ) );
 			$bline.append( $( "<td class=\"gndid\"></td>" ).html( dat.id ) );
+			
 			$bline.append( $( "<td class=\"details-control\"></td>" ).html('') );
 			
 			$body.append( $bline );
@@ -162,11 +200,6 @@ $(document).ready(function () {
 		
 		var dtable = $("#datatable").DataTable();
 		dtable.draw();
-
-		$('#datatable tbody').on( 'click', 'tr', function (event) {
-			var id = $('td', this).eq(1).text();
-			map.openMarkerPopup(id);
-		});
 
 		$('#datatable tbody').on('click', 'td.details-control', function () {
 			var td = $(this);

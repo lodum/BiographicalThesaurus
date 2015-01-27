@@ -41,10 +41,15 @@
 
 			<div class="row" style= "padding-top: 13%;">
 				<!-- container for the result form (the result form is on the left hand-side) -->
-				<div class="col-xs-6 col-md-6 pull-left"> 
+				<div id="result-container" style="overflow-x: auto;" class="col-xs-8 col-md-8 pull-left"> 
 
 					<!--<h1>Thesaurus Search Results</h1>-->
-					<p><?php echo $lang['RESULT_FILTER']; ?></p>
+					<p>
+						<?php echo $lang['RESULT_FILTER']; ?>
+						<div class="pull-right">
+							<button id="btn-toggle-map" class="btn btn-primary">></button>
+						</div>
+					</p>
 					<span style="padding-left:  0pt"><a href="#" onclick="history.go(-1);return false;">&lt;&lt; <?php echo $lang['RESULT_GO_BACK']; ?></a></span>
 					<span style="padding-left:  20pt"><a href="search.php">&lt;&lt; <?php echo $lang['RESULT_START_NEW']; ?></a></span>
 					<div id="error" style="color:red; display:none;"><br/><br/><?php echo $lang['RESULT_NO_RESULT']; ?></div>
@@ -77,7 +82,7 @@
 					<span id="titleExportedResults" style="display:none"><?php echo $lang['TITLE_EXPORTED_RESULTS']; ?></span> 
 				</div>
 				<!-- container for the map (the map is on the right hand-side) -->
-				<div id="map" class="col-xs-6 col-md-6 pull-right"></div>
+				<div id="map" class="col-xs-4 col-md-4 pull-right"></div>
 			</div>
 		</div>
 
