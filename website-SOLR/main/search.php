@@ -78,16 +78,13 @@
 							</p>	
 
 							<p>
-	 							<span><?php echo $lang['SEARCH_TIME']; ?></span>
+	 							<span><b><?php echo $lang['SEARCH_TIME']; ?></b></span>
 	 						</p>
-							<div id="slider"></div>
 
-							<p>
-								<div id="box_slider" style="display: none;">
-									<label class="checkbox inline"><input type="checkbox" id="checkbox_slider"><?php echo $lang['SEARCH_CHECK_BOX4:'];?></label>
-								</div>
+	 						<p>
+								<div id="slider"></div>							
+
 							</p>
-							
 
 							<label><?php echo $lang['SEARCH_ERA']; ?></label>
 							<select id="eraSelector">
@@ -95,7 +92,16 @@
 								<option><?php echo $lang['SEARCH_ERA_CHOICES'][1];?></option>
 								<option><?php echo $lang['SEARCH_ERA_CHOICES'][2];?></option>
 								<option><?php echo $lang['SEARCH_ERA_CHOICES'][3];?></option>	 	
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][4];?></option>	 			
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][4];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][5];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][6];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][7];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][8];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][9];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][10];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][11];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][12];?></option>
+								<option><?php echo $lang['SEARCH_ERA_CHOICES'][13];?></option>	 			
 							</select>
 						</fieldset>	
 					</form>

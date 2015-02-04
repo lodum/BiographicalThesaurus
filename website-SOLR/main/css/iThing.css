@@ -150,6 +150,7 @@
 
 .ui-rangeSlider-bar{
 	background: #68a1d6;
+  opacity: 0.5;
   height: 29px;
   margin:1px 0;
   -moz-border-radius: 4px;
@@ -179,7 +180,7 @@
 }
 
 .ui-rangeSlider-label{
-  padding: 5px 10px;
+  padding: 2px 4px;
   bottom:40px;
 
   -moz-border-radius: 4px;
@@ -213,7 +214,7 @@
 }
 
 .ui-editRangeSlider-inputValue{
-  width:2em;
+  width:4em;
   text-align:center;
   font-size:15px;
 }

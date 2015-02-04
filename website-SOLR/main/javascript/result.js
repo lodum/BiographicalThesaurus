@@ -45,12 +45,11 @@ $(document).ready(function () {
 		if($("#btn-toggle-map").text() == "<") {
 			$("#btn-toggle-map").text(">");
 			$("#map").show();
-			$("#result-container").attr("class","col-xs-8 col-md-8 pull-left");
+			$("#result-container").attr("class","col-xs-6 col-md-6 pull-left");
 		} else {
 			$("#btn-toggle-map").text("<");
 			$("#map").hide();
 			$("#result-container").attr("class","col-xs-12 col-md-12 pull-left");
-			console.log();
 		}
 		
 	});
@@ -81,7 +80,7 @@ $(document).ready(function () {
 	$.getJSON(query.buildURL(), function(result){
 		processData(result.response.docs);
     });
-
+	
 
 	function getParam(variable) {
 		var query = window.location.search.substring(1);
@@ -148,22 +147,21 @@ $(document).ready(function () {
 		$('#result_text').html('');
 	}
 
-	var $table = $( "<table id='datatable'></table>" );
+	var $table = $("<table id='datatable'></table>");
 	var $head = $("<thead></thead>");
 	var $body = $("<tbody></tbody>");
-	var $hline = $( "<tr></tr>" );
+	var $hline = $("<tr></tr>");
 
 
 	function fillTable (data) {
 		clearTable();
 		$("#pagesContainer").show();
 		$("#resultsPerPageContainer").show();
-		$hline.append( $( "<td></td>" ).html( "<b>Name</b>" ) );
+		$hline.append($("<td></td>").html( "<b>Name</b>" ) );
 		$hline.append($("<td></td>").html("<b>Geb. Ort</b>"));
-		$hline.append($("<td></td>").html("<b>Akt. Ort</b>"));
 		$hline.append($("<td></td>").html("<b>Ster. Ort</b>"));
 		$hline.append($("<td></td>").html("<b>Geb. Datum</b>"));
-		$hline.append($("<td></td>").html("<b>Ster. Ort</b>"));
+		$hline.append($("<td></td>").html("<b>Ster. Datum</b>"));
 		$hline.append($("<td></td>").html("<b>Beruf</b>"));
 		$hline.append($("<td></td>").html("<b>GND ID</b>"));
 
@@ -175,7 +173,6 @@ $(document).ready(function () {
 			var $bline = $( "<tr></tr>" );
 			$bline.append( $( "<td></td>" ).html( dat.preferredNameForThePerson ) );
 			$bline.append( $( "<td></td>" ).html( dat.placeOfBirth ) );
-			$bline.append( $( "<td></td>" ).html( dat.placeOfActivity ) );
 			$bline.append( $( "<td></td>" ).html( dat.placeOfDeath ) );
 			$bline.append( $( "<td></td>" ).html( dat.dateOfBirth ) );
 			$bline.append( $( "<td></td>" ).html( dat.dateOfDeath ) );
@@ -199,6 +196,7 @@ $(document).ready(function () {
 		$table.appendTo( $( "#resultdiv" ) );
 		
 		var dtable = $("#datatable").DataTable();
+
 		dtable.draw();
 
 		$('#datatable tbody').on('click', 'td.details-control', function () {

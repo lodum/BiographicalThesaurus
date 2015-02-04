@@ -25,45 +25,34 @@ $(document).ready(function () {
 		goToResults();
 	});
 
-	$("#checkbox_slider").on('click', function () {
-		// uncheck the checkbox related to the slider
-		$("#checkbox_slider").prop('checked', false);
-		// hide the div which contains the checkbox related to the slider
-		$("#box_slider").hide();
-		// update the status of the date selection to false
-		sliderDateSelection=false;
-		$("#slider").rangeSlider("values", 1100, 1400);
-		$("#eraSelector")[0][0].text = "...";
-		$("#eraSelector")[0].selectedIndex = 0;
-	});
-
 	$("#eraSelector").on('change', function (e, data) {
-		timetext = $("#eraSelector").val();
-		timetext = timetext.split("(");
-		timetext = timetext[1].split(")");
-		time = timetext[0].split("-");
-		startdate = 0;
-		enddate = 0;
-		if(time.length == 1) {
-			time = time[0].split(" ");
-			startdate = time[0];
+		var index = $("#eraSelector option:selected").index();
+		var eras = [{min: null,max: null}, {min: null,max: 500}, {min: 500,max: 1500}, {min: 500,max: 900}, {min: 900,max: 1250}, {min: 1250,max: 1500}, {min: 1500,max: null}, {min: 1500,max: 1800}, {min: 1500,max: 1650}, {min: 1680,max: 1800}, {min: 1800,max: null}, {min: 1800,max: 1870}, {min: 1871,max: 1945}, {min: 1945, max: null} ]
+		var startdate = eras[index].min;
+		var enddate = eras[index].max;
+		var sliderValues = $("#slider").editRangeSlider("values");
+		if(startdate == null) {
+			if(enddate == null) {
+				startdate = sliderValues.min;
+				enddate = sliderValues.max;
+			} else {
+				startdate = 0;
+			}
+		} else if(enddate == null) {
 			enddate = new Date().getFullYear();
-		} else {
-			startdate = time[0];
-			enddate = time[1];
 		}
-		$("#slider").rangeSlider("values", startdate, enddate);
+		$("#slider").editRangeSlider("values", startdate, enddate);
 		selectedDate = {min: startdate, max: enddate}
 	});
 
 	function initSlider() {
-		$("#slider").rangeSlider({
-			bounds: {min: 0, max: new Date().getFullYear()},
-			defaultValues:{min: 1100, max: 1400},
+		$("#slider").editRangeSlider({
+			bounds: {min: -500, max: new Date().getFullYear()},
+			defaultValues:{min: 0, max: new Date().getFullYear()},
 			arrows:false,
 			symmetricPositionning: true,
   			range: {min: 0},
-  			step:5,
+  			step:1,
 			scales: [
 				// Primary scale
 				{
@@ -89,9 +78,11 @@ $(document).ready(function () {
 				}
 			]
 		});
+		selectedDate = {min: $("#slider").editRangeSlider("values").min, max: $("#slider").editRangeSlider("values").max}
+		sliderDateSelection = true,
+		//selectedDate = {min: data.values.min, max: data.values.max}
 
-
-		$("#slider").bind("valuesChanging", function(e, data){
+		$("#slider").bind("valuesChanged", function(e, data){
 			$("#eraSelector")[0][0].text = "(" + data.values.min + "-" + data.values.max + ")";
 			$("#eraSelector")[0].selectedIndex = 0;
 			selectedDate = {min: data.values.min, max: data.values.max}

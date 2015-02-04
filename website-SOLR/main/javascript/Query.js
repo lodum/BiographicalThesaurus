@@ -77,7 +77,14 @@ Query.prototype.buildURL = function () {
 	srchstrng = "select?q=";
 	
 	if(this.person) {
-		srchstrng += 'preferredNameForThePerson:' + this.person;
+    	persons = decodeURIComponent(this.person);
+    	persons = persons.split(" ");
+    	$.each(persons, function (index) {
+    		if(index != 0) {
+    			srchstrng += ' AND '
+    		}
+    		srchstrng += 'preferredNameForThePerson:' + persons[index];
+    	});
 		attributeUsed = true;
 	}
 	if(this.activity) {
@@ -114,8 +121,6 @@ Query.prototype.buildURL = function () {
 		}
 		
 	}
-	
-	
 	
 
 
