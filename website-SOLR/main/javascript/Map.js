@@ -98,6 +98,18 @@ var Map = L.Map.extend({
 		activity: []
 	},
 
+	selection: {
+		birth: null,
+		death: null
+	},
+
+	selection_removed: {
+		birth: null,
+		death: null
+	},
+
+	placeType: null,
+
 	/***Methods
 	*
 	*
@@ -214,21 +226,71 @@ var Map = L.Map.extend({
 	*/
 	addMarker: function (lat, lng, name, type, id) {
 		if(type == "birth") {
-			var marker = new L.Marker([lat,lng], {color: 'green', fillOpacity: 2});
-			marker.bindPopup(new L.popup().setContent("<div><b>" + name + "</b></div>"));
+			var marker = new L.Marker([lat,lng]);
 			this.markerArray.birth[id] = marker;
 			this.birthplaces.addLayer(this.markerArray.birth[id]);
+			var that = this;
+			this.markerArray.birth[id].on('click', function (e) {
+				$(that).trigger("marker_clicked", [id] );
+			});
 		} else if (type == "death") {
-			var marker = new L.Marker([lat,lng], {color: 'red', fillOpacity: 2});
-			marker.bindPopup(new L.popup().setContent("<div><b>" + name + "</b></div>"));
+			var marker = new L.Marker([lat,lng]);
 			this.markerArray.death[id] = marker;
 			this.deathplaces.addLayer(this.markerArray.death[id]);
+			var that = this;
+			this.markerArray.death[id].on('click', function (e) {
+				$(that).trigger("marker_clicked", [id] );
+			});
 		} else if (type == "activity") {
-			var marker = new L.Marker([lat,lng], {color: 'blue', fillOpacity: 2});
-			marker.bindPopup(new L.popup().setContent("<div><b>" + name + "</b></div>"));
+			var marker = new L.Marker([lat,lng]);
 			this.markerArray.activity[id] = marker;
 			this.activityplaces.addLayer(this.markerArray.activity[id]);
+			var that = this;
+			this.markerArray.activity[id].on('click', function (e) {
+				$(that).trigger("marker_clicked", [id] );
+			});
 		}
+	},
+
+	highLight: function (id) {
+		//add previous selection back to layer
+		this.undoHighLight();		
+
+		//get current selection
+		this.selection_removed.birth = this.markerArray.birth[id];
+		this.selection_removed.death = this.markerArray.death[id];
+		
+
+		//remove selection from normal layer
+		//add selection as markers to map
+		if(this.selection_removed.birth) {
+			lat = this.selection_removed.birth._latlng.lat;
+			lng = this.selection_removed.birth._latlng.lng;
+			this.selection.birth = new L.Marker([lat,lng]);
+			this.birthplaces.removeLayer(this.selection_removed.birth);
+		}
+		if(this.selection_removed.death) {
+			lat = this.selection_removed.death._latlng.lat;
+			lng = this.selection_removed.death._latlng.lng;
+			this.selection.death = new L.Marker([lat,lng]);
+			this.deathplaces.removeLayer(this.selection_removed.death);
+		}
+		//display new markers
+		this.showMarkers();
+	},
+
+	undoHighLight: function () {
+		this.hideMarkers();
+		if(this.selection_removed.birth) {
+			this.birthplaces.addLayer(this.selection_removed.birth);
+		}
+		if(this.selection_removed.death) {
+			this.deathplaces.addLayer(this.selection_removed.death);
+		}
+		this.selection_removed.birth = null;
+		this.selection_removed.death = null;
+		this.selection.birth = null;
+		this.selection.death = null;
 	},
 
 	/** Open a popup of a marker
@@ -252,24 +314,59 @@ var Map = L.Map.extend({
 		this.layersControl.addOverlay(this.birthplaces, 'Birth');
 		this.layersControl.addOverlay(this.deathplaces, 'Death');
 		this.layersControl.addOverlay(this.activityplaces, 'Activity');
+		this.placeType = placeType;		
+		this.showMarkers();
+		this.addControl(this.layersControl);
+	},
+
+	hideMarkers: function () {
 		var that = this;
-		if(placeType) {
-			$.each(placeType, function (index) {
-				if(placeType[index] == 'Birth') {
+		if(this.placeType) {
+			$.each(this.placeType, function (index) {
+				if(that.placeType[index] == 'Birth') {
+					that.removeLayer(that.birthplaces);
+				} else if(that.placeType[index] == 'Death') {
+					that.removeLayer(that.deathplaces);
+				}else if(that.placeType[index] == 'Activity') {
+					that.removeLayer(that.activityplaces);
+				}
+			});	
+		} else {
+			this.removeLayer(this.birthplaces);
+			this.removeLayer(this.deathplaces);
+			this.removeLayer(this.activityplaces);
+		}
+		if(this.selection.birth) {
+			this.removeLayer(this.selection.birth);
+		}
+		if(this.selection.death) {
+			this.removeLayer(this.selection.death);
+		}
+	},
+
+	showMarkers: function () {
+		var that = this;
+		if(this.placeType) {
+			$.each(this.placeType, function (index) {
+				if(that.placeType[index] == 'Birth') {
 					that.addLayer(that.birthplaces);
-				} else if(placeType[index] == 'Death') {
+				} else if(that.placeType[index] == 'Death') {
 					that.addLayer(that.deathplaces);
-				}else if(placeType[index] == 'Activity') {
+				}else if(that.placeType[index] == 'Activity') {
 					that.addLayer(that.activityplaces);
 				}
 			});	
 		} else {
-			that.addLayer(that.birthplaces);
-			that.addLayer(that.deathplaces);
-			that.addLayer(that.activityplaces);
+			this.addLayer(this.birthplaces);
+			this.addLayer(this.deathplaces);
+			this.addLayer(this.activityplaces);
 		}
-
-		this.addControl(this.layersControl);
+		if(this.selection.birth) {
+			this.addLayer(this.selection.birth);
+		}
+		if(this.selection.death) {
+			this.addLayer(this.selection.death);
+		}
 	},
 
 	showMiniMap: function () {
@@ -278,7 +375,6 @@ var Map = L.Map.extend({
 		var minimapLayer = new L.TileLayer(osmUrl, {minZoom: 0, maxZoom: 13, attribution: osmAttrib});
 		var miniMap = new L.Control.MiniMap(minimapLayer, {toggleDisplay:true, zoomLevelFixed:10}).addTo(this);
 	},
-
 
 	drawShape: function (wkt, type) {
 		if(type == "Polygon") {

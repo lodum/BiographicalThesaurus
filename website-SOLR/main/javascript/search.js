@@ -25,6 +25,7 @@ $(document).ready(function () {
 		goToResults();
 	});
 
+
 	$("#eraSelector").on('change', function (e, data) {
 		var index = $("#eraSelector option:selected").index();
 		var eras = [{min: null,max: null}, {min: null,max: 500}, {min: 500,max: 1500}, {min: 500,max: 900}, {min: 900,max: 1250}, {min: 1250,max: 1500}, {min: 1500,max: null}, {min: 1500,max: 1800}, {min: 1500,max: 1650}, {min: 1680,max: 1800}, {min: 1800,max: null}, {min: 1800,max: 1870}, {min: 1871,max: 1945}, {min: 1945, max: null} ]

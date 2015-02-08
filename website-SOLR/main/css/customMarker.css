@@ -20,6 +20,29 @@
 }
 
 
+.marker-cluster-birth-disabled {
+	background-color: rgba(238, 233, 233, 0.6);
+}
+.marker-cluster-birth-disabled div {
+	background-color: rgba(237, 220, 190, 0.6);
+}
+
+.marker-cluster-activity-disabled {
+	background-color: rgba(238, 233, 233, 0.6);
+}
+.marker-cluster-activity-disabled div {
+	background-color: rgba(237, 220, 190, 0.6);
+}
+
+.marker-cluster-death-disabled {
+	background-color: rgba(238, 233, 233, 0.6);
+}
+.marker-cluster-death-disabled div {
+	background-color: rgba(237, 220, 190, 0.6);
+}
+
+
+
 .marker-cluster-s {
 	background-clip: padding-box;
 	border-radius: 10px;
