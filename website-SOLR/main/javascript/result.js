@@ -164,7 +164,7 @@ $(document).ready(function () {
 		$hline.append($("<td></td>").html("<b>Geb. Datum</b>"));
 		$hline.append($("<td></td>").html("<b>Ster. Datum</b>"));
 		$hline.append($("<td></td>").html("<b>Beruf</b>"));
-		$hline.append($("<td></td>").html("<b>GND ID</b>"));
+		$hline.append($("<td style=\"display:none;\"></td>").html("<b>GND ID</b>"));
 
 		$hline.append($("<td class=\"details-control sorting_disabled headrow\" rowspan=\"1\" colspan=\"1\" aria-label=\"\" style=\"width: 18px;\"></td>").html(""));
 		$head.append($hline);
@@ -175,8 +175,11 @@ $(document).ready(function () {
 			$bline.append( $( "<td></td>" ).html( dat.preferredNameForThePerson ) );
 			$bline.append( $( "<td></td>" ).html( dat.placeOfBirth ) );
 			$bline.append( $( "<td></td>" ).html( dat.placeOfDeath ) );
-			$bline.append( $( "<td></td>" ).html( dat.dateOfBirth ) );
-			$bline.append( $( "<td></td>" ).html( dat.dateOfDeath ) );
+
+			// Dates
+			$bline.append( $( "<td></td>" ).html( details.dateFormat(dat.dateOfBirth) ) );
+			$bline.append( $( "<td></td>" ).html( details.dateFormat(dat.dateOfDeath) ) );
+			
 			var occ = "";
 			if(dat.professionOrOccupation) {
 				$.each(dat.professionOrOccupation, function (index) {
@@ -187,7 +190,7 @@ $(document).ready(function () {
 				});
 			}
 			$bline.append( $( "<td></td>" ).html( occ ) );
-			$bline.append( $( "<td class=\"gndid\"></td>" ).html( dat.id ) );
+			$bline.append( $( "<td class=\"gndid\" style=\"display:none;\"></td>" ).html( dat.id ) );
 			
 			$bline.append( $( "<td class=\"details-control\"></td>" ).html('') );
 			
@@ -217,65 +220,15 @@ $(document).ready(function () {
 	            // Open this row
         		var gndID = $('td.gndid', tr).text();
         		map.highLight(gndID);
-        		getAdditionalData(gndID, row);        		
+
+        		//Load Details
+        		details.load(gndID, row);        		
+	            
 	            td.addClass('shown');
 	            tr.addClass('shown');
 	        }
     	} );
 	};
-
-	function getAdditionalData(gndID, row) {
-       	var solrQueryUrl = 'http://giv-lodum.uni-muenster.de:8983/solr/gnd/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';
-		var birth = '';	
-
- 		$.getJSON(solrQueryUrl, function(result){
-			
-			var person = result.response.docs[0];
-
-			var daten = '';
-
-			daten = 
-				'<table class="personDetails" style="width:100%">' +
-				'<tr><td align="right" style="width:120px">Name : </td><td>' + person.preferredNameForThePerson + '</td></tr>' +
-				'<tr><td align="right">Geburtsdatum : </td><td>' 	+ person.dateOfBirth + '</td></tr>' +
-				'<tr><td align="right">Geburtsort : </td><td>' 	+ person.placeOfBirth + '</td></tr>';
-
-			if (person.dateOfDeath != undefined)
-				daten += '<tr><td align="right">Sterbedatum : </td><td>' 	+ person.dateOfDeath + '</td></tr>' +
-					'<tr><td align="right">Sterbeort : </td><td>' 	+ person.placeOfDeath + '</td></tr>';
-
-			daten += '<tr><td>&nbsp;</td><td></td></tr>';
-
-			if (person.id != undefined)
-				daten += 
-					'<tr><td align="right">D-NB : </td><td>' + 
-					'<a href="' + person.id + '">' + person.id + '</a>' + '</td></tr>';
-
-			if (person.wikipedia != undefined)
-				daten +=	
-					'<tr><td align="right">Wikipedia : </td><td>' + 
-					'<a href="' + person.wikipedia + '">' + person.wikipedia + '</a>' + '</td></tr>';
-
-			daten += "</table>"
-
-			var dnbQueryUrl = 'http://hub.culturegraph.org/entityfacts/' + gndID;
-			
-			$.getJSON(dnbQueryUrl, function(dnbResult){
-				
-				if (dnbResult != undefined && dnbResult.person != undefined && dnbResult.person.depiction != undefined) {
-					var imgURL = dnbResult.person.depiction.thumbnail;
-
-					if (imgURL != undefined)
-						daten += "<img src=\"" + imgURL + "\"/>";
-				};
-
-			}).always(function() {
-					row.child( daten ).show();
-				});
-	    });
-	};
-
-
 
 	$(map).on('marker_clicked', function (e, id) {
 		dtable.search(id);

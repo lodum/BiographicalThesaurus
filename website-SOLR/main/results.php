@@ -123,6 +123,7 @@
 		<script src="javascript/Query.js" type="text/javascript"></script>
 		<script src="javascript/Map.js" type="text/javascript"></script>
 		<script src="javascript/result.js"></script>
+		<script src="javascript/details.js"></script>
 
 	</body>
 </html>
