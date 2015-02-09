@@ -231,12 +231,13 @@ $(document).ready(function () {
 	};
 
 	$(map).on('marker_clicked', function (e, id) {
+		map.highLight(id);
 		dtable.search(id);
 		dtable.draw();
 		var index = 0;
 		$.each(dtable.rows().data(), function (index) {
 			if(dtable.row(index).data()[6] == id) {
-				getAdditionalData(id, dtable.row(index));
+				details.load(id, dtable.row(index));
 			}
 		});
 		
