@@ -1,4 +1,4 @@
-var Query = function() {
+var Query = function(personSearch) {
 	this.basePath = "http://giv-lodum.uni-muenster.de:8983/solr/";
 	this.core = "collection1";
 	this.rows = "20";
@@ -10,6 +10,7 @@ var Query = function() {
 	this.activity = null;
 	this.spatialField = null;
 	this.queryReturn = [];
+	this.personSearch = personSearch;
 };
 
 Query.prototype.setRows = function (rows) {
@@ -77,16 +78,23 @@ Query.prototype.buildURL = function () {
 	srchstrng = "select?q=";
 	
 	if(this.person) {
-    	persons = decodeURIComponent(this.person);
-    	persons = persons.split(" ");
-    	$.each(persons, function (index) {
-    		if(index != 0) {
-    			srchstrng += ' AND '
-    		}
-    		srchstrng += 'preferredNameForThePerson:' + persons[index];
-    	});
-		attributeUsed = true;
+		if(this.personSearch) {
+	    	persons = decodeURIComponent(this.person);
+	    	persons = persons.split(" ");
+	    	$.each(persons, function (index) {
+	    		if(index != 0) {
+	    			srchstrng += ' AND ';
+	    		}
+	    		srchstrng += 'preferredNameForThePerson:' + persons[index];
+	    	});
+			attributeUsed = true;
+		} else {
+			srchstrng += 'preferredNameForThePerson:' + this.person;
+			attributeUsed = true;
+		}
 	}
+	
+
 	if(this.activity) {
 		if(attributeUsed) {
 			srchstrng += ' AND ';

@@ -7,29 +7,18 @@
 $( "#person" ).autocomplete(
   {
     source: function( request, response ) {
-      suggester = new Suggester();
-      suggester.setField("preferredNameForThePerson");
+      suggester = new Query(false);
       suggester.setCore("test_all");
-      suggester.setSearchTerm(request.term.toLowerCase());
+      suggester.setRows("7");
+      suggester.setPerson(request.term);
 
       $.getJSON(suggester.buildURL(), function(result){
-
-      		var tmp = result.facet_counts.facet_fields.preferredNameForThePerson;
+      		var tmp = result.response.docs;
       		var data=[];
-      		var number=[];
 			
 			$.each(tmp, function (index, value) {
-				if(index % 2) {
-					number.push(value);
-				} else {
-					data.push(value);
-				}
-			});
-        	
-			$.each(data, function (index) {
-				data[index] = data[index] + " (" + number[index] + ")";
-			});
-        	
+        data.push(value.preferredNameForThePerson);
+			});     	
 
 	        response($.map(data, function(item) {
 	            return {
@@ -41,10 +30,6 @@ $( "#person" ).autocomplete(
       });
     },
 
-    select: function (event, ui) {
-    	ui.item.label = ui.item.label.split(" (")[0];
-    	ui.item.value = ui.item.value.split(" (")[0];
-    },
     minLength: 2,
     delay: 200
   }
@@ -65,15 +50,19 @@ $( "#place" ).autocomplete(
 
       $.getJSON(suggester.buildURL(), function(result){
         var tmp = result.facet_counts.facet_fields.placeOfBirth;
-      		var data=[];
-      		var number=[];
+      	var data=[];
+      	var number=[];
+        var count = 0;
 			
 			$.each(tmp, function (index, value) {
-				if(index % 2) {
-					number.push(value);
-				} else {
-					data.push(value);
-				}
+        if(count < 7){
+          if(index % 2) {
+            number.push(value);
+            count++;
+          } else {
+            data.push(value);
+          }
+        }
 			});
         	
 			$.each(data, function (index) {
@@ -113,21 +102,26 @@ $("#occ").autocomplete(
 
       $.getJSON(suggester.buildURL(), function(result){
         var tmp = result.facet_counts.facet_fields.professionOrOccupation;
-      		var data=[];
-      		var number=[];
+    		var data=[];
+    		var number=[];
+        var count = 0;
 			
 			$.each(tmp, function (index, value) {
-				if(index % 2) {
-					number.push(value);
-				} else {
-					data.push(value);
-				}
+        if(count < 7) {
+          if(index % 2) {
+            number.push(value);
+            count++;
+          } else {
+            data.push(value);
+          }
+        }
+				
 			});
-        	
+
 			$.each(data, function (index) {
 				data[index] = data[index] + " (" + number[index] + ")";
 			});
-        	
+
 
 	        response($.map(data, function(item) {
 	            return {

@@ -143,13 +143,21 @@ var Map = L.Map.extend({
 		var drawControlOptions = ({
 			position: 'topleft',
 			draw: {
-				rectangle: true,
+				rectangle: {
+					shapeOptions: {
+						color: 'blue'
+					}
+				},
 				marker: false,
 				polyline: false,
-				circle: true,
+				circle: {
+					shapeOptions: {
+						color: 'blue'
+					}
+				},
 				polygon: {
 					shapeOptions: {
-						color: 'purple'
+						color: 'blue'
 					},
 					allowIntersection: false,
 					drawError: {
@@ -392,7 +400,7 @@ var Map = L.Map.extend({
 			});
 
 			var polygon = new L.Polygon(polygonPoints);
-			this.layersControl.addOverlay(polygon, 'Shape');
+			polygon.addTo(this.regionLayer);
         	this.addLayer(polygon);     
 			
 
@@ -409,9 +417,10 @@ var Map = L.Map.extend({
 			rad = rad * 40000 / 360 * 1000;
 
 			var circle = new L.Circle(new L.LatLng(lat, lng), rad);
-			this.layersControl.addOverlay(circle, 'Shape');
+			circle.addTo(this.regionLayer);
          	this.addLayer(circle);
 		}
+		console.log(this.regionLayer);
 	}
 
 });

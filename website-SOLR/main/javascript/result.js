@@ -11,7 +11,7 @@ $(document).ready(function () {
 	);
 	map.addTileLayer(tilelayer);
 	
-	var query = new Query();	
+	var query = new Query(true);	
 	query.setCore("test_all");
 	query.setRows("999");
 

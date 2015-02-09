@@ -10,15 +10,86 @@ $(document).ready(function () {
 		}
 	);
 	map.addTileLayer(tilelayer);
-	map.initLeafletDraw();
 	var selectedDate = null;
 	initSlider();
-
-	$("[rel='tooltip']").tooltip();
-
+	map.initLeafletDraw();
 	$('#box_birthplace').prop('checked', true);
 	$('#box_deathplace').prop('checked', true);
 	$('#box_activityplace').prop('checked', true);
+
+
+	function getParam(variable) {
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			if (pair[0] == variable) {
+				return pair[1];
+			}
+		}
+		return (false);
+	};
+
+	var _place = getParam('place');
+	var _person = getParam('person');
+	var _pType = getParam('pType');
+	var _start = getParam('startDate');
+	var _end = getParam('endDate');
+	var _occ = getParam('occ');
+	if(_place) {
+		var tmp = _place;
+		try {
+			_place = decodeURI(_place);
+			_place = JSON.parse(_place);
+			if(_place.type == "Circle") {
+				_place.wkt = "CIRCLE(" + _place.coordinates + " d=" + _place.radius + ")";
+			}
+		} catch(e) {
+			// place is no object, so place is a city and not a polygon or circle
+			_place = tmp;
+			$('#place').val(_place);
+			$('#place').text(_place);
+		}
+		if(typeof _place != 'string') {
+			map.drawShape(_place.wkt, _place.type);
+		}
+	}
+	if(_person) {
+		$('#person').val(_person);
+		$('#person').text(_person);
+	}
+	if(_pType) {
+		_pType = _pType.split(',');
+		$('#box_birthplace').prop('checked', false);
+		$('#box_deathplace').prop('checked', false);
+		$('#box_activityplace').prop('checked', false);
+		$.each(_pType, function (index) {
+			if(_pType[index] == 'Birth'){
+				$('#box_birthplace').prop('checked', true);
+			}
+			if(_pType[index] == 'Death'){
+				$('#box_deathplace').prop('checked', true);
+			}
+			if(_pType[index] == 'Activity'){
+				$('#box_activityplace').prop('checked', true);
+			}
+		});
+	}
+	if(_start) {
+		selectedDate = {min: _start, max: selectedDate.max};
+		$("#slider").editRangeSlider("values", selectedDate.min, selectedDate.max);
+	}
+	if(_end) {
+		selectedDate = {min: selectedDate.min, max: _end};
+		$("#slider").editRangeSlider("values", selectedDate.min, selectedDate.max);
+	}
+	if(_occ) {
+		$('#occ').val(_occ);
+		$('#occ').text(_occ);
+	}
+
+
+	$("[rel='tooltip']").tooltip();
 
 	$('#btn-search').on('click', function () {
 		console.log("click");
@@ -121,7 +192,8 @@ $(document).ready(function () {
 			enddate = selectedDate.max;
 		}
 
-		var target = "results.php?";
+		var suffix = "results.php?";
+		var target = '';
 		var targetControl = target;
 		if (person && person != "") {
 			target += "person=" + person;
@@ -164,7 +236,8 @@ $(document).ready(function () {
 			}
 			target += "place=" + place;
 		}
-		
-		window.location = target;
+		var stateObj = { foo: "bar" };
+		history.pushState(stateObj, "page 2", "search.php?" + target);
+		window.location = suffix + target;
 	}
 });
