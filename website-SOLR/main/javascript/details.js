@@ -137,40 +137,42 @@ var details = new function() {
 
 					litArray.sort(function(a, b){return a.title.localeCompare(b.title);});
 					
-					litTable = '<table class="litratureTable" style="width:100%">' +
-							   '<tr><td><b>Literatur</b></td></tr>';
+					if (litArray.length > 0) {
+						litTable = '<table class="litratureTable" style="width:100%">' +
+								   '<tr><td><b>Literatur</b></td></tr>';
 
-					$.each( litArray, function( i, lit ){
-						litTable += '<tr><td>';
-						litTable += '<a href="' + lit.titleID + '" target="_blank">' + lit.title + '</a>';
+						$.each( litArray, function( i, lit ){
+							litTable += '<tr><td>';
+							litTable += '<a href="' + lit.titleID + '" target="_blank">' + lit.title + '</a>';
 
-						if ((lit.authors != undefined && lit.authors.length > 0) || (lit.contributors != undefined && lit.contributors.length > 0))
-							litTable += ' - ';
+							if ((lit.authors != undefined && lit.authors.length > 0) || (lit.contributors != undefined && lit.contributors.length > 0))
+								litTable += ' - ';
 
-						if (lit.authors != undefined && lit.authors.length > 0) {
-							
-							$.each( lit.authors, function( i, auth ){
-								litTable += ' <a href="' + auth.nameID + '" target="_blank">' + auth.name + '</a>;';
-							});
-						};
+							if (lit.authors != undefined && lit.authors.length > 0) {
+								
+								$.each( lit.authors, function( i, auth ){
+									litTable += ' <a href="' + auth.nameID + '" target="_blank">' + auth.name + '</a>;';
+								});
+							};
 
-						if (lit.contributors != undefined && lit.contributors.length > 0) {
-							
-							$.each( lit.contributors, function( i, cont ){
-								litTable += ' <a href="' + cont.nameID + '" target="_blank">' + cont.name + '</a>;';
-							});
-						};
+							if (lit.contributors != undefined && lit.contributors.length > 0) {
+								
+								$.each( lit.contributors, function( i, cont ){
+									litTable += ' <a href="' + cont.nameID + '" target="_blank">' + cont.name + '</a>;';
+								});
+							};
 
-						if (lit.year != undefined)
-							litTable += ' (' + lit.year + ')';
+							if (lit.year != undefined)
+								litTable += ' (' + lit.year + ')';
 
-						litTable += '</td></tr>';
-					});
+							litTable += '</td></tr>';
+						});
 
-					litTable += '</table>';
+						litTable += '</table>';
 
-					$('#litrature' + gndID).html(litTable);
-
+						$('#litrature' + gndID).html(litTable);
+					};
+					
 					//console.log(litTable);
 				};
 			}
