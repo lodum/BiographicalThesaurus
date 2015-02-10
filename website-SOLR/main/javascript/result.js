@@ -45,11 +45,19 @@ $(document).ready(function () {
 		if($("#btn-toggle-map").text() == "<") {
 			$("#btn-toggle-map").text(">");
 			$("#map").show();
+
 			$("#result-container").attr("class","col-xs-6 col-md-6 pull-left");
+
+			$('#datatable').width($('#resultdiv').width());
+			dtable.draw();
 		} else {
 			$("#btn-toggle-map").text("<");
 			$("#map").hide();
+
 			$("#result-container").attr("class","col-xs-12 col-md-12 pull-left");
+
+			$('#datatable').width($('#resultdiv').width());
+			dtable.draw();
 		}
 		
 	});
@@ -147,7 +155,7 @@ $(document).ready(function () {
 		$('#result_text').html('');
 	}
 
-	var $table = $("<table id='datatable'></table>");
+	var $table = $('<table id="datatable" style="width=100%;"></table>');
 	var $head = $("<thead></thead>");
 	var $body = $("<tbody></tbody>");
 	var $hline = $("<tr></tr>");
