@@ -1,5 +1,5 @@
 var Query = function(personSearch) {
-	this.basePath = "http://giv-lodum.uni-muenster.de:8983/solr/";
+	this.basePath = "http://ubsvirt112.uni-muenster.de:8181/solr/";
 	this.core = "collection1";
 	this.rows = "20";
 	this.spatial = null;

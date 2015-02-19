@@ -8,7 +8,7 @@ var Map = L.Map.extend({
 	regionLayer: new L.FeatureGroup(),
 	// create a layer to display information about places of birth
 	birthplaces: new L.MarkerClusterGroup({
-		maxClusterRadius:3, 
+		maxClusterRadius:50, 
 		singleMarkerMode:true, 
 		spiderfyDistanceMultiplier:2, 
 		iconCreateFunction: function(cluster) {
@@ -35,7 +35,7 @@ var Map = L.Map.extend({
 	}),
 	// create a layer to display information about places of death
 	deathplaces: new L.MarkerClusterGroup({
-		maxClusterRadius:3, 
+		maxClusterRadius:50, 
 		singleMarkerMode:true, 
 		spiderfyDistanceMultiplier:2, 
 		iconCreateFunction: function(cluster) {
@@ -62,7 +62,7 @@ var Map = L.Map.extend({
 	}),
 	// create a layer to display information about places of activity
 	activityplaces: new L.MarkerClusterGroup({
-		maxClusterRadius:3, 
+		maxClusterRadius:50, 
 		singleMarkerMode:true, 
 		spiderfyDistanceMultiplier:2, 
 		iconCreateFunction: function(cluster) {
@@ -251,11 +251,13 @@ var Map = L.Map.extend({
 			});
 		} else if (type == "activity") {
 			var marker = new L.Marker([lat,lng]);
-			this.markerArray.activity[id] = marker;
-			this.activityplaces.addLayer(this.markerArray.activity[id]);
+			this.markerArray.activity[id] = [];
+			this.markerArray.activity[id].push(marker);
+			var number = this.markerArray.activity[id].length - 1;
+			this.activityplaces.addLayer(this.markerArray.activity[id][number]);
 			var that = this;
-			this.markerArray.activity[id].on('click', function (e) {
-				$(that).trigger("marker_clicked", [id] );
+			this.markerArray.activity[id][number].on('click', function (e) {
+				$(that).trigger("marker_clicked", [id, number] );
 			});
 		}
 	},
@@ -401,7 +403,8 @@ var Map = L.Map.extend({
 
 			var polygon = new L.Polygon(polygonPoints);
 			polygon.addTo(this.regionLayer);
-        	this.addLayer(polygon);     
+        	this.addLayer(polygon);  
+        	this.isDrawn = true;   
 			
 
 		} else if (type == "Circle") {
@@ -419,8 +422,8 @@ var Map = L.Map.extend({
 			var circle = new L.Circle(new L.LatLng(lat, lng), rad);
 			circle.addTo(this.regionLayer);
          	this.addLayer(circle);
+         	this.isDrawn = true; 
 		}
-		console.log(this.regionLayer);
 	}
 
 });

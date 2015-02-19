@@ -192,7 +192,7 @@ $(document).ready(function () {
 			enddate = selectedDate.max;
 		}
 
-		var suffix = "results.php?";
+		var suffix = "results.php?core=gnd&";
 		var target = '';
 		var targetControl = target;
 		if (person && person != "") {

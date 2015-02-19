@@ -12,8 +12,16 @@ $(document).ready(function () {
 	map.addTileLayer(tilelayer);
 	
 	var query = new Query(true);	
-	query.setCore("test_all");
-	query.setRows("999");
+	query.setRows("99999");
+
+
+	var core = getParam('core');
+	if(core && core != "") {
+		query.setCore(core);
+		if(core == "gnd2") {
+			$('#coreSelector')[0].selectedIndex = 1;
+		}
+	}
 
 	var searchstring = getParam('searchstring');
 
@@ -45,17 +53,13 @@ $(document).ready(function () {
 		if($("#btn-toggle-map").text() == "<") {
 			$("#btn-toggle-map").text(">");
 			$("#map").show();
-
 			$("#result-container").attr("class","col-xs-6 col-md-6 pull-left");
-
 			$('#datatable').width($('#resultdiv').width());
 			dtable.draw();
 		} else {
 			$("#btn-toggle-map").text("<");
 			$("#map").hide();
-
 			$("#result-container").attr("class","col-xs-12 col-md-12 pull-left");
-
 			$('#datatable').width($('#resultdiv').width());
 			dtable.draw();
 		}
@@ -64,11 +68,15 @@ $(document).ready(function () {
 	
 	var begindate = getParam('beginDate');
 	if(begindate) {
-		query.setStart(begindate);
+		if(begindate != 0) {
+			query.setStart(begindate);
+		}
 	}
 	var enddate = getParam('endDate');
 	if(enddate) {
-		query.setEnd(enddate);
+		if(enddate != new Date().getFullYear()) {
+			query.setEnd(enddate);
+		}
 	}
 	var occ = getParam('occ');
 	if(occ) {
@@ -79,11 +87,16 @@ $(document).ready(function () {
 		placeType = placeType.split(",");
 		query.initSpatialField();
 		$.each(placeType, function (index) {
-			tmp = 'placeOf' + placeType[index];
-			query.addSpatialField(tmp);
+			if(placeType[index] == 'Activity') {
+				tmp = 'placesOfActivity'
+				query.addSpatialField(tmp);
+			} else {
+				tmp = 'placeOf' + placeType[index];
+				query.addSpatialField(tmp);
+			}
 		});
 	}
-	
+
 	//query.execute()
 	$.getJSON(query.buildURL(), function(result){
 		processData(result.response.docs);
@@ -101,6 +114,25 @@ $(document).ready(function () {
 		}
 		return (false);
 	}
+
+	$('#coreSelector').on('change', function (e) {
+		var val = $("#coreSelector option:selected").val();
+		var query = window.location.search.substring(1);
+		vars = query.split("&");
+		var newURL = "results.php?";
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			if (pair[0] == "core") {
+				pair[1] = val;
+			}
+			if(i != 0) {
+				newURL += "&"
+			}
+			newURL += pair[0] + "=" + pair[1];
+			console.log(newURL);
+		}
+		window.location = newURL;
+	});
 
 	function processData (data) {
 		fillTable(data);
@@ -134,14 +166,16 @@ $(document).ready(function () {
 				map.addMarker(lat, lng, dat.preferredNameForThePerson, "death",dat.id);
 			}
 
-			wkt = dat.placeOfActivity_geom;
+			wkt = dat.placesOfActivity_geom;
 			if(wkt) {
-				cd = wkt[0].split("POINT(");
-				cd = cd[1].split(")");
-				cd = cd[0].split(" ");
-				lat = cd[1];
-				lng = cd[0];
-				map.addMarker(lat, lng, dat.preferredNameForThePerson, "activity", dat.id);
+				$.each(wkt, function (index) {
+					cd = wkt[index].split("POINT(");
+					cd = cd[1].split(")");
+					cd = cd[0].split(" ");
+					lat = cd[1];
+					lng = cd[0];
+					map.addMarker(lat, lng, dat.preferredNameForThePerson, "activity", dat.id);
+				});
 			}
 		});
 		map.addMarkerLayer(placeType);
