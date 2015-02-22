@@ -28,6 +28,10 @@
 		margin: 0;
 	}
 
+
+
+
+
 	img {
 		max-width: none
 	}
@@ -52,6 +56,10 @@
 	  
 /* ------------------------------ css classes (in alphabetical order) ------------------------------ */
 
+
+	.affix {
+		right: 0;
+	}
 	/* specifying the properties of dropdown list (for dropdown buttons) */
 	.dropdown-menu {
 	  z-index: 1000;

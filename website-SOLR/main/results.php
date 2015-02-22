@@ -86,7 +86,7 @@
 					<span id="titleExportedResults" style="display:none"><?php echo $lang['TITLE_EXPORTED_RESULTS']; ?></span> 
 				</div>
 				<!-- container for the map (the map is on the right hand-side) -->
-				<div id="map" class="col-xs-6 col-md-6 pull-right"></div>
+				<div id="map" class="col-xs-6 col-md-6 pull-right" data-spy="affix" data-offset-top="0" class="col-xs-6 col-md-6 pull-right"></div>
 			</div>
 		</div>
 
@@ -114,6 +114,7 @@
 		<script src="../assets/js/bootstrap-collapse.js"></script>
 		<script src="../assets/js/bootstrap-carousel.js"></script>
 		<script src="../assets/js/bootstrap-typeahead.js"></script>
+		<script src="../assets/js/bootstrap-affix.js"></script>
 		<!-- Leaflet -->
 		<script src="../assets/leaflet-0.6.4/leaflet.js"></script>
 		<!-- Leaflet Minimap -->
