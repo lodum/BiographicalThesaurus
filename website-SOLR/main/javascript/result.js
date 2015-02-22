@@ -14,6 +14,10 @@ $(document).ready(function () {
 	var query = new Query(true);	
 	query.setRows("99999");
 
+	//To Store all selected Persons from Table
+	var selectedAll = false;
+	var selection = [];
+	var allData;
 
 	var core = getParam('core');
 	if(core && core != "") {
@@ -100,6 +104,7 @@ $(document).ready(function () {
 	//query.execute()
 	$.getJSON(query.buildURL(), function(result){
 		processData(result.response.docs);
+		allData = result.response.docs;
     });
 	
 
@@ -200,20 +205,24 @@ $(document).ready(function () {
 		clearTable();
 		$("#pagesContainer").show();
 		$("#resultsPerPageContainer").show();
-		$hline.append($("<td></td>").html( "<b>Name</b>" ) );
-		$hline.append($("<td></td>").html("<b>Geb. Ort</b>"));
-		$hline.append($("<td></td>").html("<b>Ster. Ort</b>"));
-		$hline.append($("<td></td>").html("<b>Geb. Datum</b>"));
-		$hline.append($("<td></td>").html("<b>Ster. Datum</b>"));
-		$hline.append($("<td></td>").html("<b>Beruf</b>"));
-		$hline.append($("<td style=\"display:none;\"></td>").html("<b>GND ID</b>"));
+		$hline.append($('<th class="select-all"></th>').html('<b>Alle <br> <input class="select-all" type="checkbox"></b>') );
+		$hline.append($("<th></th>").html( "<b>Name</b>" ) );
+		$hline.append($("<th></th>").html("<b>Geb. Ort</b>"));
+		$hline.append($("<th></th>").html("<b>Ster. Ort</b>"));
+		$hline.append($("<th></th>").html("<b>Geb. Datum</b>"));
+		$hline.append($("<th></th>").html("<b>Ster. Datum</b>"));
+		$hline.append($("<th></th>").html("<b>Beruf</b>"));
+		$hline.append($("<th style=\"display:none;\"></th>").html("<b>GND ID</b>"));
 
-		$hline.append($("<td class=\"details-control sorting_disabled headrow\" rowspan=\"1\" colspan=\"1\" aria-label=\"\" style=\"width: 18px;\"></td>").html(""));
+		$hline.append($("<th class=\"details-control sorting_disabled headrow\" rowspan=\"1\" colspan=\"1\" aria-label=\"\" style=\"width: 18px;\"></th>").html(""));
 		$head.append($hline);
 		$table.append($head);
 
 		$.each(data, function (index, dat) {
 			var $bline = $( "<tr></tr>" );
+			$bline.append( $( '<td></td>' ).html( '<input class="select-person" id="cb_' + dat.id + '" type="checkbox">' ) );
+
+
 			$bline.append( $( "<td></td>" ).html( dat.preferredNameForThePerson ) );
 			$bline.append( $( "<td></td>" ).html( dat.placeOfBirth ) );
 			$bline.append( $( "<td></td>" ).html( dat.placeOfDeath ) );
@@ -270,6 +279,46 @@ $(document).ready(function () {
 	            tr.addClass('shown');
 	        }
     	} );
+
+		$('#datatable thead').on('click', 'input.select-all', function () {
+			if(selectedAll) {
+				$.each(dtable.rows().data(), function (index) {
+					id = dtable.row(index).data()[0].split('id="')[1];
+					id = id.split('"')[0];
+					if(document.getElementById(id)) {
+						document.getElementById(id).checked = false;
+					}
+				});
+				selection = [];
+				selectedAll = false;
+			} else {
+				$.each(dtable.rows().data(), function (index) {
+					id = dtable.row(index).data()[0].split('id="')[1];
+					id = id.split('"')[0];
+					if(document.getElementById(id)) {
+						document.getElementById(id).checked = true;
+					}
+					id = id.split('cb_')[1];
+					selection[id] = id;
+				});
+				selectedAll = true;
+			}
+		} );
+
+		$('#datatable tbody').on('click', 'input.select-person', function () {
+			_id = this.id.split("cb_")[1];
+			if(selection[_id]) {
+				console.log("remove");
+				index = selection.indexOf(_id);
+				if(index > -1){
+					selection.splice(index, 1);
+				}
+			} else {
+				console.log("add");
+				selection[_id] = _id;
+			}
+		} );
+
 	};
 
 	$(map).on('marker_clicked', function (e, id) {
@@ -284,5 +333,72 @@ $(document).ready(function () {
 		});
 		
 	});
+
+
+	$('#exportButton').on('click', function (e) {
+		var _export = exportSelection('json');
+		var data = "data:Application/octet-stream;text/json;filename=persons.json;charset=utf-8," + encodeURIComponent(_export);
+		window.open(data, 'persons.json');
+	});
+	$('#printButton').on('click', function (e) {
+		var printWin = window.open('','','left=0,top=0,width=800,height=600,toolbar=0,scrollbars=0,status  =0');
+		printWin.document.write(printSelection());
+		printWin.document.close();
+		printWin.focus();
+		printWin.print();
+		printWin.close();
+		//var printWindow = window.open("", "Print Window", "width=800, height=600");
+		//printWindow.document.write(printSelection());
+	});
+
+
+	function exportSelection (format) {
+		var returnData ={
+			person : []
+		};
+		if(format == 'json') {
+			if(selectedAll || selection.length != 0) {
+				var key;
+				var result = [];
+				for(key in selection) {
+					result.push($.grep(allData, function(e){ return e.id == key; })[0]);
+				}
+				$.each(result, function (index, data) {
+					var key;
+					var person = {};
+					for(key in data) {
+						person[key] = data[key];
+					}
+					returnData.person.push(person);
+				});
+				return JSON.stringify(returnData);
+			} else {
+				return null;
+			}
+		}
+	}
+
+
+	function printSelection () {
+		var returnData = '<br> ---------------------------------------- <br>';
+		if(selectedAll || selection.length != 0) {
+			var key;
+			var result = [];
+			for(key in selection) {
+				result.push($.grep(allData, function(e){ return e.id == key; })[0]);
+			}
+			$.each(result, function (index, data) {
+				var key;
+				for(key in data) {
+					returnData += key + ': ' + data[key] + '<br>';
+				}
+				returnData += '<br> ---------------------------------------- <br>'
+			});
+			return returnData;
+		} else {
+			return null;
+		}
+		
+	}
 
 });

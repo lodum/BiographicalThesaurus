@@ -41,7 +41,7 @@
 
 			<div class="row" style= "padding-top: 13%;">
 				<!-- container for the result form (the result form is on the left hand-side) -->
-				<div id="result-container" style="overflow-x: auto;" class="col-xs-6 col-md-6 pull-left"> 
+				<div id="result-container" class="col-xs-6 col-md-6 pull-left"> 
 
 					<!--<h1>Thesaurus Search Results</h1>-->
 					<p>
@@ -60,34 +60,34 @@
 
 					<div id="loadingDiv"><img src="images/ajax-loader.gif"></div>
 					<div id="resultdiv" style="height:400px;"></div>
-					<span style="text-align:center">
-						<p>
-							<!--
-							<button id="exportButton" class="btn btn-primary btn-mini" style="display:none;" onclick="displaySelectedResultsAsHTML()"><?php echo $lang['RESULT_EXPORT']; ?></button> -->
-							<div id="exportButton" class="btn-group" style="display:none;" >
-								<button class="btn btn-primary btn-mini"><?php echo $lang['RESULT_EXPORT']; ?></button>
-								<button class="btn btn-primary btn-mini dropdown-toggle" data-toggle="dropdown">
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu"> 
-									<!-- dropdown menu links -->
-									<li><a tabindex="-1" href="#" onclick="displaySelectedResultsAsHTML()"><?php echo $lang['RESULT_EXPORT_DROPDOWN']; ?> HTML</a></li>
-									<li class="divider"></li>
-									<li><a tabindex="-1" href="#"><?php echo $lang['RESULT_EXPORT_DROPDOWN']; ?>...</a></li>
-									<li class="divider"></li>
-									<li><a tabindex="-1" href="#"><?php echo $lang['RESULT_EXPORT_DROPDOWN']; ?>...</a></li>
-								</ul>
-							</div>
-							&nbsp; 	&nbsp;
-							<button id="printButton" class="btn btn-primary btn-mini" style="display:none;" onclick="printResults()"><?php echo $lang['RESULT_PRINT']; ?></button>
-						</p>
-					</span>
 					<!-- this span element is used to store the title (in german or in english) of the additional window displayed when the results are exported as HTML -->
 					<span id="titleExportedResults" style="display:none"><?php echo $lang['TITLE_EXPORTED_RESULTS']; ?></span> 
 				</div>
 				<!-- container for the map (the map is on the right hand-side) -->
 				<div id="map" class="col-xs-6 col-md-6 pull-right" data-spy="affix" data-offset-top="0" class="col-xs-6 col-md-6 pull-right"></div>
 			</div>
+			<span style="text-align:left">
+				<p>
+					
+					<button id="exportButton" class="btn btn-primary btn-mini"><?php echo $lang['RESULT_EXPORT']; ?></button>
+					<!--
+					<div id="exportButton" class="btn-group">
+						<button class="btn btn-primary btn-mini"><?php echo $lang['RESULT_EXPORT']; ?></button>
+						<button class="btn btn-primary btn-mini dropdown-toggle" data-toggle="dropdown">
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu"> 
+							<li><a tabindex="-1" href="#"><?php echo $lang['RESULT_EXPORT_DROPDOWN']; ?> HTML</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#"><?php echo $lang['RESULT_EXPORT_DROPDOWN']; ?>...</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#"><?php echo $lang['RESULT_EXPORT_DROPDOWN']; ?>...</a></li>
+						</ul>
+					</div>
+					-->
+					<button id="printButton" class="btn btn-primary btn-mini"><?php echo $lang['RESULT_PRINT']; ?></button>
+				</p>
+			</span>
 		</div>
 
 		<!-- include the footer -->
