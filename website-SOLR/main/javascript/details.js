@@ -2,7 +2,7 @@ var details = new function() {
 
 	this.load = function(gndID, row) {
 
-       	var solrQueryUrl = 'http://giv-lodum.uni-muenster.de:8983/solr/gnd/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';	
+       	var solrQueryUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/gnd2/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';	
 
  		$.getJSON(solrQueryUrl, function(result){
 			
@@ -19,7 +19,7 @@ var details = new function() {
 		var daten = '';
 
 		daten += '<table class="personDetails" style="width:100%">' +
-				 '<tr><td><b>Biogramm</b></td></tr>' +
+				 '<p><b>Biogramm</b></p>' + 
 				 '<tr><td style="width:120px">Name : </td><td>' + person.preferredNameForThePerson + '</td>' +
 				 '<td rowspan="12" style="width:150px; vertical-align:top;"><div id="img' + gndID + '" style="text-align:right;"></div></td></tr>';
 			
@@ -29,17 +29,33 @@ var details = new function() {
 		daten += details.getDetailRow('Sterbedatum', details.dateFormat(person.dateOfDeath));
 		daten += details.getDetailRow('Sterbeort', person.placeOfDeath);
 
+		daten += details.getDetailRow('Beruf(e)', person.professionsOrOccupations);
+
+		daten += details.getDetailRow('Beziehungen zu Personen', person.familialRelationship);
+
+		daten += details.getDetailRow('Weitere Angaben', person.biographicalOrHistoricalInformation);
+
+		
+
+		
 		daten += '<tr><td>&nbsp;</td><td></td></tr>';
 
-		daten += details.getDetailReferenceRow('D-NB', person.id, person.id);
+		daten += details.getDetailReferenceRow('D-NB', person.gndIdentifier, person.gndIdentifier);
 		daten += details.getDetailReferenceRow('Wikipedia', person.wikipedia, person.wikipedia);
 
 		daten += '<tr style="height:auto;"><td>&nbsp;</td></tr>' +
 				 '</table>';
 
-		daten += '<div id="litrature' + gndID + '"></div>'
+		daten += '<div id="div' + gndID + '"></div>'
+		daten += '<br>';
+		daten += '<div id="divauthor' + gndID + '"></div>'
+		daten += '<br>';
+		daten += '<div id="divsubject' + gndID + '"></div>'
 
-		details.loadLitrature(gndID);
+		//details.loadReferences(gndID);
+
+		details.loadLitrature('author', gndID, 'Literatur Von');
+		details.loadLitrature('subject', gndID, 'Literatur Über');
 
 		return daten;
 	};
@@ -65,7 +81,7 @@ var details = new function() {
 	this.getDetailRow = function(key, value) {
 
 		if (value != undefined && value != '')
-			return '<tr><td>' + key + '&nbsp;:</td><td>' + value + '</td></tr>';
+			return '<tr style="vertical-align:top;"><td>' + key + '&nbsp;:</td><td>' + value + '</td></tr>';
 		else
 			return '';
 	};
@@ -73,14 +89,14 @@ var details = new function() {
 	this.getDetailReferenceRow = function(key, linkValue, textValue) {
 
 		if (linkValue != undefined && linkValue != '' && textValue != undefined && textValue != '')
-			return '<tr><td>' + key + '&nbsp;:</td><td>' + '<a href="' + linkValue + '" target="_blank">' + textValue + '</a>' + '</td></tr>';
+			return '<tr><td>' + key + '&nbsp;:</td><td>' + '<a href="' + linkValue + '" target="_blank">' + decodeURIComponent(textValue) + '</a>' + '</td></tr>';
 		else
 			return '';
 	};
 
-	this.loadLitrature = function(gndID) {
+	this.loadLitrature = function(target, gndID, title) {
 		
-		var lobidURL = "http://lobid.org/resource?subject=" + gndID;
+		var lobidURL = "http://lobid.org/resource?" + target + "=" + gndID;
 
 		$.ajax({
 			url : lobidURL,
@@ -104,49 +120,68 @@ var details = new function() {
 							var resourceData = resource['@graph']
 							var resourceDetails = resourceData[resourceData.length -1];
 
+							var litTitle = '-';
 							if (resourceDetails.title != undefined) {
-								var litAuthors = [];
-								var litContributors = [];
-
-								if (resourceDetails.creator != undefined) {
-									for (var j = 0; j < resourceData.length; j++) {
-										if (resourceDetails.creator.indexOf(resourceData[j]['@id']) > -1)
-											litAuthors.push( {name : resourceData[j].preferredName,
-															nameID : resourceData[j]['@id']
-														});
-									};
-								};
-								if (resourceDetails.contributor != undefined) {
-									for (var j = 0; j < resourceData.length; j++) {
-										if (resourceDetails.contributor.indexOf(resourceData[j]['@id']) > -1)
-											litContributors.push( {name : resourceData[j].preferredName,
-															nameID : resourceData[j]['@id']
-														});
-									};
-								};
-
-								litArray.push( { title : resourceDetails.title,
-												 titleID : resourceDetails['@id'],
-												 year : resourceDetails.issued,
-												 authors : litAuthors,
-												 contributors : litContributors
-											});
+								litTitle = resourceDetails.title;
 							};
+
+							var litYear = '';
+							if (resourceDetails.issued != undefined) {
+								litYear = resourceDetails.issued;
+							};
+
+							var litPublisher = '';
+							if (resourceDetails.publisher != undefined) {
+								litPublisher = resourceDetails.publisher;
+							};
+							
+
+							var litAuthors = [];
+							var litContributors = [];
+
+							if (resourceDetails.creator != undefined) {
+								for (var j = 0; j < resourceData.length; j++) {
+									if (resourceDetails.creator.indexOf(resourceData[j]['@id']) > -1)
+										litAuthors.push( {name : resourceData[j].preferredName,
+														nameID : resourceData[j]['@id']
+													});
+								};
+							};
+							if (resourceDetails.contributor != undefined) {
+								for (var j = 0; j < resourceData.length; j++) {
+									if (resourceDetails.contributor.indexOf(resourceData[j]['@id']) > -1)
+										litContributors.push( {name : resourceData[j].preferredName,
+														nameID : resourceData[j]['@id']
+													});
+								};
+							};
+
+							litArray.push( { title : litTitle,
+											 titleID : resourceDetails['@id'],
+											 year : litYear,
+											 authors : litAuthors,
+											 contributors : litContributors,
+											 publisher : litPublisher
+										});
 						};
 					};
 
-					litArray.sort(function(a, b){return a.title.localeCompare(b.title);});
+					//litArray.sort(function(a, b){return a.title.localeCompare(b.title);});
 					
 					if (litArray.length > 0) {
-						litTable = '<table class="litratureTable" style="width:100%">' +
-								   '<tr><td><b>Literatur</b></td></tr>';
+						litTable = '<p><b>' + title + '</b></p>' +
+								   '<table id="lit' + target + gndID + '" class="litratureTable">' + 
+								   '<thead>' + 
+						           		'<tr>'+
+						           		'<th>Autor</th>' + 
+						           		//'<th>Mitwirkende</th>' + 
+						                '<th>Titel</th>' +
+						                //'<th>Verlag</th>' +
+						                '<th>Jahr</th></tr>' +
+        							'</thead><tbody>';
 
 						$.each( litArray, function( i, lit ){
 							litTable += '<tr><td>';
-							litTable += '<a href="' + lit.titleID + '" target="_blank">' + lit.title + '</a>';
-
-							if ((lit.authors != undefined && lit.authors.length > 0) || (lit.contributors != undefined && lit.contributors.length > 0))
-								litTable += ' - ';
 
 							if (lit.authors != undefined && lit.authors.length > 0) {
 								
@@ -155,22 +190,41 @@ var details = new function() {
 								});
 							};
 
-							if (lit.contributors != undefined && lit.contributors.length > 0) {
-								
-								$.each( lit.contributors, function( i, cont ){
-									litTable += ' <a href="' + cont.nameID + '" target="_blank">' + cont.name + '</a>;';
-								});
-							};
+							// litTable += '</td><td>';
 
-							if (lit.year != undefined)
-								litTable += ' (' + lit.year + ')';
+							// if (lit.contributors != undefined && lit.contributors.length > 0) {
+								
+							// 	$.each( lit.contributors, function( i, cont ){
+							// 		litTable += ' <a href="' + cont.nameID + '" target="_blank">' + cont.name + '</a>;';
+							// 	});
+							// };
+
+							litTable += '</td><td>';
+
+							litTable += '<a href="' + lit.titleID + '" target="_blank">' + lit.title + '</a>';
+
+							//litTable += '</td><td>';
+
+							//litTable += lit.publisher;
+
+							litTable += '</td><td>';
+
+							litTable += lit.year;
 
 							litTable += '</td></tr>';
 						});
 
-						litTable += '</table>';
+						litTable += '</tbody></table>';
 
-						$('#litrature' + gndID).html(litTable);
+						$('#div' + target + gndID).html(litTable);
+
+						var dtablelit = $('#lit' + target + gndID).DataTable( {
+					        "order": [[ 1, "asc" ]],
+					        "bPaginate": false,
+					        "bFilter": false,
+					        "bInfo": false
+					    } );
+						dtablelit.draw();
 					};
 					
 					//console.log(litTable);
