@@ -39,7 +39,7 @@
 
 		<div class="container-fluid"> 
 
-			<div class="row" style= "padding-top: 13%;">
+			<div class="row" style= "padding-top: 9%;">
 				<!-- container for the result form (the result form is on the left hand-side) -->
 				<div id="result-container" class="col-xs-6 col-md-6 pull-left"> 
 

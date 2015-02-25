@@ -194,7 +194,7 @@ $(document).ready(function () {
 		$('#result_text').html('');
 	}
 
-	var $table = $('<table id="datatable" style="width=100%;"></table>');
+	var $table = $('<table id="datatable" class="display" style="width=100%;"></table>');
 	var $head = $("<thead></thead>");
 	var $body = $("<tbody></tbody>");
 	var $hline = $("<tr></tr>");
