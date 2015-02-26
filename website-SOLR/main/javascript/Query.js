@@ -99,7 +99,7 @@ Query.prototype.buildURL = function () {
 		if(attributeUsed) {
 			srchstrng += ' AND ';
 		}
-		srchstrng += 'professionOrOccupation:' + this.activity;
+		srchstrng += 'professionsOrOccupations:' + this.activity;
 		attributeUsed = true;
 	}
 	
