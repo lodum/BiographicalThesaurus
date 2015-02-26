@@ -43,26 +43,46 @@
 		include 'banner/banner.php';
 	?>
 	<body>
-		<div class="container-fluid" style="padding-top: 13%;">
+		<div class="container-fluid" style="padding-top: 9%;">
 		    <div class="row">
 		        <div class="col-xs-6 col-md-4 pull-left">
 		            <form id="searchform">		
 						<fieldset>
-
+							
 							<legend><?php echo $lang['SEARCH_TITLE']; ?></legend>
-								
-							<p><label><?php echo $lang['SEARCH_POI']; ?></label></p>
-							<input id="person" type="text" placeholder="<?php echo $lang['SEARCH_POI2']; ?>">
-							<a href="#" rel="tooltip" title="Adenauer, Konrad"><span class="label label-info"><?php echo $lang['SEARCH_FOREXAMPLE:']; ?></span> </a>
-						 
-							<p><label><?php echo $lang['SEARCH_OCC']; ?></label></p>
-							<input id="occ" type="text" placeholder="<?php echo $lang['SEARCH_OCC2']; ?>">
-							<a href="#" rel="tooltip" title="Politiker / Lehrer"><span class="label label-info"><?php echo $lang['SEARCH_FOREXAMPLE:']; ?></span> </a>
-		 
-							<p><label><?php echo $lang['SEARCH_PLACE']; ?></label></p>			
-							<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
-							<a href="#" rel="tooltip" title="K&ouml;ln"><span class="label label-info"><?php echo $lang['SEARCH_FOREXAMPLE:']; ?></span> </a>
-								
+							
+							<div class="row">
+								<div class="col-md-4 col-xs-5">
+									<label><?php echo $lang['SEARCH_POI']; ?></label>
+								</div>
+								<div class="col-md-8 col-xs-7">
+									<input id="person" type="text" placeholder="<?php echo $lang['SEARCH_POI2']; ?>">
+								</div> 
+							</div>
+
+							<br>
+
+							<div class="row">
+								<div class="col-md-4 col-xs-5">
+									<label><?php echo $lang['SEARCH_OCC']; ?></label>
+								</div>
+								<div class="col-md-8 col-xs-7">
+									<input id="occ" type="text" placeholder="<?php echo $lang['SEARCH_OCC2']; ?>">
+								</div> 
+							</div>
+
+							<br>
+
+							<div class="row">
+								<div class="col-md-4 col-xs-5">
+									<label><?php echo $lang['SEARCH_PLACE']; ?>
+								</div>
+								<div class="col-md-8 col-xs-7">
+									<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
+								</div> 
+							</div>
+							
+						
 							<p>
 								<div class="row" id="checkboxes">
 									<div class="col-md-4">
@@ -75,7 +95,8 @@
 										<input type="checkbox" id="box_activityplace" ><?php echo $lang['SEARCH_CHECK_BOX3:']; ?>
 									</div>
 								</div>
-							</p>	
+							</p>
+							<br>	
 
 							<p>
 	 							<span><b><?php echo $lang['SEARCH_TIME']; ?></b></span>
