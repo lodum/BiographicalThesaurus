@@ -141,15 +141,8 @@ $(document).ready(function () {
 
 	function processData (data) {
 		fillTable(data);
-		/*
-		$.each(data, function (index, dat) {
-			$.each(Object.keys(dat), function (ndx, key) {
-				console.log(key);
-				console.log(dat[key]);
-			});
-		});
-		*/
-		//Add Marker vor Birth, Death and Activity
+
+		//Add Marker for Birth, Death and Activity
 		$.each(data, function (index, dat) {
 			wkt = dat.placeOfBirth_geom;
 			if(wkt) {
@@ -158,7 +151,7 @@ $(document).ready(function () {
 				cd = cd[0].split(" ");
 				lat = cd[1];
 				lng = cd[0];
-				map.addMarker(lat, lng, dat.preferredNameForThePerson, "birth", dat.id);
+				map.addMarker(lat, lng, dat.placeOfBirth, "birth", dat.id, dat.preferredNameForThePerson);
 			}
 
 			wkt = dat.placeOfDeath_geom;
@@ -168,7 +161,7 @@ $(document).ready(function () {
 				cd = cd[0].split(" ");
 				lat = cd[1];
 				lng = cd[0];
-				map.addMarker(lat, lng, dat.preferredNameForThePerson, "death",dat.id);
+				map.addMarker(lat, lng, dat.placeOfDeath, "death", dat.id, dat.preferredNameForThePerson);
 			}
 
 			wkt = dat.placesOfActivity_geom;
@@ -179,20 +172,20 @@ $(document).ready(function () {
 					cd = cd[0].split(" ");
 					lat = cd[1];
 					lng = cd[0];
-					map.addMarker(lat, lng, dat.preferredNameForThePerson, "activity", dat.id);
+					map.addMarker(lat, lng, dat.placesOfActivity[index], "activity", dat.id, dat.preferredNameForThePerson);
 				});
 			}
 		});
 		map.addMarkerLayer(placeType);
-		map.showMiniMap();
-	}
+		map.showLegend();
+	};
 
 
 
 
 	function clearTable () {
 		$('#result_text').html('');
-	}
+	};
 
 	var $table = $('<table id="datatable" class="display" style="width=100%;"></table>');
 	var $head = $("<thead></thead>");
@@ -232,12 +225,12 @@ $(document).ready(function () {
 			$bline.append( $( "<td></td>" ).html( details.dateFormat(dat.dateOfDeath) ) );
 			
 			var occ = "";
-			if(dat.professionOrOccupation) {
-				$.each(dat.professionOrOccupation, function (index) {
+			if(dat.professionsOrOccupations) {
+				$.each(dat.professionsOrOccupations, function (index) {
 					if(occ != "") {
 						occ += ", "
 					}
-					occ += dat.professionOrOccupation[index];
+					occ += dat.professionsOrOccupations[index];
 				});
 			}
 			$bline.append( $( "<td></td>" ).html( occ ) );
@@ -262,15 +255,14 @@ $(document).ready(function () {
 	        if ( row.child.isShown() ) {
 	            // This row is already open - close it
 	            row.child.hide();
-	            map.undoHighLight();
-	            map.showMarkers();
+	            //map.undoHighLight();
+	            //map.showMarkers();
 	            td.removeClass('shown');
 	            tr.removeClass('shown');
 	        }
 	        else {
 	            // Open this row
         		var gndID = $('td.gndid', tr).text();
-        		map.highLight(gndID);
 
         		//Load Details
         		details.load(gndID, row);        		
@@ -308,30 +300,29 @@ $(document).ready(function () {
 		$('#datatable tbody').on('click', 'input.select-person', function () {
 			_id = this.id.split("cb_")[1];
 			if(selection[_id]) {
-				console.log("remove");
+				
 				index = selection.indexOf(_id);
 				if(index > -1){
 					selection.splice(index, 1);
 				}
+			map.undoHighLight(_id);
 			} else {
-				console.log("add");
 				selection[_id] = _id;
+				map.highLight(_id);
 			}
 		} );
 
 	};
 
-	$(map).on('marker_clicked', function (e, id) {
-		map.highLight(id);
+	$("#map").on('link-clicked', function (e, id) {
+		console.log(id);
 		dtable.search(id);
 		dtable.draw();
-		var index = 0;
 		$.each(dtable.rows().data(), function (index) {
-			if(dtable.row(index).data()[6] == id) {
+			if(dtable.row(index).data()[7] == id) {
 				details.load(id, dtable.row(index));
 			}
 		});
-		
 	});
 
 
@@ -392,7 +383,7 @@ $(document).ready(function () {
 				for(key in data) {
 					returnData += key + ': ' + data[key] + '<br>';
 				}
-				returnData += '<br> ---------------------------------------- <br>'
+				returnData += '<br> ---------------------------------------- <br>';
 			});
 			return returnData;
 		} else {

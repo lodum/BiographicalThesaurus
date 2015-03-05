@@ -6,87 +6,10 @@ var Map = L.Map.extend({
 
 	//Store drawn Shapes in this layer
 	regionLayer: new L.FeatureGroup(),
-	// create a layer to display information about places of birth
-	birthplaces: new L.MarkerClusterGroup({
-		maxClusterRadius:50, 
-		singleMarkerMode:true, 
-		spiderfyDistanceMultiplier:2, 
-		iconCreateFunction: function(cluster) {
-	        var childCount = cluster.getChildCount();
-	        var classname = "";
-	        var size = null;
-	        if(childCount == 1) {
-	        	classname = "marker-cluster-s marker-cluster-birth";
-	        	size = new L.Point(20, 20);
-	        } else if(childCount < 10) {
-	        	classname = "marker-cluster-m marker-cluster-birth";
-	        	size = new L.Point(30, 30);
-	        } else {
-	        	classname = "marker-cluster-l marker-cluster-birth";
-	        	size = new L.Point(40, 40);
-	        }
-	        divicon = new L.DivIcon({ 
-		        	html: '<div><span>' + childCount + '</span></div>', 
-		        	className: classname, 
-		        	iconSize: size 
-		        });
-	        return divicon;
-		}
-	}),
-	// create a layer to display information about places of death
-	deathplaces: new L.MarkerClusterGroup({
-		maxClusterRadius:50, 
-		singleMarkerMode:true, 
-		spiderfyDistanceMultiplier:2, 
-		iconCreateFunction: function(cluster) {
-	        var childCount = cluster.getChildCount();
-	        var classname = "";
-	        var size = null;
-	        if(childCount == 1) {
-	        	classname = "marker-cluster-s marker-cluster-death";
-	        	size = new L.Point(20, 20);
-	        } else if(childCount < 10) {
-	        	classname = "marker-cluster-m marker-cluster-death";
-	        	size = new L.Point(30, 30);
-	        } else {
-	        	classname = "marker-cluster-l marker-cluster-death";
-	        	size = new L.Point(40, 40);
-	        }
-	        divicon = new L.DivIcon({ 
-		        	html: '<div><span>' + childCount + '</span></div>', 
-		        	className: classname, 
-		        	iconSize: size 
-		        });
-	        return divicon;
-		}
-	}),
-	// create a layer to display information about places of activity
-	activityplaces: new L.MarkerClusterGroup({
-		maxClusterRadius:50, 
-		singleMarkerMode:true, 
-		spiderfyDistanceMultiplier:2, 
-		iconCreateFunction: function(cluster) {
-	        var childCount = cluster.getChildCount();
-	        var classname = "";
-	        var size = null;
-	        if(childCount == 1) {
-	        	classname = "marker-cluster-s marker-cluster-activity";
-	        	size = new L.Point(20, 20);
-	        } else if(childCount < 10) {
-	        	classname = "marker-cluster-m marker-cluster-activity";
-	        	size = new L.Point(30, 30);
-	        } else {
-	        	classname = "marker-cluster-l marker-cluster-activity";
-	        	size = new L.Point(40, 40);
-	        }
-	        divicon = new L.DivIcon({ 
-		        	html: '<div><span>' + childCount + '</span></div>', 
-		        	className: classname, 
-		        	iconSize: size 
-		        });
-	        return divicon;
-		}
-	}),
+	// store marker for cities with information about persons
+	cities : [],
+
+	person_city_map: [],
 	//initialize layers control
 	layersControl: L.control.layers(),
 	//Store if a shape is drawn
@@ -232,101 +155,70 @@ var Map = L.Map.extend({
 	/** Add a marker to a layer by its type
 	*
 	*/
-	addMarker: function (lat, lng, name, type, id) {
-		if(type == "birth") {
-			var marker = new L.Marker([lat,lng]);
-			this.markerArray.birth[id] = marker;
-			this.birthplaces.addLayer(this.markerArray.birth[id]);
-			var that = this;
-			this.markerArray.birth[id].on('click', function (e) {
-				$(that).trigger("marker_clicked", [id] );
-			});
-		} else if (type == "death") {
-			var marker = new L.Marker([lat,lng]);
-			this.markerArray.death[id] = marker;
-			this.deathplaces.addLayer(this.markerArray.death[id]);
-			var that = this;
-			this.markerArray.death[id].on('click', function (e) {
-				$(that).trigger("marker_clicked", [id] );
-			});
-		} else if (type == "activity") {
-			var marker = new L.Marker([lat,lng]);
-			this.markerArray.activity[id] = [];
-			this.markerArray.activity[id].push(marker);
-			var number = this.markerArray.activity[id].length - 1;
-			this.activityplaces.addLayer(this.markerArray.activity[id][number]);
-			var that = this;
-			this.markerArray.activity[id][number].on('click', function (e) {
-				$(that).trigger("marker_clicked", [id, number] );
-			});
+	addMarker: function (lat, lng, city, type, id, pname) {
+		if(!this.person_city_map[id]) {
+			this.person_city_map[id] = [];
 		}
+		this.person_city_map[id].push(city);
+
+		if(!this.cities[city]) {
+			var _city = {
+				name: city,
+				count: 0,
+				stats: [0, 0, 0],
+				birth: [],
+				death: [],
+				activity: [],
+				latlng: [lat, lng],
+				color: 'white',
+				marker: null
+			};
+			this.cities[city] = _city;
+		}
+
+		switch(type) {
+		    case 'birth':
+		        this.cities[city].birth[id] = {id: id, name: pname};
+		        this.cities[city].stats[0] ++;
+		        break;
+		    case 'death':
+		        this.cities[city].death[id] = {id: id, name: pname};
+		        this.cities[city].stats[1] ++;
+		        break;
+		    case 'activity':
+		    	this.cities[city].activity[id] = {id: id, name: pname};
+		    	this.cities[city].stats[2] ++;
+		    	break;
+		}
+		this.cities[city].count ++;
+		this.cities[city].latlng = [lat,lng];
 	},
 
 	highLight: function (id) {
-		//add previous selection back to layer
-		this.undoHighLight();		
+		var that = this;
+		_cities = this.person_city_map[id];
+		$.each(_cities, function (index) {
+			that.cities[_cities[index]].color = 'orange';
+			that.showMarkers(_cities[index]);
+		});
+	},
 
-		//get current selection
-		this.selection_removed.birth = this.markerArray.birth[id];
-		this.selection_removed.death = this.markerArray.death[id];
+	undoHighLight: function (id) {
+		var that = this;
+		_cities = this.person_city_map[id];
+		$.each(_cities, function (index) {
+			that.cities[_cities[index]].color = 'white';
+			that.showMarkers(_cities[index]);
+		});
 		
-
-		//remove selection from normal layer
-		//add selection as markers to map
-		if(this.selection_removed.birth) {
-			lat = this.selection_removed.birth._latlng.lat;
-			lng = this.selection_removed.birth._latlng.lng;
-			this.selection.birth = new L.Marker([lat,lng]);
-			this.birthplaces.removeLayer(this.selection_removed.birth);
-		}
-		if(this.selection_removed.death) {
-			lat = this.selection_removed.death._latlng.lat;
-			lng = this.selection_removed.death._latlng.lng;
-			this.selection.death = new L.Marker([lat,lng]);
-			this.deathplaces.removeLayer(this.selection_removed.death);
-		}
-		//display new markers
-		this.showMarkers();
-	},
-
-	undoHighLight: function () {
-		this.hideMarkers();
-		if(this.selection_removed.birth) {
-			this.birthplaces.addLayer(this.selection_removed.birth);
-		}
-		if(this.selection_removed.death) {
-			this.deathplaces.addLayer(this.selection_removed.death);
-		}
-		this.selection_removed.birth = null;
-		this.selection_removed.death = null;
-		this.selection.birth = null;
-		this.selection.death = null;
-	},
-
-	/** Open a popup of a marker
-	*
-	*/
-	openMarkerPopup: function (id) {
-		bmarker = this.markerArray.birth[id];
-		dmarker = this.markerArray.death[id];
-		amarker = this.markerArray.activity[id];
-		if(bmarker) {
-			this.birthplaces.zoomToShowLayer(bmarker, function () {
-				bmarker.openPopup();
-			});
-		}
 	},
 
 	/** Add all layer of marker to the map. Display them.
 	*
 	*/
 	addMarkerLayer: function (placeType) {
-		this.layersControl.addOverlay(this.birthplaces, 'Birth');
-		this.layersControl.addOverlay(this.deathplaces, 'Death');
-		this.layersControl.addOverlay(this.activityplaces, 'Activity');
 		this.placeType = placeType;		
 		this.showMarkers();
-		this.addControl(this.layersControl);
 	},
 
 	hideMarkers: function () {
@@ -354,36 +246,137 @@ var Map = L.Map.extend({
 		}
 	},
 
-	showMarkers: function () {
-		var that = this;
-		if(this.placeType) {
-			$.each(this.placeType, function (index) {
-				if(that.placeType[index] == 'Birth') {
-					that.addLayer(that.birthplaces);
-				} else if(that.placeType[index] == 'Death') {
-					that.addLayer(that.deathplaces);
-				}else if(that.placeType[index] == 'Activity') {
-					that.addLayer(that.activityplaces);
+	showMarkers: function (_city) {
+		var city;
+		for(city in this.cities) {
+			if(_city) {
+				if(city != _city) {
+					break;
 				}
-			});	
-		} else {
-			this.addLayer(this.birthplaces);
-			this.addLayer(this.deathplaces);
-			this.addLayer(this.activityplaces);
-		}
-		if(this.selection.birth) {
-			this.addLayer(this.selection.birth);
-		}
-		if(this.selection.death) {
-			this.addLayer(this.selection.death);
+			}
+			size = 44 + (this.cities[city].count * 2);
+			var icon = new MarkerIcon({iconSize: new L.Point(size, size), middleColor: this.cities[city].color});
+			icon.stats = this.cities[city].stats;
+            icon.population = this.cities[city].count;
+			this.cities[city].marker = new L.marker(this.cities[city].latlng, {icon: icon});
+
+			var _popupid = 'popup-' + city.replace(/ /g, '').replace(",", "").replace("<", "").replace(">", "").replace(")", "").replace("(", "");
+			var person;
+			var content = '<div style="width:100%;" id="' + _popupid + '">';
+			content += '<b>Stadt: ' + city + '</b>';
+			content += '<ul>';
+			content += '<li><a href="#tabs-1">Geboren(' + this.cities[city].stats[0] + ')</a></li>';
+			content += '<li><a href="#tabs-2">Gestorben(' + this.cities[city].stats[1] + ')</a></li>';
+			content += '<li><a href="#tabs-3">Gewirkt(' + this.cities[city].stats[2] + ')</a></li>';
+			content += '</ul>';
+			content += '<div id="tabs-1">';
+			for(person in this.cities[city].birth) {
+				person = this.cities[city].birth[person];
+				var action = '$(document).trigger(\"link-clicked\");';
+				content += '<a href="#" id="b' + person.id + '">' + person.name + '</a>';
+				content += '<br>';
+			}
+			content += '</div>';
+			content += '<div id="tabs-2">';
+			for(person in this.cities[city].death) {
+				person = this.cities[city].death[person];
+				content += '<a href="#" id="d' + person.id + '">' + person.name + '</a>';
+				content += '<br>';
+			}
+			content += '</div>';
+			content += '<div id="tabs-3">';
+			for(person in this.cities[city].activity) {
+				person = this.cities[city].activity[person];
+				content += '<a href="#" id="a' + person.id + '">' + person.name + '</a>';
+				content += '<br>';
+			}
+			content += '</div>';
+			content += '</div>';
+
+			_popupid = '#' + _popupid;
+
+			this.cities[city].marker.popupid = _popupid;
+			this.cities[city].marker.firstopen = true;
+			this.cities[city].marker.bindPopup(content);
+
+			this.cities[city].marker.on('popupopen', function(e) {
+				e.popup.options.maxWidth = 450;
+				e.popup.options.minWidth = 400;
+				e.popup.options.maxHeight = 200;
+
+				innerHTML = this._popup._contentNode.innerHTML;
+					//birth
+					tmp = innerHTML.split('<div id="tabs-1">')[1].split('</div>')[0];
+					tmp = tmp.split('<a href="#" id="');
+					$.each(tmp, function (index) {
+						if(index != 0) {
+							id = tmp[index].split('"')[0];
+							var _id = id.split("b")[1].toString();
+							$("#" + id).click(function () {
+								$("#map").trigger('link-clicked', [_id]);
+							});
+
+						}
+					});
+					
+					//death
+					tmp = innerHTML.split('<div id="tabs-2">')[1].split('</div>')[0];
+					tmp = tmp.split('<a href="#" id="');
+					$.each(tmp, function (index) {
+						if(index > 0) {
+							id = tmp[index].split('"')[0];
+							var _id = id.split("d")[1].toString();
+							$("#" + id).on('click', function () {
+								$("#map").trigger('link-clicked', [_id]);
+							});
+						}
+					});
+
+					//activity
+					tmp = innerHTML.split('<div id="tabs-3">')[1].split('</div>')[0];
+					tmp = tmp.split('<a href="#" id="');
+					$.each(tmp, function (index) {
+						if(index > 0) {
+							id = tmp[index].split('"')[0];
+							var _id = id.split("a")[1].toString();
+							$("#" + id).on('click', function () {
+								$("#map").trigger('link-clicked', [_id]);
+							});
+						}
+					});
+
+				if(this.firstopen) {
+					this.firstopen = false;
+					this.closePopup();
+					this.openPopup();
+				}
+				$(this.popupid).tabs();
+			});
+			this.addLayer(this.cities[city].marker);
 		}
 	},
 
-	showMiniMap: function () {
-		var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-		var osmAttrib='Map data &copy; OpenStreetMap contributors';
-		var minimapLayer = new L.TileLayer(osmUrl, {minZoom: 0, maxZoom: 13, attribution: osmAttrib});
-		var miniMap = new L.Control.MiniMap(minimapLayer, {toggleDisplay:true, zoomLevelFixed:10}).addTo(this);
+	showLegend: function () {
+		var legend = L.control({position: 'bottomright'});
+		legend.onAdd = function (map) {
+
+		    var div = L.DomUtil.create('div', 'info legend'),
+		        colors = ['#00FF00', '#FF0000', '#FFFF00'],
+		        labels = ['Geburtsort', 'Sterbeort', 'Wirkungsort'];
+
+		    // loop through our density intervals and generate a label with a colored square for each interval
+		    var inner = '<div style="background-color:#FFFFFF; border: 2px solid;"><b>Legende</b>';
+		    inner += '<div style="margin-top:5px;">'
+		    for (var i = 0; i < colors.length; i++) {	
+		        inner += '<div style="background-color:' + colors[i] + '"><b>' + labels[i];
+		        inner += '</b></div>'; 
+		    }
+		    inner += '</div></div>'
+		    div.innerHTML = inner;
+
+		    return div;
+		};
+		legend.addTo(this);
 	},
 
 	drawShape: function (wkt, type) {

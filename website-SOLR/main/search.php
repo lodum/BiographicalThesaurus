@@ -187,6 +187,6 @@
 		<script src="javascript/Query.js"></script>
 		<script src="javascript/Suggester.js"></script>
 		<script src="javascript/search_autocomplete.js" type="text/javascript"></script>
-
+		<script src="javascript/MarkerIcon.js" type="text/javascript"></script>
 	</body>
 </html>                 
