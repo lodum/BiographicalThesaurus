@@ -85,11 +85,11 @@ Query.prototype.buildURL = function () {
 	    		if(index != 0) {
 	    			srchstrng += ' AND ';
 	    		}
-	    		srchstrng += 'preferredNameForThePerson:' + persons[index];
+	    		srchstrng += 'variantNameForThePerson:' + persons[index];
 	    	});
 			attributeUsed = true;
 		} else {
-			srchstrng += 'preferredNameForThePerson:' + this.person;
+			srchstrng += 'variantNameForThePerson:' + this.person;
 			attributeUsed = true;
 		}
 	}
@@ -148,7 +148,7 @@ Query.prototype.buildURL = function () {
 			});
 		} else {
 			if(attributeUsed) {
-				srchstrng += ' AND ';
+				srchstrng += ' AND (';
 			}
 			$.each(this.spatialField, function (index) {
 				if(index == 0) {
@@ -156,6 +156,11 @@ Query.prototype.buildURL = function () {
 				} else {
 					srchstrng += ' OR '
 					srchstrng += that.spatialField[index] + ":" + that.spatial;
+				}
+				if(attributeUsed) {
+					if(index == that.spatialField.length - 1) {
+						srchstrng += ')';
+					}
 				}
 			});
 			
@@ -172,8 +177,6 @@ Query.prototype.buildURL = function () {
 	url += srchstrng;
 
 	url += spatialUrl;
-
-
 
 	if (this.queryReturn && this.queryReturn.length != 0) {
 		url += '&fl=';

@@ -56,6 +56,12 @@ var Map = L.Map.extend({
 			var layer = e.layer;
 			this.regionLayer.addLayer(layer);
 			this.isDrawn = true;
+			var that = this;
+			if (confirm('Soll die Suche ausgeführt werden?')) {
+			    $(that).trigger('execute-search');
+			} else {
+			    // Do nothing!
+			}
 		});
 		//Delete drawn layers
 		this.on('draw:deleted', function () {

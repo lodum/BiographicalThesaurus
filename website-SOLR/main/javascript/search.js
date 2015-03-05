@@ -33,7 +33,7 @@ $(document).ready(function () {
 	var _place = getParam('place');
 	var _person = getParam('person');
 	var _pType = getParam('pType');
-	var _start = getParam('startDate');
+	var _start = getParam('beginDate');
 	var _end = getParam('endDate');
 	var _occ = getParam('occ');
 	if(_place) {
@@ -47,16 +47,16 @@ $(document).ready(function () {
 		} catch(e) {
 			// place is no object, so place is a city and not a polygon or circle
 			_place = tmp;
-			$('#place').val(_place);
-			$('#place').text(_place);
+			$('#place').val(decodeURI(_place));
+			$('#place').text(decodeURI(place));
 		}
 		if(typeof _place != 'string') {
 			map.drawShape(_place.wkt, _place.type);
 		}
 	}
 	if(_person) {
-		$('#person').val(_person);
-		$('#person').text(_person);
+		$('#person').val(decodeURI(_person));
+		$('#person').text(decodeURI(_person));
 	}
 	if(_pType) {
 		_pType = _pType.split(',');
@@ -84,18 +84,20 @@ $(document).ready(function () {
 		$("#slider").editRangeSlider("values", selectedDate.min, selectedDate.max);
 	}
 	if(_occ) {
-		$('#occ').val(_occ);
-		$('#occ').text(_occ);
+		$('#occ').val(decodeURI(_occ));
+		$('#occ').text(decodeURI(_occ));
 	}
 
 
 	$("[rel='tooltip']").tooltip();
 
 	$('#btn-search').on('click', function () {
-		console.log("click");
 		goToResults();
 	});
 
+	$(map).on('execute-search', function () {
+		goToResults();
+	});
 
 	$("#eraSelector").on('change', function (e, data) {
 		var index = $("#eraSelector option:selected").index();
