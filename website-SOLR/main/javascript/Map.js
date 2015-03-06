@@ -260,7 +260,15 @@ var Map = L.Map.extend({
 					break;
 				}
 			}
-			size = 44 + (this.cities[city].count * 2);
+			var size = 44;
+			var count = this.cities[city].count;
+			if(count < 10) {
+
+			} else if (count < 50) {
+				size = size + 22;
+			} else{
+				size = size + 44
+			}
 			var icon = new MarkerIcon({iconSize: new L.Point(size, size), middleColor: this.cities[city].color});
 			icon.stats = this.cities[city].stats;
             icon.population = this.cities[city].count;

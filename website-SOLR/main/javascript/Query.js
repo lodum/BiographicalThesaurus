@@ -85,11 +85,13 @@ Query.prototype.buildURL = function () {
 	    		if(index != 0) {
 	    			srchstrng += ' AND ';
 	    		}
-	    		srchstrng += 'variantNameForThePerson:' + persons[index];
+	    		srchstrng += '(preferredNameForThePerson_tm:' + persons[index];
+	    		srchstrng += ' OR variantNameForThePerson_tm:' + persons[index] + ')';
 	    	});
 			attributeUsed = true;
 		} else {
-			srchstrng += 'variantNameForThePerson:' + this.person;
+			srchstrng += 'preferredNameForThePerson_tm:' + this.person;
+			srchstrng += ' OR variantNameForThePerson_tm:' + this.person;
 			attributeUsed = true;
 		}
 	}
@@ -111,12 +113,25 @@ Query.prototype.buildURL = function () {
 			if(attributeUsed) {
 				srchstrng += ' AND ';
 			}
-			srchstrng += 'dateOfBirth:[' + this.start + ' TO ' + this.end + ']';
+			if(this.core == 'gnd3') {
+				srchstrng += 'yearOfBirth:[' + this.start + ' TO ' + this.end + ']';
+				srchstrng += ' OR yearOfDeath:[' + this.start + ' TO ' + this.end + ']';
+			} else {
+				srchstrng += 'dateOfBirth:[' + this.start + ' TO ' + this.end + ']';
+				srchstrng += 'dateOfDeath:[' + this.start + ' TO ' + this.end + ']';
+			}
+			
 		} else {
 			if(attributeUsed) {
 				srchstrng += ' AND ';
 			}
-			srchstrng += 'dateOfBirth:[' + this.start + ' TO NOW]';
+			if(this.core == 'gnd3') {
+				srchstrng += 'yearOfBirth:[' + this.start + ' TO NOW]';
+				srchstrng += ' OR yearOfDeath:[' + this.start + ' TO NOW]';
+			} else {
+				srchstrng += 'dateOfBirth:[' + this.start + ' TO NOW]';
+				srchstrng += ' OR dateOfDeath:[' + this.start + ' TO NOW]';
+			}
 		}
 		attributeUsed = true;
 	}else {
@@ -124,7 +139,13 @@ Query.prototype.buildURL = function () {
 			if(attributeUsed) {
 				srchstrng += ' AND ';
 			}
-			srchstrng += 'dateOfBirth:[0 TO ' + this.end + ']';
+			if(this.core == 'gnd3') {
+				srchstrng += 'yearOfBirth:[-500 TO ' + this.end + ']';
+				srchstrng += ' OR yearOfDeath:[-500 TO ' + this.end + ']';
+			} else {
+				srchstrng += 'dateOfBirth:[-500 TO ' + this.end + ']';
+				srchstrng += 'dateOfDeath:[-500 TO ' + this.end + ']';
+			}
 			attributeUsed = true;
 		}
 		
@@ -152,10 +173,10 @@ Query.prototype.buildURL = function () {
 			}
 			$.each(this.spatialField, function (index) {
 				if(index == 0) {
-					srchstrng += that.spatialField[index] + ":" + that.spatial;
+					srchstrng += that.spatialField[index] + "_tm:" + that.spatial;
 				} else {
 					srchstrng += ' OR '
-					srchstrng += that.spatialField[index] + ":" + that.spatial;
+					srchstrng += that.spatialField[index] + "_tm:" + that.spatial;
 				}
 				if(attributeUsed) {
 					if(index == that.spatialField.length - 1) {

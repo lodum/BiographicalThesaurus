@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	//Init map and Add tilelayer to the map
-	var map = new Map('map').setView([51.78682,7.2858], 8);
+	var map = new Map('map').setView([51.962797, 7.621200], 8);
 	mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
 	tilelayer = L.tileLayer(
 		'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 			// place is no object, so place is a city and not a polygon or circle
 			_place = tmp;
 			$('#place').val(decodeURI(_place));
-			$('#place').text(decodeURI(place));
+			$('#place').text(decodeURI(_place));
 		}
 		if(typeof _place != 'string') {
 			map.drawShape(_place.wkt, _place.type);
@@ -194,7 +194,7 @@ $(document).ready(function () {
 			enddate = selectedDate.max;
 		}
 
-		var suffix = "results.php?core=gnd&";
+		var suffix = "results.php?core=gnd3&";
 		var target = '';
 		var targetControl = target;
 		if (person && person != "") {

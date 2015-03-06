@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	//Init map and Add tilelayer to the map
-	var map = new Map('map').setView([51.78682,7.2858], 8);
+	var map = new Map('map').setView([51.962797, 7.621200], 10);
 	mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
 	tilelayer = L.tileLayer(
 		'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
@@ -22,8 +22,8 @@ $(document).ready(function () {
 	var core = getParam('core');
 	if(core && core != "") {
 		query.setCore(core);
-		if(core == "gnd2") {
-			$('#coreSelector')[0].selectedIndex = 1;
+		if(core == "gnd3") {
+			$('#coreSelector')[0].selectedIndex = 0;
 		}
 	}
 
@@ -134,7 +134,6 @@ $(document).ready(function () {
 				newURL += "&"
 			}
 			newURL += pair[0] + "=" + pair[1];
-			console.log(newURL);
 		}
 		window.location = newURL;
 	});

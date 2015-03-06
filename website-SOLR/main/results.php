@@ -48,6 +48,7 @@
 						<?php echo $lang['RESULT_FILTER']; ?>
 						<div class="pull-right">
 							<select id="coreSelector">
+								<option>gnd3</option>
 								<option>gnd</option>
 								<option>gnd2</option>
 							</select>
