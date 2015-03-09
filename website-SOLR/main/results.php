@@ -42,21 +42,23 @@
 			<div class="row" style= "padding-top: 9%;">
 				<!-- container for the result form (the result form is on the left hand-side) -->
 				<div id="result-container" class="col-xs-6 col-md-6 pull-left"> 
-
-					<!--<h1>Thesaurus Search Results</h1>-->
-					<p>
-						<?php echo $lang['RESULT_FILTER']; ?>
-						<div class="pull-right">
-							<select id="coreSelector">
-								<option>gnd3</option>
-								<option>gnd</option>
-								<option>gnd2</option>
-							</select>
-							<button id="btn-toggle-map" >></button>
-						</div>
-					</p>
 					<span style="padding-left:  0pt"><a href="#" onclick="history.go(-1);return false;">&lt;&lt; <?php echo $lang['RESULT_GO_BACK']; ?></a></span>
 					<span style="padding-left:  20pt"><a href="search.php">&lt;&lt; <?php echo $lang['RESULT_START_NEW']; ?></a></span>
+
+					<!--<h1>Thesaurus Search Results</h1>-->
+					<div class="pull-right">
+						<select id="coreSelector">
+							<option>gnd3</option>
+							<option>gnd</option>
+							<option>gnd2</option>
+						</select>
+						<button id="btn-toggle-map" >></button>
+					</div>
+
+					<br><br>
+					<p>
+						<div id="search_text_field"></div>
+					</p>
 					<div id="error" style="color:red; display:none;"><br/><br/><?php echo $lang['RESULT_NO_RESULT']; ?></div>
 
 					<div id="loadingDiv"><img src="images/ajax-loader.gif"></div>

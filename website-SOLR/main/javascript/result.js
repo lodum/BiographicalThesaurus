@@ -107,6 +107,31 @@ $(document).ready(function () {
 		allData = result.response.docs;
     });
 	
+	function searchToText () {
+		var text = 'Ergebnisse der Suche';
+		if(person && person != "") {
+			text += ' nach dem Namen ' + person;
+		}
+		if(place && place != "") {
+			var tmp = place;
+			var status = 0;
+			if(typeof place == 'string') {
+				text += ' in ' + decodeURI(place);
+			} else {
+				text += ' in dem ausgewähltem Raum';
+			}
+		}
+		if(begindate) {
+			text += ' von dem Jahre ' + beginDate;
+		}
+		if(enddate) {
+			text += ' bis zum Jahre ' + enddate;
+		}
+		if(occ) {
+			text += ' mit dem Beruf ' + occ;
+		}
+		return text;
+	};
 
 	function getParam(variable) {
 		var query = window.location.search.substring(1);
@@ -177,10 +202,9 @@ $(document).ready(function () {
 		});
 		map.addMarkerLayer(placeType);
 		map.showLegend();
+
+		$('#search_text_field').text(searchToText());
 	};
-
-
-
 
 	function clearTable () {
 		$('#result_text').html('');
@@ -191,7 +215,23 @@ $(document).ready(function () {
 	var $body = $("<tbody></tbody>");
 	var $hline = $("<tr></tr>");
 
-	var dtable = $("#datatable").DataTable();
+	var dtable = $("#datatable").DataTable( 
+		{
+		    "oLanguage": {
+		      	"sSearch": "Ergebnisse filtern:",
+		      	"sInfo": "Ergebnisse _START_ bis _END_ von _TOTAL_",
+		      	"sNext": "Nächste",
+		      	"sPrevious": "Vorherige",
+		      	"sLengthMenu": 'Anzeigen <select>'+
+					'<option value="10">10</option>'+
+					'<option value="25">25</option>'+
+					'<option value="50">50</option>'+
+					'<option value="100">100</option>'+
+					'<option value="-1">Alle</option>'+
+					'</select>'
+		    },
+	  	} 
+  	);
 
 	function fillTable (data) {
 		clearTable();
@@ -242,13 +282,29 @@ $(document).ready(function () {
 		$table.append($body);
 		$table.appendTo( $( "#resultdiv" ) );
 
-		dtable = $("#datatable").DataTable();
+		dtable = $("#datatable").DataTable( 
+			{
+			    "oLanguage": {
+			      	"sSearch": "Ergebnisse filtern:",
+			      	"sInfo": "Ergebnisse _START_ bis _END_ von _TOTAL_",
+			      	"sNext": "Nächste",
+			      	"sPrevious": "Vorherige",
+			      	"sLengthMenu": 'Anzeigen <select>'+
+						'<option value="10">10</option>'+
+						'<option value="25">25</option>'+
+						'<option value="50">50</option>'+
+						'<option value="100">100</option>'+
+						'<option value="-1">Alle</option>'+
+						'</select>'
+			    },
+		  	} 
+	  	);
 
 		dtable.draw();
 
 		$('#datatable tbody').on('click', 'td.details-control', function () {
 			var td = $(this);
-	        var tr = $(this).closest('tr'); 
+	        var tr = $(this).closest('tr');
 	       	var row = dtable.row( tr );
 
 	        if ( row.child.isShown() ) {
@@ -314,7 +370,6 @@ $(document).ready(function () {
 	};
 
 	$("#map").on('link-clicked', function (e, id) {
-		console.log(id);
 		dtable.search(id);
 		dtable.draw();
 		$.each(dtable.rows().data(), function (index) {
