@@ -1,8 +1,12 @@
+/*
+	Detail class - functions to load and display person details
+*/
 var details = new function() {
 
+	// General load function
 	this.load = function(gndID, row) {
 
-       	var solrQueryUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/gnd2/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';	
+       	var solrQueryUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/gnd3/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';	
 
  		$.getJSON(solrQueryUrl, function(result){
 			
@@ -15,12 +19,13 @@ var details = new function() {
 	    });
 	};
 
+	// Detail table showing person attributes
 	this.getDetailTable = function (gndID, person) {
 		
 		var daten = '';
 
-		daten += '<table class="personDetails" style="background-color:#e3e9f0; width:100%">' +
-				 '<p><b>Biogramm</b></p>' + 
+		daten += '<p><b>Biogramm</b></p>' + 
+				 '<table class="personDetails" style="background-color:#e3e9f0; width:100%">' +
 				 '<tr><td style="width:120px; background-color:#e3e9f0;">Name : </td><td style="background-color:#e3e9f0;">' + person.preferredNameForThePerson + '</td>' +
 				 '<td rowspan="12" style="width:150px; background-color:#e3e9f0; vertical-align:top;"><div id="img' + gndID + '" style="text-align:right;"></div></td></tr>';
 			
@@ -47,13 +52,13 @@ var details = new function() {
 		daten += '<tr style="height:auto; background-color:#e3e9f0;"><td>&nbsp;</td></tr>' +
 				 '</table>';
 
-		daten += '<div id="div' + gndID + '"></div>'
-		daten += '<br>';
+		daten += '<div id="divref' + gndID + '"></div>'
+
 		daten += '<div id="divauthor' + gndID + '"></div>'
-		daten += '<br>';
+
 		daten += '<div id="divsubject' + gndID + '"></div>'
 
-		//details.loadReferences(gndID);
+		details.loadReferences(gndID);
 
 		details.loadLitrature('author', gndID, 'Literatur Von');
 		details.loadLitrature('subject', gndID, 'Literatur Über');
@@ -61,6 +66,7 @@ var details = new function() {
 		return daten;
 	};
 
+	// Load the associated person image 
 	this.loadDetailImg = function (gndID) {
 
 		var dnbQueryUrl = 'http://hub.culturegraph.org/entityfacts/' + gndID;
@@ -79,6 +85,35 @@ var details = new function() {
   		});
 	};
 
+	// Load beacon references
+	this.loadReferences = function(gndID) {
+		
+		var solrBeaconUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/beaconInfo/select?q=gndIdentifier:"http://d-nb.info/gnd/' + gndID + '"&wt=json&json.wrf=?&indent=true';	
+
+ 		$.getJSON(solrBeaconUrl, function(result){
+			
+			if (result.response.docs.length > 0) {
+				
+				var refs = '';
+
+				refs += '<br><p><b>Referenzen</b></p>' + 
+						'<table class="personDetails" style="background-color:#e3e9f0; width:100%">'
+
+				for (var i = result.response.docs.length - 1; i >= 0; i--) {
+					refs += '<tr><td style="background-color:#e3e9f0;">';
+					refs += '<a href="' + result.response.docs[i].linkTarget + '" target="_blank">' + result.response.docs[i].linkDescription + '</a>';
+					refs += '</td></tr>';
+				};
+
+				refs += '</table>'
+
+				$('#divref' + gndID).html(refs);
+			};
+			
+	    });
+	};
+
+	// Helper function to create a table row
 	this.getDetailRow = function(key, value) {
 
 		if (value != undefined && value != '')
@@ -87,6 +122,7 @@ var details = new function() {
 			return '';
 	};
 
+	// Helper function to create a table row with link attributes
 	this.getDetailReferenceRow = function(key, linkValue, textValue) {
 
 		if (linkValue != undefined && linkValue != '' && textValue != undefined && textValue != '')
@@ -95,6 +131,7 @@ var details = new function() {
 			return '';
 	};
 
+	// Litrature loading via lobid.org
 	this.loadLitrature = function(target, gndID, title) {
 		
 		var lobidURL = "http://lobid.org/resource?" + target + "=" + gndID;
@@ -170,7 +207,7 @@ var details = new function() {
 					//litArray.sort(function(a, b){return a.title.localeCompare(b.title);});
 					
 					if (litArray.length > 0) {
-						litTable = '<p><b>' + title + '</b></p>' +
+						litTable = '<br><p><b>' + title + '</b></p>' +
 								   '<table id="lit' + target + gndID + '" class="litratureTable" >' + 
 								   '<thead>' + 
 						           		'<tr style="background-color:#e3e9f0;">'+
@@ -234,6 +271,7 @@ var details = new function() {
 		});
 	};
 
+	// Helper function to correctly format dates
 	this.dateFormat = function(date) {
 		
 		if (date != undefined) {
