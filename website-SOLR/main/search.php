@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 	
+	<link rel="stylesheet" href="../assets/css/selectize.css">
 	<!-- Leaflet -->
 	<link rel="stylesheet" href="../assets/leaflet-0.6.4/leaflet.css" type="stylesheet"/>
 	<!-- Leaflet.markercluster -->
@@ -60,29 +61,24 @@
 								</div> 
 							</div>
 
-							<br>
-
 							<div class="row">
 								<div class="col-md-4 col-xs-5">
 									<label><?php echo $lang['SEARCH_OCC']; ?></label>
 								</div>
 								<div class="col-md-8 col-xs-7">
-									<input id="occ" type="text" placeholder="<?php echo $lang['SEARCH_OCC2']; ?>">
+									<select id="select-occ" placeholder="<?php echo $lang['SEARCH_OCC2']; ?>"></select>
 								</div> 
 							</div>
-
-							<br>
 
 							<div class="row">
 								<div class="col-md-4 col-xs-5">
-									<label><?php echo $lang['SEARCH_PLACE']; ?>
+									<label><?php echo $lang['SEARCH_PLACE2']; ?></label>
 								</div>
 								<div class="col-md-8 col-xs-7">
-									<input id="place" type="text" placeholder="<?php echo $lang['SEARCH_PLACE2']; ?>">
+									<select id="select-place" placeholder="<?php echo $lang['SEARCH_PLACE']; ?>"></select>
 								</div> 
 							</div>
-							
-						
+
 							<p>
 								<div class="row" id="checkboxes">
 									<div class="col-md-4">
@@ -97,6 +93,7 @@
 								</div>
 							</p>
 							<br>	
+
 
 							<p>
 	 							<span><b><?php echo $lang['SEARCH_TIME']; ?></b></span>
@@ -127,7 +124,7 @@
 						</fieldset>	
 					</form>
 					<button class="btn btn-primary" id="btn-search"><?php echo $lang['SEARCH_SUBMIT']; ?></button>
-					<button class="btn btn-primary" type="reset" onclick="document.getElementById('searchform').reset(); hideSliderCheckbox();" ><?php echo $lang['SEARCH_RESET']; ?></button>
+					<button class="btn btn-primary" type="reset" onclick='window.location="search.php"' ><?php echo $lang['SEARCH_RESET']; ?></button>
 				</div>
 		        <div id="map" class="col-xs-6 col-md-8 pull-right"></div>
 		    </div>
@@ -164,6 +161,8 @@
 		<script src="javascript/jQAllRangeSliders-withRuler-min.js"></script>
 		<!-- Leaflet -->
 		<script src="../assets/leaflet-0.6.4/leaflet.js"></script>
+
+		<script src="../assets/js/selectize.min.js"></script>
 		<!-- Leaflet.markerCluster -->
 		<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
 		<!-- Leaflet.draw -->

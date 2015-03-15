@@ -82,6 +82,7 @@ $(document).ready(function () {
 			query.setEnd(enddate);
 		}
 	}
+	var era = getParam('era');
 	var occ = getParam('occ');
 	if(occ) {
 		query.setActivity(occ);
@@ -108,28 +109,33 @@ $(document).ready(function () {
     });
 	
 	function searchToText () {
-		var text = 'Ergebnisse der Suche';
+		var eras = ['...', 'während der <b>Antike</b>', 'während dem <b>Mittelalter</b>', 'während dem <b>Frühmittelatler</b>', 'während dem <b>Hochmittelalter</b>', 'während dem <b>Spätmittelalter</b>', 'während der <b>Neuzeit</b>', 'während der <b>frühen Neuzeit</b>', 'während des <b>Konfessionellem Zeitalters</b>', 'wärhend des <b>Absolutismus und der Aufklärung</b>', 'während der <b>Moderne</b>', 'vom <b>Alten zum Deutschen Reich</b>', 'wärhend des <b>Deutschen Reiches</b>', 'seit der <b>Bundesrepublik Deutschland</b>']
+		var text = '<div>Ergebnisse der Suche';
 		if(person && person != "") {
-			text += ' nach dem Namen ' + person;
+			text += ' nach dem Namen <b>' + person + '</b>';
 		}
 		if(place && place != "") {
 			var tmp = place;
 			var status = 0;
 			if(typeof place == 'string') {
-				text += ' in ' + decodeURI(place);
+				text += ' in <b>' + decodeURI(place) + '</b>';
 			} else {
-				text += ' in dem ausgewähltem Raum';
+				text += ' in dem <b>ausgewähltem Raum</b>';
 			}
 		}
+		if(era) {
+			text += eras[era];
+		}
 		if(begindate) {
-			text += ' von dem Jahre ' + beginDate;
+			text += ' von dem <b>Jahre ' + begindate + '</b>';
 		}
 		if(enddate) {
-			text += ' bis zum Jahre ' + enddate;
+			text += ' bis zum <b>Jahre ' + enddate + '</b>';
 		}
 		if(occ) {
-			text += ' mit dem Beruf ' + occ;
+			text += ' mit dem <b>Beruf ' + occ + '</b>';
 		}
+		text += '</div>'
 		return text;
 	};
 
@@ -203,7 +209,7 @@ $(document).ready(function () {
 		map.addMarkerLayer(placeType);
 		map.showLegend();
 
-		$('#search_text_field').text(searchToText());
+		$('#search_text_field').html(searchToText());
 	};
 
 	function clearTable () {

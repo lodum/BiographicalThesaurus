@@ -114,11 +114,13 @@ Query.prototype.buildURL = function () {
 				srchstrng += ' AND ';
 			}
 			if(this.core == 'gnd3') {
-				srchstrng += 'yearOfBirth:[' + this.start + ' TO ' + this.end + ']';
-				srchstrng += ' OR yearOfDeath:[' + this.start + ' TO ' + this.end + ']';
+				srchstrng += '((yearOfBirth:[' + this.start + ' TO ' + this.end + ']';
+				srchstrng += ' OR yearOfDeath:[' + this.start + ' TO ' + this.end + '])';
+				srchstrng += ' OR (yearOfBirth:[-500 TO ' + this.start + ']';
+				srchstrng += ' AND yearOfDeath:[' + this.end + ' TO 2100]))';
 			} else {
-				srchstrng += 'dateOfBirth:[' + this.start + ' TO ' + this.end + ']';
-				srchstrng += 'dateOfDeath:[' + this.start + ' TO ' + this.end + ']';
+				srchstrng += '(dateOfBirth:[' + this.start + ' TO ' + this.end + ']';
+				srchstrng += 'dateOfDeath:[' + this.start + ' TO ' + this.end + '])';
 			}
 			
 		} else {
@@ -126,11 +128,11 @@ Query.prototype.buildURL = function () {
 				srchstrng += ' AND ';
 			}
 			if(this.core == 'gnd3') {
-				srchstrng += 'yearOfBirth:[' + this.start + ' TO NOW]';
-				srchstrng += ' OR yearOfDeath:[' + this.start + ' TO NOW]';
+				srchstrng += '(yearOfBirth:[' + this.start + ' TO ' + new Date().getFullYear() + ']';
+				srchstrng += ' OR yearOfDeath:[' + this.start + ' TO ' + new Date().getFullYear() + '])';
 			} else {
-				srchstrng += 'dateOfBirth:[' + this.start + ' TO NOW]';
-				srchstrng += ' OR dateOfDeath:[' + this.start + ' TO NOW]';
+				srchstrng += '(dateOfBirth:[' + this.start + ' TO ' + new Date().getFullYear() + ']';
+				srchstrng += ' OR dateOfDeath:[' + this.start + ' TO ' + new Date().getFullYear() + '])';
 			}
 		}
 		attributeUsed = true;
@@ -140,11 +142,11 @@ Query.prototype.buildURL = function () {
 				srchstrng += ' AND ';
 			}
 			if(this.core == 'gnd3') {
-				srchstrng += 'yearOfBirth:[-500 TO ' + this.end + ']';
-				srchstrng += ' OR yearOfDeath:[-500 TO ' + this.end + ']';
+				srchstrng += '(yearOfBirth:[-500 TO ' + this.end + ']';
+				srchstrng += ' OR yearOfDeath:[-500 TO ' + this.end + '])';
 			} else {
-				srchstrng += 'dateOfBirth:[-500 TO ' + this.end + ']';
-				srchstrng += 'dateOfDeath:[-500 TO ' + this.end + ']';
+				srchstrng += '(dateOfBirth:[-500 TO ' + this.end + ']';
+				srchstrng += 'dateOfDeath:[-500 TO ' + this.end + '])';
 			}
 			attributeUsed = true;
 		}
