@@ -154,8 +154,22 @@ $(document).ready(function () {
 		goToResults();
 	});
 
-	$(map).on('execute-search', function () {
-		goToResults();
+	$(map).on('draw:created', function () {
+		$( "#dialog-confirm" ).html('<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>Wollen Sie die Suche ausführen?');
+		$( "#dialog-confirm" ).dialog({
+			resizable: false,
+			height:200,
+			modal: true,
+			buttons: {
+				"Ja": function() {
+					$( this ).dialog( "close" );
+					goToResults();
+				},
+				Nein: function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		});
 	});
 
 	$("#eraSelector").on('change', function (e, data) {

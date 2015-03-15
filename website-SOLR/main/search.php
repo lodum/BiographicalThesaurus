@@ -127,6 +127,9 @@
 					<button class="btn btn-primary" type="reset" onclick='window.location="search.php"' ><?php echo $lang['SEARCH_RESET']; ?></button>
 				</div>
 		        <div id="map" class="col-xs-6 col-md-8 pull-right"></div>
+
+		        <div id="dialog-confirm"></div>
+
 		    </div>
 		</div>
 
