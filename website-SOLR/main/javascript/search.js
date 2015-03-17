@@ -13,6 +13,7 @@ $(document).ready(function () {
 	var selectedDate = null;
 	var era;
 	var eraChangeFlag = false;
+
 	initSlider();
 	map.initLeafletDraw();
 	$('#box_birthplace').prop('checked', true);
@@ -144,7 +145,7 @@ $(document).ready(function () {
 		}
 		if(_era) {
 			eraChangeFlag = true;
-			$("#eraSelector")[0].selectedIndex = _era;
+			$("#eraSelector").val(_era);
 		}
 	}
 

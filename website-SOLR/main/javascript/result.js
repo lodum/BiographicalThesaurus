@@ -1,4 +1,18 @@
+function getParam(variable) {
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			if (pair[0] == variable) {
+				return pair[1];
+			}
+		}
+		return (false);
+	};
+
 $(document).ready(function () {
+
+
 	//Init map and Add tilelayer to the map
 	var map = new Map('map').setView([51.962797, 7.621200], 10);
 	mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
@@ -52,22 +66,38 @@ $(document).ready(function () {
 		query.setSpatial(place);
 	}
 
+	var hideMap = false;
+	hideMap = Boolean(getParam('hideMap'));
 
-	$("#btn-toggle-map").click(function (e) {
-		if($("#btn-toggle-map").text() == "<") {
+	function toggleMap(pushState) {
+		if(!hideMap) {
 			$("#btn-toggle-map").text(">");
 			$("#map").show();
 			$("#result-container").attr("class","col-xs-6 col-md-6 pull-left");
 			$('#datatable').width($('#resultdiv').width());
 			dtable.draw();
+
+			if (pushState)
+				history.pushState(null, "", window.location.href.replace('&hideMap=true', ''));
+			//window.location = window.location.href.replace('&hideMap=true', '');
 		} else {
 			$("#btn-toggle-map").text("<");
 			$("#map").hide();
 			$("#result-container").attr("class","col-xs-12 col-md-12 pull-left");
 			$('#datatable').width($('#resultdiv').width());
 			dtable.draw();
+
+			if (pushState)
+				history.pushState(null, "", window.location.href.replace('&hideMap=true', '') + '&hideMap=true');
+			//window.location = window.location.href.replace('&hideMap=true', '') + '&hideMap=true';
 		}
+
+		hideMap = !hideMap;
+	};
+
+	$("#btn-toggle-map").click(function (e) {
 		
+		toggleMap(true);	
 	});
 	
 	var begindate = getParam('beginDate');
@@ -102,11 +132,16 @@ $(document).ready(function () {
 		});
 	}
 
+
 	//query.execute()
 	$.getJSON(query.buildURL(), function(result){
 		processData(result.response.docs);
 		allData = result.response.docs;
+
+		toggleMap(false);	
     });
+
+
 	
 	function searchToText () {
 		var eras = ['...', 'während der <b>Antike</b>', 'während dem <b>Mittelalter</b>', 'während dem <b>Frühmittelatler</b>', 'während dem <b>Hochmittelalter</b>', 'während dem <b>Spätmittelalter</b>', 'während der <b>Neuzeit</b>', 'während der <b>frühen Neuzeit</b>', 'während des <b>Konfessionellem Zeitalters</b>', 'wärhend des <b>Absolutismus und der Aufklärung</b>', 'während der <b>Moderne</b>', 'vom <b>Alten zum Deutschen Reich</b>', 'wärhend des <b>Deutschen Reiches</b>', 'seit der <b>Bundesrepublik Deutschland</b>']
@@ -138,18 +173,6 @@ $(document).ready(function () {
 		text += '</div>'
 		return text;
 	};
-
-	function getParam(variable) {
-		var query = window.location.search.substring(1);
-		var vars = query.split("&");
-		for (var i = 0; i < vars.length; i++) {
-			var pair = vars[i].split("=");
-			if (pair[0] == variable) {
-				return pair[1];
-			}
-		}
-		return (false);
-	}
 
 	$('#coreSelector').on('change', function (e) {
 		var val = $("#coreSelector option:selected").val();
@@ -313,21 +336,54 @@ $(document).ready(function () {
 	        var tr = $(this).closest('tr');
 	       	var row = dtable.row( tr );
 
+	       	var gndID = $('td.gndid', tr).text();
+
+
 	        if ( row.child.isShown() ) {
 	            // This row is already open - close it
 	            row.child.hide();
+
+	            history.pushState(null, "", window.location.origin +
+	            	window.location.pathname + '?' +
+	            	removeShowDetails());
+
 	            //map.undoHighLight();
 	            //map.showMarkers();
 	            td.removeClass('shown');
 	            tr.removeClass('shown');
 	        }
 	        else {
+	        	// Close all
+
+	        	$('#datatable').find('tr').each (function() {
+				var tr = $(this).closest('tr');
+				var td = $('td.details-control', tr);
+		       	var row = dtable.row( tr );
+
+
+		        if ( row.child.isShown() ) {
+		            // This row is already open - close it
+		            row.child.hide();
+
+		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
+
+		            //map.undoHighLight();
+		            //map.showMarkers();
+		            td.removeClass('shown');
+		            tr.removeClass('shown');
+		        }
+			});
+
 	            // Open this row
-        		var gndID = $('td.gndid', tr).text();
 
         		//Load Details
         		details.load(gndID, row);        		
 	            
+	            history.pushState(null, "", window.location.origin +
+	            	window.location.pathname + '?' +
+	            	removeShowDetails() +
+	            	'&showDetails=' + gndID);
+
 	            td.addClass('shown');
 	            tr.addClass('shown');
 	        }
@@ -452,4 +508,62 @@ $(document).ready(function () {
 		
 	}
 
+	window.onpopstate = function(event) {
+    	if(event) {
+			hideMap = Boolean(getParam('hideMap'));
+
+			toggleMap(false);
+
+			showDetailsGNDid = getParam('showDetails')
+
+			$('#datatable').find('tr').each (function() {
+				var tr = $(this).closest('tr');
+				var td = $('td.details-control', tr);
+		       	var row = dtable.row( tr );
+
+
+		        if ( row.child.isShown() ) {
+		            // This row is already open - close it
+		            row.child.hide();
+
+		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
+
+		            //map.undoHighLight();
+		            //map.showMarkers();
+		            td.removeClass('shown');
+		            tr.removeClass('shown');
+		        }
+			});
+
+			$('#datatable').find('tr').each (function() {
+				var tr = $(this).closest('tr');
+				var td = $('td.details-control', tr);
+		       	var row = dtable.row( tr );
+
+		       	var gndID = $('td.gndid', tr).text();
+
+		        if ( showDetailsGNDid == gndID) {
+
+		            details.load(gndID, row);        		
+		            
+		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, '') + '&showDetails=' + gndID);
+
+		            td.addClass('shown');
+		            tr.addClass('shown');
+		        }
+			});
+    	}
+	};
+
+	function removeShowDetails() {
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			if (pair[0] == 'showDetails') {
+				query = query.replace('&showDetails=' + pair[1], '');
+			}
+		}
+		return query;
+	};
 });

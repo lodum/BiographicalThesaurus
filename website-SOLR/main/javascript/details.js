@@ -26,42 +26,50 @@ var details = new function() {
 
 		daten += '<p><b>Biogramm</b></p>' + 
 				 '<table class="personDetails" style="background-color:#e3e9f0; width:100%">' +
-				 '<tr><td style="width:120px; background-color:#e3e9f0;">Name : </td><td style="background-color:#e3e9f0;">' + person.preferredNameForThePerson + '</td>' +
+				 '<tr><td style="width:120px; background-color:#e3e9f0;"><b>Name : </b></td><td style="background-color:#e3e9f0;"><b>' + person.preferredNameForThePerson + '</b></td>' +
 				 '<td rowspan="12" style="width:150px; background-color:#e3e9f0; vertical-align:top;"><div id="img' + gndID + '" style="text-align:right;"></div></td></tr>';
-			
-		daten += details.getDetailRow('Geburtsdatum', details.dateFormat(person.dateOfBirth));
-		daten += details.getDetailRow('Geburtsort', person.placeOfBirth);
+		
+		
+		daten += details.getDetailRow('Abweichende Namen', person.variantNameForThePerson);
 
+		daten += details.getDetailRow('Geburtsdatum', details.dateFormat(person.dateOfBirth));
 		daten += details.getDetailRow('Sterbedatum', details.dateFormat(person.dateOfDeath));
+
+		daten += details.getDetailRow('Wirkungszeitraum', person.periodOfActivity);
+
+
+		daten += details.getDetailRow('Geburtsort', person.placeOfBirth);		
 		daten += details.getDetailRow('Sterbeort', person.placeOfDeath);
 
-		daten += details.getDetailRow('Beruf(e)', person.professionsOrOccupations);
+		daten += details.getDetailRow('Wirkungsort(e)', person.placesOfActivity);
 
-		daten += details.getDetailRow('Beziehungen zu Personen', person.familialRelationship);
+		daten += details.getDetailRow('Beruf(e) / Funktion(en)', person.professionsOrOccupations);
 
-		daten += details.getDetailRow('Weitere Angaben', person.biographicalOrHistoricalInformation);
+		daten += details.getDetailRow('Biograph. Anmerkungen', person.biographicalOrHistoricalInformation);
 
-		
+		daten += details.getDetailRow('Beziehungen zu anderen Personen', person.familialRelationship);
 
-		
-		daten += '<tr style="background-color:#e3e9f0;"><td>&nbsp;</td><td></td></tr>';
+		daten += details.getDetailRow('Beziehung zu Körperschaften', person.affiliation);
 
-		daten += details.getDetailReferenceRow('D-NB', person.gndIdentifier, person.gndIdentifier);
-		daten += details.getDetailReferenceRow('Wikipedia', person.wikipedia, person.wikipedia);
+
+		daten += details.getDetailReferenceRow('Datensatz', person.gndIdentifier, person.gndIdentifier);
+
 
 		daten += '<tr style="height:auto; background-color:#e3e9f0;"><td>&nbsp;</td></tr>' +
 				 '</table>';
 
-		daten += '<div id="divref' + gndID + '"></div>'
 
 		daten += '<div id="divauthor' + gndID + '"></div>'
 
 		daten += '<div id="divsubject' + gndID + '"></div>'
 
-		details.loadReferences(gndID);
+		daten += '<div id="divref' + gndID + '"></div>'
+
 
 		details.loadLitrature('author', gndID, 'Literatur Von');
 		details.loadLitrature('subject', gndID, 'Literatur Über');
+
+		details.loadReferences(gndID);
 
 		return daten;
 	};
@@ -96,7 +104,7 @@ var details = new function() {
 				
 				var refs = '';
 
-				refs += '<br><p><b>Referenzen</b></p>' + 
+				refs += '<br><p><b>Weiteres zur Person</b></p>' + 
 						'<table class="personDetails" style="background-color:#e3e9f0; width:100%">'
 
 				for (var i = result.response.docs.length - 1; i >= 0; i--) {
@@ -116,8 +124,15 @@ var details = new function() {
 	// Helper function to create a table row
 	this.getDetailRow = function(key, value) {
 
-		if (value != undefined && value != '')
-			return '<tr style="background-color:#e3e9f0; vertical-align:top;"><td>' + key + '&nbsp;:</td><td>' + value + '</td></tr>';
+		if (value != undefined && value != '') {
+			
+			var fValue = value;
+
+			if ($.isArray(value))
+				fValue = value.join('; ');
+				
+			return '<tr style="background-color:#e3e9f0; vertical-align:top;"><td>' + key + '&nbsp;:</td><td>' + fValue + '</td></tr>';
+		}
 		else
 			return '';
 	};

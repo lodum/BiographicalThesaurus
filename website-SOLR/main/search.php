@@ -106,20 +106,20 @@
 
 							<label><?php echo $lang['SEARCH_ERA']; ?></label>
 							<select id="eraSelector">
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][0];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][1];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][2];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][3];?></option>	 	
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][4];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][5];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][6];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][7];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][8];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][9];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][10];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][11];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][12];?></option>
-								<option><?php echo $lang['SEARCH_ERA_CHOICES'][13];?></option>	 			
+								<option value="0"><?php echo $lang['SEARCH_ERA_CHOICES'][0];?></option>
+								<option value="1"><?php echo $lang['SEARCH_ERA_CHOICES'][1];?></option>
+								<option value="2"><?php echo $lang['SEARCH_ERA_CHOICES'][2];?></option>
+								<option value="3"><?php echo $lang['SEARCH_ERA_CHOICES'][3];?></option>	 	
+								<option value="4"><?php echo $lang['SEARCH_ERA_CHOICES'][4];?></option>
+								<option value="5"><?php echo $lang['SEARCH_ERA_CHOICES'][5];?></option>
+								<option value="6"><?php echo $lang['SEARCH_ERA_CHOICES'][6];?></option>
+								<option value="7"><?php echo $lang['SEARCH_ERA_CHOICES'][7];?></option>
+								<option value="8"><?php echo $lang['SEARCH_ERA_CHOICES'][8];?></option>
+								<option value="9"><?php echo $lang['SEARCH_ERA_CHOICES'][9];?></option>
+								<option value="10"><?php echo $lang['SEARCH_ERA_CHOICES'][10];?></option>
+								<option value="11"><?php echo $lang['SEARCH_ERA_CHOICES'][11];?></option>
+								<option value="12"><?php echo $lang['SEARCH_ERA_CHOICES'][12];?></option>
+								<option value="13"><?php echo $lang['SEARCH_ERA_CHOICES'][13];?></option>	 			
 							</select>
 						</fieldset>	
 					</form>
