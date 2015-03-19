@@ -220,6 +220,7 @@ var Map = L.Map.extend({
 	addMarkerLayer: function (placeType) {
 		this.placeType = placeType;		
 		this.showMarkers();
+		this.focusOnMarker();
 	},
 
 	hideMarkers: function () {
@@ -426,6 +427,17 @@ var Map = L.Map.extend({
          	this.addLayer(circle);
          	this.isDrawn = true; 
 		}
+	},
+
+	focusOnMarker: function () {
+		var city;
+		var markers = [];
+		for(city in this.cities) {
+			markers.push(this.cities[city].marker);
+		}
+		var group = new L.featureGroup(markers);
+		var bounds = group.getBounds();
+		this.fitBounds(bounds);
 	}
 
 });
