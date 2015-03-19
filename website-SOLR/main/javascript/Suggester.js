@@ -33,6 +33,6 @@ Suggester.prototype.execute = function () {
 */
 Suggester.prototype.buildURL = function () {
 	url = this.basePath + this.core + '/select?'; 
-	url += 'q=*:*&rows=1&facet=true&facet.field=' + this.field + '&wt=json&json.wrf=?&indent=true';
+	url += 'q=*:*&rows=1&facet=true&facet.limit=999999&facet.field=' + this.field + '&wt=json&json.wrf=?&indent=true';
 	return url;
 };

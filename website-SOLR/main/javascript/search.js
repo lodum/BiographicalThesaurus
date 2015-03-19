@@ -1,82 +1,47 @@
 $(document).ready(function () {
-	//Init map and Add tilelayer to the map
-	var map = new Map('map').setView([51.962797, 7.621200], 8);
-	mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
-	tilelayer = L.tileLayer(
+	/*** Variables
+	*
+	*/
+	var map = new Map('map').setView([51.962797, 7.621200], 8),
+		selectedDate = null,
+		era,
+		eraChangeFlag = false,
+		profession_data,
+		place_data,
+		data_loaded = 0,
+		_place = getParam('place'),
+		_person = getParam('person'),
+		_pType = getParam('pType'),
+		_start = getParam('beginDate'),
+		_end = getParam('endDate'),
+		_occ = getParam('occ'),
+		_era = getParam('era'),
+		mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>',
+		tilelayer = L.tileLayer(
 		'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 		{
 	        attribution: 'Map data &copy; ' + mapLink,
 	        maxZoom: 18,
-		}
-	);
-	map.addTileLayer(tilelayer);
-	var selectedDate = null;
-	var era;
-	var eraChangeFlag = false;
+		}),
+		$selectOcc = $('#select-occ').selectize({
+			sortField: {field: 'text'},
+			openOnFocus: false
+		}),
+    	$selectPlace = $('#select-place').selectize({
+			sortField: {field: 'text'},
+			openOnFocus: false
+		}),
+		selectizeOcc = $selectOcc[0].selectize,
+		selectizePlace = $selectPlace[0].selectize;
 
-	initSlider();
-	map.initLeafletDraw();
-	$('#box_birthplace').prop('checked', true);
-	$('#box_deathplace').prop('checked', true);
-	$('#box_activityplace').prop('checked', true);
+	
+	/*** Functions
+	*
+	*/
 
-	var profession_data;
-	var place_data;
-	var data_loaded = 0;
-	suggester = new Suggester();
-	suggester.setCore('gnd3');
-
-	var $selectOcc = $('#select-occ').selectize({
-		sortField: {field: 'text'},
-		openOnFocus: false
-	});
-    var $selectPlace = $('#select-place').selectize({
-		sortField: {field: 'text'},
-		openOnFocus: false
-	});
-	var selectizeOcc = $selectOcc[0].selectize;
-	var selectizePlace = $selectPlace[0].selectize;
-
-	suggester.setField('professionsOrOccupations');
-	$.getJSON(suggester.buildURL(), function(result){
-		profession_data = result.facet_counts.facet_fields.professionsOrOccupations;
-		$.each(profession_data, function (index, value) {
-			if(index % 2) {
-				//do nothing
-			} else {
-				selectizeOcc.addOption(new Option(value, index/2));
-			}
-		});
-		data_loaded ++;
-		if(data_loaded == 2) {
-			restoreValues();
-		}
-    });
-
-	suggester.setField('placeOfBirth');
-	$.getJSON(suggester.buildURL(), function(result){
-		profession_data = result.facet_counts.facet_fields.placeOfBirth;
-		$.each(profession_data, function (index, value) {
-			if(index % 2) {
-				//do nothing
-			} else {
-				selectizePlace.addOption(new Option(value, index/2));
-			}
-		});
-		data_loaded ++;
-		if(data_loaded == 2) {
-			restoreValues();
-		}
-    });	
-
-	var _place = getParam('place');
-	var _person = getParam('person');
-	var _pType = getParam('pType');
-	var _start = getParam('beginDate');
-	var _end = getParam('endDate');
-	var _occ = getParam('occ');
-	var _era = getParam('era');
-
+	/***
+	* Extract parameter from the URL
+	*/
 	function getParam(variable) {
 		var query = window.location.search.substring(1);
 		var vars = query.split("&");
@@ -89,6 +54,10 @@ $(document).ready(function () {
 		return (false);
 	};
 
+	/***
+	* Restore values after reloading the page.
+	* Values are stored in the URL.
+	*/
 	function restoreValues() {
 		if(_place) {
 			var tmp = _place;
@@ -149,52 +118,9 @@ $(document).ready(function () {
 		}
 	}
 
-	$("[rel='tooltip']").tooltip();
-
-	$('#btn-search').on('click', function () {
-		goToResults();
-	});
-
-	$(map).on('draw:created', function () {
-		$( "#dialog-confirm" ).html('<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>Wollen Sie die Suche ausführen?');
-		$( "#dialog-confirm" ).dialog({
-			resizable: false,
-			height:200,
-			modal: true,
-			buttons: {
-				"Ja": function() {
-					$( this ).dialog( "close" );
-					goToResults();
-				},
-				Nein: function() {
-					$( this ).dialog( "close" );
-				}
-			}
-		});
-	});
-
-	$("#eraSelector").on('change', function (e, data) {
-		var index = $("#eraSelector option:selected").index();
-		era = index;
-		eraChangeFlag = true;
-		var eras = [{min: null,max: null}, {min: null,max: 500}, {min: 500,max: 1500}, {min: 500,max: 900}, {min: 900,max: 1250}, {min: 1250,max: 1500}, {min: 1500,max: null}, {min: 1500,max: 1800}, {min: 1500,max: 1650}, {min: 1680,max: 1800}, {min: 1800,max: null}, {min: 1800,max: 1870}, {min: 1871,max: 1945}, {min: 1945, max: null} ]
-		var startdate = eras[index].min;
-		var enddate = eras[index].max;
-		var sliderValues = $("#slider").editRangeSlider("values");
-		if(startdate == null) {
-			if(enddate == null) {
-				startdate = sliderValues.min;
-				enddate = sliderValues.max;
-			} else {
-				startdate = 0;
-			}
-		} else if(enddate == null) {
-			enddate = new Date().getFullYear();
-		}
-		$("#slider").editRangeSlider("values", startdate, enddate);
-		selectedDate = {min: startdate, max: enddate}
-	});
-
+	/***
+	* Initialize the slider, set the values and add Listener for Changed Values
+	*/
 	function initSlider() {
 		$("#slider").editRangeSlider({
 			bounds: {min: -500, max: new Date().getFullYear()},
@@ -241,7 +167,9 @@ $(document).ready(function () {
 		});
 	}
 
-
+	/***
+	* Get all data inserted into the form and go to the results page
+	*/
 	function goToResults() {
 		var person = $('#person').val();
 		var occ = $('#select-occ').text();
@@ -322,4 +250,111 @@ $(document).ready(function () {
 		history.pushState(stateObj, "page 2", "search.php?" + target);
 		window.location = suffix + target;
 	}
+
+	/*** Events
+	*
+	*/
+
+	/***
+	* Is called when an era is changed
+	*/
+	$("#eraSelector").on('change', function (e, data) {
+		var index = $("#eraSelector option:selected").index();
+		era = index;
+		eraChangeFlag = true;
+		var eras = [{min: null,max: null}, {min: null,max: 500}, {min: 500,max: 1500}, {min: 500,max: 900}, {min: 900,max: 1250}, {min: 1250,max: 1500}, {min: 1500,max: null}, {min: 1500,max: 1800}, {min: 1500,max: 1650}, {min: 1680,max: 1800}, {min: 1800,max: null}, {min: 1800,max: 1870}, {min: 1871,max: 1945}, {min: 1945, max: null} ]
+		var startdate = eras[index].min;
+		var enddate = eras[index].max;
+		var sliderValues = $("#slider").editRangeSlider("values");
+		if(startdate == null) {
+			if(enddate == null) {
+				startdate = sliderValues.min;
+				enddate = sliderValues.max;
+			} else {
+				startdate = 0;
+			}
+		} else if(enddate == null) {
+			enddate = new Date().getFullYear();
+		}
+		$("#slider").editRangeSlider("values", startdate, enddate);
+		selectedDate = {min: startdate, max: enddate}
+	});
+
+	/***
+	* Is called when an shape is drawn on the map.
+	* Calls a window asking to submit the query.
+	*/
+	$(map).on('draw:created', function () {
+		$( "#dialog-confirm" ).html('<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>Wollen Sie die Suche ausführen?');
+		$( "#dialog-confirm" ).dialog({
+			resizable: false,
+			height:200,
+			modal: true,
+			buttons: {
+				"Ja": function() {
+					$( this ).dialog( "close" );
+					goToResults();
+				},
+				Nein: function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		});
+	});
+
+	/***
+	* Is called when the submit button is clicked
+	*/
+	$('#btn-search').on('click', function () {
+		goToResults();
+	});
+
+	/*** Function Calls
+	* 
+	*/
+	map.addTileLayer(tilelayer);
+
+	initSlider();
+	map.initLeafletDraw();
+
+	//tick checkboxes for place types
+	$('#box_birthplace').prop('checked', true);
+	$('#box_deathplace').prop('checked', true);
+	$('#box_activityplace').prop('checked', true);
+
+	// Query places and professions and add them to the select elements
+	suggester = new Suggester();
+	suggester.setCore('gnd3');
+	suggester.setField('professionsOrOccupations');
+	$.getJSON(suggester.buildURL(), function(result){
+		profession_data = result.facet_counts.facet_fields.professionsOrOccupations;
+		$.each(profession_data, function (index, value) {
+			if(index % 2) {
+				//do nothing
+			} else {
+				selectizeOcc.addOption(new Option(value, index/2));
+			}
+		});
+		data_loaded ++;
+		if(data_loaded == 2) {
+			restoreValues();
+		}
+    });
+	suggester.setField('placeOfBirth');
+	$.getJSON(suggester.buildURL(), function(result){
+		profession_data = result.facet_counts.facet_fields.placeOfBirth;
+		$.each(profession_data, function (index, value) {
+			if(index % 2) {
+				//do nothing
+			} else {
+				selectizePlace.addOption(new Option(value, index/2));
+			}
+		});
+		data_loaded ++;
+		if(data_loaded == 2) {
+			restoreValues();
+		}
+    });	
+
+    $("[rel='tooltip']").tooltip();
 });
