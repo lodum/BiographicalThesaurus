@@ -228,6 +228,30 @@ $(document).ready(function () {
 	}
 
 	function printSelection () {
+		function variableToText (variable) {
+			var mapNames = [
+				{variable: 'preferredNameForThePerson', text: 'Bevorzugter Name'}, 
+				{variable: 'variantNameForThePerson', text: 'Abweichende Namen'}, 
+				{variable: 'dateOfBirth', text: 'Geburtsdatum'}, 
+				{variable: 'dateOfDeath', text: 'Sterbedatum'}, 
+				{variable: 'periodOfActivity', text: 'Wirkungszeitraum'}, 
+				{variable: 'placeOfBirth', text: 'Geburtsort'}, 
+				{variable: 'placeOfDeath', text: 'Sterbeort'}, 
+				{variable: 'placesOfActivity', text: 'Wirkungsort(e)'}, 
+				{variable: 'professionsOrOccupations', text: 'Beruf(e) / Funktion(en)'}, 
+				{variable: 'biographicalOrHistoricalInformation', text: 'Biograph. Anmerkungen'}, 
+				{variable: 'familialRelationship', text: 'Beziehungen zu anderen Personen'}, 
+				{variable: 'affiliation', text: 'Beziehung zu Körperschaften'}
+			];
+			var text = null;
+			$.each(mapNames, function (index, value) {
+				if(variable == value.variable) {
+					text = value.text;
+				}
+			});
+			return text;
+		};
+
 		var returnData = '<br> ---------------------------------------- <br>';
 		if(selectedAll || selection.length != 0) {
 			var key;
@@ -238,7 +262,10 @@ $(document).ready(function () {
 			$.each(result, function (index, data) {
 				var key;
 				for(key in data) {
-					returnData += key + ': ' + data[key] + '<br>';
+					var _key = variableToText(key);
+					if(_key) {
+						returnData += '<b>' + _key + '</b>: ' + data[key] + '<br>';
+					}	
 				}
 				returnData += '<br> ---------------------------------------- <br>';
 			});
@@ -246,7 +273,7 @@ $(document).ready(function () {
 		} else {
 			return null;
 		}	
-	}
+	};
 
 	function fillTable (data) {
 		clearTable();
@@ -416,8 +443,6 @@ $(document).ready(function () {
 		printWin.focus();
 		printWin.print();
 		printWin.close();
-		//var printWindow = window.open("", "Print Window", "width=800, height=600");
-		//printWindow.document.write(printSelection());
 	});
 
 	$("#btn-toggle-map").click(function (e) {
