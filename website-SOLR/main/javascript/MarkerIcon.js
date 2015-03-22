@@ -2,7 +2,7 @@
 *
 */
 
- colors = ['#00FF00', '#FF0000', '#FFFF00'],
+ colors = ['#66c2a5', '#fc8d62', '#8da0cb'],
  pi2 = Math.PI * 2;
 
 var MarkerIcon = L.Icon.extend({

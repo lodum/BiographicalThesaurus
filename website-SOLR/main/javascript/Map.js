@@ -198,20 +198,19 @@ var Map = L.Map.extend({
 	highLight: function (id) {
 		var that = this;
 		_cities = this.person_city_map[id];
-		$.each(_cities, function (index) {
-			that.cities[_cities[index]].color = 'orange';
-			that.showMarkers(_cities[index]);
+		$.each(_cities, function (index, _city) {
+			that.cities[_city].color = 'orange';
 		});
+		that.showMarkers();
 	},
 
 	undoHighLight: function (id) {
 		var that = this;
 		_cities = this.person_city_map[id];
-		$.each(_cities, function (index) {
-			that.cities[_cities[index]].color = 'white';
-			that.showMarkers(_cities[index]);
+		$.each(_cities, function (index, _city) {
+			that.cities[_city].color = 'white';
 		});
-		
+		that.showMarkers();
 	},
 
 	/** Add all layer of marker to the map. Display them.
@@ -248,14 +247,9 @@ var Map = L.Map.extend({
 		}
 	},
 
-	showMarkers: function (_city) {
+	showMarkers: function () {
 		var city;
 		for(city in this.cities) {
-			if(_city) {
-				if(city != _city) {
-					break;
-				}
-			}
 			var size = 44;
 			var count = this.cities[city].count;
 			if(count < 10) {
@@ -266,6 +260,7 @@ var Map = L.Map.extend({
 				size = size + 44
 			}
 			var icon = new MarkerIcon({iconSize: new L.Point(size, size), middleColor: this.cities[city].color});
+			//console.log(icon);
 			icon.stats = this.cities[city].stats;
             icon.population = this.cities[city].count;
 			this.cities[city].marker = new L.marker(this.cities[city].latlng, {icon: icon});
@@ -371,7 +366,7 @@ var Map = L.Map.extend({
 		legend.onAdd = function (map) {
 
 		    var div = L.DomUtil.create('div', 'info legend'),
-		        colors = ['#00FF00', '#FF0000', '#FFFF00'],
+		        colors = ['#66c2a5', '#fc8d62', '#8da0cb'],
 		        labels = ['Geburtsort', 'Sterbeort', 'Wirkungsort'];
 
 		    // loop through our density intervals and generate a label with a colored square for each interval
@@ -435,6 +430,18 @@ var Map = L.Map.extend({
 		for(city in this.cities) {
 			markers.push(this.cities[city].marker);
 		}
+		var group = new L.featureGroup(markers);
+		var bounds = group.getBounds();
+		this.fitBounds(bounds);
+	},
+
+	focusOnSpecificMarker: function (id) {
+		var that = this;
+		var _cities = this.person_city_map[id];
+		var markers = [];
+		$.each(_cities, function (index, _city) {
+			markers.push(that.cities[_city].marker)
+		});
 		var group = new L.featureGroup(markers);
 		var bounds = group.getBounds();
 		this.fitBounds(bounds);

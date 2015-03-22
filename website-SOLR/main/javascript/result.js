@@ -83,32 +83,32 @@ $(document).ready(function () {
 
 	function searchToText () {
 		var eras = ['...', 'während der <b>Antike</b>', 'während dem <b>Mittelalter</b>', 'während dem <b>Frühmittelatler</b>', 'während dem <b>Hochmittelalter</b>', 'während dem <b>Spätmittelalter</b>', 'während der <b>Neuzeit</b>', 'während der <b>frühen Neuzeit</b>', 'während des <b>Konfessionellem Zeitalters</b>', 'wärhend des <b>Absolutismus und der Aufklärung</b>', 'während der <b>Moderne</b>', 'vom <b>Alten zum Deutschen Reich</b>', 'wärhend des <b>Deutschen Reiches</b>', 'seit der <b>Bundesrepublik Deutschland</b>']
-		var text = '<div>Ergebnisse der Suche';
+		var text = '<div>Ergebnisse der Suche "';
 		if(person && person != "") {
-			text += ' nach dem Namen <b>' + decodeURI(person) + '</b>';
+			text += 'nach dem Namen <b>' + decodeURI(person) + '</b> ';
 		}
 		if(place && place != "") {
 			var tmp = place;
 			var status = 0;
 			if(typeof place == 'string') {
-				text += ' in <b>' + decodeURI(place) + '</b>';
+				text += 'in <b>' + decodeURI(place) + '</b> ';
 			} else {
-				text += ' in dem <b>ausgewähltem Raum</b>';
+				text += 'in dem <b>ausgewähltem Raum</b> ';
 			}
 		}
 		if(era) {
-			text += eras[era];
+			text += eras[era] + ' ';
 		}
 		if(begindate) {
-			text += ' von dem <b>Jahre ' + decodeURI(begindate) + '</b>';
+			text += 'während dem <b>Jahre ' + decodeURI(begindate) + '</b> ';
 		}
 		if(enddate) {
-			text += ' bis zum <b>Jahre ' + decodeURI(enddate) + '</b>';
+			text += 'bis zum <b>Jahre ' + decodeURI(enddate) + '</b> ';
 		}
 		if(occ) {
-			text += ' mit dem <b>Beruf ' + decodeURI(occ) + '</b>';
+			text += 'mit dem <b>Beruf ' + decodeURI(occ) + '</b>';
 		}
-		text += '</div>'
+		text += '"</div>'
 		return text;
 	};
 
@@ -339,13 +339,13 @@ $(document).ready(function () {
 	       	var row = dtable.row( tr );
 	       	var gndID = $('td.gndid', tr).text();
 	        if ( row.child.isShown() ) {
+	        	map.undoHighLight(gndID);
+	        	map.focusOnMarker();
 	            // This row is already open - close it
 	            row.child.hide();
 	            history.pushState(null, "", window.location.origin +
 	            	window.location.pathname + '?' +
 	            	removeShowDetails());
-	            //map.undoHighLight();
-	            //map.showMarkers();
 	            td.removeClass('shown');
 	            tr.removeClass('shown');
 	        }
@@ -359,14 +359,14 @@ $(document).ready(function () {
 		            // This row is already open - close it
 		            row.child.hide();
 		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
-		            //map.undoHighLight();
-		            //map.showMarkers();
 		            td.removeClass('shown');
 		            tr.removeClass('shown');
 		        }
 			});
 	            // Open this row
         		//Load Details
+        		map.focusOnSpecificMarker(gndID);
+        		map.highLight(gndID);
         		details.load(gndID, row);        		 
 	            history.pushState(null, "", window.location.origin +
 	            	window.location.pathname + '?' +
@@ -403,15 +403,12 @@ $(document).ready(function () {
 		$('#datatable tbody').on('click', 'input.select-person', function () {
 			_id = this.id.split("cb_")[1];
 			if(selection[_id]) {
-				
 				index = selection.indexOf(_id);
 				if(index > -1){
 					selection.splice(index, 1);
 				}
-			map.undoHighLight(_id);
 			} else {
 				selection[_id] = _id;
-				map.highLight(_id);
 			}
 		} );
 	};
