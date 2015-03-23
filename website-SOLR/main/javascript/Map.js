@@ -198,19 +198,23 @@ var Map = L.Map.extend({
 	highLight: function (id) {
 		var that = this;
 		_cities = this.person_city_map[id];
-		$.each(_cities, function (index, _city) {
-			that.cities[_city].color = 'orange';
-		});
-		that.showMarkers();
+		if(_cities) {
+			$.each(_cities, function (index, _city) {
+				that.cities[_city].color = 'orange';
+			});
+			that.showMarkers();
+		}
 	},
 
 	undoHighLight: function (id) {
 		var that = this;
 		_cities = this.person_city_map[id];
-		$.each(_cities, function (index, _city) {
-			that.cities[_city].color = 'white';
-		});
-		that.showMarkers();
+		if(_cities) {
+			$.each(_cities, function (index, _city) {
+				that.cities[_city].color = 'white';
+			});
+			that.showMarkers();
+		}
 	},
 
 	/** Add all layer of marker to the map. Display them.
@@ -439,12 +443,14 @@ var Map = L.Map.extend({
 		var that = this;
 		var _cities = this.person_city_map[id];
 		var markers = [];
-		$.each(_cities, function (index, _city) {
-			markers.push(that.cities[_city].marker)
-		});
-		var group = new L.featureGroup(markers);
-		var bounds = group.getBounds();
-		this.fitBounds(bounds);
+		console.log(_cities);
+		if(_cities) {
+			$.each(_cities, function (index, _city) {
+				markers.push(that.cities[_city].marker)
+			});
+			var group = new L.featureGroup(markers);
+			var bounds = group.getBounds();
+			this.fitBounds(bounds);
+		}
 	}
-
 });
