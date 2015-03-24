@@ -1,22 +1,27 @@
 /*
-	Detail class - functions to load and display person details
+Detail class - functions to load and display person details
 */
 var details = new function() {
 
 	// General load function
 	this.load = function(gndID, row) {
 
-       	var solrQueryUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/gnd3/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';	
+		var solrQueryUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/gnd3/select?q=id:' + gndID + '&wt=json&json.wrf=?&indent=true';	
 
- 		$.getJSON(solrQueryUrl, function(result){
+		$.getJSON(solrQueryUrl, function(result){
 			
 			var table = details.getDetailTable(gndID, result.response.docs[0]);
 			row.child(table).show();
 			$(row.child()).css("background-color", "#cccccc");
 
-			details.loadDetailImg(gndID);			
+			details.loadDetailImg(gndID);
+
+			details.loadLitrature('author', gndID, 'Literatur Von');
+			details.loadLitrature('subject', gndID, 'Literatur Über');
+
+			details.loadReferences(gndID);		
 			
-	    });
+		});
 	};
 
 	// Detail table showing person attributes
@@ -25,9 +30,9 @@ var details = new function() {
 		var daten = '';
 
 		daten += '<p><b>Biogramm</b></p>' + 
-				 '<table class="personDetails" style="background-color:#e3e9f0; width:100%">' +
-				 '<tr><td style="width:120px; background-color:#e3e9f0;"><b>Name : </b></td><td style="background-color:#e3e9f0;"><b>' + person.preferredNameForThePerson + '</b></td>' +
-				 '<td rowspan="12" style="width:150px; background-color:#e3e9f0; vertical-align:top;"><div id="img' + gndID + '" style="text-align:right;"></div></td></tr>';
+		'<table class="personDetails" style="background-color:#e3e9f0; width:100%">' +
+		'<tr><td style="width:120px; background-color:#e3e9f0;"><b>Name : </b></td><td style="background-color:#e3e9f0;"><b>' + person.preferredNameForThePerson + '</b></td>' +
+		'<td rowspan="12" style="width:150px; background-color:#e3e9f0; vertical-align:top;"><div id="img' + gndID + '" style="text-align:right;"></div></td></tr>';
 		
 		
 		daten += details.getDetailRow('Abweichende Namen', person.variantNameForThePerson);
@@ -56,7 +61,7 @@ var details = new function() {
 
 
 		daten += '<tr style="height:auto; background-color:#e3e9f0;"><td>&nbsp;</td></tr>' +
-				 '</table>';
+		'</table>';
 
 
 		daten += '<div id="divauthor' + gndID + '"></div>'
@@ -64,12 +69,6 @@ var details = new function() {
 		daten += '<div id="divsubject' + gndID + '"></div>'
 
 		daten += '<div id="divref' + gndID + '"></div>'
-
-
-		details.loadLitrature('author', gndID, 'Literatur Von');
-		details.loadLitrature('subject', gndID, 'Literatur Über');
-
-		details.loadReferences(gndID);
 
 		return daten;
 	};
@@ -89,8 +88,8 @@ var details = new function() {
 			};
 
 		}).always(function() {
-   			
-  		});
+
+		});
 	};
 
 	// Load beacon references
@@ -98,14 +97,14 @@ var details = new function() {
 		
 		var solrBeaconUrl = 'http://ubsvirt112.uni-muenster.de:8181/solr/beaconInfo/select?q=gndIdentifier:"http://d-nb.info/gnd/' + gndID + '"&wt=json&json.wrf=?&indent=true';	
 
- 		$.getJSON(solrBeaconUrl, function(result){
+		$.getJSON(solrBeaconUrl, function(result){
 			
 			if (result.response.docs.length > 0) {
 				
 				var refs = '';
 
 				refs += '<br><p><b>Weiteres zur Person</b></p>' + 
-						'<table class="personDetails" style="background-color:#e3e9f0; width:100%">'
+				'<table class="personDetails" style="background-color:#e3e9f0; width:100%">'
 
 				for (var i = result.response.docs.length - 1; i >= 0; i--) {
 					refs += '<tr><td style="background-color:#e3e9f0;">';
@@ -118,7 +117,7 @@ var details = new function() {
 				$('#divref' + gndID).html(refs);
 			};
 			
-	    });
+		});
 	};
 
 	// Helper function to create a table row
@@ -130,7 +129,7 @@ var details = new function() {
 
 			if ($.isArray(value))
 				fValue = value.join('; ');
-				
+
 			return '<tr style="background-color:#e3e9f0; vertical-align:top;"><td>' + key + '&nbsp;:</td><td>' + fValue + '</td></tr>';
 		}
 		else
@@ -196,26 +195,26 @@ var details = new function() {
 								for (var j = 0; j < resourceData.length; j++) {
 									if (resourceDetails.creator.indexOf(resourceData[j]['@id']) > -1)
 										litAuthors.push( {name : resourceData[j].preferredName,
-														nameID : resourceData[j]['@id']
-													});
+											nameID : resourceData[j]['@id']
+										});
 								};
 							};
 							if (resourceDetails.contributor != undefined) {
 								for (var j = 0; j < resourceData.length; j++) {
 									if (resourceDetails.contributor.indexOf(resourceData[j]['@id']) > -1)
 										litContributors.push( {name : resourceData[j].preferredName,
-														nameID : resourceData[j]['@id']
-													});
+											nameID : resourceData[j]['@id']
+										});
 								};
 							};
 
 							litArray.push( { title : litTitle,
-											 titleID : resourceDetails['@id'],
-											 year : litYear,
-											 authors : litAuthors,
-											 contributors : litContributors,
-											 publisher : litPublisher
-										});
+								titleID : resourceDetails['@id'],
+								year : litYear,
+								authors : litAuthors,
+								contributors : litContributors,
+								publisher : litPublisher
+							});
 						};
 					};
 
@@ -223,25 +222,25 @@ var details = new function() {
 					
 					if (litArray.length > 0) {
 						litTable = '<br><p><b>' + title + '</b></p>' +
-								   '<table id="lit' + target + gndID + '" class="litratureTable" >' + 
-								   '<thead>' + 
-						           		'<tr style="background-color:#e3e9f0;">'+
-						           		'<th>Autor</th>' + 
+						'<table id="lit' + target + gndID + '" class="litratureTable" >' + 
+						'<thead>' + 
+						'<tr style="background-color:#e3e9f0;">'+
+						'<th>Autor</th>' + 
 						           		//'<th>Mitwirkende</th>' + 
-						                '<th>Titel</th>' +
+						           		'<th>Titel</th>' +
 						                //'<th>Verlag</th>' +
 						                '<th>Jahr</th></tr>' +
-        							'</thead><tbody>';
+						                '</thead><tbody>';
 
-						$.each( litArray, function( i, lit ){
-							litTable += '<tr style="background-color:#e3e9f0;"><td>';
+						                $.each( litArray, function( i, lit ){
+						                	litTable += '<tr style="background-color:#e3e9f0;"><td>';
 
-							if (lit.authors != undefined && lit.authors.length > 0) {
-								
-								$.each( lit.authors, function( i, auth ){
-									litTable += ' <a href="' + auth.nameID + '" target="_blank">' + auth.name + '</a>;';
-								});
-							};
+						                	if (lit.authors != undefined && lit.authors.length > 0) {
+
+						                		$.each( lit.authors, function( i, auth ){
+						                			litTable += ' <a href="' + auth.nameID + '" target="_blank">' + auth.name + '</a>;';
+						                		});
+						                	};
 
 							// litTable += '</td><td>';
 
@@ -272,15 +271,15 @@ var details = new function() {
 						$('#div' + target + gndID).html(litTable);
 
 						var dtablelit = $('#lit' + target + gndID).DataTable( {
-					        "order": [[ 1, "asc" ]],
-					        "bPaginate": false,
-					        "bFilter": false,
-					        "bInfo": false
-					    } );
+							"order": [[ 1, "asc" ]],
+							"bPaginate": false,
+							"bFilter": false,
+							"bInfo": false
+						});
+
 						dtablelit.draw();
 					};
-					
-					//console.log(litTable);
+
 				};
 			}
 		});

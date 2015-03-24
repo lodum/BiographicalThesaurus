@@ -7,8 +7,8 @@ $(document).ready(function () {
 		tilelayer = L.tileLayer(
 			'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 			{
-		        attribution: 'Map data &copy; ' + mapLink,
-		        maxZoom: 18,
+				attribution: 'Map data &copy; ' + mapLink,
+				maxZoom: 18,
 			}
 		),
 		query = new Query(true),
@@ -26,19 +26,19 @@ $(document).ready(function () {
 		$hline = $("<tr></tr>"),
 		dtable = $("#datatable").DataTable( 
 			{
-			    "oLanguage": {
-			      	"sSearch": "Ergebnisse filtern:",
-			      	"sInfo": "Ergebnisse _START_ bis _END_ von _TOTAL_",
-			      	"sNext": "Nächste",
-			      	"sPrevious": "Vorherige",
-			      	"sLengthMenu": 'Anzeigen <select>'+
+				"oLanguage": {
+				  	"sSearch": "Ergebnisse filtern:",
+				  	"sInfo": "Ergebnisse _START_ bis _END_ von _TOTAL_",
+				  	"sNext": "Nächste",
+				  	"sPrevious": "Vorherige",
+				  	"sLengthMenu": 'Anzeigen <select>'+
 						'<option value="10">10</option>'+
 						'<option value="25">25</option>'+
 						'<option value="50">50</option>'+
 						'<option value="100">100</option>'+
 						'<option value="-1">Alle</option>'+
 						'</select>'
-			    },
+				},
 		  	} 
 	  	);
 
@@ -156,37 +156,37 @@ $(document).ready(function () {
 	};
 
 	window.onpopstate = function(event) {
-    	if(event) {
+		if(event) {
 			hideMap = Boolean(getParam('hideMap'));
 			toggleMap(false);
 			showDetailsGNDid = getParam('showDetails')
 			$('#datatable').find('tr').each (function() {
 				var tr = $(this).closest('tr');
 				var td = $('td.details-control', tr);
-		       	var row = dtable.row( tr );
-		        if ( row.child.isShown() ) {
-		            // This row is already open - close it
-		            row.child.hide();
-		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
-		            //map.undoHighLight();
-		            //map.showMarkers();
-		            td.removeClass('shown');
-		            tr.removeClass('shown');
-		        }
+			   	var row = dtable.row( tr );
+				if ( row.child.isShown() ) {
+					// This row is already open - close it
+					row.child.hide();
+					//history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
+					//map.undoHighLight();
+					//map.showMarkers();
+					td.removeClass('shown');
+					tr.removeClass('shown');
+				}
 			});
 			$('#datatable').find('tr').each (function() {
 				var tr = $(this).closest('tr');
 				var td = $('td.details-control', tr);
-		       	var row = dtable.row( tr );
-		       	var gndID = $('td.gndid', tr).text();
-		        if ( showDetailsGNDid == gndID) {
-		            details.load(gndID, row);        		     
-		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, '') + '&showDetails=' + gndID);
-		            td.addClass('shown');
-		            tr.addClass('shown');
-		        }
+			   	var row = dtable.row( tr );
+			   	var gndID = $('td.gndid', tr).text();
+				if ( showDetailsGNDid == gndID) {
+					details.load(gndID, row);					 
+					//history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, '') + '&showDetails=' + gndID);
+					td.addClass('shown');
+					tr.addClass('shown');
+				}
 			});
-    	}
+		}
 	};
 
 	function removeShowDetails() {
@@ -317,65 +317,65 @@ $(document).ready(function () {
 		$table.appendTo( $( "#resultdiv" ) );
 		dtable = $("#datatable").DataTable( 
 			{
-			    "oLanguage": {
-			      	"sSearch": "Ergebnisse filtern:",
-			      	"sInfo": "Ergebnisse _START_ bis _END_ von _TOTAL_",
-			      	"sNext": "Nächste",
-			      	"sPrevious": "Vorherige",
-			      	"sLengthMenu": 'Anzeigen <select>'+
+				"oLanguage": {
+				  	"sSearch": "Ergebnisse filtern:",
+				  	"sInfo": "Ergebnisse _START_ bis _END_ von _TOTAL_",
+				  	"sNext": "Nächste",
+				  	"sPrevious": "Vorherige",
+				  	"sLengthMenu": 'Anzeigen <select>'+
 						'<option value="10">10</option>'+
 						'<option value="25">25</option>'+
 						'<option value="50">50</option>'+
 						'<option value="100">100</option>'+
 						'<option value="-1">Alle</option>'+
 						'</select>'
-			    },
+				},
 		  	} 
 	  	);
 		dtable.draw();
 		$('#datatable tbody').on('click', 'td.details-control', function () {
 			var td = $(this);
-	        var tr = $(this).closest('tr');
-	       	var row = dtable.row( tr );
-	       	var gndID = $('td.gndid', tr).text();
-	        if ( row.child.isShown() ) {
-	        	map.undoHighLight(gndID);
-	        	map.focusOnMarker();
-	            // This row is already open - close it
-	            row.child.hide();
-	            history.pushState(null, "", window.location.origin +
-	            	window.location.pathname + '?' +
-	            	removeShowDetails());
-	            td.removeClass('shown');
-	            tr.removeClass('shown');
-	        }
-	        else {
-	        	// Close all
-	        	$('#datatable').find('tr').each (function() {
+			var tr = $(this).closest('tr');
+		   	var row = dtable.row( tr );
+		   	var gndID = $('td.gndid', tr).text();
+			if ( row.child.isShown() ) {
+				map.undoHighLight(gndID);
+				map.focusOnMarker();
+				// This row is already open - close it
+				row.child.hide();
+				history.pushState(null, "", window.location.origin +
+					window.location.pathname + '?' +
+					removeShowDetails());
+				td.removeClass('shown');
+				tr.removeClass('shown');
+			}
+			else {
+				// Close all
+				$('#datatable').find('tr').each (function() {
 				var tr = $(this).closest('tr');
 				var td = $('td.details-control', tr);
-		       	var row = dtable.row( tr );
-		        if ( row.child.isShown() ) {
-		            // This row is already open - close it
-		            row.child.hide();
-		            //history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
-		            td.removeClass('shown');
-		            tr.removeClass('shown');
-		        }
+			   	var row = dtable.row( tr );
+				if ( row.child.isShown() ) {
+					// This row is already open - close it
+					row.child.hide();
+					//history.pushState(null, "", window.location.href.replace('&showDetails=' + gndID, ''));
+					td.removeClass('shown');
+					tr.removeClass('shown');
+				}
 			});
-	            // Open this row
-        		//Load Details
-        		map.focusOnSpecificMarker(gndID);
-        		map.highLight(gndID);
-        		details.load(gndID, row);        		 
-	            history.pushState(null, "", window.location.origin +
-	            	window.location.pathname + '?' +
-	            	removeShowDetails() +
-	            	'&showDetails=' + gndID);
-	            td.addClass('shown');
-	            tr.addClass('shown');
-	        }
-    	} );
+				// Open this row
+				//Load Details
+				map.focusOnSpecificMarker(gndID);
+				map.highLight(gndID);
+				details.load(gndID, row);				 
+				history.pushState(null, "", window.location.origin +
+					window.location.pathname + '?' +
+					removeShowDetails() +
+					'&showDetails=' + gndID);
+				td.addClass('shown');
+				tr.addClass('shown');
+			}
+		} );
 		$('#datatable thead').on('click', 'input.select-all', function () {
 			if(selectedAll) {
 				$.each(dtable.rows().data(), function (index) {
@@ -540,6 +540,6 @@ $(document).ready(function () {
 		allData = result.response.docs;
 
 		toggleMap(false);	
-    });	
+	});	
 	
 });
